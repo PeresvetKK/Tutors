@@ -80,7 +80,40 @@ input {
 button {
     cursor: pointer;
 }
-
+thead,
+tbody,
+tr {
+    display: contents;
+}
+th,
+td {
+    display: flex;
+    align-items: center;
+    padding: 17px 0 17px 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 56px;
+    border-bottom: 1px solid $acPassiveBlue;
+}
+th {
+    position: sticky;
+    background: $bgWhite;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: $dark900;
+    cursor: pointer;
+}
+td {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $dark900;
+}
 .wrapper {
     margin: 30px 0 67px 36px;
     max-width: 920px;
@@ -220,7 +253,7 @@ button {
             color: $dark700;
         }
     }
-    &__box:hover{
+    &__box:hover, &__box:focus{
         .form__label{
             color: $acBlue !important;
         }
@@ -246,17 +279,9 @@ button {
         border: 1px solid #D6E2F5;
         border-radius: 8px;
         outline: none;
-        &:hover{
+        &:hover, &:focus{
             border: 1px solid $acBlue;
         }
-        // &:active{
-
-        // }
-        // &:focus{
-        //     background: #fff;
-        //     color: #000;
-        //     border: 1px solid blue;
-        // }
         // &._error{
         //     color: #000;
         //     background: red;
@@ -612,13 +637,66 @@ select{
         margin-bottom: 73px;
     }
 }
-
-
 .shedule-block{
     display: none;
 }
-.schedule-block, .subjects-block, .course-block{
-    width: 1108px;
+
+.salary-block{
+    background: transparent;
+    border: none;
+}
+.salary{
+    &__information{
+        background: $bgWhite;
+        width: 100%;
+        border-radius: 16px;
+        padding: 30px 30px 30px 30px;
+        margin-bottom: 30px;
+    }
+}
+.salary-information{
+    &__title{
+        margin-bottom: 22px;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        width: 337px;
+        min-width: auto;
+        height: 93px;
+        background-color: $bgBlueWhite;
+        border: 1px solid $acPassiveBlue;
+        border-radius: 6px;
+        padding: 20px;
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+    &__item-title{
+        font-size: 16px;
+        line-height: 150%;
+        color: $dark500;
+        margin-bottom: 8px;
+    }
+    &__item-subtitle{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: $dark900;
+    }
+}
+.salary-table{
+    background: $bgWhite;
+}
+.salary-tableBlock__title{
+    margin-bottom: 20px;
+}
+.table-functional{
+    background: $bgWhite;
+    border-radius: 0 0 16px 16px;
 }
 
 @import "media";

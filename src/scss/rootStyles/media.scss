@@ -2,6 +2,12 @@
     .wrapper{
         width: 92.405%;
     }
+    .tabs{
+        width: 100%;
+        &__item{
+            width: 163px;
+        }
+    }
 }
 
 @media screen and (max-width: 913px){
@@ -109,5 +115,20 @@
     }
     .menu__list:not(:last-child){
         border-bottom: 1px solid $acPassiveBlue;
+    }
+    .salary-information{
+        &__title{
+            width: 156px;
+        }
+        &__box{
+            flex-direction: column;
+        }
+        &__item{
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__item:not(:last-child){
+            margin-bottom: 22px;
+        }
     }
 }

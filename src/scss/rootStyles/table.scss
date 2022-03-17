@@ -17,7 +17,6 @@
 .schedule-table--mobile{
     display: none;
 }
-
 .subjects-table{
     display: grid;
     border-collapse: collapse;
@@ -29,7 +28,6 @@
     overflow: hidden;
     border-radius: 16px;
 }
-
 .course-table{
     display: grid;
     border-collapse: collapse;
@@ -60,39 +58,21 @@
         border-radius: 15px; 
     }    
 }
-thead,
-tbody,
-tr {
-    display: contents;
-}
-th,
-td {
-    display: flex;
-    align-items: center;
-    padding: 17px 0 17px 20px;
+.salary-table{
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns:
+    minmax(149px, 1fr)
+    minmax(190px, 1.67fr)
+    minmax(149px, 1.67fr)
+    minmax(148px, 1.67fr)
+    minmax(148px, 3.33fr)
+    minmax(127px, 1.67fr)
+    minmax(148px, 3.33fr);
     overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    height: 56px;
-    border-bottom: 1px solid $acPassiveBlue;
-}
-th {
-    position: sticky;
-    background: $bgWhite;
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 143%;
-    color: $dark900;
-    cursor: pointer;
-}
-td {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: $dark900;
+    overflow-x: scroll;
+    border-radius: 16px;
 }
 .table-select{
     display: none;
@@ -103,6 +83,13 @@ td {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 19px;
+    &__add{
+        font-size: 14px;
+        line-height: 150%;
+        color: $stGreen;
+    }
+
 }
 .table-functional--noBtn{
     justify-content: flex-end;
@@ -133,6 +120,8 @@ td {
     &__pages{
         margin-left: 35px;
         margin-right: 16px;
+        font-size: 14px;
+        line-height: 150%;
     }
     &__arrows{
         cursor: pointer;
@@ -147,7 +136,7 @@ td {
 }
 @media screen and(max-width: 1201px) {
     .schedule-block, .subjects-block, .course-block{
-        width: 99.4%;
+        width: 100%;
     }
     .schedule-table {
         grid-template-columns:
@@ -175,11 +164,18 @@ td {
             minmax(166px, 1.67fr)
             minmax(148px, 3.33fr);
     }
+    .salary-table{
+        grid-template-columns:
+        minmax(149px, 1fr)
+        minmax(149px, 1.67fr)
+        minmax(149px, 1.67fr)
+        minmax(148px, 1.67fr)
+        minmax(148px, 3.33fr)
+        minmax(127px, 1.67fr)
+        minmax(148px, 3.33fr);
+    }
 }
 @media screen and(max-width: 834px) {
-    .schedule-block, .subjects-block, .course-block{
-        width: 100%;
-    }
     .schedule-table {
         grid-template-columns:
             minmax(140px, 1fr)
@@ -206,6 +202,16 @@ td {
             minmax(147px, 1.67fr)
             minmax(147px, 3.33fr);
     }
+    .salary-table{
+        grid-template-columns:
+        minmax(149px, 1fr)
+        minmax(148px, 1.67fr)
+        minmax(127px, 1.67fr)
+        minmax(110px, 1.67fr)
+        minmax(110px, 3.33fr)
+        minmax(127px, 1.67fr)
+        minmax(148px, 3.33fr);
+    }
 }
 @media screen and(max-width: 476px) {
     #table-sort{
@@ -222,7 +228,7 @@ td {
     .table-select::after{
         top: 10px;
     }
-    .schedule-table, .subjects-table, .course-table{
+    .schedule-table, .subjects-table, .course-table, .salary-table{
         display: none;
     }
     .schedule-block, .subjects-block, .course-block{
@@ -283,7 +289,7 @@ td {
     }
     .table-functional__add{
         position: fixed;
-        top: 364px;
+        bottom: 86px;
         right: 30px;
         width: 48px;
         height: 48px;
