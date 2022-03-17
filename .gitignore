@@ -5,4 +5,4 @@ debug.log
 yarn.lock
 yarn-error.log
 deploy
-# build
+build
