@@ -1,0 +1,222 @@
+.schedule-block {
+  width: 1108px;
+}
+.schedule-table{
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns:
+        minmax(168px, 1fr)
+        minmax(282px, 1.67fr)
+        minmax(187px, 1.67fr)
+        minmax(189px, 1.67fr)
+        minmax(282px, 3.33fr)
+        minmax(282px, 1.67fr)
+        minmax(282px, 3.33fr);
+    overflow: hidden;
+    overflow-x: scroll;
+    border-radius: 16px;
+}
+.schedule-table--mobile{
+    display: none;
+}
+thead,
+tbody,
+tr {
+    display: contents;
+}
+th,
+td {
+    display: flex;
+    align-items: center;
+    padding: 17px 20px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    height: 56px;
+    border-bottom: 1px solid $acPassiveBlue;
+}
+th {
+    position: sticky;
+    background: $bgWhite;
+    text-align: left;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 143%;
+    color: $dark900;
+    cursor: pointer;
+}
+td {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 150%;
+    color: $dark900;
+}
+.table-select{
+    display: none;
+}
+.table-functional{
+    width: 100%;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row-counter{
+    display: flex;
+    align-items: center;
+    padding-right: 16px;
+    &__box{
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+    }
+    &__text{
+        font-size: 14px;
+        line-height: 150%;
+        margin-right: 10px;
+    }
+    &__select{
+        position: relative;
+        border: none;
+        background: transparent;
+        font-size: 14px;
+        line-height: 143%;
+        width: 12px;
+        outline: none;
+    }
+    &__pages{
+        margin-left: 35px;
+        margin-right: 16px;
+    }
+    &__arrows{
+        cursor: pointer;
+    }
+}
+.table-btn--mobile{
+    display: none;
+}
+
+@media screen and(max-width: 1201px) {
+    .schedule-block{
+        width: 99.4%;
+    }
+    .schedule-table {
+        grid-template-columns:
+            minmax(201px, 1fr)
+            minmax(168px, 1.67fr)
+            minmax(148px, 1.67fr)
+            minmax(148px, 1.67fr)
+            minmax(202px, 3.33fr)
+            minmax(202px, 1.67fr)
+            minmax(202px, 3.33fr);
+        overflow: hidden;
+        overflow-x: scroll;
+        border-radius: 16px;
+    }
+}
+@media screen and(max-width: 834px) {
+    .schedule-table {
+        grid-template-columns:
+            minmax(140px, 1fr)
+            minmax(168px, 1.67fr)
+            minmax(148px, 1.67fr)
+            minmax(134px, 1.67fr)
+            minmax(205px, 3.33fr)
+            minmax(205px, 1.67fr)
+            minmax(205px, 3.33fr);
+        overflow: hidden;
+        overflow-x: scroll;
+        border-radius: 16px;
+    }
+}
+@media screen and(max-width: 476px) {
+    #table-sort{
+        height: 40px;
+        padding: 0 0 0 16px;
+        font-size: 14px;
+        line-height: 150%;
+        color: $dark500;
+    }
+    .table-select{
+        display: flex;
+        margin-bottom: 20px;
+    }
+    .table-select::after{
+        top: 10px;
+    }
+    .schedule-table{
+        display: none;
+    }
+    .schedule-block{
+        width: 100%;
+        background: transparent;
+        border: none;
+    }
+    .table-mobile{
+        margin-bottom: 20px;
+        background: $bgWhite;
+        border-radius: 16px;
+    }
+    .table-functional{
+        display: none;
+    }
+    .schedule-table--mobile {
+        display: grid;
+        border-collapse: collapse;
+        min-width: 100%;
+        grid-template-columns:
+            minmax(140px, 1fr);
+        &:not(:last-child){
+            margin-bottom: 20px;
+        }
+    }
+    .tr__head{
+        width: calc(100% - 40px);
+        margin: 0 auto;
+    }
+    .tabel__cell{
+        border-bottom: none;
+        width: 48%;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        padding: 0 20px 0 20px;
+        margin-top: 15px;
+        span{
+            color: $dark500;
+            margin-bottom: 2px;
+        }
+    }
+    .tabel__block{
+        padding-bottom: 20px;
+    }
+    th{
+        font-size: 20px;
+        line-height: 160%;
+        width: 100%;
+        padding: 17px 0 17px 0; 
+        justify-content: space-between;
+    }
+    thead,
+    tbody,
+    tr {
+    display: flex;
+    flex-wrap: wrap;
+    }
+    .table-functional__add{
+        position: fixed;
+        top: 364px;
+        right: 30px;
+        width: 48px;
+        height: 48px;
+        color: $bgWhite;
+        border-radius: 50%;
+        background: $stGreen;
+    }
+    .table-btn--mobile{
+        display: block;
+    }
+}

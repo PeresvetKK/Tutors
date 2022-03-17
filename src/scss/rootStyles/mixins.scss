@@ -1,0 +1,61 @@
+//Создание необходимых миксинов
+%flexbox {
+    display: flex;
+    align-items: center;
+    align-self: center;
+}
+
+%textM{
+    font-family: 'Lato', sans-serif;
+    color: #6A7175;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+%textMBold{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+%textS{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+%descrM{
+    font-size: 12px;
+    line-height: 14px;
+}
+%descrS{
+    font-size: 10px;
+    line-height: 12px;
+}
+
+%btnL{
+    width: 200px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    border-radius: 8px;
+}
+%btnM{
+    width: 131px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 157%;
+    border-radius: 6px;
+}
+%btnS{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 133%;
+}
+%btnLink{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration-line: underline;
+}
