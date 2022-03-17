@@ -29,6 +29,37 @@
     overflow: hidden;
     border-radius: 16px;
 }
+
+.course-table{
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns:
+        minmax(168px, 1fr)
+        minmax(188px, 1.67fr)
+        minmax(188px, 1.67fr)
+        minmax(189px, 1.67fr)
+        minmax(187px, 3.33fr)
+        minmax(188px, 1.67fr)
+        minmax(188px, 3.33fr);
+    overflow: hidden;
+    overflow-x: scroll;
+    border-radius: 16px;
+    &__id{
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: $stBlue;
+    }
+    &__lesson{
+        font-size: 12px;
+        line-height: 14px;
+        color: $stGreen;
+        padding: 5px 10px;
+        background-color: $bgGreen;
+        border-radius: 15px; 
+    }    
+}
 thead,
 tbody,
 tr {
@@ -38,7 +69,7 @@ th,
 td {
     display: flex;
     align-items: center;
-    padding: 17px 20px;
+    padding: 17px 0 17px 20px;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
@@ -72,6 +103,9 @@ td {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+.table-functional--noBtn{
+    justify-content: flex-end;
 }
 .row-counter{
     display: flex;
@@ -107,9 +141,12 @@ td {
 .table-btn--mobile{
     display: none;
 }
-
+.table__header-arrow{
+    width: 24px;
+    height: 24px;
+}
 @media screen and(max-width: 1201px) {
-    .schedule-block, .subjects-block{
+    .schedule-block, .subjects-block, .course-block{
         width: 99.4%;
     }
     .schedule-table {
@@ -128,9 +165,19 @@ td {
             minmax(297px, 1.67fr)
             minmax(295px, 1.67fr);
     }
+    .course-table {
+        grid-template-columns:
+            minmax(128px, 1fr)
+            minmax(146px, 1.67fr)
+            minmax(146px, 1.67fr)
+            minmax(146px, 1.67fr)
+            minmax(146px, 3.33fr)
+            minmax(166px, 1.67fr)
+            minmax(148px, 3.33fr);
+    }
 }
 @media screen and(max-width: 834px) {
-    .schedule-block, .subjects-block{
+    .schedule-block, .subjects-block, .course-block{
         width: 100%;
     }
     .schedule-table {
@@ -149,6 +196,16 @@ td {
             minmax(223px, 1.67fr)
             minmax(287px, 1.67fr);
     }
+    .course-table {
+        grid-template-columns:
+            minmax(128px, 1fr)
+            minmax(130px, 1.67fr)
+            minmax(137px, 1.67fr)
+            minmax(104px, 1.67fr)
+            minmax(120px, 3.33fr)
+            minmax(147px, 1.67fr)
+            minmax(147px, 3.33fr);
+    }
 }
 @media screen and(max-width: 476px) {
     #table-sort{
@@ -165,10 +222,10 @@ td {
     .table-select::after{
         top: 10px;
     }
-    .schedule-table, .subjects-table{
+    .schedule-table, .subjects-table, .course-table{
         display: none;
     }
-    .schedule-block, .subjects-block{
+    .schedule-block, .subjects-block, .course-block{
         width: 100%;
         background: transparent;
         border: none;
@@ -203,7 +260,7 @@ td {
         height: auto;
         padding: 0 20px 0 20px;
         margin-top: 15px;
-        span{
+        .table-mobile__text{
             color: $dark500;
             margin-bottom: 2px;
         }

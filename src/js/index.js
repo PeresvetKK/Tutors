@@ -4,6 +4,7 @@ import '../scss/index.scss';
 // import header from '../components/header.html';
 import sched from '../components/schedule.html';
 import subjects from '../components/subjects.html';
+import course from '../components/course.html';
 // import { doc } from 'prettier';
 $(() => {
 	// $('#root').prepend(header);
@@ -122,4 +123,5 @@ $(() => {
 
 	$(".schedule-block").prepend(sched);
 	$(".subjects-block").prepend(subjects);
+	$(".course-block").prepend(course);
 });

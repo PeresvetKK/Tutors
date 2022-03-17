@@ -681,7 +681,7 @@ select {
 .shedule-block {
   display: none;
 }
-.schedule-block, .subjects-block {
+.schedule-block, .subjects-block, .course-block {
   width: 1108px;
 }
 @media (max-width: 1201px) {
@@ -842,6 +842,30 @@ select {
   overflow: hidden;
   border-radius: 16px;
 }
+.course-table {
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns: minmax(168px, 1fr) minmax(188px, 1.67fr) minmax(188px, 1.67fr) minmax(189px, 1.67fr) minmax(187px, 3.33fr) minmax(188px, 1.67fr) minmax(188px, 3.33fr);
+  overflow: hidden;
+  overflow-x: scroll;
+  border-radius: 16px;
+}
+.course-table__id {
+  font-size: 14px;
+  line-height: 17px;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+  color: #38AAFF;
+}
+.course-table__lesson {
+  font-size: 12px;
+  line-height: 14px;
+  color: #30D937;
+  padding: 5px 10px;
+  background-color: #EDF8ED;
+  border-radius: 15px;
+}
 thead,
 tbody,
 tr {
@@ -855,7 +879,7 @@ td {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 17px 20px;
+  padding: 17px 0 17px 20px;
   overflow: hidden;
   -o-text-overflow: ellipsis;
      text-overflow: ellipsis;
@@ -896,6 +920,11 @@ td {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.table-functional--noBtn {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .row-counter {
   display: -webkit-box;
@@ -939,8 +968,12 @@ td {
 .table-btn--mobile {
   display: none;
 }
+.table__header-arrow {
+  width: 24px;
+  height: 24px;
+}
 @media screen and (max-width: 1201px) {
-  .schedule-block, .subjects-block {
+  .schedule-block, .subjects-block, .course-block {
     width: 99.4%;
   }
 
@@ -951,9 +984,13 @@ td {
   .subjects-table {
     grid-template-columns: minmax(276px, 1fr) minmax(297px, 1.67fr) minmax(295px, 1.67fr);
   }
+
+  .course-table {
+    grid-template-columns: minmax(128px, 1fr) minmax(146px, 1.67fr) minmax(146px, 1.67fr) minmax(146px, 1.67fr) minmax(146px, 3.33fr) minmax(166px, 1.67fr) minmax(148px, 3.33fr);
+  }
 }
 @media screen and (max-width: 834px) {
-  .schedule-block, .subjects-block {
+  .schedule-block, .subjects-block, .course-block {
     width: 100%;
   }
 
@@ -963,6 +1000,10 @@ td {
 
   .subjects-table {
     grid-template-columns: minmax(285px, 1fr) minmax(223px, 1.67fr) minmax(287px, 1.67fr);
+  }
+
+  .course-table {
+    grid-template-columns: minmax(128px, 1fr) minmax(130px, 1.67fr) minmax(137px, 1.67fr) minmax(104px, 1.67fr) minmax(120px, 3.33fr) minmax(147px, 1.67fr) minmax(147px, 3.33fr);
   }
 }
 @media screen and (max-width: 476px) {
@@ -985,11 +1026,11 @@ td {
     top: 10px;
   }
 
-  .schedule-table, .subjects-table {
+  .schedule-table, .subjects-table, .course-table {
     display: none;
   }
 
-  .schedule-block, .subjects-block {
+  .schedule-block, .subjects-block, .course-block {
     width: 100%;
     background: transparent;
     border: none;
@@ -1034,7 +1075,7 @@ td {
     padding: 0 20px 0 20px;
     margin-top: 15px;
   }
-  .tabel__cell span {
+  .tabel__cell .table-mobile__text {
     color: #8F9498;
     margin-bottom: 2px;
   }
