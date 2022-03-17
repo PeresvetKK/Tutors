@@ -1,6 +1,3 @@
-.schedule-block {
-  width: 1108px;
-}
 .schedule-table{
     display: grid;
     border-collapse: collapse;
@@ -19,6 +16,18 @@
 }
 .schedule-table--mobile{
     display: none;
+}
+
+.subjects-table{
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns:
+        minmax(376px, 1fr)
+        minmax(376px, 1.67fr)
+        minmax(356px, 1.67fr);
+    overflow: hidden;
+    border-radius: 16px;
 }
 thead,
 tbody,
@@ -100,7 +109,7 @@ td {
 }
 
 @media screen and(max-width: 1201px) {
-    .schedule-block{
+    .schedule-block, .subjects-block{
         width: 99.4%;
     }
     .schedule-table {
@@ -112,12 +121,18 @@ td {
             minmax(202px, 3.33fr)
             minmax(202px, 1.67fr)
             minmax(202px, 3.33fr);
-        overflow: hidden;
-        overflow-x: scroll;
-        border-radius: 16px;
+    }
+    .subjects-table{
+        grid-template-columns:
+            minmax(276px, 1fr)
+            minmax(297px, 1.67fr)
+            minmax(295px, 1.67fr);
     }
 }
 @media screen and(max-width: 834px) {
+    .schedule-block, .subjects-block{
+        width: 100%;
+    }
     .schedule-table {
         grid-template-columns:
             minmax(140px, 1fr)
@@ -127,9 +142,12 @@ td {
             minmax(205px, 3.33fr)
             minmax(205px, 1.67fr)
             minmax(205px, 3.33fr);
-        overflow: hidden;
-        overflow-x: scroll;
-        border-radius: 16px;
+    }
+    .subjects-table{
+        grid-template-columns:
+            minmax(285px, 1fr)
+            minmax(223px, 1.67fr)
+            minmax(287px, 1.67fr);
     }
 }
 @media screen and(max-width: 476px) {
@@ -147,10 +165,10 @@ td {
     .table-select::after{
         top: 10px;
     }
-    .schedule-table{
+    .schedule-table, .subjects-table{
         display: none;
     }
-    .schedule-block{
+    .schedule-block, .subjects-block{
         width: 100%;
         background: transparent;
         border: none;

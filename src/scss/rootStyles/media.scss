@@ -53,8 +53,18 @@
     .container{
         padding: 20px 20px 50px 20px;
     }
-    .aside__nav, .aside__logo, .aside__dt{
-        width: 85% !important;
+    .aside{
+        &__logo{
+            display: none;
+            width: 100%;
+        }
+        &__nav{
+            top: 85px;
+            border-top: 1px solid #D6E2F5;
+        }
+        .aside__nav, .aside__logo, .aside__dt{
+            width: 85% !important;
+        }
     }
     .person{
         flex-direction: column;
@@ -96,9 +106,6 @@
     h1{
         font-size: 28px;
         line-height: 129%;
-    }
-    .aside__logo{
-        width: 100%;
     }
     .menu__list:not(:last-child){
         border-bottom: 1px solid $acPassiveBlue;

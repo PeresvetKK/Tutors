@@ -3,6 +3,7 @@ import { doc } from 'prettier';
 import '../scss/index.scss';
 // import header from '../components/header.html';
 import sched from '../components/schedule.html';
+import subjects from '../components/subjects.html';
 // import { doc } from 'prettier';
 $(() => {
 	// $('#root').prepend(header);
@@ -120,4 +121,5 @@ $(() => {
 	tabsFunc();
 
 	$(".schedule-block").prepend(sched);
+	$(".subjects-block").prepend(subjects);
 });

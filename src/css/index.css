@@ -681,6 +681,9 @@ select {
 .shedule-block {
   display: none;
 }
+.schedule-block, .subjects-block {
+  width: 1108px;
+}
 @media (max-width: 1201px) {
   .wrapper {
     width: 92.405%;
@@ -750,7 +753,15 @@ select {
     padding: 20px 20px 50px 20px;
   }
 
-  .aside__nav, .aside__logo, .aside__dt {
+  .aside__logo {
+    display: none;
+    width: 100%;
+  }
+  .aside__nav {
+    top: 85px;
+    border-top: 1px solid #D6E2F5;
+  }
+  .aside .aside__nav, .aside .aside__logo, .aside .aside__dt {
     width: 85% !important;
   }
 
@@ -807,16 +818,9 @@ select {
     line-height: 129%;
   }
 
-  .aside__logo {
-    width: 100%;
-  }
-
   .menu__list:not(:last-child) {
     border-bottom: 1px solid #D6E2F5;
   }
-}
-.schedule-block {
-  width: 1108px;
 }
 .schedule-table {
   display: grid;
@@ -829,6 +833,14 @@ select {
 }
 .schedule-table--mobile {
   display: none;
+}
+.subjects-table {
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns: minmax(376px, 1fr) minmax(376px, 1.67fr) minmax(356px, 1.67fr);
+  overflow: hidden;
+  border-radius: 16px;
 }
 thead,
 tbody,
@@ -928,23 +940,29 @@ td {
   display: none;
 }
 @media screen and (max-width: 1201px) {
-  .schedule-block {
+  .schedule-block, .subjects-block {
     width: 99.4%;
   }
 
   .schedule-table {
     grid-template-columns: minmax(201px, 1fr) minmax(168px, 1.67fr) minmax(148px, 1.67fr) minmax(148px, 1.67fr) minmax(202px, 3.33fr) minmax(202px, 1.67fr) minmax(202px, 3.33fr);
-    overflow: hidden;
-    overflow-x: scroll;
-    border-radius: 16px;
+  }
+
+  .subjects-table {
+    grid-template-columns: minmax(276px, 1fr) minmax(297px, 1.67fr) minmax(295px, 1.67fr);
   }
 }
 @media screen and (max-width: 834px) {
+  .schedule-block, .subjects-block {
+    width: 100%;
+  }
+
   .schedule-table {
     grid-template-columns: minmax(140px, 1fr) minmax(168px, 1.67fr) minmax(148px, 1.67fr) minmax(134px, 1.67fr) minmax(205px, 3.33fr) minmax(205px, 1.67fr) minmax(205px, 3.33fr);
-    overflow: hidden;
-    overflow-x: scroll;
-    border-radius: 16px;
+  }
+
+  .subjects-table {
+    grid-template-columns: minmax(285px, 1fr) minmax(223px, 1.67fr) minmax(287px, 1.67fr);
   }
 }
 @media screen and (max-width: 476px) {
@@ -967,11 +985,11 @@ td {
     top: 10px;
   }
 
-  .schedule-table {
+  .schedule-table, .subjects-table {
     display: none;
   }
 
-  .schedule-block {
+  .schedule-block, .subjects-block {
     width: 100%;
     background: transparent;
     border: none;

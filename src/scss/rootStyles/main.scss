@@ -617,4 +617,8 @@ select{
 .shedule-block{
     display: none;
 }
+.schedule-block, .subjects-block{
+    width: 1108px;
+}
+
 @import "media";
