@@ -243,7 +243,7 @@
 										<input class="form__input" type="password" id="password-input" name="password"
 											placeholder="***********">
 										<a href="#" class="password-control"
-											onclick="return show_hide_password(this);"></a>
+											onclick="show_hide_password(this);"></a>
 									</div>
 								</div>
 							</div>
@@ -318,20 +318,5 @@
 		<footer>
 		</footer>
 	</section>
-	<script>
-		function show_hide_password(target) {
-			var input = document.getElementById('password-input');
-			if (input.getAttribute('type') == 'password') {
-				target.classList.add('view');
-				input.setAttribute('type', 'text');
-			} else {
-				target.classList.remove('view');
-				input.setAttribute('type', 'password');
-			}
-			return false;
-		}
-	</script>
-
 </body>
-
 </html>
