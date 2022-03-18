@@ -74,6 +74,37 @@
     overflow-x: scroll;
     border-radius: 16px;
 }
+.courses-block__table{
+    display: grid;
+    border-collapse: collapse;
+    min-width: 100%;
+    grid-template-columns:
+        minmax(140px, 1fr)
+        minmax(127px, 1.67fr)
+        minmax(188px, 1.67fr)
+        minmax(189px, 1.67fr)
+        minmax(140px, 3.33fr)
+        minmax(188px, 1.67fr)
+        minmax(188px, 3.33fr);
+    overflow: hidden;
+    overflow-x: scroll;
+    border-radius: 16px;
+    &__id{
+        font-size: 14px;
+        line-height: 17px;
+        text-decoration-line: underline;
+        color: $stBlue;
+    }
+    &__lesson{
+        font-size: 12px;
+        line-height: 14px;
+        color: $stGreen;
+        padding: 5px 10px;
+        background-color: $bgGreen;
+        border-radius: 15px; 
+    }  
+}
+
 .table-select{
     display: none;
 }
@@ -133,6 +164,12 @@
 .table__header-arrow{
     width: 24px;
     height: 24px;
+}
+.table__search{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
 }
 @media screen and(max-width: 1201px) {
     .schedule-block, .subjects-block, .course-block{

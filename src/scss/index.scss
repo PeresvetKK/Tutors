@@ -1,2 +1,147 @@
 @import './rootStyles/main.scss';
 @import './rootStyles/table.scss';
+
+.profile-block__person{
+    margin: 0 0 60px 0;
+}
+.person{
+    display: flex;
+    align-items: center;
+    position: relative;
+    &__img{
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    &__edit{
+        position: absolute;
+        left: 113px;
+        bottom: 0;
+    }
+}
+.person-textbox{
+    padding-left: 16px;
+    &__post{
+        font-weight: 700;
+        line-height: 100%;
+        color: $dark300;
+        margin-bottom: 8px;
+    }
+    &__name{
+        margin-bottom: 16px;
+    }
+}
+.profile-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    &:not(:last-child){
+        margin-bottom: 73px;
+    }
+}
+.shedule-block{
+    display: none;
+}
+.salary-block{
+    background: transparent;
+    border: none;
+}
+.salary{
+    &__information{
+        background: $bgWhite;
+        width: 100%;
+        border-radius: 16px;
+        padding: 30px 30px 30px 30px;
+        margin-bottom: 30px;
+    }
+}
+.salary-information{
+    &__title{
+        margin-bottom: 22px;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__item{
+        width: 337px;
+        min-width: auto;
+        height: 93px;
+        background-color: $bgBlueWhite;
+        border: 1px solid $acPassiveBlue;
+        border-radius: 6px;
+        padding: 20px;
+        &:not(:last-child){
+            margin-right: 20px;
+        }
+    }
+    &__item-title{
+        font-size: 16px;
+        line-height: 150%;
+        color: $dark500;
+        margin-bottom: 8px;
+    }
+    &__item-subtitle{
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: $dark900;
+    }
+}
+.salary-table{
+    background: $bgWhite;
+}
+.salary-tableBlock__title{
+    margin-bottom: 20px;
+}
+.course-block{
+    .table-functional{
+        justify-content: flex-end;
+    }
+}
+.table-functional{
+    background: $bgWhite;
+    border-radius: 0 0 16px 16px;
+}
+@media (max-width: 1201px) {
+    
+}
+
+@media screen and (max-width: 913px){
+    
+}
+
+@media screen and (max-width: 476px){
+    .person{
+        flex-direction: column;
+        align-items: flex-start;
+        &__img{
+            margin-bottom: 16px;
+        }
+        &__edit{
+            bottom: 118px;
+        }
+    }
+    .person-textbox{
+        padding-left: 0;
+    }
+    .salary-information{
+        &__title{
+            width: 156px;
+        }
+        &__box{
+            flex-direction: column;
+        }
+        &__item{
+            width: 100%;
+            margin: 0 auto;
+        }
+        &__item:not(:last-child){
+            margin-bottom: 22px;
+        }
+    }
+}

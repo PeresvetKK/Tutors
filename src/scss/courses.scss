@@ -1,0 +1,10 @@
+@import './rootStyles/main.scss';
+@import './rootStyles/table.scss';
+
+.courses-block{
+    background: $bgWhite;
+    border-radius: 16px;
+    .table-functional{
+        justify-content: flex-end;
+    }
+}
