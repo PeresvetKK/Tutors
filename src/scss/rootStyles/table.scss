@@ -166,10 +166,18 @@
     height: 24px;
 }
 .table__search{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 0 16px;
     height: 72px;
+}
+.table__dropdown{
+    width: 168px;
+    height: 40px;
+    .form__input{
+        width: 168px;
+        height: 40px;
+        padding: 9px 16px;
+        font-size: 14px;
+    }
 }
 @media screen and(max-width: 1201px) {
     .schedule-block, .subjects-block, .course-block{
@@ -211,6 +219,16 @@
         minmax(127px, 1.67fr)
         minmax(148px, 3.33fr);
     }
+    .courses-block__table{
+        grid-template-columns:
+        minmax(149px, 1fr)
+        minmax(129px, 1.67fr)
+        minmax(166px, 1.67fr)
+        minmax(166px, 1.67fr)
+        minmax(127px, 3.33fr)
+        minmax(149px, 1.67fr)
+        minmax(149px, 3.33fr);
+    }
 }
 @media screen and(max-width: 834px) {
     .schedule-table {
@@ -249,6 +267,16 @@
         minmax(127px, 1.67fr)
         minmax(148px, 3.33fr);
     }
+    .courses-block__table{
+        grid-template-columns:
+        minmax(131px, 1fr)
+        minmax(109px, 1.67fr)
+        minmax(147px, 1.67fr)
+        minmax(126px, 1.67fr)
+        minmax(127px, 3.33fr)
+        minmax(149px, 1.67fr)
+        minmax(149px, 3.33fr);
+    }
 }
 @media screen and(max-width: 476px) {
     #table-sort{
@@ -265,7 +293,7 @@
     .table-select::after{
         top: 10px;
     }
-    .schedule-table, .subjects-table, .course-table, .salary-table{
+    .schedule-table, .subjects-table, .course-table, .salary-table, .courses-block__table{
         display: none;
     }
     .schedule-block, .subjects-block, .course-block{

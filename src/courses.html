@@ -7,21 +7,41 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
 	<title>Profile</title>
 </head>
-
 <body id="root" class="scroll">
 	<section class="content">
 		<main class="main">
 			<div class="wrapper">
 				<section class="main__header">
-					<h1 class="main__title title">Курсы</h1>
-                    <div class="courses-block">
-                        <div class="table__search">
-                            <input type="search" placeholder="Быстрый поиск">
-                            <select class="form__input" id="table-sort" name="table-sort">
-                                <option value="">Сортировать по</option>
-                                <option value="dog">Дате</option>
-                                <option value="cat">Времени</option>
+                    <div class="main__title-box dropdown-box">
+                        <h1 class="main__title title">Курсы</h1>
+                        <div class="form__box form__box--select main__dropdown">
+                            <select class="form__input">
+                                <option value="">Направление</option>
+                                <option value="dog">Направление</option>
+                                <option value="cat">Направление</option>
                             </select>
+                        </div>
+                    </div>
+                    <div class="courses-block">
+                        <div class="dropdown-box table__search">
+                            <div class="form__box search-box">
+                                <svg class="search-box__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="#8F9498"/>
+                                    <mask id="mask0_448_89" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0_448_89)">
+                                    </g>
+                                </svg>
+                                <input class="form__input input__search" type="search" placeholder="Быстрый поиск">
+                            </div>
+                            <div class="form__box form__box--select table__dropdown">
+                                <select class="form__input">
+                                    <option value="">Статус</option>
+                                    <option value="dog">Статус</option>
+                                    <option value="cat">Статус</option>
+                                </select>
+                            </div>
                         </div>
                         <table class="courses-block__table">
                             <thead>
@@ -89,12 +109,25 @@
                             </tbody>
                         </table>
 
-                        <div class="form__box form__box--select table-select">
-                            <select class="form__input" id="table-sort" name="table-sort">
-                                <option value="">Сортировать по</option>
-                                <option value="dog">Дате</option>
-                                <option value="cat">Времени</option>
-                            </select>
+                        <div class="table-mobile">
+                            <table class="schedule-table--mobile">
+                                <thead>
+                                    <tr class="tr__head">
+                                        <th>Математика</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="tabel__block">
+                                        <td class="tabel__cell"><span class="table-mobile__text">ID заявления:</span> <span class="course-table__id">1234567</span></td>
+                                        <td class="tabel__cell"><span class="table-mobile__text">Форма обучения:</span>Онлайн</td>
+                                        <td class="tabel__cell"><span class="table-mobile__text">Ученик:</span>Иван Иванов</td>
+                                        <td class="tabel__cell"><span class="table-mobile__text">Лектор:</span>Джейком Стеванс</td>
+                                        <td class="tabel__cell"><span class="table-mobile__text">Уроков:</span><span class="course-table__lesson">20/20</span></td>
+                                        <td class="tabel__cell"><span class="table-mobile__text">Причина обучения:</span>Репититорство</td>
+                                        <td class="tabel__cell"><span class="table-mobile__text">Создан:</span>20.08.2020 - 00:10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                         <div class="table-mobile">
                             <table class="schedule-table--mobile">
@@ -106,12 +139,12 @@
                                 <tbody>
                                     <tr class="tabel__block">
                                         <td class="tabel__cell"><span class="table-mobile__text">ID заявления:</span> <span class="course-table__id">1234567</span></td>
-                                        <td class="tabel__cell"><span class="table-mobile__text">Ученик:</span>Иван Иванов</td>
-                                        <td class="tabel__cell"><span class="table-mobile__text">Уроков:</span><span class="course-table__lesson">20/20</span></td>
-                                        <td class="tabel__cell"><span class="table-mobile__text">Состояние:</span>В процессе</td>
                                         <td class="tabel__cell"><span class="table-mobile__text">Форма обучения:</span>Онлайн</td>
-                                        <td class="tabel__cell"><span class="table-mobile__text">Причина:</span>Репититорство</td>
-                                        <td class="tabel__cell"><span class="table-mobile__text">Дата создания:</span>22.02.2022</td>
+                                        <td class="tabel__cell"><span class="table-mobile__text">Ученик:</span>Иван Иванов</td>
+                                        <td class="tabel__cell"><span class="table-mobile__text">Лектор:</span>Джейком Стеванс</td>
+                                        <td class="tabel__cell"><span class="table-mobile__text">Уроков:</span><span class="course-table__lesson">20/20</span></td>
+                                        <td class="tabel__cell"><span class="table-mobile__text">Причина обучения:</span>Репититорство</td>
+                                        <td class="tabel__cell"><span class="table-mobile__text">Создан:</span>20.08.2020 - 00:10</td>
                                     </tr>
                                 </tbody>
                             </table>

@@ -267,8 +267,9 @@ td {
             width: 24px;
             height: 24px;
             right: 18px;
-            top: 16px;
-            background: url("/img/arrowDownGray.svg") 0 0 no-repeat;
+            top: 25%;
+            background: url("/img/arrowDownGray.svg") no-repeat;
+            background-position: center;
     }
     &__input{
         width: 100%;
@@ -290,6 +291,21 @@ td {
     }
     
 }
+.dropdown-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .form__box{
+        margin-bottom: 0;
+    }
+    .form__box--select::after{
+        width: 16px;
+        height: 16px;
+        background-position: right center;
+        top: 13px;
+        background-image: url("/img/arrowDownLightGray.svg");
+    }
+}
 .form-btn{
     width: 100%;
     display: flex;
@@ -309,6 +325,22 @@ td {
 }
 .password-control.view {
 	background: url("/img/hide.svg") 0 0 no-repeat;
+}
+.search-box{
+    position: relative;
+    &__icon{
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        left: 10px;
+        top: 10px;
+    }
+}
+.input__search{
+    width: 262px;
+    height: 40px;
+    padding-left: 44px;
+    font-size: 14px;
 }
 select{
     appearance: none;
@@ -555,6 +587,20 @@ select{
         background: $bgWhite;
         border: 1px solid $acPassiveBlue;
         border-radius: 16px;
+    }
+    &__title-box{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__dropdown{
+        width: 186px;
+        height: 40px;
+        .form__input{
+            height: 40px;
+            padding: 9px 16px;
+            font-size: 14px;
+        }
     }
 }
 .tabs{

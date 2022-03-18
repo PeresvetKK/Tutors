@@ -305,8 +305,9 @@ td {
   width: 24px;
   height: 24px;
   right: 18px;
-  top: 16px;
-  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjcwNzEgMTAuNzA3MUMxNy4wOTc2IDEwLjMxNjYgMTcuMDk3NiA5LjY4MzQyIDE2LjcwNzEgOS4yOTI4OUMxNi4zMTY2IDguOTAyMzcgMTUuNjgzNCA4LjkwMjM3IDE1LjI5MjkgOS4yOTI4OUwxNi43MDcxIDEwLjcwNzFaTTEyIDE0TDExLjI5MjkgMTQuNzA3MUMxMS42ODM0IDE1LjA5NzYgMTIuMzE2NiAxNS4wOTc2IDEyLjcwNzEgMTQuNzA3MUwxMiAxNFpNOC43MDcxMSA5LjI5Mjg5QzguMzE2NTggOC45MDIzNyA3LjY4MzQyIDguOTAyMzcgNy4yOTI4OSA5LjI5Mjg5QzYuOTAyMzcgOS42ODM0MiA2LjkwMjM3IDEwLjMxNjYgNy4yOTI4OSAxMC43MDcxTDguNzA3MTEgOS4yOTI4OVpNMTUuMjkyOSA5LjI5Mjg5TDExLjI5MjkgMTMuMjkyOUwxMi43MDcxIDE0LjcwNzFMMTYuNzA3MSAxMC43MDcxTDE1LjI5MjkgOS4yOTI4OVpNMTIuNzA3MSAxMy4yOTI5TDguNzA3MTEgOS4yOTI4OUw3LjI5Mjg5IDEwLjcwNzFMMTEuMjkyOSAxNC43MDcxTDEyLjcwNzEgMTMuMjkyOVoiIGZpbGw9IiM2QTcxNzUiLz4KPC9zdmc+Cg==) 0 0 no-repeat;
+  top: 25%;
+  background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTE2LjcwNzEgMTAuNzA3MUMxNy4wOTc2IDEwLjMxNjYgMTcuMDk3NiA5LjY4MzQyIDE2LjcwNzEgOS4yOTI4OUMxNi4zMTY2IDguOTAyMzcgMTUuNjgzNCA4LjkwMjM3IDE1LjI5MjkgOS4yOTI4OUwxNi43MDcxIDEwLjcwNzFaTTEyIDE0TDExLjI5MjkgMTQuNzA3MUMxMS42ODM0IDE1LjA5NzYgMTIuMzE2NiAxNS4wOTc2IDEyLjcwNzEgMTQuNzA3MUwxMiAxNFpNOC43MDcxMSA5LjI5Mjg5QzguMzE2NTggOC45MDIzNyA3LjY4MzQyIDguOTAyMzcgNy4yOTI4OSA5LjI5Mjg5QzYuOTAyMzcgOS42ODM0MiA2LjkwMjM3IDEwLjMxNjYgNy4yOTI4OSAxMC43MDcxTDguNzA3MTEgOS4yOTI4OVpNMTUuMjkyOSA5LjI5Mjg5TDExLjI5MjkgMTMuMjkyOUwxMi43MDcxIDE0LjcwNzFMMTYuNzA3MSAxMC43MDcxTDE1LjI5MjkgOS4yOTI4OVpNMTIuNzA3MSAxMy4yOTI5TDguNzA3MTEgOS4yOTI4OUw3LjI5Mjg5IDEwLjcwNzFMMTEuMjkyOSAxNC43MDcxTDEyLjcwNzEgMTMuMjkyOVoiIGZpbGw9IiM2QTcxNzUiLz4KPC9zdmc+Cg==) no-repeat;
+  background-position: center;
 }
 .form__input {
   width: 100%;
@@ -319,6 +320,27 @@ td {
 }
 .form__input:hover, .form__input:focus {
   border: 1px solid #608BCC;
+}
+.dropdown-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dropdown-box .form__box {
+  margin-bottom: 0;
+}
+.dropdown-box .form__box--select::after {
+  width: 16px;
+  height: 16px;
+  background-position: right center;
+  top: 13px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTExLjIzMiA3LjIzMjM2QzExLjU0NDQgNi45MTk5NCAxMS41NDQ0IDYuNDEzNCAxMS4yMzIgNi4xMDA5OEMxMC45MTk2IDUuNzg4NTYgMTAuNDEzMSA1Ljc4ODU2IDEwLjEwMDcgNi4xMDA5OEwxMS4yMzIgNy4yMzIzNlpNNy45OTk2NyA5LjMzMzM0TDcuNDMzOTkgOS44OTkwMkM3Ljc0NjQxIDEwLjIxMTQgOC4yNTI5NCAxMC4yMTE0IDguNTY1MzYgOS44OTkwMkw3Ljk5OTY3IDkuMzMzMzRaTTUuODk4NjkgNi4xMDA5OEM1LjU4NjI3IDUuNzg4NTYgNS4wNzk3NCA1Ljc4ODU2IDQuNzY3MzIgNi4xMDA5OEM0LjQ1NDkgNi40MTM0IDQuNDU0OSA2LjkxOTk0IDQuNzY3MzIgNy4yMzIzNkw1Ljg5ODY5IDYuMTAwOThaTTEwLjEwMDcgNi4xMDA5OEw3LjQzMzk5IDguNzY3NjVMOC41NjUzNiA5Ljg5OTAyTDExLjIzMiA3LjIzMjM2TDEwLjEwMDcgNi4xMDA5OFpNOC41NjUzNiA4Ljc2NzY1TDUuODk4NjkgNi4xMDA5OEw0Ljc2NzMyIDcuMjMyMzZMNy40MzM5OSA5Ljg5OTAyTDguNTY1MzYgOC43Njc2NVoiIGZpbGw9IiM4Rjk0OTgiLz4KPC9zdmc+Cg==);
 }
 .form-btn {
   width: 100%;
@@ -343,6 +365,22 @@ td {
 }
 .password-control.view {
   background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTQgNEwyMCAyMCIgc3Ryb2tlPSIjOEY5NDk4IiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8cGF0aCBkPSJNMTYuNSAxNi43NTZDMTUuMTQ3NCAxNy40ODQ2IDEzLjYxODYgMTggMTIgMThDNi40NzcxNSAxOCAyIDEyIDIgMTJDMiAxMiA0LjA4ODQyIDkuMjAxMjMgNy4xNzIwNSA3LjQyNjdNMTkuNSAxNC42MzM3QzIxLjA1NTkgMTMuMjY1MiAyMiAxMiAyMiAxMkMyMiAxMiAxNy41MjI4IDYgMTIgNkMxMS42NjI1IDYgMTEuMzI4OSA2LjAyMjQxIDExIDYuMDY0NDgiIHN0cm9rZT0iIzhGOTQ5OCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPHBhdGggZD0iTTEzLjMyMjkgMTMuNTAwMkMxMi45NzAzIDEzLjgxMTQgMTIuNTA3MiAxNC4wMDAyIDEyIDE0LjAwMDJDMTAuODk1NCAxNC4wMDAyIDEwIDEzLjEwNDggMTAgMTIuMDAwMkMxMCAxMS40NjA3IDEwLjIxMzYgMTAuOTcxMSAxMC41NjA5IDEwLjYxMTMiIHN0cm9rZT0iIzhGOTQ5OCIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==) 0 0 no-repeat;
+}
+.search-box {
+  position: relative;
+}
+.search-box__icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 10px;
+  top: 10px;
+}
+.input__search {
+  width: 262px;
+  height: 40px;
+  padding-left: 44px;
+  font-size: 14px;
 }
 select {
   -webkit-appearance: none;
@@ -622,6 +660,26 @@ select {
   background: #fff;
   border: 1px solid #D6E2F5;
   border-radius: 16px;
+}
+.main__title-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.main__dropdown {
+  width: 186px;
+  height: 40px;
+}
+.main__dropdown .form__input {
+  height: 40px;
+  padding: 9px 16px;
+  font-size: 14px;
 }
 .tabs {
   width: 645px;
@@ -982,16 +1040,18 @@ select {
   height: 24px;
 }
 .table__search {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding: 0 16px;
   height: 72px;
+}
+.table__dropdown {
+  width: 168px;
+  height: 40px;
+}
+.table__dropdown .form__input {
+  width: 168px;
+  height: 40px;
+  padding: 9px 16px;
+  font-size: 14px;
 }
 @media screen and (max-width: 1201px) {
   .schedule-block, .subjects-block, .course-block {
@@ -1013,6 +1073,10 @@ select {
   .salary-table {
     grid-template-columns: minmax(149px, 1fr) minmax(149px, 1.67fr) minmax(149px, 1.67fr) minmax(148px, 1.67fr) minmax(148px, 3.33fr) minmax(127px, 1.67fr) minmax(148px, 3.33fr);
   }
+
+  .courses-block__table {
+    grid-template-columns: minmax(149px, 1fr) minmax(129px, 1.67fr) minmax(166px, 1.67fr) minmax(166px, 1.67fr) minmax(127px, 3.33fr) minmax(149px, 1.67fr) minmax(149px, 3.33fr);
+  }
 }
 @media screen and (max-width: 834px) {
   .schedule-table {
@@ -1029,6 +1093,10 @@ select {
 
   .salary-table {
     grid-template-columns: minmax(149px, 1fr) minmax(148px, 1.67fr) minmax(127px, 1.67fr) minmax(110px, 1.67fr) minmax(110px, 3.33fr) minmax(127px, 1.67fr) minmax(148px, 3.33fr);
+  }
+
+  .courses-block__table {
+    grid-template-columns: minmax(131px, 1fr) minmax(109px, 1.67fr) minmax(147px, 1.67fr) minmax(126px, 1.67fr) minmax(127px, 3.33fr) minmax(149px, 1.67fr) minmax(149px, 3.33fr);
   }
 }
 @media screen and (max-width: 476px) {
@@ -1051,7 +1119,7 @@ select {
     top: 10px;
   }
 
-  .schedule-table, .subjects-table, .course-table, .salary-table {
+  .schedule-table, .subjects-table, .course-table, .salary-table, .courses-block__table {
     display: none;
   }
 
@@ -1147,9 +1215,54 @@ tr {
 .courses-block {
   background: #fff;
   border-radius: 16px;
+  margin-top: 25px;
 }
 .courses-block .table-functional {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+@media screen and (max-width: 476px) {
+  .main__title-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .main__title-box .main__title {
+    margin-bottom: 20px;
+  }
+
+  .courses-block {
+    background: transparent;
+    margin-top: 20px;
+    border-radius: 0;
+    border-top: 1px solid #D6E2F5;
+    padding-top: 14px;
+  }
+
+  .table__search {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 0;
+    height: 100%;
+    margin-bottom: 20px;
+  }
+  .table__search .form__box {
+    width: 100%;
+  }
+  .table__search .form__box:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .table__search .form__input {
+    width: 100%;
+  }
 }
