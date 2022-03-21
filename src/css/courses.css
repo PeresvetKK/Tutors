@@ -16,7 +16,7 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 100%;
-  border-radius: 8px;
+  border-radius: 0.25rem;
 }
 * {
   padding: 0;
@@ -133,15 +133,10 @@ td {
   color: #454D53;
 }
 .wrapper {
-  margin: 30px 0 67px 36px;
-  max-width: 920px;
+  margin: 30px 36px 67px 36px;
+  max-width: 100%;
   position: relative;
   height: 100%;
-}
-@media (max-width: 1201px) {
-  .wrapper {
-    width: 869px;
-  }
 }
 .container {
   width: 100%;
@@ -315,7 +310,7 @@ td {
   padding: 15px;
   background: #fff;
   border: 1px solid #D6E2F5;
-  border-radius: 8px;
+  border-radius: 0.25rem;
   outline: none;
 }
 .form__input:hover, .form__input:focus {
@@ -694,14 +689,14 @@ select {
       justify-content: space-around;
   background: #fff;
   border: 1px solid #D6E2F5;
-  border-radius: 8px;
+  border-radius: 0.25rem;
 }
 .tabs__item {
   width: 113px;
   height: 40px;
   background: #fff;
   border: none;
-  border-radius: 8px;
+  border-radius: 0.25rem;
   color: #608BCC;
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -726,10 +721,6 @@ select {
   /* по умолчанию показываем нужный блок */
 }
 @media (max-width: 1201px) {
-  .wrapper {
-    width: 92.405%;
-  }
-
   .tabs {
     width: 100%;
   }
@@ -738,12 +729,6 @@ select {
   }
 }
 @media screen and (max-width: 913px) {
-  .wrapper {
-    margin: 0 auto;
-    margin-top: 30px;
-    margin-bottom: 67px;
-  }
-
   .aside {
     display: none;
   }
@@ -793,10 +778,6 @@ select {
   }
 }
 @media screen and (max-width: 476px) {
-  .wrapper {
-    width: 327px;
-  }
-
   .container {
     padding: 20px 20px 50px 20px;
   }
