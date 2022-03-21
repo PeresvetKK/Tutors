@@ -1,0 +1,47 @@
+@import './rootStyles/main.scss';
+@import './rootStyles/table.scss';
+
+
+.main__tabs--mini{
+    width: 262px;
+}
+.table-functional{
+    justify-content: flex-end;
+}
+.checked{
+    .checked-cell{
+        background: $bgGreen;
+    }
+    .course-table__status{
+        color: $stGreen;
+    }
+}
+.nochecked{
+    .nochecked-cell{
+        background: $bgOrange;
+    }
+    .course-table__status{
+        color: $stOrange;
+    }
+}
+.disabledCheck{
+    .disabledCheck-cell{
+        background: $bgGray;
+    }
+    .course-table__status{
+        color: $stGray;
+    }
+}
+tr{
+    position: relative;
+}
+.table__edit{
+    position: absolute;
+    background-image: url("../img/pencel.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    right: 0;
+    top: 69px;
+}
