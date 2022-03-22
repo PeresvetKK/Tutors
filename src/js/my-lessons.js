@@ -33,48 +33,31 @@ $(() => {
 			burger.classList.toggle("burger-active");
 		});
 	}
-	
-	// сбрасывае табы
-	function defaultChange() {
-		const lessonsCurrent = document.querySelector('.my-lessons__current');
-		const lessonsPast = document.querySelector('.my-lessons__past');
 
-		lessonsCurrent.style.display = "block";
-		lessonsPast.style.display = "none";
-	}
-	// работа табов
-	function tabsFunc() {
-		const lessonsCurrent = document.querySelector('.my-lessons__current');
-		const lessonsPast = document.querySelector('.my-lessons__past');
-		let tabs = document.getElementsByClassName("tabs__item");
-		for (let i = 0; i < tabs.length; i++) {
-			tabs[i].addEventListener("click", function (e) {
+	$('.tabs__item').click(function () {
+		var id = $(this).attr('data-tab'),
+			content = $('.tab-content[data-tab="' + id + '"]');
 
+		$('.tabs__item.tabs__item--active').removeClass('tabs__item--active'); // 1
+		$(this).addClass('tabs__item--active'); // 2
 
-				for (let n = 0; n < tabs.length; n++) {
-					tabs[n].classList.remove("tabs__item--active");
-				}
-				e.target.classList.add("tabs__item--active");
-				if (e.target.classList.contains("current")) {
-					lessonsCurrent.style.display = "block";
-					lessonsPast.style.display = "none";
-				}
-				else if (e.target.classList.contains("past")) {
-					lessonsCurrent.style.display = "none";
-					lessonsPast.style.display = "block";
-					
-				}
-			})
-		}
-	}
-
-	let edit = document.querySelector('.row-counter__pages');
-	edit.addEventListener('click', function(){
-		
+		$('.tab-content.active').removeClass('active'); // 3
+		content.addClass('active'); // 4
 	});
-	
+
+	let edit = document.querySelector(".notify");
+	edit.addEventListener("click", function(){
+		let myLessons = document.querySelector("#my-lessons");
+		let myLessonsEdit = document.querySelector("#my-lessons--edit");
+		let information = document.querySelector("#information");
+		let open = document.querySelector("#open");
+		
+		myLessons.classList.toggle("hide");
+		myLessonsEdit.classList.toggle("active");
+		open.classList.add("active");
+		information.classList.add('tabs__item--active');
+	});
+
 	dropDownFunc();
 	burger();
-	defaultChange();
-	tabsFunc();
 });

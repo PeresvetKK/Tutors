@@ -1,47 +1,210 @@
 @import './rootStyles/main.scss';
-@import './rootStyles/table.scss';
+@import './index.scss';
 
+.main__tabs--mini {
+  width: 262px;
+}
+.table-functional {
+  justify-content: flex-end;
+}
+.checked {
+  .checked-cell {
+    background: $bgGreen;
+  }
+  .course-table__status {
+    color: $green;
+  }
+}
+.nochecked {
+  .nochecked-cell {
+    background: $bgOrange;
+  }
+  .course-table__status {
+    color: $orange;
+  }
+}
+.disabledCheck {
+  .disabledCheck-cell {
+    background: $bgGray;
+  }
+  .course-table__status {
+    color: $gray;
+  }
+}
+tr {
+  position: relative;
+}
+.table__edit {
+  position: absolute;
+  background-image: url('../img/pencel.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  right: 0;
+  top: 69px;
+}
 
-.main__tabs--mini{
-    width: 262px;
+.lessons-edit {
+  &__box {
+    padding-bottom: 30px;
+  }
+  &__box:not(:last-child) {
+    border-bottom: 1px solid $bgElement;
+    margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 150%;
+    color: $dark500;
+    margin-bottom: 8px;
+  }
+  &__score {
+    margin-bottom: 20px;
+  }
 }
-.table-functional{
-    justify-content: flex-end;
+.progressbar {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #30d937 0%, #eff4fb 72.71%);
+  border-radius: 3px;
+  margin-bottom: 30px;
 }
-.checked{
-    .checked-cell{
-        background: $bgGreen;
+.infoblock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__item {
+    width: 33.33%;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+  &__title {
+    color: $dark500;
+    font-size: 14px;
+    line-height: 171%;
+    margin-bottom: 8px;
+  }
+  &__text {
+    font-weight: 700;
+  }
+
+  &__item--big {
+    width: 66.67%;
+  }
+}
+
+.estimation{
+    &__message{
+        margin: 20px 0 30px 0;
     }
-    .course-table__status{
-        color: $stGreen;
+    &__comment{
+        margin: 20px 0 0 0;
+        max-width: 100%;
+        min-width: 100%;
+        min-height: 180px;
+        max-height: 180px;
+    }
+    &__inputs{
+        display: flex;
+        justify-content: space-between;
+        .form__box{
+            width: 32%;
+        }
+    }
+    &__submit{
+        margin-top: 50px;
     }
 }
-.nochecked{
-    .nochecked-cell{
-        background: $bgOrange;
+.estimation-test{
+    &__item{
+        margin-top: 30px;
     }
-    .course-table__status{
-        color: $stOrange;
+    &__inner{
+        display: flex;
+        justify-content: flex-start;
+        padding-top: 20px;
+        flex-wrap: wrap;
+    }
+    &__inner-item{
+        width: 33.33%;
+        span{
+            padding-right: 5px;
+            font-weight: bold;
+        }
     }
 }
-.disabledCheck{
-    .disabledCheck-cell{
-        background: $bgGray;
+@media screen and (max-width: 834px){
+    .main__tabs--mini{
+        width: 100%;
     }
-    .course-table__status{
-        color: $stGray;
+    .tabs__item{
+        width: 49%;
+    }
+    .infoblock__item{
+        width: 49.99%;
+        order: 0;
+    }
+    .infoblock__item--big{
+        order: 1;
+    }
+    .infoblock__text{
+        width: 90%;
+    }
+    .estimation__inputs{
+        flex-wrap: wrap;
+    }
+    .estimation__inputs .form__box{
+        width: 49%;
     }
 }
-tr{
-    position: relative;
-}
-.table__edit{
-    position: absolute;
-    background-image: url("../img/pencel.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 24px;
-    height: 24px;
-    right: 0;
-    top: 69px;
+@media screen and (max-width: 477px){
+    .tabs__item{
+        width: 100%;
+    }
+    .infoblock{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .infoblock__item{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 16px;
+    }
+    .infoblock__title{
+        margin-bottom: 1px;
+    }
+    .infoblock__text{
+        width: 100%;
+        font-size: 14px;
+    }
+    .message-orange__text{
+        font-size: 14px;
+        line-height: 150%;
+    }
+    .estimation-test__inner{
+        flex-direction: column;
+    }
+    .estimation-test__inner-item{
+        width: 100%;
+    }
+    .estimation__title{
+        width: 80%;
+    }
+    .message-blue{
+        width: 100%;
+    }
+    .estimation__inputs{
+        flex-direction: column;
+    }
+    .estimation__inputs .form__box{
+        width: 100%;
+    }
+    .btn__save--L{
+        width: 100%;
+    }
 }

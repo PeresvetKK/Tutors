@@ -12,6 +12,7 @@ body {
     color: $dark900;
     font-size: 16px;
     cursor: default;
+    background: $bgPaper;
 }
 section {
     position: relative;
@@ -43,7 +44,6 @@ h5 {
 }
 
 a {
-    // color: $mainColor;
     display: inline-block;
     text-decoration: none;
 }
@@ -94,7 +94,7 @@ td {
     text-overflow: ellipsis;
     white-space: nowrap;
     height: 56px;
-    border-bottom: 1px solid $acPassiveBlue;
+    border-bottom: 1px solid $border;
 }
 th {
     position: sticky;
@@ -126,12 +126,12 @@ td {
 }
 .btn__save--L{
     @extend %btnL;
-    background: $acBlue;
+    background: $darkBlue;
     color: $bgWhite;
     padding: 16px 32px;
     &:hover{
         @extend %btnL;
-        background: $acDarkBlue;
+        background: $hovDarkBlue;
         color: $bgWhite;
     }
 }
@@ -161,19 +161,30 @@ td {
 .btn__add--M{
     position: relative;
     background: $bgWhite;
-    color: $stGreen;
+    color: $green;
     padding: 9px;
     font-size: 14px;
     line-height: 150%;
-    border-radius: 6px;
+    border-radius: 0.25rem;
     width: 115px;
     &:hover{
-        background: $stGreen;
+        background: $green;
         color: $bgWhite;
     }
-    &:focus{
-        background: $blackGreen;
-        color: $bgWhite;
+    // &:focus{
+    //     background: $blackGreen;
+    //     color: $bgWhite;
+    // }
+}
+.textarea{
+    padding: 12px 16px;
+    color: $dark500;
+    font-family: 'Lato', sans-serif;
+    border: 1px solid $border;
+    border-radius: 0.25rem;
+    &::placeholder{
+        color: $dark500;
+        font-family: 'Lato', sans-serif;
     }
 }
 .fixed-scroll{
@@ -187,11 +198,21 @@ td {
     height: 48px;
     padding: 12px;
     border-radius: 50%;
-    background: $bgBlueWhite;
-    border: 1px solid $acPassiveBlue;
+    background: $bgElement;
+    border: 1px solid $bgElement;
     cursor: pointer;
+    svg{
+        path{
+            fill: $darkBlue;
+        }
+    }
     &:hover{
-        background: $acPassiveBlue;
+        background: $darkBlue;
+        svg{
+            path{
+                fill: $bgWhite;
+            }
+        }
     }
 }
 .edit__circle{
@@ -199,21 +220,21 @@ td {
     height: 40px;
     padding: 8px;
     border-radius: 50%;
-    background: $acBlue;
+    background: $darkBlue;
     cursor: pointer;
     &:hover{
-        background: $acDarkBlue;
+        background: $hovDarkBlue;
     }
 }
 .drop-status{
     background: $bgGreen;
-    color: $stGreen;
+    color: $green;
     width: 112px;
     height: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 6px;
+    border-radius: 0.25rem;
     cursor: pointer;
     padding: 8px 8px 8px 16px;
     border: 1px solid transparent;
@@ -221,7 +242,7 @@ td {
         margin-right: 8px;
     }
     &:hover{
-        border: 1px solid $stGreen;
+        border: 1px solid $green;
     }
 }
 .form{
@@ -251,7 +272,7 @@ td {
     }
     &__box:hover, &__box:focus{
         .form__label{
-            color: $acBlue !important;
+            color: $darkBlue !important;
         }
     }
     &__box--small{
@@ -267,6 +288,30 @@ td {
             background: url("/img/arrowDownGray.svg") no-repeat;
             background-position: center;
     }
+    &__box--selectSVG{
+        height: 56px;
+        position: relative;
+        svg{
+            position: absolute;
+            left: 20px;
+            top: 17px;
+        }
+        .form__input{
+            height: 100%;
+            width: 100%;
+            padding-left: 51px;
+        }
+    }
+    &__box--selectSVG::after{
+        content: "";
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 18px;
+        top: 25%;
+        background: url("/img/arrowDownGray.svg") no-repeat;
+        background-position: center;
+    }
     &__input{
         width: 100%;
         height: 56px;
@@ -277,7 +322,7 @@ td {
         border-radius: 0.25rem;
         outline: none;
         &:hover, &:focus{
-            border: 1px solid $acBlue;
+            border: 1px solid $darkBlue;
         }
         // &._error{
         //     color: #000;
@@ -350,7 +395,6 @@ select{
     position: relative;
     display: flex;
     flex-flow: row wrap;
-    background: $bgBlueWhite;
 }
 
 .aside {
@@ -359,12 +403,12 @@ select{
     position: relative;
     padding: 20px 21px 20px 24px;
     z-index: 10;
-    background: $acBlue;
+    background: $menu;
     &__logo{
         position: fixed;
         width: 207px;
         padding-bottom: 20px;
-        border-bottom: 1px solid $acPassiveBlue;
+        border-bottom: 1px solid $bgWhite;
         cursor: pointer;
     }
     &__nav{
@@ -378,7 +422,7 @@ select{
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
-        border-top: 1px solid $acPassiveBlue;
+        border-top: 1px solid $bgWhite;
     }
     &__date, &__time{
         @extend %textS;
@@ -407,14 +451,14 @@ select{
         padding: 12px 0 12px 0px;
     }
     &__link{
-        color: $acPassiveBlue;
+        color: $bgWhite;
         margin-left: 8px;
         font-weight: 700;
         font-size: 14px;
         line-height: 143%;
     }
     &__link--active{
-        color: $bgWhite;
+        color: $darkBlue;
     }
     &__list--dropdown::before{
         content: "";
@@ -441,7 +485,7 @@ select{
     left: 256px;
     z-index: 515;
     background: $bgWhite;
-    border: 1px solid $acPassiveBlue;
+    border: 1px solid $border;
     &__language{
         margin: 0 27px 0 19px;
     }
@@ -457,7 +501,7 @@ select{
         span{
             transition: all 0.2s;
             position: absolute;
-            background-color: $acBlue;
+            background-color: $menu;
             left: 15px;
             width: 18px;
             height: 2px;
@@ -465,7 +509,7 @@ select{
         }
         &::before, &::after{
             content: "";
-            background-color: $acBlue;
+            background-color: $menu;
             position: absolute;
             width: 18px;
             height: 2px;
@@ -509,8 +553,8 @@ select{
     height: 48px;
     position: relative;
     padding: 13px 13px 13px 16px;
-    border: 1px solid $acPassiveBlue;
-    border-radius: 8px;
+    border: 1px solid $border;
+    border-radius: 0.25rem;
     @extend %textS;
     color: $dark700;
     svg{
@@ -530,7 +574,7 @@ select{
     border-right: 1px solid #D6E2F5;
     border-bottom: 1px solid #D6E2F5;
     border-left: 1px solid #D6E2F5;
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 0 0.25rem 0.25rem;
     &__inner{
         display: flex;
         align-items: flex-start;
@@ -551,11 +595,11 @@ select{
 .profile{
     width: 44.57px;
     height: 44.57px;
-    background: $acPassiveBlue;
+    background: $border;
     border-radius: 50%;
     padding: 1.71px;
     &:hover{
-        background: $acBlue;
+        background: $darkBlue
     }
     img{
         width: 100%;
@@ -566,7 +610,7 @@ select{
     width: 48px;
     height: 48px;
     border-radius: 50%;
-    background: $bgBlueWhite;
+    background: $bgWhite;
     cursor: pointer;
     display: none;
 }
@@ -580,9 +624,10 @@ select{
         margin: 20px 0 30px 0;
     }
     &__block{
+        display: none;
         background: $bgWhite;
-        border: 1px solid $acPassiveBlue;
-        border-radius: 16px;
+        border: 1px solid $border;
+        border-radius: 0.25rem;
     }
     &__title-box{
         display: flex;
@@ -599,6 +644,40 @@ select{
         }
     }
 }
+.message-orange{
+    width: 100%;
+    background: rgba(255, 247, 222, 0.3);
+    border: 1px solid $orange;
+    color: $orange;
+    padding: 20px;
+    border-radius: 0.25rem;
+    &__titlebox{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    &__title{
+        color: $orange;
+    }
+    &__text{
+        max-width: 668px;
+    }
+    &__close{
+        cursor: pointer;
+    }
+}
+.message-blue{
+    width: 417px;
+    padding: 20px;
+    background: $bgElement;
+    border: 1px solid $darkBlue;
+    border-radius: 0.25rem;
+    &__text{
+        color: $blue;
+        line-height: 150%;
+    }
+}
 .tabs{
     width: 645px;
     height: 56px;
@@ -606,7 +685,7 @@ select{
     align-items: center;
     justify-content: space-around;
     background: $bgWhite;
-    border: 1px solid $acPassiveBlue;
+    border: 1px solid $border;
     border-radius: 0.25rem;
     &__item{
         width: 113px;
@@ -614,20 +693,20 @@ select{
         background: $bgWhite;
         border: none;
         border-radius: 0.25rem;
-        color: $acBlue;
+        color: $darkBlue;
         font-family: 'Lato', sans-serif;
         font-weight: 700;
         font-size: 14px;
         line-height: 150%;
         text-align: center;
         &:hover{
-            background: $acPassiveBlue;
-            color: $acBlue;
+            background: $bgElement;
+            color: $darkBlue;
         }
     }
     &__item--active{
         color: $bgWhite;
-        background: $acBlue;
+        background: $darkBlue
     }
 }
 .tabs__content {
@@ -636,7 +715,48 @@ select{
 .tabs__content.active {
     display: block; /* по умолчанию показываем нужный блок */
 }
-
+.radio {
+    margin-bottom: 0.7em;
+}
+.custom-radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.custom-radio + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.custom-radio + label::before {
+  content: '';
+  box-sizing: border-box;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(26, 26, 26, 0.2);
+  background: rgba(26, 26, 26, 0.05);
+  border-radius: 50%;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+.custom-radio:not(:disabled):not(:checked) + label:hover::before {
+  border-color: #b3d7ff;
+}
+.custom-radio:checked + label::before {
+  background: $bgWhite;
+  border: 5px solid $blue;
+  
+}
+.custom-radio:disabled + label::before {
+  background: rgba(26, 26, 26, 0.1);
+  border: none;
+}
+.hide{
+    display: none;
+}
+.active{
+    display: block;
+}
 @media (max-width: 1201px) {
     .tabs{
         width: 100%;
@@ -654,7 +774,7 @@ select{
         left: 0;
         width: 100%;
         justify-content: space-between;
-        background: $acBlue;
+        background: $menu;
         padding: 0 20px;
         border: none;
         &__notify, &__language, &__profile{
@@ -718,10 +838,10 @@ select{
         flex-wrap: wrap;
         background: none;
         border: none;
-        border-bottom: 1px solid $acPassiveBlue;
+        border-bottom: 1px solid $border;
         border-radius: 0;
         &__item{
-            width: 158px;
+            width: 49%;
             margin-bottom: 16px;
         }
         &__item:last-child{
@@ -742,21 +862,6 @@ select{
         line-height: 129%;
     }
     .menu__list:not(:last-child){
-        border-bottom: 1px solid $acPassiveBlue;
-    }
-    .salary-information{
-        &__title{
-            width: 156px;
-        }
-        &__box{
-            flex-direction: column;
-        }
-        &__item{
-            width: 100%;
-            margin: 0 auto;
-        }
-        &__item:not(:last-child){
-            margin-bottom: 22px;
-        }
+        border-bottom: 1px solid $border;
     }
 }

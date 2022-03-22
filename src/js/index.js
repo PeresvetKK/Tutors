@@ -53,78 +53,17 @@ $(() => {
 			burger.classList.toggle("burger-active");
 		});
 	}
-	// сбрасывае табы
-	function defaultChange() {
-		const profile = document.querySelector('.profile-block');
-		const schedule = document.querySelector('.schedule-block');
-		const subjectsBlock = document.querySelector('.subjects-block');
-		const courseBlock = document.querySelector('.course-block');
-		const salaryBlock = document.querySelector('.salary-block');
-
-		profile.style.display = "block";
-		schedule.style.display = "none";
-		subjectsBlock.style.display = "none";
-		courseBlock.style.display = "none";
-		salaryBlock.style.display = "none";
-	}
-	// работа табов
-	function tabsFunc() {
-		const profile = document.querySelector('.profile-block');
-		const schedule = document.querySelector('.schedule-block');
-		const subjectsBlock = document.querySelector('.subjects-block');
-		const courseBlock = document.querySelector('.course-block');
-		const salaryBlock = document.querySelector('.salary-block');
-		let tabs = document.getElementsByClassName("tabs__item");
-		for (let i = 0; i < tabs.length; i++) {
-			tabs[i].addEventListener("click", function (e) {
-
-
-				for (let n = 0; n < tabs.length; n++) {
-					tabs[n].classList.remove("tabs__item--active");
-				}
-				e.target.classList.add("tabs__item--active");
-				if (e.target.classList.contains("profile")) {
-					profile.style.display = "block";
-					schedule.style.display = "none";
-					subjectsBlock.style.display = "none";
-					courseBlock.style.display = "none";
-					salaryBlock.style.display = "none";
-				}
-				else if (e.target.classList.contains("schedule")) {
-					profile.style.display = "none";
-					schedule.style.display = "block";
-					subjectsBlock.style.display = "none";
-					courseBlock.style.display = "none";
-					salaryBlock.style.display = "none";
-				}
-				else if (e.target.classList.contains("subjects")) {
-					profile.style.display = "none";
-					schedule.style.display = "none";
-					subjectsBlock.style.display = "block";
-					courseBlock.style.display = "none";
-					salaryBlock.style.display = "none";
-				}
-				else if (e.target.classList.contains("course")) {
-					profile.style.display = "none";
-					schedule.style.display = "none";
-					subjectsBlock.style.display = "none";
-					courseBlock.style.display = "block";
-					salaryBlock.style.display = "none";
-				}
-				else if (e.target.classList.contains("salary")) {
-					profile.style.display = "none";
-					schedule.style.display = "none";
-					subjectsBlock.style.display = "none";
-					courseBlock.style.display = "none";
-					salaryBlock.style.display = "block";
-				}
-			})
-		}
-	}
-
+	$('.tabs__item').click(function() {
+		var id = $(this).attr('data-tab'),
+			content = $('.tab-content[data-tab="'+ id +'"]');
+		
+		$('.tabs__item.tabs__item--active').removeClass('tabs__item--active'); // 1
+		$(this).addClass('tabs__item--active'); // 2
+		
+		$('.tab-content.active').removeClass('active'); // 3
+		content.addClass('active'); // 4
+	 });
 	
 	dropDownFunc();
 	burger();
-	defaultChange();
-	tabsFunc();
 });

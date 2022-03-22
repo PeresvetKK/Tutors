@@ -3,7 +3,7 @@
 
 .courses-block{
     background: $bgWhite;
-    border-radius: 16px;
+    border-radius: 0.25rem;
     margin-top: 25px;
     .table-functional{
         justify-content: flex-end;
@@ -22,7 +22,7 @@
         background: transparent;
         margin-top: 20px;
         border-radius: 0;
-        border-top: 1px solid $acPassiveBlue;
+        border-top: 1px solid $border;
         padding-top: 14px;
     }
     .table__search{

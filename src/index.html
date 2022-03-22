@@ -15,14 +15,14 @@
 				<section class="main__header">
 					<h1 class="main__title title">Личная карта</h1>
 					<div class="tabs main__tabs">
-						<button class="tabs__item tabs__item--active profile">Профиль</button>
-						<button class="tabs__item schedule">Рассписание</button>
-						<button class="tabs__item subjects">Предметы</button>
-						<button class="tabs__item course">Мои курсы</button>
-						<button class="tabs__item salary">Зарплата</button>
+						<button class="tabs__item tabs__item--active profile" data-tab="1">Профиль</button>
+						<button class="tabs__item schedule" data-tab="2">Рассписание</button>
+						<button class="tabs__item subjects" data-tab="3">Предметы</button>
+						<button class="tabs__item course" data-tab="4">Мои курсы</button>
+						<button class="tabs__item salary" data-tab="5">Зарплата</button>
 					</div>
 				</section>
-				<section class="main__block profile-block">
+				<section class="main__block profile-block tab-content active" data-tab="1">
 					<div class="container">
 						<div class="profile-block__person person">
 							<img class="person__img" src="img/person.png" alt="person">
@@ -142,15 +142,15 @@
 						</form>
 					</div>
 				</section>
-				<section class="main__block schedule-block">
+				<section class="main__block schedule-block tab-content" data-tab="2">
 					
 				</section>
-				<section class="main__block subjects-block">
+				<section class="main__block subjects-block tab-content" data-tab="3">
 					
 				</section>
-				<section class="main__block course-block">
+				<section class="main__block course-block tab-content" data-tab="4">
 				</section>
-				<section class="main__block salary-block">
+				<section class="main__block salary-block tab-content" data-tab="5">
 					
 				</section>
 			</div>
