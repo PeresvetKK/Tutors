@@ -45,19 +45,21 @@ $(() => {
 		content.addClass('active'); // 4
 	});
 
-	let edit = document.querySelector(".notify");
-	edit.addEventListener("click", function(){
-		let myLessons = document.querySelector("#my-lessons");
-		let myLessonsEdit = document.querySelector("#my-lessons--edit");
-		let information = document.querySelector("#information");
-		let open = document.querySelector("#open");
-		
-		myLessons.classList.toggle("hide");
-		myLessonsEdit.classList.toggle("active");
-		open.classList.add("active");
-		information.classList.add('tabs__item--active');
-	});
-
 	dropDownFunc();
 	burger();
+	let edit = document.getElementsByClassName("edit-icon");
+
+	for(let i = 0; i < edit.length; i++){
+		edit[i].addEventListener("click", function(){
+			let myLessons = document.querySelector("#my-lessons");
+			let myLessonsEdit = document.querySelector("#my-lessons--edit");
+			let information = document.querySelector("#information");
+			let open = document.querySelector("#open");
+			
+			myLessons.classList.toggle("hide");
+			myLessonsEdit.classList.toggle("active");
+			open.classList.add("active");
+			information.classList.add('tabs__item--active');
+		});
+	}
 });

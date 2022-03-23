@@ -1,147 +1,323 @@
 @import './rootStyles/main.scss';
 @import './rootStyles/table.scss';
 
-.profile-block__person{
-    margin: 0 0 60px 0;
+.profile-block__person {
+  	margin: 0 0 60px 0;
 }
-.person{
+.person {
+  display: flex;
+  align-items: center;
+  position: relative;
+  &__img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  &__edit {
+    position: absolute;
+    left: 113px;
+    bottom: 0;
+  }
+}
+.person-textbox {
+  padding-left: 16px;
+  &__post {
+    font-weight: 700;
+    line-height: 100%;
+    color: $dark300;
+    margin-bottom: 8px;
+  }
+  &__name {
+    margin-bottom: 16px;
+  }
+}
+.profile-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  &:not(:last-child) {
+    margin-bottom: 73px;
+  }
+}
+.shedule-block {
+  display: none;
+}
+.salary-block {
+  background: transparent;
+  border: none;
+}
+.salary {
+  &__information {
+    background: $bgWhite;
+    width: 100%;
+    border-radius: 0.25rem;
+    padding: 30px 30px 30px 30px;
+    margin-bottom: 30px;
+  }
+}
+.salary-information {
+  &__title {
+    margin-bottom: 22px;
+  }
+  &__box {
     display: flex;
-    align-items: center;
-    position: relative;
-    &__img{
-        width: 160px;
-        height: 160px;
-        border-radius: 50%;
-        cursor: pointer;
-    }
-    &__edit{
-        position: absolute;
-        left: 113px;
-        bottom: 0;
-    }
-}
-.person-textbox{
-    padding-left: 16px;
-    &__post{
-        font-weight: 700;
-        line-height: 100%;
-        color: $dark300;
-        margin-bottom: 8px;
-    }
-    &__name{
-        margin-bottom: 16px;
-    }
-}
-.profile-container{
-    display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-bottom: 50px;
-    &:not(:last-child){
-        margin-bottom: 73px;
+    align-items: center;
+  }
+  &__item {
+    width: 337px;
+    min-width: auto;
+    height: 93px;
+    background-color: $bgElement;
+    border: 1px solid $border;
+    border-radius: 0.25rem;
+    padding: 20px;
+    &:not(:last-child) {
+      margin-right: 20px;
     }
+  }
+  &__item-title {
+    font-size: 16px;
+    line-height: 150%;
+    color: $dark500;
+    margin-bottom: 8px;
+  }
+  &__item-subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 150%;
+    color: $dark900;
+  }
 }
-.shedule-block{
-    display: none;
+.salary-table {
+  background: $bgWhite;
 }
-.salary-block{
-    background: transparent;
-    border: none;
+.salary-tableBlock__title {
+  margin-bottom: 20px;
 }
-.salary{
-    &__information{
-        background: $bgWhite;
-        width: 100%;
-        border-radius: 0.25rem;
-        padding: 30px 30px 30px 30px;
-        margin-bottom: 30px;
-    }
+.course-block {
+  .table-functional {
+    justify-content: flex-end;
+  }
 }
-.salary-information{
-    &__title{
-        margin-bottom: 22px;
-    }
-    &__box{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    &__item{
-        width: 337px;
-        min-width: auto;
-        height: 93px;
-        background-color: $bgElement;
-        border: 1px solid $border;
-        border-radius: 0.25rem;
-        padding: 20px;
-        &:not(:last-child){
-            margin-right: 20px;
-        }
-    }
-    &__item-title{
-        font-size: 16px;
-        line-height: 150%;
-        color: $dark500;
-        margin-bottom: 8px;
-    }
-    &__item-subtitle{
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 150%;
-        color: $dark900;
-    }
+.table-functional {
+  background: $bgWhite;
+  border-radius: 0 0 0.25rem 0.25rem;
 }
-.salary-table{
-    background: $bgWhite;
+.main__tabs--mini {
+	width: 262px;
 }
-.salary-tableBlock__title{
+.table-functional {
+	justify-content: flex-end;
+}
+.lessons-edit {
+  &__box {
+    padding-bottom: 30px;
+  }
+  &__box:not(:last-child) {
+    border-bottom: 1px solid $bgElement;
     margin-bottom: 20px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__subtitle {
+    font-size: 16px;
+    line-height: 150%;
+    color: $dark500;
+    margin-bottom: 8px;
+  }
+  &__score {
+    margin-bottom: 20px;
+  }
 }
-.course-block{
-    .table-functional{
-        justify-content: flex-end;
+.progressbar {
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #30d937 0%, #eff4fb 72.71%);
+  border-radius: 3px;
+  margin-bottom: 30px;
+}
+.infoblock {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &__item {
+    width: 33.33%;
+    height: 48px;
+    margin-bottom: 16px;
+  }
+  &__title {
+    color: $dark500;
+    font-size: 14px;
+    line-height: 171%;
+    margin-bottom: 8px;
+  }
+  &__text {
+    font-weight: 700;
+  }
+
+  &__item--big {
+    width: 66.67%;
+  }
+}
+.estimation {
+  &__message {
+    margin: 20px 0 30px 0;
+  }
+  &__comment {
+    margin: 20px 0 0 0;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 180px;
+    max-height: 180px;
+  }
+  &__inputs {
+    display: flex;
+    justify-content: space-between;
+    .form__box {
+      width: 32%;
     }
+  }
+  &__submit {
+    margin-top: 50px;
+  }
 }
-.table-functional{
-    background: $bgWhite;
-    border-radius: 0 0 0.25rem 0.25rem;
+.estimation-test {
+  &__item {
+    margin-top: 30px;
+  }
+  &__inner {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 20px;
+    flex-wrap: wrap;
+  }
+  &__inner-item {
+    width: 33.33%;
+    span {
+      padding-right: 5px;
+      font-weight: bold;
+    }
+  }
+}
+.personal-comment{
+	max-width: 500px;
+	color: $dark900;
+}
+.table-functional--LC{
+  justify-content: space-between;
 }
 @media (max-width: 1201px) {
-    
+	.tabs__item{
+		width: 49%;
+	}
 }
 
-@media screen and (max-width: 913px){
-    
+@media screen and (max-width: 834px) {
+  .main__tabs--mini {
+    width: 100%;
+  }
+  .tabs__item {
+    width: 49%;
+  }
+  .infoblock__item {
+    width: 49.99%;
+    order: 0;
+  }
+  .infoblock__item--big {
+    order: 1;
+  }
+  .infoblock__text {
+    width: 90%;
+  }
+  .estimation__inputs {
+    flex-wrap: wrap;
+  }
+  .estimation__inputs .form__box {
+    width: 49%;
+  }
 }
 
-@media screen and (max-width: 476px){
-    .person{
-        flex-direction: column;
-        align-items: flex-start;
-        &__img{
-            margin-bottom: 16px;
-        }
-        &__edit{
-            bottom: 118px;
-        }
+@media screen and (max-width: 477px) {
+  .person {
+    flex-direction: column;
+    align-items: flex-start;
+    &__img {
+      margin-bottom: 16px;
     }
-    .person-textbox{
-        padding-left: 0;
+    &__edit {
+      bottom: 118px;
     }
-    .salary-information{
-        &__title{
-            width: 156px;
-        }
-        &__box{
-            flex-direction: column;
-        }
-        &__item{
-            width: 100%;
-            margin: 0 auto;
-        }
-        &__item:not(:last-child){
-            margin-bottom: 22px;
-        }
+  }
+  .person-textbox {
+    padding-left: 0;
+  }
+  .salary-information {
+    &__title {
+      width: 156px;
     }
+    &__box {
+      flex-direction: column;
+    }
+    &__item {
+      width: 100%;
+      margin: 0 auto;
+    }
+    &__item:not(:last-child) {
+      margin-bottom: 22px;
+    }
+  }
+  
+  .tabs__item {
+    width: 100%;
+  }
+  .tabs__profile{
+	  width: 49%;
+  }
+  .infoblock {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .infoblock__item {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 16px;
+  }
+  .infoblock__title {
+    margin-bottom: 1px;
+  }
+  .infoblock__text {
+    width: 100%;
+    font-size: 14px;
+  }
+  .message-orange__text {
+    font-size: 14px;
+    line-height: 150%;
+  }
+  .estimation-test__inner {
+    flex-direction: column;
+  }
+  .estimation-test__inner-item {
+    width: 100%;
+  }
+  .estimation__title {
+    width: 80%;
+  }
+  .message-blue {
+    width: 100%;
+  }
+  .estimation__inputs {
+    flex-direction: column;
+  }
+  .estimation__inputs .form__box {
+    width: 100%;
+  }
+  .btn__save--L {
+    width: 100%;
+  }
 }

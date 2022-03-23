@@ -13,6 +13,7 @@ body {
     font-size: 16px;
     cursor: default;
     background: $bgPaper;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 section {
     position: relative;
@@ -62,6 +63,9 @@ input {
         transition: background-color 5000s ease-in-out 0s;
     }
 }
+textarea{
+    resize: none;
+}
 textarea,
 button,
 input {
@@ -79,40 +83,6 @@ input {
 }
 button {
     cursor: pointer;
-}
-thead,
-tbody,
-tr {
-    display: contents;
-}
-th,
-td {
-    display: flex;
-    align-items: center;
-    padding: 17px 0 17px 20px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    height: 56px;
-    border-bottom: 1px solid $border;
-}
-th {
-    position: sticky;
-    background: $bgWhite;
-    text-align: left;
-    font-family: 'Lato', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 143%;
-    color: $dark900;
-    cursor: pointer;
-}
-td {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 150%;
-    color: $dark900;
 }
 .wrapper {
     margin: 30px 36px 67px 36px;
@@ -769,6 +739,12 @@ select{
 @media screen and (max-width: 913px){
     .aside{
         display: none;
+        &__logo{
+            width: 94%;
+        }
+        &__dt{
+            width: 94%;
+        }
     }
     .header{
         left: 0;
@@ -852,9 +828,9 @@ select{
         padding-left: 0;
     }
     .btn__save--L{
-        width: 287px;
+        width: 100%;
         &:hover{
-            width: 287px;
+            width: 100%;
         }
     }
     h1{
