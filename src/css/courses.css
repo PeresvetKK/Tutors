@@ -30,6 +30,7 @@ body {
   font-size: 16px;
   cursor: default;
   background: #E9ECEF;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 section {
   position: relative;
@@ -75,6 +76,9 @@ input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:foc
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
+textarea {
+  resize: none;
+}
 textarea,
 button,
 input {
@@ -93,45 +97,6 @@ input[disabled] {
 }
 button {
   cursor: pointer;
-}
-thead,
-tbody,
-tr {
-  display: contents;
-}
-th,
-td {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 17px 0 17px 20px;
-  overflow: hidden;
-  -o-text-overflow: ellipsis;
-     text-overflow: ellipsis;
-  white-space: nowrap;
-  height: 56px;
-  border-bottom: 1px solid #E8E8E8;
-}
-th {
-  position: sticky;
-  background: #fff;
-  text-align: left;
-  font-family: "Lato", sans-serif;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 143%;
-  color: #555555;
-  cursor: pointer;
-}
-td {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 150%;
-  color: #555555;
 }
 .wrapper {
   margin: 30px 36px 67px 36px;
@@ -875,6 +840,12 @@ select {
   .aside {
     display: none;
   }
+  .aside__logo {
+    width: 94%;
+  }
+  .aside__dt {
+    width: 94%;
+  }
 
   .header {
     left: 0;
@@ -979,10 +950,10 @@ select {
   }
 
   .btn__save--L {
-    width: 287px;
+    width: 100%;
   }
   .btn__save--L:hover {
-    width: 287px;
+    width: 100%;
   }
 
   h1 {
@@ -993,6 +964,112 @@ select {
   .menu__list:not(:last-child) {
     border-bottom: 1px solid #E8E8E8;
   }
+}
+.table {
+  display: table;
+  width: 100%;
+}
+.thead {
+  display: table-header-group;
+}
+.tr {
+  display: table-row;
+}
+.th {
+  display: table-cell;
+  position: sticky;
+  background: #fff;
+  text-align: left;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 143%;
+  color: #555555;
+  cursor: pointer;
+}
+.tbody {
+  display: table-row-group;
+}
+.td {
+  display: table-cell;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #555555;
+}
+.thead,
+.tbody,
+.tr {
+  display: contents;
+}
+.th,
+.td {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 17px 0 17px 20px;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 56px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.tabel__cell:last-child {
+  position: relative;
+}
+.edit-icon {
+  margin-left: 10px;
+  width: 24px;
+  min-width: 24px;
+  min-height: 24px;
+  height: 24px;
+  right: 16px;
+  cursor: pointer;
+}
+.checked .tabel__cell {
+  background: #EDF8ED;
+}
+.nochecked .tabel__cell {
+  background: #FFF7DE;
+}
+.disabledCheck .tabel__cell {
+  background: #FAFAFA;
+}
+.checked {
+  background: #EDF8ED;
+}
+.checked .course-table__status {
+  color: #30D937;
+}
+.nochecked .nochecked-cell {
+  background: #FFF7DE;
+}
+.nochecked .course-table__status {
+  color: #FE9824;
+}
+.disabledCheck .disabledCheck-cell {
+  background: #FAFAFA;
+}
+.disabledCheck .course-table__status {
+  color: #9FA3A7;
+}
+tr {
+  position: relative;
+}
+.table__edit {
+  position: absolute;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTQiIGhlaWdodD0iNTQiIHZpZXdCb3g9IjAgMCA1NCA1NCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGcgZmlsdGVyPSJ1cmwoI2ZpbHRlcjBfZF80OTlfMTYxMjkpIj4KPHBhdGggZD0iTTE5IDI5SDM1IiBzdHJva2U9IiM2MDhCQ0MiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik0yMyAyOC45OTk5VjI5Ljk5OTlDMjMuMjY1MiAyOS45OTk5IDIzLjUxOTYgMjkuODk0NSAyMy43MDcxIDI5LjcwN0wyMyAyOC45OTk5Wk0xOSAyOC45OTk5SDE4QzE4IDI5LjU1MjEgMTguNDQ3NyAyOS45OTk5IDE5IDI5Ljk5OTlWMjguOTk5OVpNMTkgMjQuOTk5OUwxOC4yOTI5IDI0LjI5MjdDMTguMTA1NCAyNC40ODAzIDE4IDI0LjczNDYgMTggMjQuOTk5OUgxOVpNMzAuMjkyOSAxMy43MDdMMzEgMTQuNDE0MUwzMSAxNC40MTQxTDMwLjI5MjkgMTMuNzA3Wk0zMS43MDcxIDEzLjcwN0wzMSAxNC40MTQxTDMxIDE0LjQxNDFMMzEuNzA3MSAxMy43MDdaTTM0LjI5MjkgMTYuMjkyN0wzNSAxNS41ODU2VjE1LjU4NTZMMzQuMjkyOSAxNi4yOTI3Wk0zNC4yOTI5IDE3LjcwN0wzMy41ODU4IDE2Ljk5OThMMzQuMjkyOSAxNy43MDdaTTIzIDI3Ljk5OTlIMTlWMjkuOTk5OUgyM1YyNy45OTk5Wk0yMCAyOC45OTk5VjI0Ljk5OTlIMThWMjguOTk5OUgyMFpNMTkuNzA3MSAyNS43MDdMMzEgMTQuNDE0MUwyOS41ODU4IDEyLjk5OThMMTguMjkyOSAyNC4yOTI3TDE5LjcwNzEgMjUuNzA3Wk0zMSAxNC40MTQxTDMzLjU4NTggMTYuOTk5OEwzNSAxNS41ODU2TDMyLjQxNDIgMTIuOTk5OEwzMSAxNC40MTQxWk0zMy41ODU4IDE2Ljk5OThMMjIuMjkyOSAyOC4yOTI3TDIzLjcwNzEgMjkuNzA3TDM1IDE4LjQxNDFMMzMuNTg1OCAxNi45OTk4Wk0zMy41ODU4IDE2Ljk5OThMMzUgMTguNDE0MUMzNS43ODEgMTcuNjMzIDM1Ljc4MSAxNi4zNjY3IDM1IDE1LjU4NTZMMzMuNTg1OCAxNi45OTk4Wk0zMSAxNC40MTQxSDMxTDMyLjQxNDIgMTIuOTk5OEMzMS42MzMyIDEyLjIxODggMzAuMzY2OCAxMi4yMTg4IDI5LjU4NTggMTIuOTk5OEwzMSAxNC40MTQxWiIgZmlsbD0iIzYwOEJDQyIvPgo8cGF0aCBkPSJNMjcgMTdMMzEgMjEiIHN0cm9rZT0iIzYwOEJDQyIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9nPgo8ZGVmcz4KPGZpbHRlciBpZD0iZmlsdGVyMF9kXzQ5OV8xNjEyOSIgeD0iLTMiIHk9Ii0zIiB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIGZpbHRlclVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY29sb3ItaW50ZXJwb2xhdGlvbi1maWx0ZXJzPSJzUkdCIj4KPGZlRmxvb2QgZmxvb2Qtb3BhY2l0eT0iMCIgcmVzdWx0PSJCYWNrZ3JvdW5kSW1hZ2VGaXgiLz4KPGZlQ29sb3JNYXRyaXggaW49IlNvdXJjZUFscGhhIiB0eXBlPSJtYXRyaXgiIHZhbHVlcz0iMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMCAwIDAgMTI3IDAiIHJlc3VsdD0iaGFyZEFscGhhIi8+CjxmZU9mZnNldCBkeT0iNiIvPgo8ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSI5Ii8+CjxmZUNvbG9yTWF0cml4IHR5cGU9Im1hdHJpeCIgdmFsdWVzPSIwIDAgMCAwIDAuNTA1ODgyIDAgMCAwIDAgMC43MDE5NjEgMCAwIDAgMCAwLjg3ODQzMSAwIDAgMCAwLjA4IDAiLz4KPGZlQmxlbmQgbW9kZT0ibm9ybWFsIiBpbjI9IkJhY2tncm91bmRJbWFnZUZpeCIgcmVzdWx0PSJlZmZlY3QxX2Ryb3BTaGFkb3dfNDk5XzE2MTI5Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iZWZmZWN0MV9kcm9wU2hhZG93XzQ5OV8xNjEyOSIgcmVzdWx0PSJzaGFwZSIvPgo8L2ZpbHRlcj4KPC9kZWZzPgo8L3N2Zz4K);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 24px;
+  height: 24px;
+  right: 0;
+  top: 69px;
 }
 .schedule-table {
   display: grid;
@@ -1051,7 +1128,8 @@ select {
   display: grid;
   border-collapse: collapse;
   min-width: 100%;
-  grid-template-columns: minmax(140px, 1fr) minmax(127px, 1.67fr) minmax(188px, 1.67fr) minmax(189px, 1.67fr) minmax(140px, 3.33fr) minmax(188px, 1.67fr) minmax(188px, 3.33fr);
+  grid-template-columns: minmax(168px, 1fr) minmax(188px, 1.67fr) minmax(188px, 1.67fr) minmax(189px, 1.67fr) minmax(187px, 3.33fr) minmax(189px, 1.67fr) minmax(189px, 1.67fr);
+  justify-items: stretch;
   overflow: hidden;
   overflow-x: scroll;
   border-radius: 0.25rem;
@@ -1070,6 +1148,9 @@ select {
   padding: 5px 10px;
   background-color: #EDF8ED;
   border-radius: 0.25rem;
+}
+.my-lessons-table {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.4fr;
 }
 .table-select {
   display: none;
@@ -1161,7 +1242,9 @@ select {
   font-size: 14px;
 }
 @media screen and (max-width: 1201px) {
-  .schedule-block, .subjects-block, .course-block {
+  .schedule-block,
+.subjects-block,
+.course-block {
     width: 100%;
   }
 
@@ -1207,6 +1290,13 @@ select {
   }
 }
 @media screen and (max-width: 476px) {
+  .checked, .nochecked, .disabledCheck {
+    background: #fff;
+  }
+  .checked .tabel__cell, .nochecked .tabel__cell, .disabledCheck .tabel__cell {
+    background: #fff;
+  }
+
   #table-sort {
     height: 40px;
     padding: 0 0 0 16px;
@@ -1226,11 +1316,17 @@ select {
     top: 10px;
   }
 
-  .schedule-table, .subjects-table, .course-table, .salary-table, .courses-block__table {
+  .schedule-table,
+.subjects-table,
+.course-table,
+.salary-table,
+.courses-block__table {
     display: none;
   }
 
-  .schedule-block, .subjects-block, .course-block {
+  .schedule-block,
+.subjects-block,
+.course-block {
     width: 100%;
     background: transparent;
     border: none;
@@ -1284,7 +1380,7 @@ select {
     padding-bottom: 20px;
   }
 
-  th {
+  .th {
     font-size: 20px;
     line-height: 160%;
     width: 100%;
@@ -1294,9 +1390,9 @@ select {
             justify-content: space-between;
   }
 
-  thead,
-tbody,
-tr {
+  .thead,
+.tbody,
+.tr {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1317,6 +1413,10 @@ tr {
 
   .table-btn--mobile {
     display: block;
+  }
+
+  .tabple__mobile-subject {
+    width: 100%;
   }
 }
 .courses-block {
