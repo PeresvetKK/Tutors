@@ -93,6 +93,7 @@ button {
 .container{
     width: 100%;
     padding: 30px 30px 50px 30px;
+    background: $bgWhite;
 }
 .btn__save--L{
     @extend %btnL;
@@ -130,17 +131,13 @@ button {
 }
 .btn__add--M{
     position: relative;
-    background: $bgWhite;
-    color: $green;
     padding: 9px;
     font-size: 14px;
     line-height: 150%;
     border-radius: 0.25rem;
     width: 115px;
-    &:hover{
-        background: $green;
-        color: $bgWhite;
-    }
+    background: $green;
+    color: $bgWhite;
     // &:focus{
     //     background: $blackGreen;
     //     color: $bgWhite;
@@ -366,7 +363,9 @@ select{
     display: flex;
     flex-flow: row wrap;
 }
-
+.flex{
+    display: flex;
+}
 .aside {
     min-width: 256px;
     min-height: 100vh;
@@ -595,9 +594,12 @@ select{
     }
     &__block{
         display: none;
-        background: $bgWhite;
+        background: none;
         border: 1px solid $border;
         border-radius: 0.25rem;
+    }
+    &__block--mobile{
+        display: none;
     }
     &__title-box{
         display: flex;
@@ -808,6 +810,11 @@ select{
     }
     .form__box{
         width: 100%;
+    }
+    .main{
+        &__block--mobile{
+            display: block;
+        }
     }
     .tabs{
         height: 100%;

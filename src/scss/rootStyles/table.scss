@@ -73,6 +73,12 @@
   .tabel__cell {
     background: $bgGray;
   }
+  .td{
+    color: $gray;
+  }
+  .td-time{
+    text-decoration: line-through;
+  }
 }
 
 .checked {

@@ -107,6 +107,7 @@ button {
 .container {
   width: 100%;
   padding: 30px 30px 50px 30px;
+  background: #fff;
 }
 .btn__save--L {
   background: #84B5DF;
@@ -140,15 +141,11 @@ button {
 }
 .btn__add--M {
   position: relative;
-  background: #fff;
-  color: #30D937;
   padding: 9px;
   font-size: 14px;
   line-height: 150%;
   border-radius: 0.25rem;
   width: 115px;
-}
-.btn__add--M:hover {
   background: #30D937;
   color: #fff;
 }
@@ -415,6 +412,11 @@ select {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .aside {
   min-width: 256px;
   min-height: 100vh;
@@ -671,9 +673,12 @@ select {
 }
 .main__block {
   display: none;
-  background: #fff;
+  background: none;
   border: 1px solid #E8E8E8;
   border-radius: 0.25rem;
+}
+.main__block--mobile {
+  display: none;
 }
 .main__title-box {
   display: -webkit-box;
@@ -928,6 +933,10 @@ select {
     width: 100%;
   }
 
+  .main__block--mobile {
+    display: block;
+  }
+
   .tabs {
     height: 100%;
     -ms-flex-wrap: wrap;
@@ -1039,6 +1048,12 @@ select {
 }
 .disabledCheck .tabel__cell {
   background: #FAFAFA;
+}
+.disabledCheck .td {
+  color: #9FA3A7;
+}
+.disabledCheck .td-time {
+  text-decoration: line-through;
 }
 .checked {
   background: #EDF8ED;
@@ -1423,11 +1438,6 @@ tr {
   background: #fff;
   border-radius: 0.25rem;
   margin-top: 25px;
-}
-.courses-block .table-functional {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
 }
 @media screen and (max-width: 476px) {
   .main__title-box {

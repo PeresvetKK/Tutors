@@ -108,6 +108,7 @@ button {
 .container {
   width: 100%;
   padding: 30px 30px 50px 30px;
+  background: #fff;
 }
 .btn__save--L {
   background: #84B5DF;
@@ -141,15 +142,11 @@ button {
 }
 .btn__add--M {
   position: relative;
-  background: #fff;
-  color: #30D937;
   padding: 9px;
   font-size: 14px;
   line-height: 150%;
   border-radius: 0.25rem;
   width: 115px;
-}
-.btn__add--M:hover {
   background: #30D937;
   color: #fff;
 }
@@ -416,6 +413,11 @@ select {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .aside {
   min-width: 256px;
   min-height: 100vh;
@@ -672,9 +674,12 @@ select {
 }
 .main__block {
   display: none;
-  background: #fff;
+  background: none;
   border: 1px solid #E8E8E8;
   border-radius: 0.25rem;
+}
+.main__block--mobile {
+  display: none;
 }
 .main__title-box {
   display: -webkit-box;
@@ -927,6 +932,10 @@ select {
 
   .form__box {
     width: 100%;
+  }
+
+  .main__block--mobile {
+    display: block;
   }
 
   .tabs {
@@ -1073,6 +1082,7 @@ button {
 .container {
   width: 100%;
   padding: 30px 30px 50px 30px;
+  background: #fff;
 }
 .btn__save--L {
   background: #84B5DF;
@@ -1106,15 +1116,11 @@ button {
 }
 .btn__add--M {
   position: relative;
-  background: #fff;
-  color: #30D937;
   padding: 9px;
   font-size: 14px;
   line-height: 150%;
   border-radius: 0.25rem;
   width: 115px;
-}
-.btn__add--M:hover {
   background: #30D937;
   color: #fff;
 }
@@ -1381,6 +1387,11 @@ select {
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
 }
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 .aside {
   min-width: 256px;
   min-height: 100vh;
@@ -1637,9 +1648,12 @@ select {
 }
 .main__block {
   display: none;
-  background: #fff;
+  background: none;
   border: 1px solid #E8E8E8;
   border-radius: 0.25rem;
+}
+.main__block--mobile {
+  display: none;
 }
 .main__title-box {
   display: -webkit-box;
@@ -1894,6 +1908,10 @@ select {
     width: 100%;
   }
 
+  .main__block--mobile {
+    display: block;
+  }
+
   .tabs {
     height: 100%;
     -ms-flex-wrap: wrap;
@@ -2005,6 +2023,12 @@ select {
 }
 .disabledCheck .tabel__cell {
   background: #FAFAFA;
+}
+.disabledCheck .td {
+  color: #9FA3A7;
+}
+.disabledCheck .td-time {
+  text-decoration: line-through;
 }
 .checked {
   background: #EDF8ED;
@@ -2493,11 +2517,6 @@ tr {
 .salary-tableBlock__title {
   margin-bottom: 20px;
 }
-.course-block .table-functional {
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
 .table-functional {
   background: #fff;
   border-radius: 0 0 0.25rem 0.25rem;
@@ -2509,6 +2528,9 @@ tr {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+}
+.table {
+  background: #fff;
 }
 .lessons-edit__box {
   padding-bottom: 30px;
@@ -2622,6 +2644,12 @@ tr {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+.schedule-block {
+  background: none;
+}
+.schedule-table {
+  margin-top: 20px;
+}
 @media (max-width: 1201px) {
   .tabs__item {
     width: 49%;
@@ -2698,6 +2726,10 @@ tr {
   }
   .salary-information__item:not(:last-child) {
     margin-bottom: 22px;
+  }
+
+  .schedule-block .shedule-btn {
+    display: none;
   }
 
   .tabs__item {

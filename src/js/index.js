@@ -56,11 +56,11 @@ $(() => {
 			var id = $(this).attr('data-tab'),
 				content = $('.tab-content[data-tab="'+ id +'"]');
 			
-			$('.tabs__item.tabs__item--active').removeClass('tabs__item--active'); // 1
-			$(this).addClass('tabs__item--active'); // 2
+			$('.tabs__item.tabs__item--active').removeClass('tabs__item--active');
+			$(this).addClass('tabs__item--active');
 			
-			$('.tab-content.active').removeClass('active'); // 3
-			content.addClass('active'); // 4
+			$('.tab-content.active').removeClass('active');
+			content.addClass('active'); 
 		});
 	}
 	function editCourse() {

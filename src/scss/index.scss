@@ -98,11 +98,7 @@
 .salary-tableBlock__title {
   margin-bottom: 20px;
 }
-.course-block {
-  .table-functional {
-    justify-content: flex-end;
-  }
-}
+
 .table-functional {
   background: $bgWhite;
   border-radius: 0 0 0.25rem 0.25rem;
@@ -112,6 +108,9 @@
 }
 .table-functional {
 	justify-content: flex-end;
+}
+.table{
+  background: $bgWhite;
 }
 .lessons-edit {
   &__box {
@@ -212,6 +211,12 @@
 .table-functional--LC{
   justify-content: space-between;
 }
+.schedule-block{
+  background: none;
+}
+.schedule-table{
+  margin-top: 20px;
+}
 @media (max-width: 1201px) {
 	.tabs__item{
 		width: 49%;
@@ -272,7 +277,11 @@
       margin-bottom: 22px;
     }
   }
-  
+  .schedule-block{
+    .shedule-btn{
+      display: none;
+    }
+  }
   .tabs__item {
     width: 100%;
   }
