@@ -68,9 +68,47 @@ $(() => {
 			});
 		}
 	}
-	
+	function changeBtn() {
+		// let btn = document.querySelector('.btn__save--L');
+		// if(btn.classList.contains("btn__disabled--L")){
+		// 	btn.addEventListener('click', function(e){
+		// 		e.preventDefault();
+		// 	});
+		// }else{
+		// 	btn.defaultPrevented;
+		// }
+		let inputForm = document.getElementsByClassName('form__input');
+		for (let i = 0; i < inputForm.length; i++) {
+			inputForm[i].addEventListener('change', function () {
+				let btn = document.querySelector('.btn__save--L');
+				btn.classList.remove('btn__disabled--L');
+			})
+		}
+	}
+
+	function profileDropDown() {
+		let containerDropDown = document.querySelector('.drop-status');
+		let profileDropDown = document.querySelector('.profile-dropdown');
+		let profileArrow = document.querySelector('.status-arrow');
+		containerDropDown.addEventListener('click', () => {
+			profileDropDown.classList.toggle('profile-dropdown--active');
+			profileArrow.classList.toggle("rotate180");
+		});
+		let itemDropDown = document.getElementsByClassName('profile-dropdow__item');
+		let textStatus = document.querySelector('.drop-status__text');
+		for(let i = 0; i < itemDropDown.length; i++){
+			itemDropDown[i].addEventListener('click', function(e){
+				let eveText = e.target.textContent;
+				textStatus.textContent = eveText;
+				profileDropDown.classList.toggle('profile-dropdown--active');
+			});
+		}
+	}
+
 	dropDownFunc();
 	burger();
 	tabs();
-	editCourse()
+	editCourse();
+	changeBtn();
+	profileDropDown();
 });

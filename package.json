@@ -16,7 +16,8 @@
   "dependencies": {
     "basic-ftp": "^4.6.6",
     "dotenv": "^10.0.0",
-    "jquery": "^3.6.0"
+    "jquery": "^3.6.0",
+    "jquery-validation": "^1.19.3"
   },
   "devDependencies": {
     "@babel/core": "^7.15.4",

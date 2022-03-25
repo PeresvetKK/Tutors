@@ -222,47 +222,56 @@
 							<div class="person__textbox person-textbox">
 								<p class="person-textbox__post">Лектор</p>
 								<h2 class="person-textbox__name">Никита Герасимов</h2>
-								<div class="person-textbox__status drop-status">
-									<div class="drop-status__text">Работаю</div>
-									<svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-										xmlns="http://www.w3.org/2000/svg">
-										<path
-											d="M11.2324 7.23227C11.5448 6.91985 11.5448 6.41332 11.2324 6.1009C10.92 5.78848 10.4134 5.78848 10.101 6.1009L11.2324 7.23227ZM8.00004 9.33325L7.43436 9.89894C7.74677 10.2114 8.25331 10.2114 8.56573 9.89894L8.00004 9.33325ZM5.89906 6.1009C5.58664 5.78848 5.08011 5.78848 4.76769 6.1009C4.45527 6.41332 4.45527 6.91985 4.76769 7.23227L5.89906 6.1009ZM10.101 6.1009L7.43436 8.76757L8.56573 9.89894L11.2324 7.23227L10.101 6.1009ZM8.56573 8.76757L5.89906 6.1009L4.76769 7.23227L7.43436 9.89894L8.56573 8.76757Z"
-											fill="#30D937" />
-									</svg>
-								</div>
+                                <div class="profile-status">
+                                    <div class="person-textbox__status drop-status">
+                                        <div class="drop-status__text">Работаю</div>
+                                        <svg class="status-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M11.2324 7.23227C11.5448 6.91985 11.5448 6.41332 11.2324 6.1009C10.92 5.78848 10.4134 5.78848 10.101 6.1009L11.2324 7.23227ZM8.00004 9.33325L7.43436 9.89894C7.74677 10.2114 8.25331 10.2114 8.56573 9.89894L8.00004 9.33325ZM5.89906 6.1009C5.58664 5.78848 5.08011 5.78848 4.76769 6.1009C4.45527 6.41332 4.45527 6.91985 4.76769 7.23227L5.89906 6.1009ZM10.101 6.1009L7.43436 8.76757L8.56573 9.89894L11.2324 7.23227L10.101 6.1009ZM8.56573 8.76757L5.89906 6.1009L4.76769 7.23227L7.43436 9.89894L8.56573 8.76757Z"
+                                                fill="#30D937" />
+                                        </svg>
+                                    </div>
+                                    <div class="profile-dropdown">
+                                        <div class="profile-dropdow__inner">
+                                            <p class="profile-dropdow__item">Преподаю</p>
+                                            <p class="profile-dropdow__item">Не преподаю</p>
+                                        </div>
+                                    </div>
+                                </div>								
 							</div>
 						</div>
-						<form action="" class="profile-form">
+						<form action="" id="main-form" class="profile-form" method="POST">
 							<div class="profile-form__block profile-block">
 								<h3 class="profile-block__title">Основная информация</h3>
 								<div class="profile-container">
-									<div class="form__box">
+									<div class="form__box form__box--index">
 										<label class="form__label" for="name">Имя</label>
-										<input class="form__input" type="text" id="name" name="name" placeholder="Value"
-											value="Value">
+										<input class="form__input name" type="text" id="name" name="name" placeholder="Value"
+											value="" required>
+                                        <p class="form__lagel-error">Введено некорректное значение</p>
 									</div>
-									<div class="form__box">
-										<label class="form__label" for="tel">Номер телефона</label>
-										<input class="form__input" type="tel" id="tel" name="tel"
-											placeholder="+7(909) 334-66-77" value="+7(909) 334-66-77">
+									<div class="form__box form__box--index">
+										<label class="form__label phone" for="tel">Номер телефона</label>
+										<input class="form__input phone" type="tel" id="tel" name="tel"
+											placeholder="+7(909) 334-66-77" value="" required>
 									</div>
-									<div class="form__box">
-										<label class="form__label" for="name">Фамилия</label>
-										<input class="form__input" type="text" id="name" name="name" placeholder="Value"
-											value="Value">
+									<div class="form__box form__box--index">
+										<label class="form__label lastname" for="lastname">Фамилия</label>
+										<input class="form__input lastname" type="text" id="lastname" name="lastname" placeholder="Value"
+											value="" required>
 									</div>
-									<div class="form__box">
-										<label class="form__label" for="email">E-mail</label>
-										<input class="form__input" type="email" id="email" name="email"
-											placeholder="ad.valach@gmail.com" value="ad.valach@gmail.com">
+									<div class="form__box form__box--index">
+										<label class="form__label email" for="email">E-mail</label>
+										<input class="form__input email" type="email" id="email" name="email"
+											placeholder="ad.valach@gmail.com" value="" required>
 									</div>
-									<div class="form__box">
+									<div class="form__box form__box--index">
 										<label class="form__label" for="name">Роль</label>
 										<input class="form__input" type="text" id="name" name="name"
-											placeholder="Лектор" value="Лектор">
+											placeholder="Лектор" value="">
 									</div>
-									<div class="form__box password">
+									<div class="form__box form__box--index password">
 										<label class="form__label" for="password">Пароль</label>
 										<input class="form__input" type="password" id="password-input" name="password"
 											placeholder="***********">
@@ -274,12 +283,12 @@
 							<div class="profile-form__block profile-block">
 								<h3 class="profile-block__title">Информация об адресе</h3>
 								<div class="profile-container">
-									<div class="form__box">
-										<label class="form__label" for="city">Город</label>
-										<input class="form__input" type="text" id="city" name="city" placeholder="Прага"
-											value="Прага">
+									<div class="form__box form__box--index">
+										<label class="form__label city" for="city">Город</label>
+										<input class="form__input city" type="text" id="city" name="city" placeholder="Прага"
+											value="Прага" required>
 									</div>
-									<div class="form__box form__box--select">
+									<div class="form__box form__box--select form__box--index">
 										<label class="form__label" for="UTC">Часовой пояс</label>
 										<select class="form__input" id="UTC" name="UTC">
 											<option value="">Прага +3 UTC</option>
@@ -287,15 +296,15 @@
 											<option value="cat">Прага +3 UTC</option>
 										</select>
 									</div>
-									<div class="form__box">
-										<label class="form__label" for="street">Улица</label>
-										<input class="form__input" type="text" id="street" name="street"
-											placeholder="Ленина 13" value="Ленина 13">
+									<div class="form__box form__box--index" >
+										<label class="form__label street" for="street">Улица</label>
+										<input class="form__input street" type="text" id="street" name="street"
+											placeholder="Ленина 13" value="Ленина 13" required>
 									</div>
-									<div class="form__box">
-										<label class="form__label" for="index">Почтовый индекс</label>
-										<input class="form__input" type="text" id="index" name="index"
-											placeholder="767 767" value="767 767">
+									<div class="form__box form__box--index">
+										<label class="form__label index" for="index">Почтовый индекс</label>
+										<input class="form__input index" type="text" id="index" name="index"
+											placeholder="767 767" value="767 767" required>
 									</div>
 								</div>
 							</div>
@@ -320,7 +329,7 @@
 								</div>
 							</div> -->
 							<div class="form-btn">
-								<button class="btn__save--L" type="submit">Сохранить</button>
+								<button class="btn__save--L btn__disabled--L" type="submit">Сохранить</button>
 							</div>
 						</form>
 					</div>

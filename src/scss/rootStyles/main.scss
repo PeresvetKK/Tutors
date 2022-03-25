@@ -14,7 +14,11 @@ body {
     cursor: default;
     background: $bgPaper;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    
 }
+::-webkit-scrollbar {
+    width: 0;
+  }
 section {
     position: relative;
 }
@@ -128,6 +132,11 @@ button {
     background: $dark300;
     color: $bgWhite;
     padding: 16px 32px;
+    pointer-events: none;
+    &:hover, &:focus{
+        background: $dark300;
+        color: $bgWhite;
+    }
 }
 .btn__add--M{
     position: relative;
@@ -196,20 +205,47 @@ button {
 .drop-status{
     background: $bgGreen;
     color: $green;
-    width: 112px;
+    width: 150px;
     height: 32px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     border-radius: 0.25rem;
     cursor: pointer;
-    padding: 8px 8px 8px 16px;
+    padding: 8px 8px 8px 8px;
     border: 1px solid transparent;
+    position: relative;
     &__text{
         margin-right: 8px;
     }
     &:hover{
         border: 1px solid $green;
+    }
+}
+.profile-dropdown{
+    display: none;
+}
+.profile-status{
+    position: relative;
+}
+.profile-dropdown--active{
+    display: flex;
+    position: absolute;
+    width: 150px;
+    left: 0;
+    top: 30px;
+    border: 1px solid $border;
+    border-radius: 0.25rem;
+    color: $dark900;
+}
+.profile-dropdow__inner{
+    width: 100%;
+}
+.profile-dropdow__item{
+    padding: 7px 7px 7px 8px;
+    cursor: pointer;
+    &:hover{
+        background-color: $bgBlue;
     }
 }
 .form{
@@ -223,7 +259,7 @@ button {
         width: 48%;
         margin-bottom: 28px;
         position: relative;
-        label{
+        .form__label{
             position: absolute;
             z-index: 2;
             top: -6px;
@@ -237,9 +273,12 @@ button {
             color: $dark700;
         }
     }
+    &__box--index{
+        height:  77px;
+    }
     &__box:hover, &__box:focus{
         .form__label{
-            color: $darkBlue !important;
+            color: $darkBlue ;
         }
     }
     &__box--small{
@@ -291,13 +330,54 @@ button {
         &:hover, &:focus{
             border: 1px solid $darkBlue;
         }
-        // &._error{
-        //     color: #000;
-        //     background: red;
-        //     border: 1px solid transparent ;
-        // }
     }
-    
+}
+.error{
+    color: $red;
+    .form__label{
+        color: $red !important;
+    }
+    .form__label:hover, .form__label:focus{
+        color: $red;
+    }
+    .form__input{
+        border: 1px solid $red;
+    }
+    .form__lagel-error{
+        display: block;
+    }
+}
+.success{
+    color: $green;
+    .form__label{
+        color: $green !important;
+    }
+    .form__label:hover, .form__label:focus{
+        color: $green;
+    }
+    .form__input{
+        border: 1px solid $green;
+    }
+    .form__lagel-error{
+        display: block;
+    }
+}
+.disabled{
+    color: $dark300;
+    .form__label{
+        color: $dark300 !important;
+    }
+    .form__label:hover, .form__label:focus{
+        color: $dark300;
+    }
+    .form__input{
+        border: 1px solid $dark300;
+        color: $dark300;
+    }
+}
+.form__lagel-error{
+    display: none;
+    font-size: 14px;
 }
 .dropdown-box{
     display: flex;
@@ -468,7 +548,7 @@ select{
     padding-right: 42px;
     top: 0px;
     right: 0px;
-    left: 252px;
+    left: 256px;
     z-index: 515;
     background: $bgWhite;
     border: 1px solid $border;
@@ -753,6 +833,12 @@ select{
     text-decoration-line: underline;
     color: $darkBlue;
 }
+.status-arrow{
+    transform: rotate(0deg);
+}
+.rotate180{
+    transform: rotate(180deg);
+}
 .information-block{
     padding: 30px;
     background: $bgWhite;
@@ -869,7 +955,7 @@ select{
             border-top: 1px solid #D6E2F5;
         }
         .aside__nav, .aside__logo, .aside__dt{
-            width: 85% !important;
+            width: 100% !important;
         }
     }
     .person{
