@@ -147,10 +147,18 @@ button {
     width: 115px;
     background: $green;
     color: $bgWhite;
-    // &:focus{
-    //     background: $blackGreen;
-    //     color: $bgWhite;
-    // }
+}
+.back-arrow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $bgWhite;
+    width: 48px;
+    height: 48px;
+    padding: 12px;
+    border-radius: 50%;
+    border: 1px solid $border;
+    cursor: pointer;
 }
 .textarea{
     padding: 12px 16px;
@@ -832,6 +840,7 @@ select{
 .underline{
     text-decoration-line: underline;
     color: $darkBlue;
+    cursor: pointer;
 }
 .status-arrow{
     transform: rotate(0deg);
@@ -893,6 +902,9 @@ select{
             width: 163px;
         }
     }
+    .main__tabs--middle{
+        width: 376px;
+    }
 }
 
 @media screen and (max-width: 913px){
@@ -938,6 +950,9 @@ select{
     }
     .form__box--small{
         width: 48%;
+    }
+    .main__tabs--middle{
+        width: 376px;
     }
 }
 
@@ -991,6 +1006,9 @@ select{
             width: 100%;
         }
     }
+    .main__tabs--middle{
+        width: 100%;
+    }
     .person-textbox{
         padding-left: 0;
     }
@@ -1006,5 +1024,8 @@ select{
     }
     .menu__list:not(:last-child){
         border-bottom: 1px solid $border;
+    }
+    .information-block{
+        padding: 23px;
     }
 }

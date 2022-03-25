@@ -1,8 +1,5 @@
 import '../scss/training.scss';
-
 $(() => {
-
-	//Dropdow
 	function dropDownFunc() {
 		let containerDropDown = document.querySelector('body');
 		let dropDown = document.querySelector('.dropdown');
@@ -16,7 +13,6 @@ $(() => {
 			}
 		});
 	}
-	//Burger-menu
 	function burger() {
 		let burger = document.querySelector(".burger");
 		burger.addEventListener("click", function () {
@@ -28,7 +24,6 @@ $(() => {
 			burger.classList.toggle("burger-active");
 		});
 	}
-
 	$('.tabs__item').click(function () {
 		var id = $(this).attr('data-tab'),
 			content = $('.tab-content[data-tab="' + id + '"]');
@@ -39,8 +34,30 @@ $(() => {
 		$('.tab-content.active').removeClass('active'); // 3
 		content.addClass('active'); // 4
 	});
+	function editCourse() {
+		let edit = document.getElementsByClassName("edit");
+		for (let i = 0; i < edit.length; i++) {
+			edit[i].addEventListener("click", function () {
+				let myLessons = document.querySelector("#my-lessons");
+				let myLessonsEdit = document.querySelector("#my-lessons--edit");
 
+				myLessons.classList.toggle("hide");
+				myLessonsEdit.classList.toggle("active");
+				
+			});
+		}
+	}
+	function goBack(){
+		let edit = document.querySelector(".back-arrow");
+			edit.addEventListener("click", function () {
+				let myLessons = document.querySelector("#my-lessons");
+				let myLessonsEdit = document.querySelector("#my-lessons--edit");
+				myLessons.classList.toggle("hide");
+				myLessonsEdit.classList.toggle("active");	
+			});
+	}
 	dropDownFunc();
 	burger();
-	
+	editCourse();
+	goBack();
 });

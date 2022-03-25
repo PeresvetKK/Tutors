@@ -1,1 +1,62 @@
+@import "./rootStyles/main.scss";
 @import "./index.scss";
+
+.modal-message{
+    width: 100%;
+    padding: 30px;
+    background: $bgWhite;
+    border: 1px solid $border;
+    border-radius: 0.25rem;
+    .information-block__title{
+        padding-bottom: 20px;
+        border-bottom: 5px solid $border;
+    }
+    &__title{
+        margin-bottom: 10px;
+    }
+    &__text{
+        width: 60%;
+        margin-bottom: 20px;
+        color: $dark700;
+        line-height: 150%;
+    }
+    &__comment{
+        padding: 3px 0 3px 15px;
+        border-left: 1px solid $darkBlue;
+        line-height: 150%;
+    }
+    &__comtext{
+        width: 60%;
+        color: $darkBlue;
+    }
+    &__tuters--text{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+.training__modal{
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 1201px){
+    .modal-message__text, .modal-message__comtext{
+        width: 83%;
+    }
+}
+@media screen and (max-width: 834px){
+    .modal-message__text, .modal-message__comtext {
+        width: 98%;
+    }
+}
+
+@media screen and (max-width: 477px){
+    .training__modal{
+        padding: 18px;
+    }
+    .modal-message .information-block__title {
+        border-bottom: 1px solid #E8E8E8;
+    }
+    .modal-message__text, .modal-message__comtext {
+        width: 100%;
+    }
+}
