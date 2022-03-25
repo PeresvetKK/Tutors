@@ -603,6 +603,10 @@ select {
 .menu__link--active {
   color: #84B5DF;
 }
+.menu__link--active svg path {
+  fill: #84B5DF;
+  stroke: #84B5DF;
+}
 .menu__list--dropdown::before {
   content: "";
   position: absolute;
@@ -1787,6 +1791,10 @@ select {
 }
 .menu__link--active {
   color: #84B5DF;
+}
+.menu__link--active svg path {
+  fill: #84B5DF;
+  stroke: #84B5DF;
 }
 .menu__list--dropdown::before {
   content: "";

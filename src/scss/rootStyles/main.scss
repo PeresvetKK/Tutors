@@ -532,6 +532,12 @@ select{
     }
     &__link--active{
         color: $darkBlue;
+        svg{
+            path{
+                fill: $darkBlue;
+                stroke: $darkBlue;
+            }
+        }
     }
     &__list--dropdown::before{
         content: "";
