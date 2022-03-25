@@ -3,19 +3,8 @@ import '../scss/index.scss';
 import header from '../components/header.html';
 import aside from '../components/aside.html';
 
-import sched from '../components/schedule.html';
-import subjects from '../components/subjects.html';
-import course from '../components/course.html';
-import salary from '../components/salary.html';
 
 $(() => {
-	$("#root").prepend(aside);
-	$("#root").prepend(header);
-	$(".schedule-block").prepend(sched);
-	$(".subjects-block").prepend(subjects);
-	$(".course-block").prepend(course);
-	$(".salary-block").prepend(salary);
-
 	function show_hide_password(target) {
 		var input = document.getElementById('password-input');
 		if (input.getAttribute('type') == 'password') {

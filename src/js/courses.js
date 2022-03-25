@@ -1,12 +1,6 @@
 import '../scss/courses.scss';
 
-import header from '../components/header.html';
-import aside from '../components/aside.html';
-
 $(() => {
-	$("#root").prepend(aside);
-	$("#root").prepend(header);
-
 	//Dropdow
 	function dropDownFunc() {
 		let containerDropDown = document.querySelector('body');

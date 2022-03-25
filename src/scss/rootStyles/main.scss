@@ -344,6 +344,12 @@ button {
         top: 10px;
     }
 }
+.search-box--big{
+    width: 376px;
+    .input__search{
+        width: 100%;
+    }
+}
 .input__search{
     width: 262px;
     height: 40px;
@@ -368,30 +374,36 @@ select{
 }
 .aside {
     min-width: 256px;
-    min-height: 100vh;
-    position: relative;
+    height: 100vh;
+    position: fixed;
     padding: 20px 21px 20px 24px;
     z-index: 10;
     background: $menu;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &__inner{
+        // overflow-y: scroll;
+        // overflow-x: hidden;
+    }
     &__logo{
-        position: fixed;
+        // position: fixed;
         width: 207px;
-        padding-bottom: 20px;
-        border-bottom: 1px solid $bgWhite;
         cursor: pointer;
     }
     &__nav{
-        position: fixed;
-        top: 93px;
+        width: 207px;
+        // position: fixed;
+        top: 70px;
     }
     &__dt{
         width: 205px;
-        position: fixed;
+        // position: fixed;
         bottom: 21px;
         display: flex;
         justify-content: space-between;
         padding-top: 20px;
-        border-top: 1px solid $bgWhite;
+        border-top: 1px solid #6F7781;
+        margin-top: 100px
     }
     &__date, &__time{
         @extend %textS;
@@ -411,7 +423,11 @@ select{
 }
 .menu{
     list-style: none;
-    margin-top: 10px;
+    margin-top: 18px;
+    border-top: 1px solid #6F7781;
+    &__title{
+        text-transform: uppercase;
+    }
     &__list{
         width: 100%;
         display: flex;
@@ -436,12 +452,13 @@ select{
         height: 24px;
         background-image: url("/img/arrowDownBlue.svg");
         background-repeat: no-repeat;
-        right: -48px;
+        right: -7px;
         cursor: pointer;
     }
 }
-
-
+.menu__title{
+    margin-left: 0px;
+}
 .header {
     position: fixed;
     display: flex;
@@ -451,7 +468,7 @@ select{
     padding-right: 42px;
     top: 0px;
     right: 0px;
-    left: 256px;
+    left: 252px;
     z-index: 515;
     background: $bgWhite;
     border: 1px solid $border;
@@ -584,6 +601,7 @@ select{
     display: none;
 }
 .content {
+    margin-left: 256px;
     margin-top: 82px;
     flex: 1 1 0%;
     overflow: hidden;
@@ -591,6 +609,12 @@ select{
 .main{
     &__tabs{
         margin: 20px 0 30px 0;
+    }
+    &__tabs--full{
+        width: 645px;
+    }
+    &__tabs--middle{
+        width: 376px;
     }
     &__block{
         display: none;
@@ -651,7 +675,6 @@ select{
     }
 }
 .tabs{
-    width: 645px;
     height: 56px;
     display: flex;
     align-items: center;
@@ -675,6 +698,9 @@ select{
             background: $bgElement;
             color: $darkBlue;
         }
+    }
+    &__item--two{
+        width: 46%;
     }
     &__item--active{
         color: $bgWhite;
@@ -723,6 +749,51 @@ select{
   background: rgba(26, 26, 26, 0.1);
   border: none;
 }
+.underline{
+    text-decoration-line: underline;
+    color: $darkBlue;
+}
+.information-block{
+    padding: 30px;
+    background: $bgWhite;
+    border: 1px solid $border;
+    border-radius: 0.25rem;
+    margin-bottom: 20px;
+    &__data{
+        font-size: 14px;
+        line-height: 150%;
+        color: $dark300;
+        margin-bottom: 10px;
+    }
+    &__title{
+        margin-bottom: 15px;
+    }
+    &__text{
+        color: $dark700;
+    }
+    &__functional{
+        margin-top: 30px;
+    }
+    &__download{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+.filebox{
+    display: flex;
+    align-items: center;
+    &__name{
+        font-size: 12px;
+        line-height: 14px;
+        color: $dark300;
+        margin-right: 12px;
+    }
+    &__download{
+        padding: 5.33px 7px;
+        border: 1.7px solid $darkBlue;
+        border-radius: 50%;
+    }
+}
 .hide{
     display: none;
 }
@@ -747,6 +818,9 @@ select{
         &__dt{
             width: 94%;
         }
+    }
+    .content{
+        margin-left: 0;
     }
     .header{
         left: 0;
