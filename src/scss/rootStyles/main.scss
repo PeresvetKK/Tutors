@@ -459,6 +459,7 @@ select{
 }
 .flex{
     display: flex;
+    align-items: center;
 }
 .aside {
     min-width: 256px;
@@ -497,6 +498,28 @@ select{
         @extend %textS;
         color: $bgWhite;
     }
+    .aside__dropdown{
+        margin-top: -8px;
+        height: 0;
+        overflow: hidden;
+        transition: height .4s ease-in-out;
+    }
+    .aside__dropdown--active{
+        display: block;
+        height: 45px;
+    }
+    .aside-dropdown__item{
+        margin-left: 31px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 14px;
+        &:hover{
+            color: $darkBlue;
+        }
+        &:not(:first-child){
+            padding-top: 8px;
+        }
+    }
 }
 .aside--active{
     display: block !important;
@@ -530,25 +553,33 @@ select{
         font-size: 14px;
         line-height: 143%;
     }
-    &__link--active{
+    &__list:hover, &__list--active{
+        .menu__link{
+            color: $darkBlue;
+        }
         color: $darkBlue;
         svg{
+            fill: $darkBlue;
             path{
                 fill: $darkBlue;
+            }
+        }
+        .stroke{
+            path{
                 stroke: $darkBlue;
+                fill: transparent;
             }
         }
     }
-    &__list--dropdown::before{
-        content: "";
-        position: absolute;
-        width: 24px;
-        height: 24px;
-        background-image: url("/img/arrowDownBlue.svg");
-        background-repeat: no-repeat;
-        right: -7px;
-        cursor: pointer;
+    &__list--dropdown{
+        position: relative;
     }
+   &__link--arrow{
+       margin-left: auto;
+       path{
+           color: $bgWhite;
+       }
+   }
 }
 .menu__title{
     margin-left: 0px;
@@ -900,6 +931,14 @@ select{
 }
 .active{
     display: block;
+}
+.row-counter__dropdown{
+    position: absolute;
+    border: 1px solid $border;
+    background: #fff;
+    border-radius: 0.25rem;
+    top: 20px;
+    width: 36px;
 }
 @media (max-width: 1201px) {
     .tabs{

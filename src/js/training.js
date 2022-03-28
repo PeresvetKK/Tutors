@@ -56,8 +56,21 @@ $(() => {
 				myLessonsEdit.classList.toggle("active");	
 			});
 	}
+	function dropDownAside(){
+		let item = document.getElementsByClassName('menu__box--dropdown');
+		for(let i = 0; i < item.length; i++){
+			item[i].addEventListener('click', function(){
+				let arrow = item[i].querySelector(".menu__link--arrow");
+				let dropdown = item[i].querySelector('.aside__dropdown');
+
+				dropdown.classList.toggle('aside__dropdown--active');
+				arrow.classList.toggle('rotate180');
+			});
+		}
+	}
 	dropDownFunc();
 	burger();
 	editCourse();
 	goBack();
+	dropDownAside();
 });

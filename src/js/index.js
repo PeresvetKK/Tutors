@@ -85,7 +85,6 @@ $(() => {
 			})
 		}
 	}
-
 	function profileDropDown() {
 		let containerDropDown = document.querySelector('.drop-status');
 		let profileDropDown = document.querySelector('.profile-dropdown');
@@ -101,6 +100,35 @@ $(() => {
 				let eveText = e.target.textContent;
 				textStatus.textContent = eveText;
 				profileDropDown.classList.toggle('profile-dropdown--active');
+				if(e.target.classList.contains('noactive')){
+					containerDropDown.classList.add('profile-dropdow--noactive');
+				}else{
+					containerDropDown.classList.remove('profile-dropdow--noactive');
+				}
+				profileArrow.classList.toggle("rotate180");
+			});
+		}
+	}
+	function tableDropdown(){
+		let containerDropDown = document.querySelector('#root');
+
+		containerDropDown.addEventListener('click', (event) => {
+			if (event.target.classList.contains('row-counter__select') || event.target.classList.contains('row-counter__icon')) {
+				let parent = event.target.parentElement;
+				let dropDown = parent.querySelector('.row-counter__dropdown');
+				dropDown.classList.toggle('active');
+			}
+		});
+	}
+	function dropDownAside(){
+		let item = document.getElementsByClassName('menu__box--dropdown');
+		for(let i = 0; i < item.length; i++){
+			item[i].addEventListener('click', function(){
+				let arrow = item[i].querySelector(".menu__link--arrow");
+				let dropdown = item[i].querySelector('.aside__dropdown');
+
+				dropdown.classList.toggle('aside__dropdown--active');
+				arrow.classList.toggle('rotate180');
 			});
 		}
 	}
@@ -111,4 +139,6 @@ $(() => {
 	editCourse();
 	changeBtn();
 	profileDropDown();
+	tableDropdown();
+	dropDownAside();
 });

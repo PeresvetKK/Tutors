@@ -18,6 +18,24 @@
     position: absolute;
     left: 113px;
     bottom: 0;
+    display: flex;
+  }
+  &__edit--input{
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+.profile-dropdow--noactive{
+  background: #FAFAFA;
+  color: $gray;
+  &:hover{
+    border: 1px solid $border;
+  }
+  .status-arrow{
+    path{
+      fill: $gray;
+    }
   }
 }
 .person-textbox {
