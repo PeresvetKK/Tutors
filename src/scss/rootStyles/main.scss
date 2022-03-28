@@ -807,6 +807,7 @@ select{
     background: $bgWhite;
     border: 1px solid $border;
     border-radius: 0.25rem;
+    width: max-content;
     &__item{
         width: 113px;
         height: 40px;
@@ -826,6 +827,10 @@ select{
     }
     &__item--two{
         width: 46%;
+    }
+    &__item--three{
+        width: 180px;
+        margin: 0 4px;
     }
     &__item--active{
         color: $bgWhite;

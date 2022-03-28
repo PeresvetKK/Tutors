@@ -916,6 +916,9 @@ select {
   background: #fff;
   border: 1px solid #E8E8E8;
   border-radius: 0.25rem;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 .tabs__item {
   width: 113px;
@@ -936,6 +939,10 @@ select {
 }
 .tabs__item--two {
   width: 46%;
+}
+.tabs__item--three {
+  width: 180px;
+  margin: 0 4px;
 }
 .tabs__item--active {
   color: #fff;
