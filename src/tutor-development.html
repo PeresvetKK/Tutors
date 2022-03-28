@@ -153,7 +153,7 @@
                             </svg>
                         </a>
                         <div class="aside__dropdown">
-                            <a href="" class="menu__link aside-dropdown__item">Повышение квалификации</a>
+                            <a href="#" class="menu__link aside-dropdown__item">Повышение квалификации</a>
                             <a href="#" class="menu__link aside-dropdown__item">Обучение</a>
                         </div>
                     </div>
@@ -171,7 +171,7 @@
                         <p class="menu__link menu__title">Методический центр</p>
                     </a></div>
                     <div class="menu__box">
-                    <a href="training.html" class="menu__list menu__list--active">
+                    <a href="training.html" class="menu__list">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M20 20V19V20ZM4 20L4 21H4V20ZM3 19H4H3ZM3 6L3 5C2.73478 5 2.48043 5.10536 2.29289 5.29289C2.10536 5.48043 2 5.73478 2 6L3 6ZM21 7L22 7L21 7ZM21 19H20H21ZM20 6V5V6ZM20 19L4 19V21L20 21V19ZM4 19L4 6L2 6L2 19H4ZM20 7L20 19H22L22 7L20 7ZM3 7L20 7V5L3 5L3 7ZM22 7C22 5.89543 21.1046 5 20 5V7L22 7ZM4 19H4H2C2 20.1046 2.89543 21 4 21L4 19ZM20 21C21.1046 21 22 20.1046 22 19H20V21Z" fill="white"/>
                             <path d="M11 16C11 16.5523 11.4477 17 12 17C12.5523 17 13 16.5523 13 16H11ZM13 10C13 9.44772 12.5523 9 12 9C11.4477 9 11 9.44772 11 10H13ZM13 16V10H11V16H13Z" fill="white"/>
@@ -181,7 +181,7 @@
                         <p class="menu__link menu__link--active">Для обучения</p>
                     </a></div>
                     <div class="menu__box menu__box--dropdown">
-                        <a href="#" class="menu__list menu__list--dropdown">
+                        <a href="#" class="menu__list menu__list--dropdown menu__list--active">
                             <svg class="stroke"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 20C7 18.3431 9.23858 17 12 17C14.7614 17 17 18.3431 17 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M18 14.2495C19.7659 14.7124 21 15.7697 21 16.9999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -195,8 +195,8 @@
                                 <path d="M15.7071 11.7071C16.0976 11.3166 16.0976 10.6834 15.7071 10.2929C15.3166 9.90237 14.6834 9.90237 14.2929 10.2929L15.7071 11.7071ZM12 14L11.2929 14.7071C11.4804 14.8946 11.7348 15 12 15C12.2652 15 12.5196 14.8946 12.7071 14.7071L12 14ZM9.70711 10.2929C9.31658 9.90237 8.68342 9.90237 8.29289 10.2929C7.90237 10.6834 7.90237 11.3166 8.29289 11.7071L9.70711 10.2929ZM14.2929 10.2929L11.2929 13.2929L12.7071 14.7071L15.7071 11.7071L14.2929 10.2929ZM12.7071 13.2929L9.70711 10.2929L8.29289 11.7071L11.2929 14.7071L12.7071 13.2929Z" fill="#D6E2F5"/>
                             </svg>
                         </a>
-                        <div class="aside__dropdown">
-                            <a href="tutor-development.html" class="menu__link aside-dropdown__item">Повышение квалификации</a>
+                        <div class="aside__dropdown aside__dropdown--active">
+                            <a href="tutor-development.html" class="menu__link aside-dropdown__item menu__list--active">Повышение квалификации</a>
                             <a href="tutor-training.html" class="menu__link aside-dropdown__item">Обучение</a>
                         </div>
                     </div>
@@ -222,10 +222,11 @@
         <main class="main">
             <div class="wrapper" id="my-lessons" class="training">
                 <section class="main__header">
-                    <h1 class="main__title title">Для обучения</h1>
-                    <div class="tabs main__tabs main__tabs--middle">
-                        <button class="tabs__item tabs__item--two tabs__item--active current" data-tab="1">Учебные материалы</button>
-                        <button class="tabs__item tabs__item--two past" data-tab="2">Игры и занятия</button>
+                    <h1 class="main__title title">Повышение квалификации</h1>
+                    <div class="tabs main__tabs">
+                        <button class="tabs__item tabs__item--three tabs__item--active current" data-tab="1">Вводное обучение</button>
+                        <button class="tabs__item tabs__item--three past" data-tab="2">Пед. минимум</button>
+                        <button class="tabs__item tabs__item--three past" data-tab="3">Цермат</button>
                     </div>
                     <div class="form__box search-box search-box--big">
                         <svg class="search-box__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -245,53 +246,26 @@
                         <p class="information-block__data">05.02.2020</p>
                         <h2 class="information-block__title">Лекция мотивация</h2>
                         <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
-                        <div class="information-block__functional information-block__download">
-                            <p class="information-block__read-more underline edit">Смотреть</p>
-                            <a href="#" class="information-block__filebox filebox">
-                                <p class="filebox__name">PDF 18 КБ</p>
-                                <div class="filebox__download">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.73438 15.3989H13.2677" stroke="#84B5DF" stroke-width="1.42222" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M9 2.59912L9 12.5547" stroke="#84B5DF" stroke-width="1.42222" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M12.5564 8.99902L9.00087 12.5546L5.44531 8.99902" stroke="#84B5DF" stroke-width="1.42222"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </a>
+                        <div class="information-block__functional information-block__readmore">
+                            <p class="information-block__read-more underline">Подробнее</p>
                         </div>
                     </div>
                     <div class="information-block">
                         <p class="information-block__data">05.02.2020</p>
                         <h2 class="information-block__title">Лекция мотивация</h2>
                         <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
-                        <div class="information-block__functional information-block__download">
-                            <p class="information-block__read-more underline edit">Смотреть</p>
-                            <a href="#" class="information-block__filebox filebox">
-                                <p class="filebox__name">PDF 18 КБ</p>
-                                <div class="filebox__download">
-                                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M4.73438 15.3989H13.2677" stroke="#84B5DF" stroke-width="1.42222" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M9 2.59912L9 12.5547" stroke="#84B5DF" stroke-width="1.42222" stroke-linecap="round"
-                                            stroke-linejoin="round" />
-                                        <path d="M12.5564 8.99902L9.00087 12.5546L5.44531 8.99902" stroke="#84B5DF" stroke-width="1.42222"
-                                            stroke-linecap="round" stroke-linejoin="round" />
-                                    </svg>
-                                </div>
-                            </a>
+                        <div class="information-block__functional information-block__readmore">
+                            <p class="information-block__read-more underline">Подробнее</p>
                         </div>
                     </div>
                 </section>
-
                 <section class="main__block tab-content" data-tab="2">
                     <div class="information-block">
                         <p class="information-block__data">05.02.2020</p>
                         <h2 class="information-block__title">Лекция мотивация</h2>
                         <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
                         <div class="information-block__functional information-block__readmore">
-                            <p class="information-block__read-more underline">Смотреть</p>
+                            <p class="information-block__read-more underline">Подробнее</p>
                         </div>
                     </div>
                     <div class="information-block">
@@ -299,12 +273,28 @@
                         <h2 class="information-block__title">Лекция мотивация</h2>
                         <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
                         <div class="information-block__functional information-block__readmore">
-                            <p class="information-block__read-more underline">Смотреть</p>
+                            <p class="information-block__read-more underline">Подробнее</p>
                         </div>
                     </div>
                 </section>
-
-                <!-- <section class="main__block tab-content"></section> -->
+                <section class="main__block tab-content" data-tab="3">
+                    <div class="information-block">
+                        <p class="information-block__data">05.02.2020</p>
+                        <h2 class="information-block__title">Лекция мотивация</h2>
+                        <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
+                        <div class="information-block__functional information-block__readmore">
+                            <p class="information-block__read-more underline">Подробнее</p>
+                        </div>
+                    </div>
+                    <div class="information-block">
+                        <p class="information-block__data">05.02.2020</p>
+                        <h2 class="information-block__title">Лекция мотивация</h2>
+                        <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
+                        <div class="information-block__functional information-block__readmore">
+                            <p class="information-block__read-more underline">Подробнее</p>
+                        </div>
+                    </div>
+                </section>
             </div>
             <div class="wrapper hide" id="my-lessons--edit">
                 <section class="main__block active">

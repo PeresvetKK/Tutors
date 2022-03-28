@@ -1,0 +1,21 @@
+@import "./rootStyles/main.scss";
+
+.block-place{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    &__title{
+        font-size: 14px;
+        line-height: 171%;
+        color: $dark500;
+    }
+    &__text{
+        margin-top: 4px;
+        font-weight: 700;
+        color: $dark900;
+    }
+    .underline{
+        color: $blue;
+    }
+}

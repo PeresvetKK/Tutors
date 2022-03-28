@@ -938,10 +938,7 @@ select {
   background: #F5F9FD;
   color: #84B5DF;
 }
-.tabs__item--two {
-  width: 46%;
-}
-.tabs__item--three {
+.tabs__item--three, .tabs__item--two {
   width: 180px;
   margin: 0 4px;
 }
@@ -2177,10 +2174,7 @@ select {
   background: #F5F9FD;
   color: #84B5DF;
 }
-.tabs__item--two {
-  width: 46%;
-}
-.tabs__item--three {
+.tabs__item--three, .tabs__item--two {
   width: 180px;
   margin: 0 4px;
 }

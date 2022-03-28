@@ -1,4 +1,4 @@
-import '../scss/development.scss';
+import '../scss/tutor-development.scss';
 $(() => {
 	function dropDownFunc() {
 		let containerDropDown = document.querySelector('body');

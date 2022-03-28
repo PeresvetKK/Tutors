@@ -825,10 +825,7 @@ select{
             color: $darkBlue;
         }
     }
-    &__item--two{
-        width: 46%;
-    }
-    &__item--three{
+    &__item--three, &__item--two{
         width: 180px;
         margin: 0 4px;
     }
