@@ -656,9 +656,6 @@ select {
 .menu__title {
   text-transform: uppercase;
 }
-.menu__box {
-  border-top: 1px solid #6F7781;
-}
 .menu__list {
   width: 100%;
   display: -webkit-box;
@@ -1331,6 +1328,10 @@ select {
     border-bottom: 1px solid #C7CACB;
     margin-bottom: 20px;
     cursor: pointer;
+  }
+
+  .menu__box {
+    border-top: 1px solid #6F7781;
   }
 
   .tabs-active {
@@ -2030,9 +2031,6 @@ select {
 .menu__title {
   text-transform: uppercase;
 }
-.menu__box {
-  border-top: 1px solid #6F7781;
-}
 .menu__list {
   width: 100%;
   display: -webkit-box;
@@ -2705,6 +2703,10 @@ select {
     border-bottom: 1px solid #C7CACB;
     margin-bottom: 20px;
     cursor: pointer;
+  }
+
+  .menu__box {
+    border-top: 1px solid #6F7781;
   }
 
   .tabs-active {
