@@ -98,6 +98,8 @@ button {
     width: 100%;
     padding: 30px 30px 50px 30px;
     background: $bgWhite;
+    border:  1px solid $border;
+    border-radius: 0.25rem;
 }
 .btn__save--L{
     @extend %btnL;
@@ -230,6 +232,46 @@ button {
         border: 1px solid $green;
     }
 }
+.pagination{
+    width: 100%;
+    display: none;
+    &__item{
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        background: $bgWhite;
+        border: 1px solid $border;
+        border-radius: 0.25rem;
+        color: $dark900;
+        svg{
+            path{
+                fill: $dark900;
+            }
+        }
+        &:hover{
+            background: $darkBlue;
+            border-color: $darkBlue;
+            color: $bgWhite;
+            svg{
+                path{
+                    fill: $bgWhite;
+                }
+            }
+        }
+    }
+    &__item--active{
+        background: $darkBlue;
+        border-color: $darkBlue;
+        color: $bgWhite;
+    }
+    &__item:not(:last-child){
+        margin-right: 8px;
+    }
+    
+}
 .profile-dropdown{
     display: none;
 }
@@ -298,7 +340,7 @@ button {
             width: 24px;
             height: 24px;
             right: 18px;
-            top: 25%;
+            top: 30%;
             background: url("/img/arrowDownGray.svg") no-repeat;
             background-position: center;
     }
@@ -444,6 +486,9 @@ button {
     padding-left: 44px;
     font-size: 14px;
 }
+.category-select{
+    display: none;
+}
 select{
     appearance: none;
     position: relative;
@@ -470,10 +515,6 @@ select{
     background: $menu;
     overflow-y: scroll;
     overflow-x: hidden;
-    &__inner{
-        // overflow-y: scroll;
-        // overflow-x: hidden;
-    }
     &__logo{
         // position: fixed;
         width: 207px;
@@ -509,6 +550,7 @@ select{
         height: 45px;
     }
     .aside-dropdown__item{
+        display: block;
         margin-left: 31px;
         font-weight: 700;
         font-size: 12px;
@@ -538,6 +580,9 @@ select{
     border-top: 1px solid #6F7781;
     &__title{
         text-transform: uppercase;
+    }
+    &__box{
+        border-top: 1px solid #6F7781;
     }
     &__list{
         width: 100%;
@@ -809,7 +854,7 @@ select{
     border-radius: 0.25rem;
     width: max-content;
     &__item{
-        width: 113px;
+        width: 120px;
         height: 40px;
         background: $bgWhite;
         border: none;
@@ -820,6 +865,7 @@ select{
         font-size: 14px;
         line-height: 150%;
         text-align: center;
+        margin: 0 4px;
         &:hover{
             background: $bgElement;
             color: $darkBlue;
@@ -946,7 +992,7 @@ select{
     .tabs{
         width: 100%;
         &__item{
-            width: 163px;
+            width: inherit;
         }
     }
     .main__tabs--middle{
@@ -989,7 +1035,7 @@ select{
     .tabs{
         width: 100%;
         &__item{
-            width: 142px;
+            width: inherit;
         }
     }
     .form__box{
@@ -1053,6 +1099,9 @@ select{
             width: 100%;
         }
     }
+    .pagination{
+        display: flex;
+    }
     .main__tabs--middle{
         width: 100%;
     }
@@ -1069,10 +1118,72 @@ select{
         font-size: 28px;
         line-height: 129%;
     }
-    .menu__list:not(:last-child){
-        border-bottom: 1px solid $border;
-    }
+    
     .information-block{
         padding: 23px;
+    }
+    .category-select{
+        display: flex;
+        margin-bottom: 0px;
+    }
+    .category{
+        width: 100%;
+        display: flex;
+        height: 56px;
+        align-items: center;
+        background-color: #fff;
+        border: 1px solid #E8E8E8;
+        border-radius: 0.25rem;
+        padding-left: 16px;
+        .category__text{
+            color: $dark500;
+        }
+    }
+    .main__tabs.tabs-active{
+        display: flex;
+        width: 100%;
+        background: #fff;
+        margin-top: 0;
+        border: 1px solid $border;
+        border-radius: 0.25rem;
+    }
+    .main__block-tabs{
+        padding: 20px 0 20px 0;
+        border-bottom: 1px solid $dark300;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }
+    .tabs-active{
+        margin-bottom: 0px;
+        .tabs__item{
+            padding-left: 16px;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            text-align: left;
+            font-weight: 400;
+            color: $dark700;
+            background: $bgWhite;
+            position: relative;
+            margin-bottom: 5px;
+        }
+        .tabs-svg{
+            margin: 0 8px 0 13px;
+            path{
+                stroke: $darkBlue;
+            }
+        }
+    }
+    .aside .aside-dropdown__item{
+        display: block;
+    }
+    .main__tabs{
+        display: none;
+    }
+    .aside .aside__dropdown{
+        margin-top: 0;
+    }
+    .aside .aside__dropdown--active{
+        margin-top: 15px;
     }
 }

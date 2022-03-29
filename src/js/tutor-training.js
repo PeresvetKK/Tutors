@@ -1,3 +1,4 @@
+import { doc } from 'prettier';
 import '../scss/tutor-training.scss';
 $(() => {
 	function dropDownFunc() {
@@ -68,6 +69,49 @@ $(() => {
 			});
 		}
 	}
+	const accrodeon = () =>{ // делаем замыкание
+		// выбираем все li
+		const chItems = document.querySelectorAll('.characteristics__item');
+		
+		// forEach для перебора всех li
+		chItems.forEach( item =>{
+			const chButton = item.querySelector('.characteristics__title');
+			const chContent = item.querySelector('.characteristics__description');
+	
+			// при клике на кнопку контент появляется и закрывается. Плавность получается засчёт высоты блока(scrollHeight)
+			chButton.addEventListener('click', ()=>{
+				if (chContent.classList.contains('open')){
+					chContent.style.height = '';
+				}else{
+					chContent.style.height = chContent.scrollHeight + 'px';
+				}
+				chButton.classList.toggle('active');
+				chContent.classList.toggle('open');
+			});
+		});
+	};
+	function mainDropdown() {
+		let tabsDropdown = document.getElementsByClassName('form__box--select');
+		for (let i = 0; i < tabsDropdown.length; i++) {
+			tabsDropdown[i].addEventListener('click', function () {
+				let parent = this.parentElement;
+				let tabs = parent.querySelector('.main__tabs');
+				tabs.classList.toggle('tabs-active');
+
+				let items = parent.getElementsByClassName('tabs__item');
+				for (let i = 0; i < items.length; i++) {
+					items[i].addEventListener('click', function () {
+						let textDropdown = parent.querySelector('.category__text');
+						textDropdown.textContent = this.textContent;
+						let tabs = parent.querySelector('.main__tabs');
+						tabs.classList.remove('tabs-active');
+					});
+				}
+			});
+		}
+	}
+	mainDropdown();
+	accrodeon();
 	dropDownFunc();
 	burger();
 	editCourse();

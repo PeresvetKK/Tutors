@@ -68,6 +68,27 @@ $(() => {
 			});
 		}
 	}
+	function mainDropdown() {
+		let tabsDropdown = document.getElementsByClassName('form__box--select');
+		for (let i = 0; i < tabsDropdown.length; i++) {
+			tabsDropdown[i].addEventListener('click', function () {
+				let parent = this.parentElement;
+				let tabs = parent.querySelector('.main__tabs');
+				tabs.classList.toggle('tabs-active');
+
+				let items = parent.getElementsByClassName('tabs__item');
+				for (let i = 0; i < items.length; i++) {
+					items[i].addEventListener('click', function () {
+						let textDropdown = parent.querySelector('.category__text');
+						textDropdown.textContent = this.textContent;
+						let tabs = parent.querySelector('.main__tabs');
+						tabs.classList.remove('tabs-active');
+					});
+				}
+			});
+		}
+	}
+	mainDropdown();
 	dropDownFunc();
 	burger();
 	editCourse();
