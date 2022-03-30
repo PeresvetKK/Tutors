@@ -2941,6 +2941,15 @@ tr {
   background-color: #EDF8ED;
   border-radius: 0.25rem;
 }
+.other__table {
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow: hidden;
+  overflow-x: scroll;
+  border-radius: 0.25rem;
+}
 .my-lessons-table {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.4fr;
 }
@@ -3037,7 +3046,8 @@ tr {
 @media screen and (max-width: 1201px) {
   .schedule-block,
 .subjects-block,
-.course-block {
+.course-block,
+.other__table {
     width: 100%;
   }
 
@@ -3113,7 +3123,8 @@ tr {
 .subjects-table,
 .course-table,
 .salary-table,
-.courses-block__table {
+.courses-block__table,
+.other__table {
     display: none;
   }
 

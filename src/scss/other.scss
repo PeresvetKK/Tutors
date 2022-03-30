@@ -1,0 +1,31 @@
+@import "./rootStyles/main.scss";
+@import "./rootStyles/table.scss";
+
+.courses-block{
+    background: $bgWhite;
+    border-radius: 0.25rem;
+}
+.sorting{
+    display: none;
+}
+@media screen and(max-width: 475px){
+    .input__search{
+        width: 100%;
+    }
+    #sorting-search{
+        margin-bottom: 10px;
+    }
+    .table__dropdown::after{
+        top: 23%;
+    }
+    .courses-block{
+        background: transparent;
+    }
+    .sorting{
+        display: block;
+        width: 100%;
+        .form__input{
+            width: 100%;
+        }
+    }
+}
