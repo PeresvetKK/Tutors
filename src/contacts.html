@@ -181,7 +181,7 @@
                         <p class="menu__link menu__link--active">Для обучения</p>
                     </a></div>
                     <div class="menu__box menu__box--dropdown">
-                        <a href="#" class="menu__list menu__list--dropdown menu__list--active">
+                        <a href="#" class="menu__list menu__list--dropdown">
                             <svg class="stroke"  width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M7 20C7 18.3431 9.23858 17 12 17C14.7614 17 17 18.3431 17 20" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                 <path d="M18 14.2495C19.7659 14.7124 21 15.7697 21 16.9999" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -195,13 +195,13 @@
                                 <path d="M15.7071 11.7071C16.0976 11.3166 16.0976 10.6834 15.7071 10.2929C15.3166 9.90237 14.6834 9.90237 14.2929 10.2929L15.7071 11.7071ZM12 14L11.2929 14.7071C11.4804 14.8946 11.7348 15 12 15C12.2652 15 12.5196 14.8946 12.7071 14.7071L12 14ZM9.70711 10.2929C9.31658 9.90237 8.68342 9.90237 8.29289 10.2929C7.90237 10.6834 7.90237 11.3166 8.29289 11.7071L9.70711 10.2929ZM14.2929 10.2929L11.2929 13.2929L12.7071 14.7071L15.7071 11.7071L14.2929 10.2929ZM12.7071 13.2929L9.70711 10.2929L8.29289 11.7071L11.2929 14.7071L12.7071 13.2929Z" fill="#D6E2F5"/>
                             </svg>
                         </a>
-                        <div class="aside__dropdown aside__dropdown--active">
+                        <div class="aside__dropdown">
                             <a href="tutor-development.html" class="menu__link aside-dropdown__item">Повышение квалификации</a>
-                            <a href="tutor-training.html" class="menu__link aside-dropdown__item menu__list--active">Обучение</a>
+                            <a href="tutor-training.html" class="menu__link aside-dropdown__item">Обучение</a>
                         </div>
                     </div>
                     <div class="menu__box">
-                    <a href="other.html" class="menu__list">
+                    <a href="other.html" class="menu__list menu__list--active">
                         <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15.5358 4.92894L12.7074 2.10051C12.3169 1.70999 11.6837 1.70999 11.2932 2.10051L8.46477 4.92894C8.07424 5.31946 8.07424 5.95263 8.46477 6.34315L11.2932 9.17158C11.6837 9.5621 12.3169 9.5621 12.7074 9.17158L15.5358 6.34315C15.9264 5.95263 15.9264 5.31946 15.5358 4.92894Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                             <path d="M9.17158 11.293L6.34315 8.46452C5.95263 8.074 5.31946 8.074 4.92894 8.46452L2.10051 11.293C1.70999 11.6835 1.70999 12.3166 2.10051 12.7072L4.92894 15.5356C5.31946 15.9261 5.95263 15.9261 6.34315 15.5356L9.17158 12.7072C9.5621 12.3166 9.5621 11.6835 9.17158 11.293Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -222,329 +222,309 @@
         <main class="main">
             <div class="wrapper" id="my-lessons" class="training">
                 <section class="main__header">
-                    <h1 class="main__title title">Обучение</h1>
+                    <h1 class="main__title title">Контакты</h1>
                     <div class="main__block-tabs">
                         <div class="form__box form__box--select category-select">
                             <div class="category">
-                                <p class="category__text">Лекции</p>
+                                <p class="category__text">Филиалы</p>
                             </div>
                         </div>
                         <div class="tabs main__tabs">
                             <button class="tabs__item tabs__item--three tabs__item--active current" data-tab="1">
-                                Лекции
+                                Филиалы
                             </button>
                             <button class="tabs__item tabs__item--three past" data-tab="2">                              
-                                Семинары
+                                Онлайн отделения
                             </button>
                             <button class="tabs__item tabs__item--three past" data-tab="3">
-                                Вебинары
+                                Координаторы
                             </button>
                             <button class="tabs__item tabs__item--three past" data-tab="4">
-                                Инструкции
-                            </button>
-                            <button class="tabs__item tabs__item--three past" data-tab="5">
-                                Частые вопросы
+                                Методические цетры
                             </button>
                         </div>
                     </div>	
                 </section>
 
                 <section class="main__block tab-content active" data-tab="1">
-                    <div class="form__box search-box search-box--big">
-                        <svg class="search-box__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="#8F9498"></path>
-                            <mask id="mask0_448_89" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="white"></path>
-                            </mask>
-                            <g mask="url(#mask0_448_89)">
-                            </g>
-                        </svg>
-                        <input class="form__input input__search" type="search" placeholder="Быстрый поиск">
-                    </div>
-                    <div class="information-block">
-                        <p class="information-block__data">05.02.2020</p>
-                        <h2 class="information-block__title">Лекция мотивация</h2>
-                        <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
-                        <div class="information-block__functional information-block__readmore">
-                            <p class="information-block__read-more underline">Подробнее</p>
+                    <div class="plate">
+                        <div class="plate__item">
+                            <h3 class="plate__title">Отделение Англии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+420 (730) 701-601, +44 (7418) 350-868</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="information-block">
-                        <p class="information-block__data">05.02.2020</p>
-                        <h2 class="information-block__title">Лекция мотивация</h2>
-                        <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
-                        <div class="information-block__functional information-block__readmore">
-                            <p class="information-block__read-more underline">Подробнее</p>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал Ческе-Будейовице</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">775-013-093</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="pagination">
-                        <a href="#" class="pagination__item" id="prev-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="#555555"/>
-                            <mask id="mask0_759_66886" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66886)">
-                            </g>
-                        </svg></a>
-                        <a href="#" class="pagination__item">1</a>
-                        <a href="#" class="pagination__item pagination__item--active">2</a>
-                        <a href="#" class="pagination__item">3</a>
-                        <a href="#" class="pagination__item">...</a>
-                        <a href="#" class="pagination__item">12</a>
-                        <a href="#" class="pagination__item" id="next-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            <mask id="mask0_759_66889" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66889)">
-                            </g>
-                        </svg></a>
-                    </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал в Словакии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+421 (918) 405-241</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Отделение Англии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+420 (730) 701-601, +44 (7418) 350-868</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал Ческе-Будейовице</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">775-013-093</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал в Словакии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+421 (918) 405-241</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                    </div>    
                 </section>
                 <section class="main__block tab-content" data-tab="2">
-                    <div class="form__box search-box search-box--big">
-                        <svg class="search-box__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="#8F9498"></path>
-                            <mask id="mask0_448_89" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="white"></path>
-                            </mask>
-                            <g mask="url(#mask0_448_89)">
-                            </g>
-                        </svg>
-                        <input class="form__input input__search" type="search" placeholder="Быстрый поиск">
-                    </div>
-                    <div class="information-block">
-                        <p class="information-block__data">05.02.2020</p>
-                        <h2 class="information-block__title">Лекция мотивация</h2>
-                        <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
-                        <div class="information-block__functional information-block__readmore">
-                            <p class="information-block__read-more underline">Подробнее</p>
+                    <div class="plate">
+                        <div class="plate__item">
+                            <h3 class="plate__title">Отделение Англии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+420 (730) 701-601, +44 (7418) 350-868</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="information-block">
-                        <p class="information-block__data">05.02.2020</p>
-                        <h2 class="information-block__title">Лекция мотивация</h2>
-                        <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
-                        <div class="information-block__functional information-block__readmore">
-                            <p class="information-block__read-more underline">Подробнее</p>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал Ческе-Будейовице</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">775-013-093</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="pagination">
-                        <a href="#" class="pagination__item" id="prev-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="#555555"/>
-                            <mask id="mask0_759_66886" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66886)">
-                            </g>
-                        </svg></a>
-                        <a href="#" class="pagination__item">1</a>
-                        <a href="#" class="pagination__item pagination__item--active">2</a>
-                        <a href="#" class="pagination__item">3</a>
-                        <a href="#" class="pagination__item">...</a>
-                        <a href="#" class="pagination__item">12</a>
-                        <a href="#" class="pagination__item" id="next-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            <mask id="mask0_759_66889" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66889)">
-                            </g>
-                        </svg></a>
-                    </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал в Словакии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+421 (918) 405-241</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Отделение Англии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+420 (730) 701-601, +44 (7418) 350-868</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал Ческе-Будейовице</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">775-013-093</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал в Словакии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+421 (918) 405-241</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                    </div> 
                 </section>
                 <section class="main__block tab-content" data-tab="3">
-                    <div class="form__box search-box search-box--big">
-                        <svg class="search-box__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="#8F9498"></path>
-                            <mask id="mask0_448_89" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="white"></path>
-                            </mask>
-                            <g mask="url(#mask0_448_89)">
-                            </g>
-                        </svg>
-                        <input class="form__input input__search" type="search" placeholder="Быстрый поиск">
-                    </div>
-                    <div class="information-block">
-                        <h2 class="information-block__title">Как правильно проводить урок Литературы</h2>
-                        <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
-                        <div class="information-block__functional information-block__place block-place">
-                            <div class="block-place__item">
-                                <p class="block-place__title infoblock__title">Место:</p>
-                                <a href="#" class="block-place__text underline">kabinetpopulo.cz/</a>
+                    <div class="plate">
+                        <div class="plate__item">
+                            <h3 class="plate__title">Отделение Англии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+420 (730) 701-601, +44 (7418) 350-868</a>
                             </div>
-                            <div class="block-place__item">
-                                <p class="block-place__title infoblock__title">Время:</p>
-                                <p class="block-place__text">17.00 - 19.30</p>
-                            </div>
-                            <div class="block-place__item">
-                                <p class="block-place__title infoblock__title">Дата проведения:</p>
-                                <p class="block-place__text">22. 03. 2022</p>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="information-block">
-                        <h2 class="information-block__title">Как правильно проводить урок Литературы</h2>
-                        <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
-                        <div class="information-block__functional information-block__place block-place">
-                            <div class="block-place__item">
-                                <p class="block-place__title infoblock__title">Место:</p>
-                                <a href="#" class="block-place__text underline">kabinetpopulo.cz/</a>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал Ческе-Будейовице</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">775-013-093</a>
                             </div>
-                            <div class="block-place__item">
-                                <p class="block-place__title infoblock__title">Время:</p>
-                                <p class="block-place__text">17.00 - 19.30</p>
-                            </div>
-                            <div class="block-place__item">
-                                <p class="block-place__title infoblock__title">Дата проведения:</p>
-                                <p class="block-place__text">22. 03. 2022</p>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="pagination">
-                        <a href="#" class="pagination__item" id="prev-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="#555555"/>
-                            <mask id="mask0_759_66886" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66886)">
-                            </g>
-                        </svg></a>
-                        <a href="#" class="pagination__item">1</a>
-                        <a href="#" class="pagination__item pagination__item--active">2</a>
-                        <a href="#" class="pagination__item">3</a>
-                        <a href="#" class="pagination__item">...</a>
-                        <a href="#" class="pagination__item">12</a>
-                        <a href="#" class="pagination__item" id="next-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            <mask id="mask0_759_66889" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66889)">
-                            </g>
-                        </svg></a>
-                    </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал в Словакии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+421 (918) 405-241</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Отделение Англии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+420 (730) 701-601, +44 (7418) 350-868</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал Ческе-Будейовице</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">775-013-093</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал в Словакии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+421 (918) 405-241</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                    </div> 
                 </section>
                 <section class="main__block tab-content" data-tab="4">
-                    <div class="form__box search-box search-box--big">
-                        <svg class="search-box__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="#8F9498"></path>
-                            <mask id="mask0_448_89" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="white"></path>
-                            </mask>
-                            <g mask="url(#mask0_448_89)">
-                            </g>
-                        </svg>
-                        <input class="form__input input__search" type="search" placeholder="Быстрый поиск">
-                    </div>
-                    <div class="information-block">
-                        <p class="information-block__data">05.02.2020</p>
-                        <h2 class="information-block__title">Лекция мотивация</h2>
-                        <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
-                        <div class="information-block__functional information-block__readmore">
-                            <p class="information-block__read-more underline">Подробнее</p>
+                    <div class="plate">
+                        <div class="plate__item">
+                            <h3 class="plate__title">Отделение Англии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+420 (730) 701-601, +44 (7418) 350-868</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="information-block">
-                        <p class="information-block__data">05.02.2020</p>
-                        <h2 class="information-block__title">Лекция мотивация</h2>
-                        <p class="information-block__text">Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций...</p>
-                        <div class="information-block__functional information-block__readmore">
-                            <p class="information-block__read-more underline">Подробнее</p>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал Ческе-Будейовице</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">775-013-093</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="pagination">
-                        <a href="#" class="pagination__item" id="prev-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="#555555"/>
-                            <mask id="mask0_759_66886" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66886)">
-                            </g>
-                        </svg></a>
-                        <a href="#" class="pagination__item">1</a>
-                        <a href="#" class="pagination__item pagination__item--active">2</a>
-                        <a href="#" class="pagination__item">3</a>
-                        <a href="#" class="pagination__item">...</a>
-                        <a href="#" class="pagination__item">12</a>
-                        <a href="#" class="pagination__item" id="next-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            <mask id="mask0_759_66889" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66889)">
-                            </g>
-                        </svg></a>
-                    </div>
-                </section>
-                <section class="main__block tab-content" data-tab="5">
-                    <div class="faq-box">
-                        <ul class="characteristics__list">
-                            <li class="characteristics__item">
-                                <button class="characteristics__title" type="button"><span>Как правильно проводить урок Литературы</span></button>
-                                <div class="characteristics__description">
-                                    <ul class="characteristics__list-description">
-                                        <li class="characteristics__item-description">
-                                            <p>Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций. Без него не только обучение ваших студентов не может проходить </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>    
-                            <li class="characteristics__item">
-                                <button class="characteristics__title" type="button"><span>Как правильно проводить урок Литературы</span></button>
-                                <div class="characteristics__description">
-                                    <ul class="characteristics__list-description">
-                                        <li class="characteristics__item-description">
-                                            <p>Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций. Без него не только обучение ваших студентов не может проходить </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>    
-                            <li class="characteristics__item">
-                                <button class="characteristics__title" type="button"><span>Как правильно проводить урок Литературы</span></button>
-                                <div class="characteristics__description">
-                                    <ul class="characteristics__list-description">
-                                        <li class="characteristics__item-description">
-                                            <p>Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций. Без него не только обучение ваших студентов не может проходить </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>    
-                            <li class="characteristics__item">
-                                <button class="characteristics__title" type="button"><span>Как правильно проводить урок Литературы</span></button>
-                                <div class="characteristics__description">
-                                    <ul class="characteristics__list-description">
-                                        <li class="characteristics__item-description">
-                                            <p>Уважаемые преподаватели, мотивация, безусловно, является одним из главных факторов успешного чтения лекций. Без него не только обучение ваших студентов не может проходить </p>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>    
-                        </ul>
-                    </div>
-                </section>
-            </div>
-            <div class="wrapper hide" id="my-lessons--edit">
-                <section class="main__block active">
-                    <div class="back-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M19 12.8C19.4418 12.8 19.8 12.4418 19.8 12C19.8 11.5582 19.4418 11.2 19 11.2V12.8ZM5 11.2C4.55817 11.2 4.2 11.5582 4.2 12C4.2 12.4418 4.55817 12.8 5 12.8L5 11.2ZM19 11.2L5 11.2L5 12.8L19 12.8V11.2Z" fill="#84B5DF"/>
-                            <path d="M10.4343 18.5657C10.7467 18.8781 11.2533 18.8781 11.5657 18.5657C11.8781 18.2533 11.8781 17.7467 11.5657 17.4343L10.4343 18.5657ZM5 12L4.43431 11.4343C4.28429 11.5843 4.2 11.7878 4.2 12C4.2 12.2122 4.28429 12.4157 4.43431 12.5657L5 12ZM11.5657 6.56569C11.8781 6.25327 11.8781 5.74673 11.5657 5.43431C11.2533 5.1219 10.7467 5.1219 10.4343 5.43431L11.5657 6.56569ZM11.5657 17.4343L5.56569 11.4343L4.43431 12.5657L10.4343 18.5657L11.5657 17.4343ZM5.56569 12.5657L11.5657 6.56569L10.4343 5.43431L4.43431 11.4343L5.56569 12.5657Z" fill="#84B5DF"/>
-                        </svg>                            
-                    </div>
-                    <div class="modal-message training__modal">
-                        <p class="information-block__data">05.02.2020</p>
-                        <h2 class="information-block__title">Тренинг лектора школы Папуло</h2>
-                        <h3 class="modal-message__title">Уважаемые лекторы!</h3>
-                        <p class="modal-message__text">Мотивация, безусловно, является одним из основных факторов успешного чтения лекций.</p>
-                        <p class="modal-message__text">Без него не только обучение ваших студентов не может проходить гладко и успешно, но и вы не можете выполнять свою работу без него. По этой причине мы затронули эту тему в следующей лекции.</p>
-                        <p class="modal-message__text">Не забывайте, что вы найдете эту лекцию (как и все остальные) в файловом менеджере <span class="underline">прямо здесь</span>, в Кабинете. </p>
-                        <div class="modal-message__comment">
-                            <p class="modal-message__comtext">Мы верим, что большинству из вас эта тема будет интересна и будет полезна. Мы будем рады, если вы обратитесь в наш Методологический центр, если у вас есть что сказать по этой или любой другой теме.</p>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал в Словакии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+421 (918) 405-241</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
                         </div>
-                        <h4 class="modal-message__tuters--text">Повеселись! :)</h4>
-                        <p class="modal-message__school--text">Команда школы Популо</p>
-                    </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Отделение Англии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+420 (730) 701-601, +44 (7418) 350-868</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал Ческе-Будейовице</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">775-013-093</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                        <div class="plate__item">
+                            <h3 class="plate__title">Филиал в Словакии</h3>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Телефон:</p>
+                                <a href="#" class="plate__text">+421 (918) 405-241</a>
+                            </div>
+                            <div class="plate__text-box">
+                                <p class="plate__sub">Почта:</p>
+                                <a href="#" class="plate__href">info@schoolpopulo.co.uk</a>
+                            </div>
+                        </div>
+                    </div> 
                 </section>
             </div>
         </main>

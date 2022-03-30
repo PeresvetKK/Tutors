@@ -151,12 +151,27 @@
     margin-bottom: 20px;
   }
 }
-.progressbar {
+progress {
   width: 100%;
   height: 4px;
-  background: linear-gradient(90deg, #30d937 0%, #eff4fb 72.71%);
+  background: $bgBlue;
+  border: 0;
   border-radius: 3px;
   margin-bottom: 30px;
+}
+ 
+progress::-webkit-progress-bar {
+  background: $bgBlue;
+  color:  $bgBlue;
+}
+progress::-webkit-progress-value {
+  background: $green;
+  color: $green;
+  border-radius: 0 3px 3px 0;
+}
+progress::-moz-progress-bar {
+  background:  $bgBlue;
+  color:  $bgBlue;
 }
 .infoblock {
   display: flex;

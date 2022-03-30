@@ -165,6 +165,7 @@ tr {
     line-height: 17px;
     text-decoration-line: underline;
     color: $blue;
+    cursor: pointer;
   }
   &__lesson {
     font-size: 12px;
@@ -285,6 +286,13 @@ tr {
   }
   &__arrows {
     cursor: pointer;
+  }
+  &__dropdown--item{
+    margin-bottom: 1px;
+    padding-bottom: 1px;
+    &:hover{
+      background: $bgBlue;
+    }
   }
 }
 .table-btn--mobile {

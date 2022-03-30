@@ -1,1 +1,47 @@
 @import "./rootStyles/main.scss";
+
+.plate{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    &__item{
+        background: $bgWhite;
+        border: 1px solid $border;
+        border-radius: 0.25rem;
+        padding: 20px;
+    }
+    &__title{
+        padding-bottom: 15px;
+        border-bottom: 1px solid $border;
+    }
+    &__text-box{
+        margin-top: 15px;
+    }
+    &__sub{
+        color: $dark500;
+        margin-bottom: 4px;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    &__text{
+        font-weight: 700;
+        color: $dark900;
+    }
+    &__href{
+        font-weight: 700;
+        color: $blue;
+        padding-bottom: 2px;
+        border-bottom: 1px solid $blue;
+    }
+}
+
+@media screen and(max-width: 1201px){
+    .plate{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and(max-width: 475px){
+    .plate{
+        grid-template-columns: 1fr;
+    }
+}

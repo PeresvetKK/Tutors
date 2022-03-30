@@ -1,9 +1,4 @@
 import '../scss/index.scss';
-
-import header from '../components/header.html';
-import aside from '../components/aside.html';
-
-
 $(() => {
 	function show_hide_password(target) {
 		var input = document.getElementById('password-input');
@@ -115,8 +110,23 @@ $(() => {
 		containerDropDown.addEventListener('click', (event) => {
 			if (event.target.classList.contains('row-counter__select') || event.target.classList.contains('row-counter__icon')) {
 				let parent = event.target.parentElement;
+				
 				let dropDown = parent.querySelector('.row-counter__dropdown');
 				dropDown.classList.toggle('active');
+				
+				let text = parent.querySelector('.row-counter__select');
+				let item = parent.getElementsByClassName('row-counter__dropdown--item');
+				for (let i = 0; i < item.length; i++){
+					item[i].addEventListener('click', function(){
+						text.textContent = this.textContent;
+						dropDown.classList.remove('active');
+					});
+				}
+			}else{
+				let drop = document.getElementsByClassName('row-counter__dropdown');
+				for(let i = 0; i < drop.length; i++){
+					drop[i].classList.remove('active');
+				}
 			}
 		});
 	}
@@ -151,6 +161,19 @@ $(() => {
 				}
 			});
 		}
+	}
+	let btn = document.getElementsByClassName('btn__add--M');
+	for(let i = 0; i < btn.length; i++){
+		btn[i].addEventListener('click', function(){
+			let mainbody = document.querySelector('.scroll');
+			// mainbody.classList.toggle('fixed-scroll');
+			let modal = document.querySelector('.modal-add');
+			let close = modal.querySelector('.modal__inner-svg');
+			modal.classList.toggle('active__modal');
+			close.addEventListener('click', function(){
+				modal.classList.remove('active__modal');
+			});
+		});
 	}
 	mainDropdown();
 	dropDownFunc();

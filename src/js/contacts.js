@@ -1,5 +1,5 @@
 import { doc } from 'prettier';
-import '../scss/other.scss';
+import '../scss/contacts.scss';
 $(() => {
 	function dropDownFunc() {
 		let containerDropDown = document.querySelector('body');

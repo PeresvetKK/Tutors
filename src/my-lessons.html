@@ -591,6 +591,9 @@
                                 <div class="row-counter__dropdown hide">
                                     <p class="row-counter__dropdown--item">10</p>
                                     <p class="row-counter__dropdown--item">20</p>
+                                    <p class="row-counter__dropdown--item">30</p>
+                                    <p class="row-counter__dropdown--item">40</p>
+                                    <p class="row-counter__dropdown--item">50</p>
                                 </div>
                             </div>
                             <p class="row-counter__pages">1-8 из 1240</p>
@@ -982,6 +985,9 @@
                                 <div class="row-counter__dropdown hide">
                                     <p class="row-counter__dropdown--item">10</p>
                                     <p class="row-counter__dropdown--item">20</p>
+                                    <p class="row-counter__dropdown--item">30</p>
+                                    <p class="row-counter__dropdown--item">40</p>
+                                    <p class="row-counter__dropdown--item">50</p>
                                 </div>
                             </div>
                             <p class="row-counter__pages">1-8 из 1240</p>
@@ -1048,7 +1054,7 @@
                             <h2 class="lessons-edit__title">Общая информация</h2>
                             <p class="lessons-edit__subtitle">Уроков пройдено:</p>
                             <h3 class="lessons-edit__score">30 из 80</h3>
-                            <div class="progressbar"></div>
+                            <progress value="30" max="100" class="progressbar"></progress>
                             <div class="salary-information__box">
                                 <div class="salary-information__item">
                                     <p class="salary-information__item-title">Ученик:</p>
@@ -1293,16 +1299,29 @@
                                             <path d="M8 2V4" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                         </svg>
                                     </div>
-                                    <div class="form__box form__box--selectSVG">
-                                        <select class="form__input">
-                                            <option value="">Время</option>
-                                            <option value="dog">Статус</option>
-                                            <option value="cat">Статус</option>
-                                        </select>
-                                        <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 21C15.9706 21 20 16.9706 20 12C20 7.02944 15.9706 3 11 3C6.02944 3 2 7.02944 2 12C2 16.9706 6.02944 21 11 21Z" stroke="#8F9498" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
-                                            <path d="M11 7V12H16" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                        </svg>
+                                    <div class="form__box select-data--box">
+                                        <div class="select-data">
+                                            <select class="form__input">
+                                                <option value="">Начало</option>
+                                                <option value="dog">Статус</option>
+                                                <option value="cat">Статус</option>
+                                            </select>
+                                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11 21C15.9706 21 20 16.9706 20 12C20 7.02944 15.9706 3 11 3C6.02944 3 2 7.02944 2 12C2 16.9706 6.02944 21 11 21Z" stroke="#8F9498" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M11 7V12H16" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="select-data">
+                                            <select class="form__input">
+                                                <option value="">Конец</option>
+                                                <option value="dog">Статус</option>
+                                                <option value="cat">Статус</option>
+                                            </select>
+                                            <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11 21C15.9706 21 20 16.9706 20 12C20 7.02944 15.9706 3 11 3C6.02944 3 2 7.02944 2 12C2 16.9706 6.02944 21 11 21Z" stroke="#8F9498" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M11 7V12H16" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
                                     </div>
                                     <div class="form__box form__box--select">
                                         <select class="form__input">
