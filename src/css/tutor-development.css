@@ -340,6 +340,11 @@ button {
 .profile-dropdow__item:hover {
   background-color: #EBF6FF;
 }
+.btn-light {
+  color: #84B5DF;
+  background: #fff;
+  border: 1px solid #84B5DF;
+}
 .modal {
   position: absolute;
   width: 100%;
@@ -1459,9 +1464,5 @@ select {
 
   .aside .aside__dropdown {
     margin-top: 0;
-  }
-
-  .aside .aside__dropdown--active {
-    margin-top: 15px;
   }
 }

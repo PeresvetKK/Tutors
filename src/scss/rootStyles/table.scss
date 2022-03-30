@@ -234,7 +234,15 @@ tr {
 .my-lessons-table {
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.4fr;
 }
-
+.lectures__table{
+  display: grid;
+  border-collapse: collapse;
+  min-width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  overflow: hidden;
+  overflow-x: scroll;
+  border-radius: 0.25rem;
+}
 .table-select {
   display: none;
 }
@@ -316,12 +324,20 @@ tr {
     font-size: 14px;
   }
 }
-
+.table-swap{
+  margin-left: 10px;
+  &:hover{
+    path{
+      fill: $darkBlue;
+    }
+  }
+}
 @media screen and(max-width: 1201px) {
   .schedule-block,
   .subjects-block,
   .course-block, 
-  .other__table {
+  .other__table,
+  .lectures__table {
     width: 100%;
   }
   .schedule-table {
@@ -445,12 +461,14 @@ tr {
   .course-table,
   .salary-table,
   .courses-block__table,
-  .other__table {
+  .other__table,
+  .lectures__table {
     display: none;
   }
   .schedule-block,
   .subjects-block,
-  .course-block {
+  .course-block,
+  .lectures__table {
     width: 100%;
     background: transparent;
     border: none;
@@ -459,6 +477,9 @@ tr {
     margin-bottom: 20px;
     background: $bgWhite;
     border-radius: 0.25rem;
+  }
+  .td{
+    white-space: normal;
   }
   .table-functional {
     display: none;
@@ -478,11 +499,11 @@ tr {
   }
   .tabel__cell {
     border-bottom: none;
-    width: 48%;
+    width: 50%;
     flex-direction: column;
     align-items: flex-start;
     height: auto;
-    padding: 0 20px 0 20px;
+    padding: 0 16px 0 16px;
     margin-top: 15px;
     .table-mobile__text {
       color: $dark500;
@@ -520,5 +541,8 @@ tr {
   }
   .tabple__mobile-subject{
     width: 100%;
+  }
+  .mobile-long__cell{
+    width: 72%;
   }
 }
