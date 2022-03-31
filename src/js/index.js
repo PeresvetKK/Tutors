@@ -175,6 +175,18 @@ $(() => {
 			});
 		});
 	}
+	function sortTable() {
+		let tableSort = document.getElementsByClassName('table-swap');
+		for (let i = 0; i < tableSort.length; i++) {
+			tableSort[i].addEventListener('click', function () {
+				for (let i = 0; i < tableSort.length; i++) {
+					tableSort[i].classList.remove('active-table--sort');
+				}
+				this.classList.toggle('active-table--sort');
+			});
+		}
+	}
+	sortTable();
 	mainDropdown();
 	dropDownFunc();
 	burger();

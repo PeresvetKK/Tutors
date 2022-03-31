@@ -1205,6 +1205,9 @@ select {
       -ms-flex-align: center;
           align-items: center;
 }
+.active-table--sort path {
+  fill: #84B5DF;
+}
 .row-counter__dropdown {
   position: absolute;
   border: 1px solid #E8E8E8;
@@ -3176,6 +3179,9 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.active-table--sort path {
+  fill: #84B5DF;
 }
 .row-counter__dropdown {
   position: absolute;

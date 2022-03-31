@@ -1,0 +1,55 @@
+@import './rootStyles/main.scss';
+
+.calendar{
+    width: 100%;
+    background: $bgWhite;
+    border: 1px solid $border;
+    border-radius: 0.25rem;
+    padding: 30px 20px;
+}
+.calendar-header{
+    &__box{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-bottom: 20px;
+        border-bottom: 1px solid $border;
+    }
+    &__title, &__navigation{
+        margin-bottom: 10px;
+    }
+    &__navigation{
+        width: 90px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__arrow{
+        width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background: $bgWhite;
+        border: 1px solid $border;
+        cursor: pointer;
+        &:hover{
+            background: $darkBlue;
+            border: 1px solid $darkBlue;
+            svg{
+                path{
+                    fill: $bgWhite;
+                }
+            }
+        }
+    }
+    &__selectbox{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .form__box--select{
+        margin: 15px 0 0 0;
+    }
+}

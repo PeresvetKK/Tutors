@@ -1469,47 +1469,74 @@ select {
     margin-top: 0;
   }
 }
-.plate {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
-}
-.plate__item {
+.calendar {
+  width: 100%;
   background: #fff;
   border: 1px solid #E8E8E8;
   border-radius: 0.25rem;
-  padding: 20px;
+  padding: 30px 20px;
 }
-.plate__title {
-  padding-bottom: 15px;
+.calendar-header__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 20px;
   border-bottom: 1px solid #E8E8E8;
 }
-.plate__text-box {
-  margin-top: 15px;
+.calendar-header__title, .calendar-header__navigation {
+  margin-bottom: 10px;
 }
-.plate__sub {
-  color: #8F9498;
-  margin-bottom: 4px;
-  font-size: 14px;
-  line-height: 24px;
+.calendar-header__navigation {
+  width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
-.plate__text {
-  font-weight: 700;
-  color: #555555;
+.calendar-header__arrow {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  cursor: pointer;
 }
-.plate__href {
-  font-weight: 700;
-  color: #38AAFF;
-  padding-bottom: 2px;
-  border-bottom: 1px solid #38AAFF;
+.calendar-header__arrow:hover {
+  background: #84B5DF;
+  border: 1px solid #84B5DF;
 }
-@media screen and (max-width: 1201px) {
-  .plate {
-    grid-template-columns: 1fr 1fr;
-  }
+.calendar-header__arrow:hover svg path {
+  fill: #fff;
 }
-@media screen and (max-width: 475px) {
-  .plate {
-    grid-template-columns: 1fr;
-  }
+.calendar-header__selectbox {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.calendar-header .form__box--select {
+  margin: 15px 0 0 0;
 }

@@ -1053,6 +1053,11 @@ select{
     justify-content: center;
     align-items: center;
 }
+.active-table--sort{
+    path{
+        fill: $darkBlue;
+    }
+}
 .row-counter__dropdown{
     position: absolute;
     border: 1px solid $border;
