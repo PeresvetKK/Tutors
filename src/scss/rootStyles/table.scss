@@ -14,21 +14,7 @@
   display: table-row;
   position: relative;
 }
-.edit-block{
-  &::after{
-    content: '';
-    position: absolute;
-    background-image: url("/img/bread.svg");
-    width: 24px;
-    height: 24px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    padding: 16px;
-    background: $bgWhite;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
-  }
-}
+
 .th {
   position: sticky;
   background: $bgWhite;

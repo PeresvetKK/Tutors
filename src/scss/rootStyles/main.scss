@@ -294,6 +294,7 @@ button {
     border: 1px solid $border;
     border-radius: 0.25rem;
     color: $dark900;
+    z-index: 5;
 }
 .profile-dropdow__inner{
     width: 100%;
@@ -1087,6 +1088,42 @@ select{
     background: $darkBlue;
     border: 0.25rem;
 }
+.edit-block{
+    // &::after{
+    //   content: '';
+    //   position: fixed;
+    //   background: $bgWhite;
+    //   right: 37px;
+    //   cursor: pointer;
+    //   background-image: url("/img/More_Vertical.png");
+    //   width: 24px;
+    //   height: 24px;
+    //   background-repeat: no-repeat;
+    //   background-position: center center;
+    //   padding: 16px;
+    //   box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
+    //   border-bottom: 1px solid $border;
+    // }
+
+  }
+  .edit-block-cell{
+    position: sticky;
+    background: $bgWhite;
+    right: 0;
+    cursor: pointer;
+    width: 56px;
+    height: 64px;
+    padding: 16px;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid $border;
+  }
+  .cell--inner{
+    margin-right: 56px;
+  }
+//   .table-inner{
+//     margin-right: 56px;
+//   }
+
 @media (max-width: 1201px) {
     .tabs{
         width: 100%;
