@@ -1245,6 +1245,7 @@ select {
   position: sticky;
   background: #fff;
   right: 0;
+  margin-left: -51px;
   cursor: pointer;
   width: 56px;
   height: 64px;
@@ -3221,6 +3222,7 @@ select {
   position: sticky;
   background: #fff;
   right: 0;
+  margin-left: -51px;
   cursor: pointer;
   width: 56px;
   height: 64px;
