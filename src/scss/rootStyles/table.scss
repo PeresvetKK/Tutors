@@ -1,3 +1,8 @@
+.table-container{
+  width: 100%;
+  overflow: hidden;
+  overflow-x: auto;
+}
 .table {
   display: table;
   width: 100%;
@@ -7,9 +12,24 @@
 }
 .tr {
   display: table-row;
+  position: relative;
+}
+.edit-block{
+  &::after{
+    content: '';
+    position: absolute;
+    background-image: url("/img/bread.svg");
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 16px;
+    background: $bgWhite;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
+  }
 }
 .th {
-  display: table-cell;
   position: sticky;
   background: $bgWhite;
   text-align: left;
@@ -24,32 +44,34 @@
   display: table-row-group;
 }
 .td {
-  display: table-cell;
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
   color: $dark900;
 }
-.thead,
-.tbody,
-.tr {
-  display: contents;
-}
 .th,
 .td {
-  display: flex;
-  align-items: center;
-  padding: 17px 0 17px 20px;
+  display: table-cell;
+  padding: 17px 17px 17px 20px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   height: 56px;
   border-bottom: 1px solid $border;
 }
-.tabel__cell:last-child {
-  position: relative;
+
+.table-flex{
+  display: flex;
+  align-items: center;
 }
+.table-bread{
+  position: absolute;
+  top: 25%;
+  right: 16px;
+  padding: 0;
+}
+
 .edit-icon {
   margin-left: 10px;
   width: 24px;
@@ -59,49 +81,23 @@
   right: 16px;
   cursor: pointer;
 }
+
 .checked {
-  .tabel__cell {
-    background: $bgGreen;
-  }
+  color: $green;
 }
 .nochecked {
-  .tabel__cell {
-    background: $bgOrange;
-  }
+  color: $orange;
 }
 .disabledCheck {
-  .tabel__cell {
-    background: $bgGray;
-  }
-  .td{
-    color: $gray;
-  }
+  color: $gray;
+}
+.disable-table{
   .td-time{
     text-decoration: line-through;
+    color: #9FA3A7;
   }
 }
-.checked {
-  background: $bgGreen;
-  .course-table__status {
-    color: $green;
-  }
-}
-.nochecked {
-  .nochecked-cell {
-    background: $bgOrange;
-  }
-  .course-table__status {
-    color: $orange;
-  }
-}
-.disabledCheck {
-  .disabledCheck-cell {
-    background: $bgGray;
-  }
-  .course-table__status {
-    color: $gray;
-  }
-}
+
 tr {
   position: relative;
 }
@@ -115,51 +111,13 @@ tr {
   right: 0;
   top: 69px;
 }
-.schedule-table {
-  display: grid;
-  border-collapse: collapse;
-  min-width: 100%;
-  grid-template-columns:
-    minmax(168px, 1fr)
-    minmax(282px, 1.67fr)
-    minmax(177px, 1.67fr)
-    minmax(177px, 1.67fr)
-    minmax(282px, 3.33fr)
-    minmax(282px, 1.67fr)
-    minmax(282px, 3.33fr);
-  overflow: hidden;
-  overflow-x: scroll;
-  border-radius: 0.25rem;
+.table{
+  display: table;
 }
 .schedule-table--mobile {
   display: none;
 }
-.subjects-table {
-  display: grid;
-  border-collapse: collapse;
-  min-width: 100%;
-  grid-template-columns:
-    minmax(376px, 1fr)
-    minmax(376px, 1.67fr)
-    minmax(356px, 1.67fr);
-  overflow: hidden;
-  border-radius: 0.25rem;
-}
 .course-table {
-  display: grid;
-  border-collapse: collapse;
-  min-width: 100%;
-  grid-template-columns:
-    minmax(168px, 1fr)
-    minmax(188px, 1.67fr)
-    minmax(188px, 1.67fr)
-    minmax(189px, 1.67fr)
-    minmax(187px, 3.33fr)
-    minmax(188px, 1.67fr)
-    minmax(188px, 3.33fr);
-  overflow: hidden;
-  overflow-x: scroll;
-  border-radius: 0.25rem;
   &__id {
     font-size: 14px;
     line-height: 17px;
@@ -168,6 +126,7 @@ tr {
     cursor: pointer;
   }
   &__lesson {
+    display: inline-block;
     font-size: 12px;
     line-height: 14px;
     color: $green;
@@ -176,37 +135,8 @@ tr {
     border-radius: 0.25rem;
   }
 }
-.salary-table {
-  display: grid;
-  border-collapse: collapse;
-  min-width: 100%;
-  grid-template-columns:
-    minmax(149px, 1fr)
-    minmax(190px, 1.67fr)
-    minmax(149px, 1.67fr)
-    minmax(148px, 1.67fr)
-    minmax(148px, 3.33fr)
-    minmax(127px, 1.67fr)
-    minmax(148px, 3.33fr);
-  overflow: hidden;
-  overflow-x: scroll;
-  border-radius: 0.25rem;
-}
+
 .courses-block__table{
-    display: grid;
-    border-collapse: collapse;
-    min-width: 100%;
-    grid-template-columns: minmax(168px, 1fr)
-    minmax(188px, 1.67fr)
-    minmax(188px, 1.67fr)
-    minmax(189px, 1.67fr)
-    minmax(187px, 3.33fr)
-    minmax(189px, 1.67fr)
-    minmax(189px, 1.67fr);
-    justify-items: stretch;
-    overflow: hidden;
-    overflow-x: scroll;
-    border-radius: 0.25rem;
     &__id {
         font-size: 14px;
         line-height: 17px;
@@ -222,27 +152,7 @@ tr {
         border-radius: 0.25rem;
     }
 }
-.other__table{
-  display: grid;
-  border-collapse: collapse;
-  min-width: 100%;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  overflow: hidden;
-  overflow-x: scroll;
-  border-radius: 0.25rem;
-}
-.my-lessons-table {
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1.4fr;
-}
-.lectures__table{
-  display: grid;
-  border-collapse: collapse;
-  min-width: 100%;
-  grid-template-columns: repeat(6, 1fr);
-  overflow: hidden;
-  overflow-x: scroll;
-  border-radius: 0.25rem;
-}
+
 .table-select {
   display: none;
 }
@@ -340,108 +250,20 @@ tr {
   .lectures__table {
     width: 100%;
   }
-  .schedule-table {
-    grid-template-columns:
-      minmax(201px, 1fr)
-      minmax(168px, 1.67fr)
-      minmax(148px, 1.67fr)
-      minmax(148px, 1.67fr)
-      minmax(202px, 3.33fr)
-      minmax(202px, 1.67fr)
-      minmax(202px, 3.33fr);
-  }
-  .subjects-table {
-    grid-template-columns:
-      minmax(276px, 1fr)
-      minmax(297px, 1.67fr)
-      minmax(295px, 1.67fr);
-  }
-  .course-table {
-    grid-template-columns:
-      minmax(128px, 1fr)
-      minmax(146px, 1.67fr)
-      minmax(146px, 1.67fr)
-      minmax(146px, 1.67fr)
-      minmax(146px, 3.33fr)
-      minmax(166px, 1.67fr)
-      minmax(148px, 3.33fr);
-  }
-  .salary-table {
-    grid-template-columns:
-      minmax(149px, 1fr)
-      minmax(149px, 1.67fr)
-      minmax(149px, 1.67fr)
-      minmax(148px, 1.67fr)
-      minmax(148px, 3.33fr)
-      minmax(127px, 1.67fr)
-      minmax(148px, 3.33fr);
-  }
-  .courses-block__table {
-    grid-template-columns:
-      minmax(149px, 1fr)
-      minmax(129px, 1.67fr)
-      minmax(166px, 1.67fr)
-      minmax(166px, 1.67fr)
-      minmax(127px, 3.33fr)
-      minmax(149px, 1.67fr)
-      minmax(149px, 3.33fr);
-  }
+  
 }
 @media screen and(max-width: 834px) {
-  .schedule-table {
-    grid-template-columns:
-      minmax(140px, 1fr)
-      minmax(168px, 1.67fr)
-      minmax(148px, 1.67fr)
-      minmax(134px, 1.67fr)
-      minmax(205px, 3.33fr)
-      minmax(205px, 1.67fr)
-      minmax(205px, 3.33fr);
-  }
-  .subjects-table {
-    grid-template-columns:
-      minmax(285px, 1fr)
-      minmax(223px, 1.67fr)
-      minmax(287px, 1.67fr);
-  }
-  .course-table {
-    grid-template-columns:
-      minmax(128px, 1fr)
-      minmax(130px, 1.67fr)
-      minmax(137px, 1.67fr)
-      minmax(104px, 1.67fr)
-      minmax(120px, 3.33fr)
-      minmax(147px, 1.67fr)
-      minmax(147px, 3.33fr);
-  }
-  .salary-table {
-    grid-template-columns:
-      minmax(149px, 1fr)
-      minmax(148px, 1.67fr)
-      minmax(127px, 1.67fr)
-      minmax(110px, 1.67fr)
-      minmax(110px, 3.33fr)
-      minmax(127px, 1.67fr)
-      minmax(148px, 3.33fr);
-  }
-  .courses-block__table {
-    grid-template-columns:
-      minmax(131px, 1fr)
-      minmax(109px, 1.67fr)
-      minmax(147px, 1.67fr)
-      minmax(126px, 1.67fr)
-      minmax(127px, 3.33fr)
-      minmax(149px, 1.67fr)
-      minmax(149px, 3.33fr);
-  }
 }
 @media screen and(max-width: 476px) {
-    .checked, .nochecked, .disabledCheck{
-        background: $bgWhite;
-        .tabel__cell{
-            background: $bgWhite;
-        }
-    }
+   
+  .tr::after{
+    display: none;
+  }
+  .table-flex--mobile{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   #table-sort {
     height: 40px;
     padding: 0 0 0 16px;
@@ -484,6 +306,9 @@ tr {
   .table-functional {
     display: none;
   }
+  .sort-table{
+    display: none;
+  }
   .schedule-table--mobile {
     display: grid;
     border-collapse: collapse;
@@ -505,13 +330,21 @@ tr {
     height: auto;
     padding: 0 16px 0 16px;
     margin-top: 15px;
-    .table-mobile__text {
+    .table-mobile__title {
+      font-size: 14px;
       color: $dark500;
       margin-bottom: 2px;
     }
+    .table-mobile__text{
+      font-size: 14px;
+    }
+  }
+  .table__cell--long{
+    width: 100%;
   }
   .tabel__block {
     padding-bottom: 20px;
+    width: 100%;
   }
   .th {
     font-size: 20px;

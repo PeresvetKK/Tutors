@@ -14,11 +14,19 @@ body {
     cursor: default;
     background: $bgPaper;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-    
 }
 ::-webkit-scrollbar {
-    width: 0;
-  }
+    width: 4px;  
+    height: 4px;             /* ширина scrollbar */
+}
+::-webkit-scrollbar-track {
+    background: $bgWhite;        /* цвет дорожки */
+}
+::-webkit-scrollbar-thumb {
+    background-color: $darkBlue;
+    border: 0; 
+    border-radius: 20px;
+}
 section {
     position: relative;
 }
@@ -612,6 +620,9 @@ select{
     width: 100%;
     height: 100vh;
 }
+.menu-profile{
+    display: none;
+}
 .logo{
     width: 178px;
     height: 40px;
@@ -1066,7 +1077,16 @@ select{
     top: 20px;
     width: 36px;
 }
-
+.loader-table{
+    opacity: 0.3;
+}
+.loader-progress{
+    position: absolute;
+    width: 30%;
+    height: 2px;
+    background: $darkBlue;
+    border: 0.25rem;
+}
 @media (max-width: 1201px) {
     .tabs{
         width: 100%;
@@ -1082,11 +1102,35 @@ select{
 @media screen and (max-width: 913px){
     .aside{
         display: none;
+        margin-top: 19px;
         &__logo{
             width: 94%;
         }
         &__dt{
             width: 94%;
+        }
+    }
+    .menu{
+        border-top: 0;
+    }
+    .menu-profile{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0 0 0;
+        border-top: 1px solid #6F7781;;
+        &__user{
+            display: flex;
+            align-items: center;
+            .profile-mobile{
+                display: block;
+            }
+        }
+        &__name{
+            font-weight: 700;
+            color: $bgWhite;
+            width: 115px;
+            margin-left: 10px;
         }
     }
     .content{
@@ -1099,11 +1143,20 @@ select{
         background: $menu;
         padding: 0 20px;
         border: none;
-        &__notify, &__language, &__profile{
+        &__language, &__profile{
             display: none;
         }
         &__logo{
             display: block;
+        }
+        &__notify{
+            margin-right: -38px;
+        }
+        &__inner{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 107px;
         }
     }
     .burger{
@@ -1129,17 +1182,21 @@ select{
 }
 
 @media screen and (max-width: 476px){
+    .wrapper{
+        margin: 30px 24px 67px 24px;
+    }
     .container{
         padding: 20px 20px 50px 20px;
     }
     .aside{
+        margin-top: 62px;
         &__logo{
             display: none;
             width: 100%;
         }
         &__nav{
             top: 85px;
-            border-top: 1px solid #D6E2F5;
+            
         }
         .aside__nav, .aside__logo, .aside__dt{
             width: 100% !important;
