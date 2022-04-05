@@ -1,3 +1,7 @@
+import AirDatepicker from 'air-datepicker';
+import 'air-datepicker/air-datepicker.css';
+import 'clockpicker/src/clockpicker.js';
+import 'clockpicker/src/clockpicker.css';
 export function dropDownFunc() {
     let containerDropDown = document.querySelector('body');
     let dropDown = document.querySelector('.dropdown');
@@ -40,6 +44,7 @@ export function editCourse() {
         edit[i].addEventListener("click", function () {
             let myLessons = document.querySelector("#my-lessons");
             let myLessonsEdit = document.querySelector("#my-lessons--edit");
+            let mainLessons = document.querySelector("#main-lessons--edit");
             let information = document.querySelector("#information");
             let open = document.querySelector("#open");
 
@@ -49,6 +54,51 @@ export function editCourse() {
             information.classList.add('tabs__item--active');
         });
     }
+}
+// export function editLessons(){
+//     let edit = document.getElementsByClassName("edit-block-cell__inner");
+//     for (let i = 0; i < edit.length; i++) {
+//         edit[i].addEventListener("click", function () {
+//             let myLessons = document.querySelector("#my-lessons--edit");
+//             let myLessonsEdit = document.querySelector("#main-lessons--edit");
+//             let information = document.querySelector("#information");
+//             let open = document.querySelector("#open-lesson");
+
+//             myLessons.classList.toggle("active");
+//             myLessonsEdit.classList.toggle("active");
+//             open.classList.add("active");
+//             information.classList.add('tabs__item--active');
+//         });
+//     }
+// }
+export function setDateTime(){
+    new AirDatepicker('#set-data', {
+        onSelect: function (dataText, inst) {
+            var dateAsString = dataText.formattedDate;
+            console.log(dateAsString);
+            var input = document.getElementById('set-data');
+            input.value = dateAsString;
+            input.setAttribute('data-quantity', input.value);
+        }
+    });
+    var input = document.getElementById('set-data');
+    input.addEventListener('input', function () {
+        input.setAttribute('data-quantity', input.value);
+    });
+
+    $('.clockpicker').clockpicker()
+        .find('input').change(function () {
+            var input = document.getElementById('set-time');
+            input.value = this.value;
+            input.setAttribute('data-time', input.value);
+        });
+    $('#set-time').clockpicker({
+        autoclose: true,
+        afterDone: function () {
+            var closeTime = document.querySelector('.clockpicker-popover');
+            closeTime.style.display = "none";
+        }
+    });
 }
 export function changeBtn() {
     // let btn = document.querySelector('.btn__save--L');
@@ -154,12 +204,13 @@ export function modal() {
     for (let i = 0; i < btn.length; i++) {
         btn[i].addEventListener('click', function () {
             let mainbody = document.querySelector('.scroll');
-            // mainbody.classList.toggle('fixed-scroll');
+            mainbody.classList.add('fixed-scroll--mobile');
             let modal = document.querySelector('.modal-add');
             let close = modal.querySelector('.modal__inner-svg');
             modal.classList.toggle('active__modal');
             close.addEventListener('click', function () {
                 modal.classList.remove('active__modal');
+                mainbody.classList.remove('fixed-scroll--mobile');
             });
         });
     }

@@ -2,10 +2,12 @@
   width: 100%;
   overflow: hidden;
   overflow-x: auto;
+  border-radius: 0.25rem;
 }
 .table {
   display: table;
   width: 100%;
+  border-radius: 0.25rem;
 }
 .thead {
   display: table-header-group;

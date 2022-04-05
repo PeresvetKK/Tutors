@@ -1,5 +1,5 @@
 import '../scss/free-lectures.scss';
-import {sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, filter} from '../vendors/script';
+import {tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, filter} from '../vendors/script';
 $(() => {
 	filter();
 	sortTable();
@@ -9,4 +9,5 @@ $(() => {
 	burger();
 	tableDropdown();
 	dropDownAside();
+	tableLoader();
 });

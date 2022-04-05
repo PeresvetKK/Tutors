@@ -1,5 +1,5 @@
 import '../scss/courses.scss';
-import {sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown} from '../vendors/script';
+import {tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown} from '../vendors/script';
 $(() => {
 	sortTable();
 	tabs();
@@ -9,4 +9,5 @@ $(() => {
 	tableDropdown();
 	dropDownAside();
 	mainDropdown();
+	tableLoader();
 });

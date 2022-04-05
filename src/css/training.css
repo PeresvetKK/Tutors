@@ -1183,6 +1183,9 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .filebox {
   display: -webkit-box;
@@ -1248,14 +1251,75 @@ select {
   margin-left: -51px;
   cursor: pointer;
   width: 56px;
-  height: 64px;
-  padding: 16px;
+  height: 55px;
+  padding: 7px;
   -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
   border-bottom: 1px solid #E8E8E8;
 }
 .cell--inner {
   margin-right: 56px;
+}
+.edit-block-cell__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.edit-block-cell__inner svg {
+  position: inherit;
+  right: -9px;
+  top: 7px;
+}
+.breads__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+.breads__list {
+  list-style: none;
+  position: relative;
+}
+.breads__list:not(:first-child) {
+  margin-left: 11px;
+}
+.breads__list:not(:first-child)::before {
+  content: "●";
+  font-size: 8px;
+  line-height: 0;
+  position: absolute;
+  top: 11px;
+  left: -7px;
+}
+.breads__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.5px;
+  color: #8F9498;
+  font-family: "Lato", sans-serif;
+}
+.breads__link--active {
+  color: #555555;
+}
+.popover {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+}
+.clockpicker {
+  position: relative;
+}
+.clockpicker-button {
+  display: none;
+}
+.clockpicker-dial, .clockpicker-hours, .clockpicker-minutes, .clockpicker-dial-out {
+  -ms-touch-action: none;
+      touch-action: none;
 }
 @media (max-width: 1201px) {
   .tabs {
@@ -1469,6 +1533,8 @@ select {
   }
 
   .active__modal {
+    position: fixed;
+    top: 82px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1566,6 +1632,14 @@ select {
 
   .aside .aside__dropdown {
     margin-top: 0;
+  }
+
+  .modal__inner {
+    height: 100%;
+  }
+
+  .fixed-scroll--mobile {
+    overflow-y: hidden;
   }
 }
 .form__input {
@@ -2750,6 +2824,9 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .filebox {
   display: -webkit-box;
@@ -2815,14 +2892,75 @@ select {
   margin-left: -51px;
   cursor: pointer;
   width: 56px;
-  height: 64px;
-  padding: 16px;
+  height: 55px;
+  padding: 7px;
   -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
           box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
   border-bottom: 1px solid #E8E8E8;
 }
 .cell--inner {
   margin-right: 56px;
+}
+.edit-block-cell__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.edit-block-cell__inner svg {
+  position: inherit;
+  right: -9px;
+  top: 7px;
+}
+.breads__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  margin-top: -10px;
+}
+.breads__list {
+  list-style: none;
+  position: relative;
+}
+.breads__list:not(:first-child) {
+  margin-left: 11px;
+}
+.breads__list:not(:first-child)::before {
+  content: "●";
+  font-size: 8px;
+  line-height: 0;
+  position: absolute;
+  top: 11px;
+  left: -7px;
+}
+.breads__link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 143%;
+  letter-spacing: -0.5px;
+  color: #8F9498;
+  font-family: "Lato", sans-serif;
+}
+.breads__link--active {
+  color: #555555;
+}
+.popover {
+  position: absolute;
+  width: 225px;
+  height: 225px;
+}
+.clockpicker {
+  position: relative;
+}
+.clockpicker-button {
+  display: none;
+}
+.clockpicker-dial, .clockpicker-hours, .clockpicker-minutes, .clockpicker-dial-out {
+  -ms-touch-action: none;
+      touch-action: none;
 }
 @media (max-width: 1201px) {
   .tabs {
@@ -3036,6 +3174,8 @@ select {
   }
 
   .active__modal {
+    position: fixed;
+    top: 82px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -3134,15 +3274,25 @@ select {
   .aside .aside__dropdown {
     margin-top: 0;
   }
+
+  .modal__inner {
+    height: 100%;
+  }
+
+  .fixed-scroll--mobile {
+    overflow-y: hidden;
+  }
 }
 .table-container {
   width: 100%;
   overflow: hidden;
   overflow-x: auto;
+  border-radius: 0.25rem;
 }
 .table {
   display: table;
   width: 100%;
+  border-radius: 0.25rem;
 }
 .thead {
   display: table-header-group;
