@@ -2060,7 +2060,68 @@ tr {
 .sorting {
   display: none;
 }
-@media screen and (max-width: 475px) {
+.main__block {
+  margin-top: 20px;
+}
+.modal-message {
+  width: 100%;
+  padding: 30px;
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  border-radius: 0.25rem;
+}
+.modal-message .information-block__title {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.modal-message__title {
+  margin-bottom: 10px;
+}
+.modal-message__text {
+  width: 60%;
+  margin-bottom: 20px;
+  color: #6A7175;
+  line-height: 150%;
+}
+.modal-message__comment {
+  padding: 3px 0 3px 15px;
+  border-left: 1px solid #84B5DF;
+  line-height: 150%;
+}
+.modal-message__comtext {
+  width: 60%;
+  color: #84B5DF;
+}
+.modal-message__tuters--text {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+.training__modal {
+  margin-top: 20px;
+}
+@media screen and (max-width: 1201px) {
+  .modal-message__text, .modal-message__comtext {
+    width: 83%;
+  }
+}
+@media screen and (max-width: 834px) {
+  .modal-message__text, .modal-message__comtext {
+    width: 98%;
+  }
+}
+@media screen and (max-width: 477px) {
+  .training__modal {
+    padding: 18px;
+  }
+
+  .modal-message .information-block__title {
+    border-bottom: 1px solid #E8E8E8;
+  }
+
+  .modal-message__text, .modal-message__comtext {
+    width: 100%;
+  }
+
   .input__search {
     width: 100%;
   }

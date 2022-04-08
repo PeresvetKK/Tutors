@@ -4129,7 +4129,7 @@ progress::-moz-progress-bar {
 }
 .modal-message .information-block__title {
   padding-bottom: 20px;
-  border-bottom: 5px solid #E8E8E8;
+  border-bottom: 1px solid #E8E8E8;
 }
 .modal-message__title {
   margin-bottom: 10px;

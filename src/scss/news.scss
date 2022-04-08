@@ -1,6 +1,16 @@
 @import "./rootStyles/main.scss";
-@import "./index.scss";
+@import "./rootStyles/table.scss";
 
+.courses-block{
+    background: $bgWhite;
+    border-radius: 0.25rem;
+}
+.sorting{
+    display: none;
+}
+.main__block{
+    margin-top: 20px;
+}
 .modal-message{
     width: 100%;
     padding: 30px;
@@ -58,5 +68,24 @@
     }
     .modal-message__text, .modal-message__comtext {
         width: 100%;
+    }
+    .input__search{
+        width: 100%;
+    }
+    #sorting-search{
+        margin-bottom: 10px;
+    }
+    .table__dropdown::after{
+        top: 23%;
+    }
+    .courses-block{
+        background: transparent;
+    }
+    .sorting{
+        display: block;
+        width: 100%;
+        .form__input{
+            width: 100%;
+        }
     }
 }
