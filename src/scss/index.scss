@@ -135,7 +135,7 @@
     padding-bottom: 30px;
   }
   &__box:not(:last-child) {
-    border-bottom: 1px solid $bgElement;
+    border-bottom: 1px solid $border;
     margin-bottom: 20px;
   }
   &__title {

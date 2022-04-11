@@ -3,17 +3,22 @@ import 'air-datepicker/air-datepicker.css';
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
 export function dropDownFunc() {
-    let containerDropDown = document.querySelector('body');
-    let dropDown = document.querySelector('.dropdown');
-
-    containerDropDown.addEventListener('click', (event) => {
-        if (event.target.classList.contains('btn-dropdown')) {
-            dropDown.classList.toggle('dropdown-active');
-        }
-        else {
-            dropDown.classList.remove('dropdown-active');
-        }
-    });
+    
+    let dropDown = document.getElementsByClassName('container__dropdown');
+    for(let i = 0; i < dropDown.length; i++){
+        dropDown[i].addEventListener('click', function(){
+            let item = dropDown[i].querySelector('.dropdown');
+            let arrow = dropDown[i].querySelector('.dropdown-arrow');
+            item.classList.toggle('dropdown-active');
+            arrow.classList.toggle('rotate180');
+            let itemsText = dropDown[i].getElementsByClassName('roles__inner');
+            for(let i = 0; i < itemsText.length; i++){
+                itemsText[i].addEventListener('click', function(){
+                    itemsText[0].textContent = this.textContent;
+                });
+            }
+        });
+    }
 }
 export function burger() {
     let burger = document.querySelector(".burger");

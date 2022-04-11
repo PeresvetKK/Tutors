@@ -240,6 +240,7 @@ button {
         border: 1px solid $green;
     }
 }
+
 .pagination{
     width: 100%;
     display: none;
@@ -685,10 +686,10 @@ select{
 .header {
     position: fixed;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     height: 82px;
-    padding-right: 42px;
+    padding: 0 42px;
     top: 0px;
     right: 0px;
     left: 256px;
@@ -750,6 +751,14 @@ select{
             height: 2px;
         }
     }
+    &__box{
+        display: flex;
+        align-items: center;
+    }
+}
+.container__dropdown{
+    position: relative;
+    cursor: pointer;
 }
 .language{
     cursor: pointer;
@@ -776,19 +785,19 @@ select{
     display: none;
     position: absolute;
     width: 95px;
-    top: 50px;
-    right: 113.5px;
+    top: 31px;
     border: 1px;
     background-color: #fff;
     border-right: 1px solid #D6E2F5;
     border-bottom: 1px solid #D6E2F5;
     border-left: 1px solid #D6E2F5;
     border-radius: 0 0 0.25rem 0.25rem;
+    cursor: pointer;
     &__inner{
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        padding: 10px 10px 10px 16px;
+        padding: 10px 13px 10px 16px;
     }
     &__link{
         color: #6A7175;
@@ -1169,6 +1178,59 @@ select{
 .clockpicker-dial, .clockpicker-hours, .clockpicker-minutes, .clockpicker-dial-out{
     touch-action: none;
 }
+.roles{
+    width: 354px;
+    &__inner{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        font-size: 14px;
+        line-height: 150%;
+        color: $dark700;
+    }
+    &__icon{
+        width: 24px;
+        height: 24px;
+    }
+    &__dropdown{
+        width: 354px;
+        top: 40px;
+        .dropdown__inner{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+    .dropdown__link{
+        margin-bottom: 1px;
+    }
+}
+.status-green, .status-gray{
+    position: relative;
+    &:hover{
+        background: $bgElement;
+        color: $darkBlue;
+    }
+}
+.status-green::after{
+    content: '';
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $green;
+}
+.status-gray::after{
+    content: '';
+    position: absolute;
+    right: 18px;
+    top: 20px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: $gray;
+}
 @media (max-width: 1201px) {
     .tabs{
         width: 100%;
@@ -1260,6 +1322,9 @@ select{
     }
     .main__tabs--middle{
         width: 376px;
+    }
+    .container__dropdown{
+        display: none;
     }
 }
 
