@@ -2,7 +2,7 @@ import '../scss/free-courses.scss';
 import {tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, filter} from '../vendors/script';
 $(() => {
 
-	let edit = document.getElementsByClassName("edit-block-cell");
+	let edit = document.getElementsByClassName("breads");
     for (let i = 0; i < edit.length; i++) {
         edit[i].addEventListener("click", function () {
             let myLessons = document.querySelector("#my-lessons");

@@ -1,19 +1,7 @@
-import { doc } from 'prettier';
 import '../scss/tutor-training.scss';
+import {dropDownFunc} from '../vendors/script';
 $(() => {
-	function dropDownFunc() {
-		let containerDropDown = document.querySelector('body');
-		let dropDown = document.querySelector('.dropdown');
-
-		containerDropDown.addEventListener('click', (event) => {
-			if (event.target.classList.contains('btn-dropdown')) {
-				dropDown.classList.toggle('dropdown-active');
-			}
-			else {
-				dropDown.classList.remove('dropdown-active');
-			}
-		});
-	}
+	
 	function burger() {
 		let burger = document.querySelector(".burger");
 		burger.addEventListener("click", function () {

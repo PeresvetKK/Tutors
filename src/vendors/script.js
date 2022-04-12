@@ -3,7 +3,6 @@ import 'air-datepicker/air-datepicker.css';
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
 export function dropDownFunc() {
-    
     let dropDown = document.getElementsByClassName('container__dropdown');
     for(let i = 0; i < dropDown.length; i++){
         dropDown[i].addEventListener('click', function(){
@@ -11,12 +10,12 @@ export function dropDownFunc() {
             let arrow = dropDown[i].querySelector('.dropdown-arrow');
             item.classList.toggle('dropdown-active');
             arrow.classList.toggle('rotate180');
-            let itemsText = dropDown[i].getElementsByClassName('roles__inner');
-            for(let i = 0; i < itemsText.length; i++){
-                itemsText[i].addEventListener('click', function(){
-                    itemsText[0].textContent = this.textContent;
-                });
-            }
+            // let itemsText = dropDown[i].getElementsByClassName('roles__inner');
+            // for(let i = 0; i < itemsText.length; i++){
+            //     itemsText[i].addEventListener('click', function(){
+            //         itemsText[0].textContent = this.textContent;
+            //     });
+            // }
         });
     }
 }
