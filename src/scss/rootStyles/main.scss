@@ -281,6 +281,15 @@ button {
     }
     
 }
+.pagination-container{
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #C7CACB;
+}
+.desc-pagination{
+    display: flex;
+    justify-content: flex-end;
+}
 .profile-dropdown{
     display: none;
 }
@@ -1014,7 +1023,7 @@ select{
 }
 .underline{
     text-decoration-line: underline;
-    color: $darkBlue;
+    color: $blue;
     cursor: pointer;
 }
 .status-arrow{
@@ -1109,8 +1118,8 @@ select{
     width: 56px;
     height: 55px;
     padding: 7px;
-    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
-    border-bottom: 1px solid $border;
+    // box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
+    // border-bottom: 1px solid $border;
   }
   .cell--inner{
     margin-right: 56px;
@@ -1231,6 +1240,15 @@ select{
     border-radius: 50%;
     background: $gray;
 }
+.profile-content{
+    display: flex;
+    align-items: center;
+    .header__profile{
+        width: 64px;
+        height: 64px;
+        margin-right: 12px;
+    }
+}
 @media (max-width: 1201px) {
     .tabs{
         width: 100%;
@@ -1345,6 +1363,11 @@ select{
             top: 85px;
             
         }
+        &__dt{
+            height: 100px;
+            position: relative;
+            bottom: 0;
+        }
         .aside__nav, .aside__logo, .aside__dt{
             width: 100% !important;
         }
@@ -1385,6 +1408,10 @@ select{
     .pagination{
         display: flex;
     }
+    .pagination-container{
+        border: 0;
+        padding: 0;
+    }
     .main__tabs--middle{
         width: 100%;
     }
@@ -1402,6 +1429,7 @@ select{
         top: 82px;
         align-items: flex-start;
     }
+    
     h1{
         font-size: 28px;
         line-height: 129%;

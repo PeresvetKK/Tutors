@@ -227,6 +227,7 @@ export function sortTable() {
                 tableSort[i].classList.remove('active-table--sort');
             }
             this.classList.toggle('active-table--sort');
+            this.classList.toggle('rotate180');
         });
     }
 }

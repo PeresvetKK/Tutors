@@ -323,6 +323,19 @@ button {
 .pagination__item:not(:last-child) {
   margin-right: 8px;
 }
+.pagination-container {
+  width: 100%;
+  padding-top: 20px;
+  border-top: 1px solid #C7CACB;
+}
+.desc-pagination {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 .profile-dropdown {
   display: none;
 }
@@ -1152,7 +1165,7 @@ select {
 .underline {
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
-  color: #84B5DF;
+  color: #38AAFF;
   cursor: pointer;
 }
 .status-arrow {
@@ -1264,9 +1277,6 @@ select {
   width: 56px;
   height: 55px;
   padding: 7px;
-  -webkit-box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
-          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
-  border-bottom: 1px solid #E8E8E8;
 }
 .cell--inner {
   margin-right: 56px;
@@ -1394,6 +1404,19 @@ select {
   height: 5px;
   border-radius: 50%;
   background: #9FA3A7;
+}
+.profile-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.profile-content .header__profile {
+  width: 64px;
+  height: 64px;
+  margin-right: 12px;
 }
 @media (max-width: 1201px) {
   .tabs {
@@ -1544,6 +1567,11 @@ select {
   .aside__nav {
     top: 85px;
   }
+  .aside__dt {
+    height: 100px;
+    position: relative;
+    bottom: 0;
+  }
   .aside .aside__nav, .aside .aside__logo, .aside .aside__dt {
     width: 100% !important;
   }
@@ -1593,6 +1621,11 @@ select {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+
+  .pagination-container {
+    border: 0;
+    padding: 0;
   }
 
   .main__tabs--middle {
