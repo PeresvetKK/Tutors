@@ -4,7 +4,7 @@ import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
-import {setDateTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, profileDropDown, tableDropdown, dropDownAside} from '../vendors/script';
+import {setDateTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside} from '../vendors/script';
 $(() => {
 	tableLoader();
 	modal();
@@ -15,7 +15,6 @@ $(() => {
 	tabs();
 	editCourse();
 	changeBtn();
-	profileDropDown();
 	tableDropdown();
 	dropDownAside();
 	setDateTime();

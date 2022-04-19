@@ -13,7 +13,7 @@
 }
 .filter-btn{
     &__text{
-        font-size: 14px;
+        font-size: 0.875em;
         line-height: 150%;
         color: $darkBlue;
         margin-right: 4px;
@@ -151,6 +151,9 @@
     }
 }
 @media screen and(max-width: 475px){
+    .main__title-box .main__title {
+        margin-bottom: 6px;
+    }
     .courses-header{
         flex-direction: column;
         align-items: inherit;
@@ -160,6 +163,9 @@
     }
     .filter__btn{
         width: 100%;
+    }
+    .courses-block{
+        margin-top: 0;
     }
     .search-box{
         display: none;

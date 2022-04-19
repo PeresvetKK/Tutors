@@ -53,17 +53,25 @@
         </div>
         <div class="header__box">
             <div class="header__inner">
-                <div class="header__notify notify">
+                <div class="header__task">
+                    <button class="btn__task">Задача +</button>
+                </div>
+                <div class="header__notify notify header-icon header__inner--item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M9 17V16C8.44772 16 8 16.4477 8 17H9ZM15 17H16C16 16.4477 15.5523 16 15 16V17ZM9 18H15V16H9V18ZM14 17V18H16V17H14ZM10 18V17H8V18H10ZM12 20C10.8954 20 10 19.1046 10 18H8C8 20.2091 9.79086 22 12 22V20ZM14 18C14 19.1046 13.1046 20 12 20V22C14.2091 22 16 20.2091 16 18H14Z"
-                            fill="#608BCC" />
+                            fill="#84B5DF" />
                         <path
                             d="M4.29289 14.7071L3.58579 14L3.58579 14L4.29289 14.7071ZM4.80372 14.1963L5.51082 14.9034L5.51082 14.9034L4.80372 14.1963ZM19.1963 14.1963L19.9034 13.4892L19.9034 13.4892L19.1963 14.1963ZM19.7071 14.7071L20.4142 14L20.4142 14L19.7071 14.7071ZM12 3L12 4L12 3ZM19 16H5V18H19V16ZM5 16V15.4142H3V16H5ZM5 15.4142L5.51082 14.9034L4.09661 13.4892L3.58579 14L5 15.4142ZM6 13.7224V10H4V13.7224H6ZM18 10V13.7224H20V10H18ZM18.4892 14.9034L19 15.4142L20.4142 14L19.9034 13.4892L18.4892 14.9034ZM19 15.4142V16H21V15.4142H19ZM19 15.4142L19 15.4142H21C21 14.8838 20.7893 14.3751 20.4142 14L19 15.4142ZM18 13.7224C18 14.1653 18.176 14.5901 18.4892 14.9034L19.9034 13.4892C19.9653 13.551 20 13.6349 20 13.7224H18ZM20 10C20 5.58171 16.4183 1.99999 12 2L12 4C15.3137 3.99999 18 6.68629 18 10H20ZM6 10C6 6.6863 8.68628 4.00001 12 4L12 2C7.58171 2.00001 4 5.58173 4 10H6ZM5.51082 14.9034C5.82404 14.5902 6 14.1654 6 13.7224H4C4 13.635 4.03475 13.5511 4.09661 13.4892L5.51082 14.9034ZM5 15.4142H5L3.58579 14C3.21071 14.3751 3 14.8838 3 15.4142H5ZM5 16H3C3 17.1046 3.89543 18 5 18V16ZM19 18C20.1046 18 21 17.1046 21 16H19V18Z"
-                            fill="#608BCC" />
+                            fill="#84B5DF" />
                     </svg>
                 </div>
-                <div class="header__burger burger">
+                <div class="header__favourites header-icon header__inner--item">
+                    <svg id="favourites" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </div>
+                <div class="header__burger burger header__inner--item">
                     <span></span>
                 </div>
             </div>
@@ -312,23 +320,7 @@
                                 <div class="person__textbox person-textbox">
                                     <p class="person-textbox__post">Лектор</p>
                                     <h2 class="person-textbox__name">Никита Герасимов</h2>
-                                    <div class="profile-status">
-                                        <div class="person-textbox__status drop-status">
-                                            <div class="drop-status__text">Преподаю</div>
-                                            <svg class="status-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                                xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    d="M11.2324 7.23227C11.5448 6.91985 11.5448 6.41332 11.2324 6.1009C10.92 5.78848 10.4134 5.78848 10.101 6.1009L11.2324 7.23227ZM8.00004 9.33325L7.43436 9.89894C7.74677 10.2114 8.25331 10.2114 8.56573 9.89894L8.00004 9.33325ZM5.89906 6.1009C5.58664 5.78848 5.08011 5.78848 4.76769 6.1009C4.45527 6.41332 4.45527 6.91985 4.76769 7.23227L5.89906 6.1009ZM10.101 6.1009L7.43436 8.76757L8.56573 9.89894L11.2324 7.23227L10.101 6.1009ZM8.56573 8.76757L5.89906 6.1009L4.76769 7.23227L7.43436 9.89894L8.56573 8.76757Z"
-                                                    fill="#30D937" />
-                                            </svg>
-                                        </div>
-                                        <div class="profile-dropdown">
-                                            <div class="profile-dropdow__inner">
-                                                <p class="profile-dropdow__item">Преподаю</p>
-                                                <p class="profile-dropdow__item noactive">Не преподаю</p>
-                                            </div>
-                                        </div>
-                                    </div>								
+                                    <p class="person-textbox__text">• Преподаю</p>						
                                 </div>
                             </div>
 							<div class="profile-form__block profile-block">

@@ -3,18 +3,18 @@
 .form__input {
   font-family: "Lato", sans-serif;
   color: #8F9498;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 150%;
 }
 .btn-dropdown, .aside__date, .aside__time {
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
 }
 .btn__disabled--L, .btn__load--L, .btn__save--L:hover, .btn__save--L {
   width: 200px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 100%;
   border-radius: 0.25rem;
 }
@@ -55,23 +55,23 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
 h1 {
-  font-size: 32px;
+  font-size: 2em;
   line-height: 131%;
 }
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 125%;
 }
 h3 {
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 160%;
 }
 h4 {
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 150%;
 }
 h5 {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
 }
 a {
@@ -163,7 +163,7 @@ button {
 .btn__add--M {
   position: relative;
   padding: 9px;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   border-radius: 0.25rem;
   width: 115px;
@@ -218,7 +218,7 @@ button {
 .fixed-scroll {
   overflow-y: hidden;
 }
-.notify {
+.header-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -236,14 +236,27 @@ button {
   border: 1px solid #F5F9FD;
   cursor: pointer;
 }
-.notify svg path {
-  fill: #84B5DF;
-}
-.notify:hover {
+.header-icon:hover {
   background: #84B5DF;
 }
-.notify:hover svg path {
+.header-icon:hover svg path {
   fill: #fff;
+}
+.header-icon:hover #favourites {
+  fill: #84B5DF;
+}
+.header-icon:hover #favourites path {
+  stroke: #fff;
+}
+.btn__task {
+  position: relative;
+  padding: 9px;
+  font-size: 0.875em;
+  line-height: 150%;
+  border-radius: 0.25rem;
+  width: 115px;
+  background: #84B5DF;
+  color: #fff;
 }
 .edit__circle {
   width: 40px;
@@ -381,6 +394,8 @@ button {
 .modal__inner {
   position: relative;
   width: 450px;
+  max-height: 80%;
+  overflow-y: scroll;
   background: #fff;
   border: 1px solid #E8E8E8;
   border-radius: 0.25rem;
@@ -395,7 +410,7 @@ button {
   padding-left: 45px;
 }
 .modal-add__box {
-  padding: 40px;
+  padding: 40px 40px 0 40px;
 }
 .modal-add__title {
   margin-bottom: 30px;
@@ -406,6 +421,7 @@ button {
 }
 .modal-add .btn__save--L {
   width: 100%;
+  margin-bottom: 40px;
 }
 .form {
   display: -webkit-box;
@@ -440,7 +456,7 @@ button {
   background: #fff;
   padding: 0px 4px;
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 100%;
   letter-spacing: 0.15px;
   color: #6A7175;
@@ -545,7 +561,7 @@ button {
 }
 .form__lagel-error {
   display: none;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .dropdown-box {
   display: -webkit-box;
@@ -612,7 +628,7 @@ button {
   width: 262px;
   height: 40px;
   padding-left: 44px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .category-select {
   display: none;
@@ -693,7 +709,7 @@ select {
   display: block;
   margin-left: 31px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
 }
 .aside .aside-dropdown__item:hover {
@@ -739,7 +755,7 @@ select {
   color: #fff;
   margin-left: 8px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
 }
 .menu__list:hover, .menu__list--active {
@@ -791,7 +807,7 @@ select {
   border: 1px solid #E8E8E8;
 }
 .header__language {
-  margin: 0 27px 0 19px;
+  margin: 0 27px 0 0;
 }
 .header__logo {
   display: none;
@@ -834,6 +850,20 @@ select {
   bottom: 0;
   height: 3px;
 }
+.header__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__inner--item:not(:last-child) {
+  margin-right: 10px;
+}
 .header .burger-active span {
   -webkit-transform: scale(0);
       -ms-transform: scale(0);
@@ -859,6 +889,17 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+.header__task {
+  padding-right: 20px;
+  border-right: 1px solid #E8E8E8;
+  margin-right: 20px;
+}
+.header .btn__task {
+  height: 48px;
+}
+.header .btn__task:hover {
+  background: #79A2C6;
 }
 .container__dropdown {
   position: relative;
@@ -917,11 +958,15 @@ select {
 .dropdown__link {
   color: #6A7175;
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
 }
 .dropdown-active {
   display: block;
+}
+.form__box--time {
+  margin-top: 20px;
+  max-width: 335px;
 }
 .profile {
   width: 44.57px;
@@ -1026,7 +1071,7 @@ select {
 .main__dropdown .form__input {
   height: 40px;
   padding: 9px 16px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .message-orange {
   width: 100%;
@@ -1094,7 +1139,7 @@ select {
   color: #84B5DF;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   text-align: center;
   margin: 0 4px;
@@ -1186,7 +1231,7 @@ select {
   margin-bottom: 20px;
 }
 .information-block__data {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #C7CACB;
   margin-bottom: 10px;
@@ -1220,7 +1265,7 @@ select {
           align-items: center;
 }
 .filebox__name {
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
   color: #C7CACB;
   margin-right: 12px;
@@ -1318,7 +1363,7 @@ select {
 }
 .breads__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
   letter-spacing: -0.5px;
   color: #8F9498;
@@ -1497,20 +1542,8 @@ select {
   .header__logo {
     display: block;
   }
-  .header__notify {
-    margin-right: -38px;
-  }
-  .header__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 107px;
+  .header__task {
+    display: none;
   }
 
   .burger {
@@ -1574,6 +1607,10 @@ select {
   }
   .aside .aside__nav, .aside .aside__logo, .aside .aside__dt {
     width: 100% !important;
+  }
+
+  .header__favourites {
+    display: none;
   }
 
   .person {
@@ -1645,14 +1682,14 @@ select {
 
   .active__modal {
     position: fixed;
-    top: 82px;
+    padding-top: 82px;
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 1.75em;
     line-height: 129%;
   }
 
@@ -1746,6 +1783,7 @@ select {
   }
 
   .modal__inner {
+    max-height: 100%;
     height: 100%;
   }
 
@@ -1777,7 +1815,7 @@ select {
   text-align: left;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
   color: #555555;
   cursor: pointer;
@@ -1788,7 +1826,7 @@ select {
 .td {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #555555;
 }
@@ -1859,7 +1897,7 @@ tr {
   display: none;
 }
 .course-table__id {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 17px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1868,7 +1906,7 @@ tr {
 }
 .course-table__lesson {
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
   color: #30D937;
   padding: 5px 10px;
@@ -1876,14 +1914,14 @@ tr {
   border-radius: 0.25rem;
 }
 .courses-block__table__id {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 17px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #38AAFF;
 }
 .courses-block__table__lesson {
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
   color: #30D937;
   padding: 5px 10px;
@@ -1908,7 +1946,7 @@ tr {
   padding-left: 19px;
 }
 .table-functional__add {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #30D937;
 }
@@ -1937,7 +1975,7 @@ tr {
   position: relative;
 }
 .row-counter__text {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   margin-right: 10px;
 }
@@ -1945,7 +1983,7 @@ tr {
   position: relative;
   border: none;
   background: transparent;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
   width: 12px;
   outline: none;
@@ -1953,7 +1991,7 @@ tr {
 .row-counter__pages {
   margin-left: 35px;
   margin-right: 16px;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
 }
 .row-counter__arrows {
@@ -1985,7 +2023,7 @@ tr {
   width: 168px;
   height: 40px;
   padding: 9px 16px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .table-swap {
   margin-left: 10px;
@@ -2022,7 +2060,7 @@ tr {
   .table-sort {
     height: 40px;
     padding: 0 0 0 16px;
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 150%;
     color: #8F9498;
   }
@@ -2105,12 +2143,12 @@ tr {
     margin-top: 15px;
   }
   .tabel__cell .table-mobile__title {
-    font-size: 14px;
+    font-size: 0.875em;
     color: #8F9498;
     margin-bottom: 2px;
   }
   .tabel__cell .table-mobile__text {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   .table__cell--long {
@@ -2123,7 +2161,7 @@ tr {
   }
 
   .th {
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 160%;
     width: 100%;
     padding: 17px 0 17px 0;
@@ -2218,6 +2256,10 @@ tr {
 .person-textbox__name {
   margin-bottom: 16px;
 }
+.person-textbox__text {
+  color: #30D937;
+  cursor: pointer;
+}
 .profile-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2274,14 +2316,14 @@ tr {
   margin-right: 20px;
 }
 .salary-information__item-title {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 150%;
   color: #8F9498;
   margin-bottom: 8px;
 }
 .salary-information__item-subtitle {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 150%;
   color: #555555;
 }
@@ -2320,7 +2362,7 @@ tr {
   margin-bottom: 20px;
 }
 .lessons-edit__subtitle {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 150%;
   color: #8F9498;
   margin-bottom: 8px;
@@ -2369,7 +2411,7 @@ progress::-moz-progress-bar {
 }
 .infoblock__title {
   color: #8F9498;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 171%;
   margin-bottom: 8px;
 }
@@ -2551,11 +2593,11 @@ progress::-moz-progress-bar {
 
   .infoblock__text {
     width: 100%;
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   .message-orange__text {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 150%;
   }
 

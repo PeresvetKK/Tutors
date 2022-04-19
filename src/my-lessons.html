@@ -54,17 +54,25 @@
         </div>
         <div class="header__box">
             <div class="header__inner">
-                <div class="header__notify notify">
+                <div class="header__task">
+                    <button class="btn__task">Задача +</button>
+                </div>
+                <div class="header__notify notify header-icon header__inner--item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M9 17V16C8.44772 16 8 16.4477 8 17H9ZM15 17H16C16 16.4477 15.5523 16 15 16V17ZM9 18H15V16H9V18ZM14 17V18H16V17H14ZM10 18V17H8V18H10ZM12 20C10.8954 20 10 19.1046 10 18H8C8 20.2091 9.79086 22 12 22V20ZM14 18C14 19.1046 13.1046 20 12 20V22C14.2091 22 16 20.2091 16 18H14Z"
-                            fill="#608BCC" />
+                            fill="#84B5DF" />
                         <path
                             d="M4.29289 14.7071L3.58579 14L3.58579 14L4.29289 14.7071ZM4.80372 14.1963L5.51082 14.9034L5.51082 14.9034L4.80372 14.1963ZM19.1963 14.1963L19.9034 13.4892L19.9034 13.4892L19.1963 14.1963ZM19.7071 14.7071L20.4142 14L20.4142 14L19.7071 14.7071ZM12 3L12 4L12 3ZM19 16H5V18H19V16ZM5 16V15.4142H3V16H5ZM5 15.4142L5.51082 14.9034L4.09661 13.4892L3.58579 14L5 15.4142ZM6 13.7224V10H4V13.7224H6ZM18 10V13.7224H20V10H18ZM18.4892 14.9034L19 15.4142L20.4142 14L19.9034 13.4892L18.4892 14.9034ZM19 15.4142V16H21V15.4142H19ZM19 15.4142L19 15.4142H21C21 14.8838 20.7893 14.3751 20.4142 14L19 15.4142ZM18 13.7224C18 14.1653 18.176 14.5901 18.4892 14.9034L19.9034 13.4892C19.9653 13.551 20 13.6349 20 13.7224H18ZM20 10C20 5.58171 16.4183 1.99999 12 2L12 4C15.3137 3.99999 18 6.68629 18 10H20ZM6 10C6 6.6863 8.68628 4.00001 12 4L12 2C7.58171 2.00001 4 5.58173 4 10H6ZM5.51082 14.9034C5.82404 14.5902 6 14.1654 6 13.7224H4C4 13.635 4.03475 13.5511 4.09661 13.4892L5.51082 14.9034ZM5 15.4142H5L3.58579 14C3.21071 14.3751 3 14.8838 3 15.4142H5ZM5 16H3C3 17.1046 3.89543 18 5 18V16ZM19 18C20.1046 18 21 17.1046 21 16H19V18Z"
-                            fill="#608BCC" />
+                            fill="#84B5DF" />
                     </svg>
                 </div>
-                <div class="header__burger burger">
+                <div class="header__favourites header-icon header__inner--item">
+                    <svg id="favourites" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                        
+                </div>
+                <div class="header__burger burger header__inner--item">
                     <span></span>
                 </div>
             </div>
@@ -269,1108 +277,578 @@
             <div class="wrapper" id="my-lessons">
                 <section class="main__header">
                     <h1 class="main__title title">Мои уроки</h1>
-                    <div class="main__block-tabs">
-                        <div class="form__box form__box--select category-select">
-                            <div class="category">
-                                <p class="category__text">Текущие 48</p>
-                            </div>
-                        </div>
-                        <div class="tabs main__tabs">
-                            <button class="tabs__item tabs__item--three tabs__item--active current" data-tab="1">
-                                Текущие 48
-                            </button>
-                            <button class="tabs__item tabs__item--three past" data-tab="2">                              
-                                Прошлые 48
-                            </button>
-                        </div>
-                    </div>
-                </section>
-                <section class="main__block tab-content active" data-tab="1">
-                    <div class="table-container">
-                        <div class="table courses-block__table my-lessons-table">
-                            <div class="thead">
-                                <div class="tr tabel__block">
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Начало
-                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
-                                            </svg> 
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Конец
-                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
-                                            </svg> 
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Počet 
-                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
-                                            </svg> 
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Forma výuky
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Предмет
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Ученик
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Статус
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Přihláška
-                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
-                                            </svg> 
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Hodnoceno
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="loader-progress hide"></div>
-                            <div class="tbody">
-                                <div class="tr">
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">7.10 - 15.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">16.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">1</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Онлайн</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Математика</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Иванов Иван</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex checked">Checked-in</div>
-                                    </div>   
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div>   
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex cell--inner"></div>
-                                    </div> 
-                                    <div class="edit-block-cell course-table__id">
-                                        <div class="edit-block-cell__inner">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_541_36990)">
-                                                    <g filter="url(#filter0_d_541_36990)">
-                                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
-                                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="6" />
-                                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
-                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
-                                                    </filter>
-                                                    <clipPath id="clip0_541_36990">
-                                                        <rect width="24" height="24" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>    
-                                        </div>                                     
-                                    </div> 
-                                </div>
-                                <div class="tr">
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">7.10 - 15.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">16.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">1</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Онлайн</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Математика</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Иванов Иван</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex checked">Checked-in</div>
-                                    </div>   
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div> 
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex cell--inner"></div>
-                                    </div>  
-                                    <div class="edit-block-cell course-table__id">
-                                        <div class="edit-block-cell__inner">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_541_36990)">
-                                                    <g filter="url(#filter0_d_541_36990)">
-                                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
-                                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="6" />
-                                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
-                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
-                                                    </filter>
-                                                    <clipPath id="clip0_541_36990">
-                                                        <rect width="24" height="24" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>    
-                                        </div>                                     
-                                    </div> 
-                                </div>
-                                <div class="tr">
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">7.10 - 15.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">16.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">1</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Онлайн</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Математика</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Иванов Иван</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex nochecked">Not checked</div>
-                                    </div>  
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div> 
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex cell--inner"></div>
-                                    </div>   
-                                    <div class="edit-block-cell course-table__id">
-                                        <div class="edit-block-cell__inner">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_541_36990)">
-                                                    <g filter="url(#filter0_d_541_36990)">
-                                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
-                                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="6" />
-                                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
-                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
-                                                    </filter>
-                                                    <clipPath id="clip0_541_36990">
-                                                        <rect width="24" height="24" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>    
-                                        </div>                                     
-                                    </div> 
-                                </div>
-                                <div class="tr">
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">7.10 - 15.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">16.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">1</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Онлайн</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Математика</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Иванов Иван</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex checked">Checked-in</div>
-                                    </div> 
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div>   
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex cell--inner"></div>
-                                    </div>  
-                                    <div class="edit-block-cell course-table__id">
-                                        <div class="edit-block-cell__inner">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_541_36990)">
-                                                    <g filter="url(#filter0_d_541_36990)">
-                                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
-                                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="6" />
-                                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
-                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
-                                                    </filter>
-                                                    <clipPath id="clip0_541_36990">
-                                                        <rect width="24" height="24" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>    
-                                        </div>                                     
-                                    </div> 
-                                </div>
-                                <div class="tr disable-table">
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex td-time">7.10 - 15.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex td-time">16.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">1</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Онлайн</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Математика</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Иванов Иван</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex disabledCheck">Zrušená</div>
-                                    </div> 
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div>  
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex"></div>
-                                    </div>   
-                                    <div class="edit-block-cell course-table__id">
-                                        <div class="edit-block-cell__inner">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_541_36990)">
-                                                    <g filter="url(#filter0_d_541_36990)">
-                                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
-                                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="6" />
-                                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
-                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
-                                                    </filter>
-                                                    <clipPath id="clip0_541_36990">
-                                                        <rect width="24" height="24" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>    
-                                        </div>                                     
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-mobile">
-                        <div class="table schedule-table--mobile">
-                            <div class="thead">
-                                <div class="tr tr__head">
-                                    <div class="th table-flex--mobile">Математика <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_541_36990)">
-                                        <g filter="url(#filter0_d_541_36990)">
-                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"/>
-                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                        </g>
-                                        <defs>
-                                        <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                        <feOffset dy="4"/>
-                                        <feGaussianBlur stdDeviation="6"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"/>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"/>
-                                        </filter>
-                                        <clipPath id="clip0_541_36990">
-                                        <rect width="24" height="24" fill="white"/>
-                                        </clipPath>
-                                        </defs>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tbody">
-                                <div class="tr tabel__block">
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Начало:</p>
-                                        <p class="table-mobile__text">7.10 - 15.40</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Конец:</p>
-                                        <p class="table-mobile__text">16.40</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Ученик:</p>
-                                        <p class="table-mobile__text">Иванов Иван</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">ID заявления:</p>
-                                        <p class="course-table__id">123456</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Форма обучения:</p>
-                                        <p class="table-mobile__text">Иванов Иван</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Количество уроков:</p>
-                                        <p class="table-mobile__text">1</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Состояние:</p>
-                                        <p class="checked">Checked-in</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Рейтинг:</p>
-                                        <p class="table-mobile__text">26.08.2021 - 15:40</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-mobile">
-                        <div class="table schedule-table--mobile">
-                            <div class="thead">
-                                <div class="tr tr__head">
-                                    <div class="th table-flex--mobile">Математика <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_541_36990)">
-                                        <g filter="url(#filter0_d_541_36990)">
-                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"/>
-                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                        </g>
-                                        <defs>
-                                        <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                        <feOffset dy="4"/>
-                                        <feGaussianBlur stdDeviation="6"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"/>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"/>
-                                        </filter>
-                                        <clipPath id="clip0_541_36990">
-                                        <rect width="24" height="24" fill="white"/>
-                                        </clipPath>
-                                        </defs>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tbody">
-                                <div class="tr tabel__block">
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Начало:</p>
-                                        <p class="table-mobile__text">7.10 - 15.40</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Конец:</p>
-                                        <p class="table-mobile__text">16.40</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Ученик:</p>
-                                        <p class="table-mobile__text">Иванов Иван</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">ID заявления:</p>
-                                        <p class="course-table__id">123456</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Форма обучения:</p>
-                                        <p class="table-mobile__text">Иванов Иван</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Количество уроков:</p>
-                                        <p class="table-mobile__text">1</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Состояние:</p>
-                                        <p class="checked">Checked-in</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Рейтинг:</p>
-                                        <p class="table-mobile__text">26.08.2021 - 15:40</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-functional table-functional--LC">
-                        <div class="flex">
-                            <p class="row-counter__text">Строк в таблице</p>
-                            <div class="row-counter__box">
-                                <p class="row-counter__select">8</p>
-                                <svg class="row-counter__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M16.7071 10.7071C17.0976 10.3166 17.0976 9.68342 16.7071 9.29289C16.3166 8.90237 15.6834 8.90237 15.2929 9.29289L16.7071 10.7071ZM12 14L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L12 14ZM8.70711 9.29289C8.31658 8.90237 7.68342 8.90237 7.29289 9.29289C6.90237 9.68342 6.90237 10.3166 7.29289 10.7071L8.70711 9.29289ZM15.2929 9.29289L11.2929 13.2929L12.7071 14.7071L16.7071 10.7071L15.2929 9.29289ZM12.7071 13.2929L8.70711 9.29289L7.29289 10.7071L11.2929 14.7071L12.7071 13.2929Z"
-                                        fill="#6A7175" />
-                                </svg>
-                                <div class="row-counter__dropdown hide">
-                                    <p class="row-counter__dropdown--item">20</p>
-                                    <p class="row-counter__dropdown--item">20</p>
-                                    <p class="row-counter__dropdown--item">20</p>
-                                    <p class="row-counter__dropdown--item">20</p>
-                                    <p class="row-counter__dropdown--item">20</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="table-functional__row-counter row-counter">
-                            <p class="row-counter__pages">1-8 из 1240</p>
-                            <svg class="row-counter__arrows" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15 18L9.07071 12.0707C9.03166 12.0317 9.03166 11.9683 9.07071 11.9293L15 6" stroke="#9FA2B4"
-                                    stroke-width="2" stroke-linecap="round" />
-                            </svg>
-                            <svg class="row-counter__arrows" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 18L14.9293 12.0707C14.9683 12.0317 14.9683 11.9683 14.9293 11.9293L9 6" stroke="#9FA2B4"
-                                    stroke-width="2" stroke-linecap="round" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div class="pagination">
-                        <a href="#" class="pagination__item prev-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="#555555"/>
-                            <mask id="mask0_759_66886" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66886)">
-                            </g>
-                        </svg></a>
-                        <a href="#" class="pagination__item">1</a>
-                        <a href="#" class="pagination__item pagination__item--active">2</a>
-                        <a href="#" class="pagination__item">3</a>
-                        <a href="#" class="pagination__item">...</a>
-                        <a href="#" class="pagination__item">12</a>
-                        <a href="#" class="pagination__item" id="next-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            <mask id="mask0_759_66889" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66889)">
-                            </g>
-                        </svg></a>
-                    </div>
-                </section>
 
-                <section class="main__block tab-content" data-tab="2">
-                    <div class="table-container">
-                        <div class="table courses-block__table my-lessons-table">
-                            <div class="thead">
-                                <div class="tr tabel__block">
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Начало
-                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
-                                            </svg> 
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Конец
-                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
-                                            </svg> 
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Počet 
-                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
-                                            </svg> 
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Forma výuky
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Предмет
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Ученик
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Статус
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Přihláška
-                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
-                                            </svg> 
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Hodnoceno
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="loader-progress hide"></div>
-                            <div class="tbody">
-                                <div class="tr">
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">7.10 - 15.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">16.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">1</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Онлайн</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Математика</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Иванов Иван</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex checked">Checked-in</div>
-                                    </div>   
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div>   
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex cell--inner"></div>
-                                    </div> 
-                                    <div class="edit-block-cell course-table__id">
-                                        <div class="edit-block-cell__inner">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_541_36990)">
-                                                    <g filter="url(#filter0_d_541_36990)">
-                                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
-                                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="6" />
-                                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
-                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
-                                                    </filter>
-                                                    <clipPath id="clip0_541_36990">
-                                                        <rect width="24" height="24" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>    
-                                        </div>                                     
-                                    </div> 
-                                </div>
-                                <div class="tr">
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">7.10 - 15.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">16.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">1</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Онлайн</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Математика</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Иванов Иван</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex checked">Checked-in</div>
-                                    </div>   
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div> 
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex cell--inner"></div>
-                                    </div>  
-                                    <div class="edit-block-cell course-table__id">
-                                        <div class="edit-block-cell__inner">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_541_36990)">
-                                                    <g filter="url(#filter0_d_541_36990)">
-                                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
-                                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="6" />
-                                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
-                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
-                                                    </filter>
-                                                    <clipPath id="clip0_541_36990">
-                                                        <rect width="24" height="24" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>    
-                                        </div>                                     
-                                    </div> 
-                                </div>
-                                <div class="tr">
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">7.10 - 15.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">16.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">1</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Онлайн</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Математика</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Иванов Иван</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex nochecked">Not checked</div>
-                                    </div>  
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div> 
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex cell--inner"></div>
-                                    </div>   
-                                    <div class="edit-block-cell course-table__id">
-                                        <div class="edit-block-cell__inner">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_541_36990)">
-                                                    <g filter="url(#filter0_d_541_36990)">
-                                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
-                                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="6" />
-                                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
-                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
-                                                    </filter>
-                                                    <clipPath id="clip0_541_36990">
-                                                        <rect width="24" height="24" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>    
-                                        </div>                                     
-                                    </div> 
-                                </div>
-                                <div class="tr">
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">7.10 - 15.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">16.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">1</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Онлайн</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Математика</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Иванов Иван</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex checked">Checked-in</div>
-                                    </div> 
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div>   
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex cell--inner"></div>
-                                    </div>  
-                                    <div class="edit-block-cell course-table__id">
-                                        <div class="edit-block-cell__inner">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_541_36990)">
-                                                    <g filter="url(#filter0_d_541_36990)">
-                                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
-                                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="6" />
-                                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
-                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
-                                                    </filter>
-                                                    <clipPath id="clip0_541_36990">
-                                                        <rect width="24" height="24" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>    
-                                        </div>                                     
-                                    </div> 
-                                </div>
-                                <div class="tr disable-table">
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex td-time">7.10 - 15.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex td-time">16.40</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">1</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Онлайн</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Математика</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Иванов Иван</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex disabledCheck">Zrušená</div>
-                                    </div> 
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div>  
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex"></div>
-                                    </div>   
-                                    <div class="edit-block-cell course-table__id">
-                                        <div class="edit-block-cell__inner">
-                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <g clip-path="url(#clip0_541_36990)">
-                                                    <g filter="url(#filter0_d_541_36990)">
-                                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
-                                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                                                    </g>
-                                                </g>
-                                                <defs>
-                                                    <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
-                                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
-                                                        <feOffset dy="4" />
-                                                        <feGaussianBlur stdDeviation="6" />
-                                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
-                                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
-                                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
-                                                    </filter>
-                                                    <clipPath id="clip0_541_36990">
-                                                        <rect width="24" height="24" fill="white" />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>    
-                                        </div>                                     
-                                    </div> 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-mobile">
-                        <div class="table schedule-table--mobile">
-                            <div class="thead">
-                                <div class="tr tr__head">
-                                    <div class="th table-flex--mobile">Математика <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_541_36990)">
-                                        <g filter="url(#filter0_d_541_36990)">
-                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"/>
-                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                        </g>
-                                        <defs>
-                                        <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                        <feOffset dy="4"/>
-                                        <feGaussianBlur stdDeviation="6"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"/>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"/>
-                                        </filter>
-                                        <clipPath id="clip0_541_36990">
-                                        <rect width="24" height="24" fill="white"/>
-                                        </clipPath>
-                                        </defs>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tbody">
-                                <div class="tr tabel__block">
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Начало:</p>
-                                        <p class="table-mobile__text">7.10 - 15.40</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Конец:</p>
-                                        <p class="table-mobile__text">16.40</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Ученик:</p>
-                                        <p class="table-mobile__text">Иванов Иван</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">ID заявления:</p>
-                                        <p class="course-table__id">123456</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Форма обучения:</p>
-                                        <p class="table-mobile__text">Иванов Иван</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Количество уроков:</p>
-                                        <p class="table-mobile__text">1</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Состояние:</p>
-                                        <p class="checked">Checked-in</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Рейтинг:</p>
-                                        <p class="table-mobile__text">26.08.2021 - 15:40</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-mobile">
-                        <div class="table schedule-table--mobile">
-                            <div class="thead">
-                                <div class="tr tr__head">
-                                    <div class="th table-flex--mobile">Математика <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <g clip-path="url(#clip0_541_36990)">
-                                        <g filter="url(#filter0_d_541_36990)">
-                                        <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"/>
-                                        <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </g>
-                                        </g>
-                                        <defs>
-                                        <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
-                                        <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-                                        <feOffset dy="4"/>
-                                        <feGaussianBlur stdDeviation="6"/>
-                                        <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"/>
-                                        <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"/>
-                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"/>
-                                        </filter>
-                                        <clipPath id="clip0_541_36990">
-                                        <rect width="24" height="24" fill="white"/>
-                                        </clipPath>
-                                        </defs>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tbody">
-                                <div class="tr tabel__block">
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Начало:</p>
-                                        <p class="table-mobile__text">7.10 - 15.40</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Конец:</p>
-                                        <p class="table-mobile__text">16.40</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Ученик:</p>
-                                        <p class="table-mobile__text">Иванов Иван</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">ID заявления:</p>
-                                        <p class="course-table__id">123456</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Форма обучения:</p>
-                                        <p class="table-mobile__text">Иванов Иван</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Количество уроков:</p>
-                                        <p class="table-mobile__text">1</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Состояние:</p>
-                                        <p class="checked">Checked-in</p>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <p class="table-mobile__title">Рейтинг:</p>
-                                        <p class="table-mobile__text">26.08.2021 - 15:40</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="table-functional table-functional--LC">
-                        <div class="flex">
-                            <p class="row-counter__text">Строк в таблице</p>
-                            <div class="row-counter__box">
-                                <p class="row-counter__select">8</p>
-                                <svg class="row-counter__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M16.7071 10.7071C17.0976 10.3166 17.0976 9.68342 16.7071 9.29289C16.3166 8.90237 15.6834 8.90237 15.2929 9.29289L16.7071 10.7071ZM12 14L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L12 14ZM8.70711 9.29289C8.31658 8.90237 7.68342 8.90237 7.29289 9.29289C6.90237 9.68342 6.90237 10.3166 7.29289 10.7071L8.70711 9.29289ZM15.2929 9.29289L11.2929 13.2929L12.7071 14.7071L16.7071 10.7071L15.2929 9.29289ZM12.7071 13.2929L8.70711 9.29289L7.29289 10.7071L11.2929 14.7071L12.7071 13.2929Z"
-                                        fill="#6A7175" />
+                    <div class="courses-block">
+                        <div class="dropdown-box table__search">
+                            <div class="form__box search-box">
+                                <svg class="search-box__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="#8F9498"/>
+                                    <mask id="mask0_448_89" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0_448_89)">
+                                    </g>
                                 </svg>
-                                <div class="row-counter__dropdown hide">
-                                    <p class="row-counter__dropdown--item">20</p>
-                                    <p class="row-counter__dropdown--item">20</p>
-                                    <p class="row-counter__dropdown--item">20</p>
-                                    <p class="row-counter__dropdown--item">20</p>
-                                    <p class="row-counter__dropdown--item">20</p>
+                                <input class="form__input input__search" type="search" placeholder="Быстрый поиск">
+                            </div>
+                            <div class="filter__btn">
+                                <p class="filter-btn__text">Фильтры</p>
+                                <svg class="filter-btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66602 12H13.9993" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12H4" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 13.3332L4 10.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.334 8H14.0007" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 8H10.6667" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.666 9.33317L10.666 6.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.33398 4H14.0007" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 4H6.66667" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.66602 5.33317L6.66602 2.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
+                            </div>
+                        </div>
+                        <div class="table-container">
+                            <div class="table courses-block__table my-lessons-table">
+                                <div class="thead">
+                                    <div class="tr tabel__block">
+                                        <div class="th">
+                                            <div class="table-flex">
+                                                Начало
+                                                <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                                </svg> 
+                                            </div>
+                                        </div>
+                                        <div class="th">
+                                            <div class="table-flex">
+                                                Конец
+                                                <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                                </svg> 
+                                            </div>
+                                        </div>
+                                        <div class="th">
+                                            <div class="table-flex">
+                                                Počet 
+                                                <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                                </svg> 
+                                            </div>
+                                        </div>
+                                        <div class="th">
+                                            <div class="table-flex">
+                                                Forma výuky
+                                            </div>
+                                        </div>
+                                        <div class="th">
+                                            <div class="table-flex">
+                                                Предмет
+                                            </div>
+                                        </div>
+                                        <div class="th">
+                                            <div class="table-flex">
+                                                Ученик
+                                            </div>
+                                        </div>
+                                        <div class="th">
+                                            <div class="table-flex">
+                                                Статус
+                                                
+                                            </div>
+                                        </div>
+                                        <div class="th">
+                                            <div class="table-flex">
+                                                Přihláška
+                                                <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                                </svg> 
+                                            </div>
+                                        </div>
+                                        <div class="th">
+                                            <div class="table-flex">
+                                                Hodnoceno
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="loader-progress hide"></div>
+                                <div class="tbody">
+                                    <div class="tr">
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">7.10 - 15.40</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">16.40</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">1</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Онлайн</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Математика</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Иванов Иван</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex checked">Checked-in</div>
+                                        </div>   
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">12345</div>
+                                        </div>   
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex cell--inner"></div>
+                                        </div> 
+                                        <div class="edit-block-cell course-table__id">
+                                            <div class="edit-block-cell__inner">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_541_36990)">
+                                                        <g filter="url(#filter0_d_541_36990)">
+                                                            <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
+                                                            <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </g>
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                            <feOffset dy="4" />
+                                                            <feGaussianBlur stdDeviation="6" />
+                                                            <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
+                                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
+                                                        </filter>
+                                                        <clipPath id="clip0_541_36990">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>    
+                                            </div>                                     
+                                        </div> 
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">7.10 - 15.40</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">16.40</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">1</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Онлайн</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Математика</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Иванов Иван</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex checked">Checked-in</div>
+                                        </div>   
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">12345</div>
+                                        </div> 
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex cell--inner"></div>
+                                        </div>  
+                                        <div class="edit-block-cell course-table__id">
+                                            <div class="edit-block-cell__inner">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_541_36990)">
+                                                        <g filter="url(#filter0_d_541_36990)">
+                                                            <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
+                                                            <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </g>
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                            <feOffset dy="4" />
+                                                            <feGaussianBlur stdDeviation="6" />
+                                                            <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
+                                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
+                                                        </filter>
+                                                        <clipPath id="clip0_541_36990">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>    
+                                            </div>                                     
+                                        </div> 
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">7.10 - 15.40</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">16.40</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">1</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Онлайн</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Математика</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Иванов Иван</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex nochecked">Not checked</div>
+                                        </div>  
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">12345</div>
+                                        </div> 
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex cell--inner"></div>
+                                        </div>   
+                                        <div class="edit-block-cell course-table__id">
+                                            <div class="edit-block-cell__inner">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_541_36990)">
+                                                        <g filter="url(#filter0_d_541_36990)">
+                                                            <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
+                                                            <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </g>
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                            <feOffset dy="4" />
+                                                            <feGaussianBlur stdDeviation="6" />
+                                                            <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
+                                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
+                                                        </filter>
+                                                        <clipPath id="clip0_541_36990">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>    
+                                            </div>                                     
+                                        </div> 
+                                    </div>
+                                    <div class="tr">
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">7.10 - 15.40</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">16.40</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">1</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Онлайн</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Математика</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Иванов Иван</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex checked">Checked-in</div>
+                                        </div> 
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">12345</div>
+                                        </div>   
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex cell--inner"></div>
+                                        </div>  
+                                        <div class="edit-block-cell course-table__id">
+                                            <div class="edit-block-cell__inner">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_541_36990)">
+                                                        <g filter="url(#filter0_d_541_36990)">
+                                                            <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
+                                                            <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </g>
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                            <feOffset dy="4" />
+                                                            <feGaussianBlur stdDeviation="6" />
+                                                            <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
+                                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
+                                                        </filter>
+                                                        <clipPath id="clip0_541_36990">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>    
+                                            </div>                                     
+                                        </div> 
+                                    </div>
+                                    <div class="tr disable-table">
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex td-time">7.10 - 15.40</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex td-time">16.40</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">1</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Онлайн</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Математика</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Иванов Иван</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex disabledCheck">Zrušená</div>
+                                        </div> 
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">12345</div>
+                                        </div>  
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex"></div>
+                                        </div>   
+                                        <div class="edit-block-cell course-table__id">
+                                            <div class="edit-block-cell__inner">
+                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <g clip-path="url(#clip0_541_36990)">
+                                                        <g filter="url(#filter0_d_541_36990)">
+                                                            <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF" />
+                                                            <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        </g>
+                                                    </g>
+                                                    <defs>
+                                                        <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                            <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+                                                            <feOffset dy="4" />
+                                                            <feGaussianBlur stdDeviation="6" />
+                                                            <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0" />
+                                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990" />
+                                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape" />
+                                                        </filter>
+                                                        <clipPath id="clip0_541_36990">
+                                                            <rect width="24" height="24" fill="white" />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>    
+                                            </div>                                     
+                                        </div> 
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="table-functional__row-counter row-counter">
-                            <p class="row-counter__pages">1-8 из 1240</p>
-                            <svg class="row-counter__arrows" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M15 18L9.07071 12.0707C9.03166 12.0317 9.03166 11.9683 9.07071 11.9293L15 6" stroke="#9FA2B4"
-                                    stroke-width="2" stroke-linecap="round" />
-                            </svg>
-                            <svg class="row-counter__arrows" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M9 18L14.9293 12.0707C14.9683 12.0317 14.9683 11.9683 14.9293 11.9293L9 6" stroke="#9FA2B4"
-                                    stroke-width="2" stroke-linecap="round" />
-                            </svg>
+                        <div class="table-mobile">
+                            <div class="table schedule-table--mobile">
+                                <div class="thead">
+                                    <div class="tr tr__head">
+                                        <div class="th table-flex--mobile">Математика <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_541_36990)">
+                                            <g filter="url(#filter0_d_541_36990)">
+                                            <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"/>
+                                            <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            </g>
+                                            <defs>
+                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="4"/>
+                                            <feGaussianBlur stdDeviation="6"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"/>
+                                            </filter>
+                                            <clipPath id="clip0_541_36990">
+                                            <rect width="24" height="24" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tbody">
+                                    <div class="tr tabel__block">
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Начало:</p>
+                                            <p class="table-mobile__text">7.10 - 15.40</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Конец:</p>
+                                            <p class="table-mobile__text">16.40</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Ученик:</p>
+                                            <p class="table-mobile__text">Иванов Иван</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">ID заявления:</p>
+                                            <p class="course-table__id">123456</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Форма обучения:</p>
+                                            <p class="table-mobile__text">Иванов Иван</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Количество уроков:</p>
+                                            <p class="table-mobile__text">1</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Состояние:</p>
+                                            <p class="checked">Checked-in</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Рейтинг:</p>
+                                            <p class="table-mobile__text">26.08.2021 - 15:40</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-mobile">
+                            <div class="table schedule-table--mobile">
+                                <div class="thead">
+                                    <div class="tr tr__head">
+                                        <div class="th table-flex--mobile">Математика <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <g clip-path="url(#clip0_541_36990)">
+                                            <g filter="url(#filter0_d_541_36990)">
+                                            <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"/>
+                                            <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </g>
+                                            </g>
+                                            <defs>
+                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                                            <feOffset dy="4"/>
+                                            <feGaussianBlur stdDeviation="6"/>
+                                            <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"/>
+                                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"/>
+                                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"/>
+                                            </filter>
+                                            <clipPath id="clip0_541_36990">
+                                            <rect width="24" height="24" fill="white"/>
+                                            </clipPath>
+                                            </defs>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tbody">
+                                    <div class="tr tabel__block">
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Начало:</p>
+                                            <p class="table-mobile__text">7.10 - 15.40</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Конец:</p>
+                                            <p class="table-mobile__text">16.40</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Ученик:</p>
+                                            <p class="table-mobile__text">Иванов Иван</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">ID заявления:</p>
+                                            <p class="course-table__id">123456</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Форма обучения:</p>
+                                            <p class="table-mobile__text">Иванов Иван</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Количество уроков:</p>
+                                            <p class="table-mobile__text">1</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Состояние:</p>
+                                            <p class="checked">Checked-in</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Рейтинг:</p>
+                                            <p class="table-mobile__text">26.08.2021 - 15:40</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-functional table-functional--LC">
+                            <div class="flex">
+                                <p class="row-counter__text">Строк в таблице</p>
+                                <div class="row-counter__box">
+                                    <p class="row-counter__select">8</p>
+                                    <svg class="row-counter__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M16.7071 10.7071C17.0976 10.3166 17.0976 9.68342 16.7071 9.29289C16.3166 8.90237 15.6834 8.90237 15.2929 9.29289L16.7071 10.7071ZM12 14L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L12 14ZM8.70711 9.29289C8.31658 8.90237 7.68342 8.90237 7.29289 9.29289C6.90237 9.68342 6.90237 10.3166 7.29289 10.7071L8.70711 9.29289ZM15.2929 9.29289L11.2929 13.2929L12.7071 14.7071L16.7071 10.7071L15.2929 9.29289ZM12.7071 13.2929L8.70711 9.29289L7.29289 10.7071L11.2929 14.7071L12.7071 13.2929Z"
+                                            fill="#6A7175" />
+                                    </svg>
+                                    <div class="row-counter__dropdown hide">
+                                        <p class="row-counter__dropdown--item">20</p>
+                                        <p class="row-counter__dropdown--item">20</p>
+                                        <p class="row-counter__dropdown--item">20</p>
+                                        <p class="row-counter__dropdown--item">20</p>
+                                        <p class="row-counter__dropdown--item">20</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="table-functional__row-counter row-counter">
+                                <p class="row-counter__pages">1-8 из 1240</p>
+                                <svg class="row-counter__arrows" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M15 18L9.07071 12.0707C9.03166 12.0317 9.03166 11.9683 9.07071 11.9293L15 6" stroke="#9FA2B4"
+                                        stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                                <svg class="row-counter__arrows" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M9 18L14.9293 12.0707C14.9683 12.0317 14.9683 11.9683 14.9293 11.9293L9 6" stroke="#9FA2B4"
+                                        stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="pagination">
+                            <a href="#" class="pagination__item prev-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="#555555"/>
+                                <mask id="mask0_759_66886" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="6" width="8" height="12">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_759_66886)">
+                                </g>
+                            </svg></a>
+                            <a href="#" class="pagination__item">1</a>
+                            <a href="#" class="pagination__item pagination__item--active">2</a>
+                            <a href="#" class="pagination__item">3</a>
+                            <a href="#" class="pagination__item">...</a>
+                            <a href="#" class="pagination__item">12</a>
+                            <a href="#" class="pagination__item" id="next-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
+                                <mask id="mask0_759_66889" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="6" width="8" height="12">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_759_66889)">
+                                </g>
+                            </svg></a>
                         </div>
                     </div>
-                    <div class="pagination">
-                        <a href="#" class="pagination__item prev-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="#555555"/>
-                            <mask id="mask0_759_66886" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66886)">
-                            </g>
-                        </svg></a>
-                        <a href="#" class="pagination__item">1</a>
-                        <a href="#" class="pagination__item pagination__item--active">2</a>
-                        <a href="#" class="pagination__item">3</a>
-                        <a href="#" class="pagination__item">...</a>
-                        <a href="#" class="pagination__item">12</a>
-                        <a href="#" class="pagination__item" id="next-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            <mask id="mask0_759_66889" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="6" width="8" height="12">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
-                            </mask>
-                            <g mask="url(#mask0_759_66889)">
-                            </g>
-                        </svg></a>
-                    </div>
+                    
                 </section>
             </div>
             <div class="wrapper hide" id="my-lessons--edit">
@@ -1498,19 +976,16 @@
                             <div class="estimation__test estimation-test">
                                 <div class="estimation-test__item">
                                     <h3 class="estimation-test__title">Количество часов</h3>
-                                    <div class="estimation-test__inner">
-                                        <div class="radio estimation-test__inner-item">
-                                            <input class="custom-radio" type="radio" id="color-1" name="color-1" value="">
-                                            <label for="color-1"><span>1 час</span></label>
-                                        </div>
-                                        <div class="radio estimation-test__inner-item">
-                                            <input class="custom-radio" type="radio" id="color-2" name="color-1" value="">
-                                            <label for="color-2"><span>2 часа</span></label>
-                                        </div>
-                                        <div class="radio estimation-test__inner-item">
-                                            <input class="custom-radio" type="radio" id="color-3" name="color-1" value="">
-                                            <label for="color-3"><span>3 часа</span></label>
-                                        </div>
+                                    <div class="form__box form__box--time form__box--selectSVG">
+                                        <select class="form__input select__time">
+                                            <option value="">Время</option>
+                                            <option value="dog">Статус</option>
+                                            <option value="cat">Статус</option>
+                                        </select>
+                                        <svg width="23" height="24" viewBox="0 0 23 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11 21C15.9706 21 20 16.9706 20 12C20 7.02944 15.9706 3 11 3C6.02944 3 2 7.02944 2 12C2 16.9706 6.02944 21 11 21Z" stroke="#8F9498" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+                                            <path d="M11 7V12H16" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
                                     </div>
                                 </div>
                                 <div class="estimation-test__item">
@@ -1717,6 +1192,63 @@
         <footer>
         </footer>
     </section>
+    <div class="filter hide">
+        <div class="filter__inner">
+            <div class="filter__title">
+                <h2 class="filter__title--text">Фильтры</h2>
+                <svg class="filter__close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.3331 21.3334L10.6665 10.6667" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.3332 10.6667L10.6665 21.3334" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="filter__select">
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Город</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Ветвь</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Тема</option>
+                        <option value="dog">Статус</option>
+                        <option value="cat">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Язык</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Форма обучения</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Причина обучения</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn__save--L" type="submit">Применить</button>
+            <button class="btn__save--L btn-light" type="submit">Сбросить</button>
+        </div>
+    </div>
 </body>
 
 </html>

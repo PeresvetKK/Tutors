@@ -6,7 +6,7 @@
     align-items: center;
     justify-content: space-between;
     &__title{
-        font-size: 14px;
+        font-size: 0.875em;
         line-height: 171%;
         color: $dark500;
     }
@@ -35,7 +35,7 @@
     width: 100%;
     padding: 26px 24px;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 140%;
     color: $dark900;
     background-color: #fff;
@@ -53,7 +53,7 @@
 .characteristics__title:after {
     content: '+';
     text-align: center;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
     transition: transform .5s;
 }
@@ -113,6 +113,6 @@
         }
     }
     .characteristics__title{
-        font-size: 16px;
+        font-size: 1em;
     }
 }

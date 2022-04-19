@@ -121,30 +121,6 @@ export function changeBtn() {
         })
     }
 }
-export function profileDropDown() {
-    let containerDropDown = document.querySelector('.drop-status');
-    let profileDropDown = document.querySelector('.profile-dropdown');
-    let profileArrow = document.querySelector('.status-arrow');
-    containerDropDown.addEventListener('click', () => {
-        profileDropDown.classList.toggle('profile-dropdown--active');
-        profileArrow.classList.toggle("rotate180");
-    });
-    let itemDropDown = document.getElementsByClassName('profile-dropdow__item');
-    let textStatus = document.querySelector('.drop-status__text');
-    for (let i = 0; i < itemDropDown.length; i++) {
-        itemDropDown[i].addEventListener('click', function (e) {
-            let eveText = e.target.textContent;
-            textStatus.textContent = eveText;
-            profileDropDown.classList.toggle('profile-dropdown--active');
-            if (e.target.classList.contains('noactive')) {
-                containerDropDown.classList.add('profile-dropdow--noactive');
-            } else {
-                containerDropDown.classList.remove('profile-dropdow--noactive');
-            }
-            profileArrow.classList.toggle("rotate180");
-        });
-    }
-}
 export function tableDropdown() {
     let containerDropDown = document.querySelector('#root');
 

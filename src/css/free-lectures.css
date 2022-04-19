@@ -4,18 +4,18 @@
 .form__input {
   font-family: "Lato", sans-serif;
   color: #8F9498;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 150%;
 }
 .btn-dropdown, .aside__date, .aside__time {
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
 }
 .btn__disabled--L, .btn__load--L, .btn__save--L:hover, .btn__save--L {
   width: 200px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 100%;
   border-radius: 0.25rem;
 }
@@ -28,7 +28,7 @@
 body {
   font-family: "Lato", sans-serif;
   color: #555555;
-  font-size: 16px;
+  font-size: 1em;
   cursor: default;
   background: #E9ECEF;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -56,23 +56,23 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
 h1 {
-  font-size: 32px;
+  font-size: 2em;
   line-height: 131%;
 }
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 125%;
 }
 h3 {
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 160%;
 }
 h4 {
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 150%;
 }
 h5 {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
 }
 a {
@@ -164,7 +164,7 @@ button {
 .btn__add--M {
   position: relative;
   padding: 9px;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   border-radius: 0.25rem;
   width: 115px;
@@ -428,7 +428,7 @@ button {
   background: #fff;
   padding: 0px 4px;
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 100%;
   letter-spacing: 0.15px;
   color: #6A7175;
@@ -533,7 +533,7 @@ button {
 }
 .form__lagel-error {
   display: none;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .dropdown-box {
   display: -webkit-box;
@@ -600,7 +600,7 @@ button {
   width: 262px;
   height: 40px;
   padding-left: 44px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .category-select {
   display: none;
@@ -681,7 +681,7 @@ select {
   display: block;
   margin-left: 31px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
 }
 .aside .aside-dropdown__item:hover {
@@ -727,7 +727,7 @@ select {
   color: #fff;
   margin-left: 8px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
 }
 .menu__list:hover, .menu__list--active {
@@ -893,7 +893,7 @@ select {
 .dropdown__link {
   color: #6A7175;
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
 }
 .dropdown-active {
@@ -1002,7 +1002,7 @@ select {
 .main__dropdown .form__input {
   height: 40px;
   padding: 9px 16px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .message-orange {
   width: 100%;
@@ -1070,7 +1070,7 @@ select {
   color: #84B5DF;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   text-align: center;
   margin: 0 4px;
@@ -1162,7 +1162,7 @@ select {
   margin-bottom: 20px;
 }
 .information-block__data {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #C7CACB;
   margin-bottom: 10px;
@@ -1196,7 +1196,7 @@ select {
           align-items: center;
 }
 .filebox__name {
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
   color: #C7CACB;
   margin-right: 12px;
@@ -1297,7 +1297,7 @@ select {
 }
 .breads__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
   letter-spacing: -0.5px;
   color: #8F9498;
@@ -1541,7 +1541,7 @@ select {
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 1.75em;
     line-height: 129%;
   }
 
@@ -1666,7 +1666,7 @@ select {
   text-align: left;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
   color: #555555;
   cursor: pointer;
@@ -1677,7 +1677,7 @@ select {
 .td {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #555555;
 }
@@ -1748,7 +1748,7 @@ tr {
   display: none;
 }
 .course-table__id {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 17px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -1757,7 +1757,7 @@ tr {
 }
 .course-table__lesson {
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
   color: #30D937;
   padding: 5px 10px;
@@ -1765,14 +1765,14 @@ tr {
   border-radius: 0.25rem;
 }
 .courses-block__table__id {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 17px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #38AAFF;
 }
 .courses-block__table__lesson {
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
   color: #30D937;
   padding: 5px 10px;
@@ -1797,7 +1797,7 @@ tr {
   padding-left: 19px;
 }
 .table-functional__add {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #30D937;
 }
@@ -1826,7 +1826,7 @@ tr {
   position: relative;
 }
 .row-counter__text {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   margin-right: 10px;
 }
@@ -1834,7 +1834,7 @@ tr {
   position: relative;
   border: none;
   background: transparent;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
   width: 12px;
   outline: none;
@@ -1842,7 +1842,7 @@ tr {
 .row-counter__pages {
   margin-left: 35px;
   margin-right: 16px;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
 }
 .row-counter__arrows {
@@ -1874,7 +1874,7 @@ tr {
   width: 168px;
   height: 40px;
   padding: 9px 16px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .table-swap {
   margin-left: 10px;
@@ -1911,7 +1911,7 @@ tr {
   #table-sort {
     height: 40px;
     padding: 0 0 0 16px;
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 150%;
     color: #8F9498;
   }
@@ -1994,12 +1994,12 @@ tr {
     margin-top: 15px;
   }
   .tabel__cell .table-mobile__title {
-    font-size: 14px;
+    font-size: 0.875em;
     color: #8F9498;
     margin-bottom: 2px;
   }
   .tabel__cell .table-mobile__text {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   .table__cell--long {
@@ -2012,7 +2012,7 @@ tr {
   }
 
   .th {
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 160%;
     width: 100%;
     padding: 17px 0 17px 0;
@@ -2057,18 +2057,18 @@ tr {
 .form__input {
   font-family: "Lato", sans-serif;
   color: #8F9498;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 150%;
 }
 .aside__date, .aside__time, .btn-dropdown {
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
 }
 .btn__save--L, .btn__save--L:hover, .btn__load--L, .btn__disabled--L {
   width: 200px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 1em;
   line-height: 100%;
   border-radius: 0.25rem;
 }
@@ -2081,7 +2081,7 @@ tr {
 body {
   font-family: "Lato", sans-serif;
   color: #555555;
-  font-size: 16px;
+  font-size: 1em;
   cursor: default;
   background: #E9ECEF;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
@@ -2109,23 +2109,23 @@ h1, h2, h3, h4, h5 {
   font-weight: 700;
 }
 h1 {
-  font-size: 32px;
+  font-size: 2em;
   line-height: 131%;
 }
 h2 {
-  font-size: 24px;
+  font-size: 1.5em;
   line-height: 125%;
 }
 h3 {
-  font-size: 20px;
+  font-size: 1.25em;
   line-height: 160%;
 }
 h4 {
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 150%;
 }
 h5 {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
 }
 a {
@@ -2217,7 +2217,7 @@ button {
 .btn__add--M {
   position: relative;
   padding: 9px;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   border-radius: 0.25rem;
   width: 115px;
@@ -2481,7 +2481,7 @@ button {
   background: #fff;
   padding: 0px 4px;
   font-family: "Roboto", sans-serif;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 100%;
   letter-spacing: 0.15px;
   color: #6A7175;
@@ -2586,7 +2586,7 @@ button {
 }
 .form__lagel-error {
   display: none;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .dropdown-box {
   display: -webkit-box;
@@ -2653,7 +2653,7 @@ button {
   width: 262px;
   height: 40px;
   padding-left: 44px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .category-select {
   display: none;
@@ -2734,7 +2734,7 @@ select {
   display: block;
   margin-left: 31px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
 }
 .aside .aside-dropdown__item:hover {
@@ -2780,7 +2780,7 @@ select {
   color: #fff;
   margin-left: 8px;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
 }
 .menu__list:hover, .menu__list--active {
@@ -2946,7 +2946,7 @@ select {
 .dropdown__link {
   color: #6A7175;
   font-family: "Lato", sans-serif;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
 }
 .dropdown-active {
@@ -3055,7 +3055,7 @@ select {
 .main__dropdown .form__input {
   height: 40px;
   padding: 9px 16px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .message-orange {
   width: 100%;
@@ -3123,7 +3123,7 @@ select {
   color: #84B5DF;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   text-align: center;
   margin: 0 4px;
@@ -3215,7 +3215,7 @@ select {
   margin-bottom: 20px;
 }
 .information-block__data {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #C7CACB;
   margin-bottom: 10px;
@@ -3249,7 +3249,7 @@ select {
           align-items: center;
 }
 .filebox__name {
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
   color: #C7CACB;
   margin-right: 12px;
@@ -3350,7 +3350,7 @@ select {
 }
 .breads__link {
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
   letter-spacing: -0.5px;
   color: #8F9498;
@@ -3594,7 +3594,7 @@ select {
   }
 
   h1 {
-    font-size: 28px;
+    font-size: 1.75em;
     line-height: 129%;
   }
 
@@ -3719,7 +3719,7 @@ select {
   text-align: left;
   font-family: "Lato", sans-serif;
   font-weight: 700;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
   color: #555555;
   cursor: pointer;
@@ -3730,7 +3730,7 @@ select {
 .td {
   font-family: "Lato", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #555555;
 }
@@ -3801,7 +3801,7 @@ tr {
   display: none;
 }
 .course-table__id {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 17px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
@@ -3810,7 +3810,7 @@ tr {
 }
 .course-table__lesson {
   display: inline-block;
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
   color: #30D937;
   padding: 5px 10px;
@@ -3818,14 +3818,14 @@ tr {
   border-radius: 0.25rem;
 }
 .courses-block__table__id {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 17px;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
   color: #38AAFF;
 }
 .courses-block__table__lesson {
-  font-size: 12px;
+  font-size: 0.75em;
   line-height: 14px;
   color: #30D937;
   padding: 5px 10px;
@@ -3850,7 +3850,7 @@ tr {
   padding-left: 19px;
 }
 .table-functional__add {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #30D937;
 }
@@ -3879,7 +3879,7 @@ tr {
   position: relative;
 }
 .row-counter__text {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   margin-right: 10px;
 }
@@ -3887,7 +3887,7 @@ tr {
   position: relative;
   border: none;
   background: transparent;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 143%;
   width: 12px;
   outline: none;
@@ -3895,7 +3895,7 @@ tr {
 .row-counter__pages {
   margin-left: 35px;
   margin-right: 16px;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
 }
 .row-counter__arrows {
@@ -3927,7 +3927,7 @@ tr {
   width: 168px;
   height: 40px;
   padding: 9px 16px;
-  font-size: 14px;
+  font-size: 0.875em;
 }
 .table-swap {
   margin-left: 10px;
@@ -3964,7 +3964,7 @@ tr {
   #table-sort {
     height: 40px;
     padding: 0 0 0 16px;
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 150%;
     color: #8F9498;
   }
@@ -4047,12 +4047,12 @@ tr {
     margin-top: 15px;
   }
   .tabel__cell .table-mobile__title {
-    font-size: 14px;
+    font-size: 0.875em;
     color: #8F9498;
     margin-bottom: 2px;
   }
   .tabel__cell .table-mobile__text {
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   .table__cell--long {
@@ -4065,7 +4065,7 @@ tr {
   }
 
   .th {
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 160%;
     width: 100%;
     padding: 17px 0 17px 0;
@@ -4216,14 +4216,14 @@ tr {
   margin-right: 20px;
 }
 .salary-information__item-title {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 150%;
   color: #8F9498;
   margin-bottom: 8px;
 }
 .salary-information__item-subtitle {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 1.125em;
   line-height: 150%;
   color: #555555;
 }
@@ -4259,7 +4259,7 @@ tr {
   margin-bottom: 20px;
 }
 .lessons-edit__subtitle {
-  font-size: 16px;
+  font-size: 1em;
   line-height: 150%;
   color: #8F9498;
   margin-bottom: 8px;
@@ -4308,7 +4308,7 @@ progress::-moz-progress-bar {
 }
 .infoblock__title {
   color: #8F9498;
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 171%;
   margin-bottom: 8px;
 }
@@ -4490,11 +4490,11 @@ progress::-moz-progress-bar {
 
   .infoblock__text {
     width: 100%;
-    font-size: 14px;
+    font-size: 0.875em;
   }
 
   .message-orange__text {
-    font-size: 14px;
+    font-size: 0.875em;
     line-height: 150%;
   }
 
@@ -4599,7 +4599,7 @@ progress::-moz-progress-bar {
   cursor: pointer;
 }
 .filter-btn__text {
-  font-size: 14px;
+  font-size: 0.875em;
   line-height: 150%;
   color: #84B5DF;
   margin-right: 4px;
@@ -4955,7 +4955,7 @@ progress::-moz-progress-bar {
   display: flex;
   align-items: center;
   flex: 1;
-  font-size: 14px;
+  font-size: 0.875em;
   text-align: center;
 }
 
@@ -4966,7 +4966,7 @@ progress::-moz-progress-bar {
 
 .air-datepicker-time--current-hours, .air-datepicker-time--current-minutes {
   line-height: 1;
-  font-size: 19px;
+  font-size: 1.32vw;
   font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
   position: relative;
   z-index: 1;
@@ -5133,7 +5133,7 @@ progress::-moz-progress-bar {
 
 .air-datepicker {
   --adp-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  --adp-font-size: 14px;
+  --adp-font-size: 0.875em;
   --adp-width: 246px;
   --adp-z-index: 100;
   --adp-padding: 4px;
@@ -5194,7 +5194,7 @@ progress::-moz-progress-bar {
   --adp-time-thumb-size: 12px;
   --adp-time-padding-inner: 10px;
   --adp-time-day-period-color: var(--adp-color-secondary);
-  --adp-mobile-font-size: 16px;
+  --adp-mobile-font-size: 1em;
   --adp-mobile-nav-height: 40px;
   --adp-mobile-width: 320px;
   --adp-mobile-day-cell-height: 38px;
@@ -5460,7 +5460,7 @@ progress::-moz-progress-bar {
 .clockpicker-popover .popover-title {
   background-color: #fff;
   color: #999;
-  font-size: 24px;
+  font-size: 1.5em;
   font-weight: bold;
   line-height: 30px;
   text-align: center;
