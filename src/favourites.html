@@ -127,7 +127,7 @@
                         <p class="menu__link">Новости</p>
                     </a></li>
                     <li class="menu__box">
-                    <a href="index.html" class="menu__list">
+                    <a href="index.html" class="menu__list ">
                         <svg class="stroke" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
                                 d="M19 4H5C4.44772 4 4 4.44772 4 5V19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4Z"
@@ -202,14 +202,15 @@
                     </a></li>
                     
                     <li class="menu__box">
-                        <a href="free-courses.html" class="menu__list menu__list--active">
+                        <a href="free-courses.html" class="menu__list  menu__list--active">
                             <svg class="stroke" width="24" height="26" viewBox="0 0 24 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M17 6C17 6.35064 16.9398 6.68722 16.8293 7L20 7C20.5523 7 21 7.44772 21 8V11.1707C20.6872 11.0602 20.3506 11 20 11C18.3431 11 17 12.3431 17 14C17 15.6569 18.3431 17 20 17C20.3506 17 20.6872 16.9398 21 16.8293V20C21 20.5523 20.5523 21 20 21H8C7.44772 21 7 20.5523 7 20V16.8293C6.68722 16.9398 6.35064 17 6 17C4.34315 17 3 15.6569 3 14C3 12.3431 4.34315 11 6 11C6.35064 11 6.68722 11.0602 7 11.1707V8C7 7.44772 7.44772 7 8 7L11.1707 7C11.0602 6.68722 11 6.35064 11 6C11 4.34315 12.3431 3 14 3C15.6569 3 17 4.34315 17 6Z"
                                     stroke="#D6E2F5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                             </svg>
                             <p class="menu__link">Свободные курсы</p>
-                        </a></li>
+                        </a>
+                    </li>
                     <li class="menu__box">
                     <a href="contacts.html" class="menu__list">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -276,50 +277,22 @@
 			<div class="wrapper" id="my-lessons">
 				<section class="main__header">
                     <div class="main__title-box dropdown-box">
-                        <h1 class="main__title title">Свободные курсы</h1>
-                        <!-- <div class="form__box form__box--select main__dropdown">
-                            <select class="form__input">
-                                <option value="">Направление</option>
-                                <option value="dog">Направление</option>
-                                <option value="cat">Направление</option>
-                            </select>
-                        </div> -->
+                        <h1 class="main__title title">Избранные свободные курсы</h1>
                     </div>
                     <div class="courses-block">
-                        <div class="dropdown-box table__search">
-                            <div class="form__box search-box">
-                                <svg class="search-box__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="#8F9498"/>
-                                    <mask id="mask0_448_89" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="19" height="18">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 11C5 7.691 7.691 5 11 5C14.309 5 17 7.691 17 11C17 14.309 14.309 17 11 17C7.691 17 5 14.309 5 11ZM20.707 19.293L17.312 15.897C18.365 14.543 19 12.846 19 11C19 6.589 15.411 3 11 3C6.589 3 3 6.589 3 11C3 15.411 6.589 19 11 19C12.846 19 14.543 18.365 15.897 17.312L19.293 20.707C19.488 20.902 19.744 21 20 21C20.256 21 20.512 20.902 20.707 20.707C21.098 20.316 21.098 19.684 20.707 19.293Z" fill="white"/>
-                                    </mask>
-                                    <g mask="url(#mask0_448_89)">
-                                    </g>
-                                </svg>
-                                <input class="form__input input__search" type="search" placeholder="Быстрый поиск">
-                            </div>
-                            <div class="filter__btn">
-                                <p class="filter-btn__text">Фильтры</p>
-                                <svg class="filter-btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M6.66602 12H13.9993" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M2 12H4" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M4 13.3332L4 10.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M13.334 8H14.0007" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M2 8H10.6667" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M10.666 9.33317L10.666 6.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M9.33398 4H14.0007" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M2 4H6.66667" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                    <path d="M6.66602 5.33317L6.66602 2.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-                                </svg> 
-                            </div>
-                        </div>
                         <div class="table-container">
                             <div class="table course-table">
                                 <div class="thead">
                                     <div class="tr tabel__block">
+                                        
                                         <div class="th">
                                             <div class="table-flex">
-                                                ID заявления 
+                                                Предмет 
+                                            </div>
+                                        </div>
+                                        <div class="th">
+                                            <div class="table-flex">
+                                                Ветвь
                                                 <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
                                                 </svg> 
@@ -327,7 +300,7 @@
                                         </div>
                                         <div class="th">
                                             <div class="table-flex">
-                                                Ветвь
+                                                Лектор
                                             </div>
                                         </div>
                                         <div class="th">
@@ -337,19 +310,31 @@
                                         </div>
                                         <div class="th">
                                             <div class="table-flex">
-                                                Предмет
+                                                    ID заявления 
+                                                    <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                                    </svg> 
                                             </div>
                                         </div>
                                         <div class="th">
                                             <div class="table-flex">
-                                                Уроков <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                Причина
+                                            </div>
+                                        </div>
+                                        <div class="th">
+                                            <div class="table-flex">
+                                                уроков
+                                                <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
                                                 </svg> 
                                             </div>
                                         </div>
                                         <div class="th">
                                             <div class="table-flex">
-                                                Доплата
+                                                Vitvoreno
+                                                <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                                </svg> 
                                             </div>
                                         </div>
                                     </div>
@@ -358,148 +343,138 @@
                                 <div class="tbody">
                                     <div class="tr">
                                         <div class="td tabel__cell">
-                                            <div class="table-flex course-table__id">1234567</div>
+                                            <div class="table-flex">Математика</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex">Оломуц</div>
+                                        </div>
+                                        
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Каетан Стурлик</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex">Иван Иванов</div>
                                         </div>
                                         <div class="td tabel__cell">
-                                            <div class="table-flex">Математика</div>
+                                            <div class="table-flex course-table__id">1234567</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Репетиторство</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex"><span class="course-table__lesson">20/20</span></div>
-                                        </div> 
+                                        </div>
                                         <div class="td tabel__cell">
-                                            <div class="table-flex cell--inner">120 крон</div>
-                                        </div>
-                                        <div class="edit-block-cell breads">
-                                            <div class="edit-block-cell__inner">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>   
-                                            </div>                                         
-                                        </div>
+                                            <div class="table-flex">07.09.2021 - 09:45</div>
+                                        </div>   
                                     </div>
                                     <div class="tr">
                                         <div class="td tabel__cell">
-                                            <div class="table-flex course-table__id">1234567</div>
+                                            <div class="table-flex">Математика</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex">Оломуц</div>
+                                        </div>
+                                        
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Каетан Стурлик</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex">Иван Иванов</div>
                                         </div>
                                         <div class="td tabel__cell">
-                                            <div class="table-flex">Математика</div>
+                                            <div class="table-flex course-table__id">1234567</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Репетиторство</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex"><span class="course-table__lesson">20/20</span></div>
-                                        </div> 
+                                        </div>
                                         <div class="td tabel__cell">
-                                            <div class="table-flex cell--inner">120 крон</div>
-                                        </div>
-                                        <div class="edit-block-cell breads">
-                                            <div class="edit-block-cell__inner">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>   
-                                            </div>                                         
-                                        </div>
+                                            <div class="table-flex">07.09.2021 - 09:45</div>
+                                        </div>   
                                     </div>
                                     <div class="tr">
                                         <div class="td tabel__cell">
-                                            <div class="table-flex course-table__id">1234567</div>
+                                            <div class="table-flex">Математика</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex">Оломуц</div>
+                                        </div>
+                                        
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Каетан Стурлик</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex">Иван Иванов</div>
                                         </div>
                                         <div class="td tabel__cell">
-                                            <div class="table-flex">Математика</div>
+                                            <div class="table-flex course-table__id">1234567</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Репетиторство</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex"><span class="course-table__lesson">20/20</span></div>
-                                        </div> 
+                                        </div>
                                         <div class="td tabel__cell">
-                                            <div class="table-flex cell--inner">120 крон</div>
-                                        </div>
-                                        <div class="edit-block-cell breads">
-                                            <div class="edit-block-cell__inner">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>   
-                                            </div>                                         
-                                        </div>
+                                            <div class="table-flex">07.09.2021 - 09:45</div>
+                                        </div>   
                                     </div>
                                     <div class="tr">
                                         <div class="td tabel__cell">
-                                            <div class="table-flex course-table__id">1234567</div>
+                                            <div class="table-flex">Математика</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex">Оломуц</div>
+                                        </div>
+                                        
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Каетан Стурлик</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex">Иван Иванов</div>
                                         </div>
                                         <div class="td tabel__cell">
-                                            <div class="table-flex">Математика</div>
+                                            <div class="table-flex course-table__id">1234567</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Репетиторство</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex"><span class="course-table__lesson">20/20</span></div>
-                                        </div> 
+                                        </div>
                                         <div class="td tabel__cell">
-                                            <div class="table-flex cell--inner">120 крон</div>
-                                        </div>
-                                        <div class="edit-block-cell breads">
-                                            <div class="edit-block-cell__inner">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>   
-                                            </div>                                         
-                                        </div>
+                                            <div class="table-flex">07.09.2021 - 09:45</div>
+                                        </div>   
                                     </div>
                                     <div class="tr">
                                         <div class="td tabel__cell">
-                                            <div class="table-flex course-table__id">1234567</div>
+                                            <div class="table-flex">Математика</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex">Оломуц</div>
+                                        </div>
+                                        
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Каетан Стурлик</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex">Иван Иванов</div>
                                         </div>
                                         <div class="td tabel__cell">
-                                            <div class="table-flex">Математика</div>
+                                            <div class="table-flex course-table__id">1234567</div>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <div class="table-flex">Репетиторство</div>
                                         </div>
                                         <div class="td tabel__cell">
                                             <div class="table-flex"><span class="course-table__lesson">20/20</span></div>
-                                        </div> 
+                                        </div>
                                         <div class="td tabel__cell">
-                                            <div class="table-flex cell--inner">120 крон</div>
-                                        </div>
-                                        <div class="edit-block-cell breads">
-                                            <div class="edit-block-cell__inner">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                    <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                </svg>   
-                                            </div>                                         
-                                        </div>
+                                            <div class="table-flex">07.09.2021 - 09:45</div>
+                                        </div>   
                                     </div>
                                 </div>
                             </div>
@@ -510,6 +485,47 @@
                                 <option value="dog">Дате</option>
                                 <option value="cat">Времени</option>
                             </select>
+                        </div>
+                        <div class="table-mobile">
+                            <div class="table schedule-table--mobile">
+                                <div class="thead">
+                                    <div class="tr tr__head">
+                                        <div class="th table-flex--mobile">Математика</div>
+                                    </div>
+                                </div>
+                                <div class="tbody">
+                                    <div class="tr tabel__block">
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">ID заявления:</p>
+                                            <p class="course-table__id">1234567</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Форма обучения:</p>
+                                            <p class="table-mobile__text">Онлайн</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Ученик:</p>
+                                            <p class="table-mobile__text">Иванов Иван</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Лектор:</p>
+                                            <p class="table-mobile__text">Джейком Стеванс</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Уроков:</p>
+                                            <p class="course-table__lesson">20/20</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Причина обучения:</p>
+                                            <p class="table-mobile__text">Репититорство</p>
+                                        </div>
+                                        <div class="td tabel__cell">
+                                            <p class="table-mobile__title">Создан:</p>
+                                            <p class="table-mobile__text">20.08.2020 - 00:10</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="table-mobile">
                             <div class="table schedule-table--mobile">
@@ -740,20 +756,11 @@
                                     <div class="th">
                                         <div class="table-flex">
                                             Статус
-                                            
                                         </div>
                                     </div>
                                     <div class="th">
                                         <div class="table-flex">
-                                            Přihláška
-                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
-                                            </svg> 
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Hodnoceno
+                                           
                                         </div>
                                     </div>
                                 </div>
@@ -782,9 +789,7 @@
                                     <div class="td tabel__cell">
                                         <div class="table-flex checked">Checked-in</div>
                                     </div>   
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div>   
+                                   
                                     <div class="td tabel__cell">
                                         <div class="table-flex cell--inner"></div>
                                     </div> 
@@ -838,9 +843,7 @@
                                     <div class="td tabel__cell">
                                         <div class="table-flex checked">Checked-in</div>
                                     </div>   
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div> 
+                                     
                                     <div class="td tabel__cell">
                                         <div class="table-flex cell--inner"></div>
                                     </div>  
@@ -895,9 +898,6 @@
                                         <div class="table-flex nochecked">Not checked</div>
                                     </div>  
                                     <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div> 
-                                    <div class="td tabel__cell">
                                         <div class="table-flex cell--inner"></div>
                                     </div>   
                                     <div class="edit-block-cell">
@@ -951,9 +951,6 @@
                                         <div class="table-flex checked">Checked-in</div>
                                     </div> 
                                     <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div>   
-                                    <div class="td tabel__cell">
                                         <div class="table-flex cell--inner"></div>
                                     </div>  
                                     <div class="edit-block-cell">
@@ -1006,9 +1003,6 @@
                                     <div class="td tabel__cell">
                                         <div class="table-flex disabledCheck">Zrušená</div>
                                     </div> 
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">12345</div>
-                                    </div>  
                                     <div class="td tabel__cell">
                                         <div class="table-flex"></div>
                                     </div>   
@@ -1169,239 +1163,8 @@
                     </div>
                 </section>
             </div>
-            <div class="wrapper hide" id="free-courses--edit">
-                <ul class="breads__nav">
-                    <li class="breads__list">
-                        <a href="#" class="breads__link">Бесплатные курсы</a>
-                    </li>
-                    <li class="breads__list">
-                        <a href="#" class="breads__link breads__link--active">Курс математики</a>
-                    </li>
-                </ul>
-                <section class="main__header courses-header">
-                    <h1 class="main__title title">Курс математики</h1>
-                    <div class="courses-header__box">
-                        <a href="#" class="favourites">
-                            <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M12 1H2C1.44772 1 1 1.44772 1 2V17.1315C1 17.9302 1.89014 18.4066 2.5547 17.9635L6.4453 15.3698C6.7812 15.1459 7.2188 15.1459 7.5547 15.3698L11.4453 17.9635C12.1099 18.4066 13 17.9302 13 17.1315V2C13 1.44772 12.5523 1 12 1Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                            </svg>                                
-                        </a>
-                        <button class="btn__save--L">Провести курс</button>                        
-                    </div>
-                </section>
-                <section class="main__block tab-content active">
-                    <div class="container">
-                        <div class="lessons-edit__box lessons-edit-box">
-                            <div class="free-courses__title">
-                                <h2 class="lessons-edit__title">Общая информация</h2>
-                                <p class="card-id lessons-edit__subtitle">ID apicapo: 111111</p>
-                            </div>
-                            <p class="lessons-edit__subtitle">Уроков пройдено:</p>
-                            <h3 class="lessons-edit__score">30 из 80</h3>
-                            <progress value="30" max="100" class="progressbar"></progress>
-                            <div class="salary-information__box">
-                                <div class="salary-information__item profile-content">
-                                    <a href="#" class="header__profile profile">
-                                        <img src="/img/profile.png" alt="profile">
-                                    </a>
-                                    <div class="salary-information__inner">
-                                        <p class="salary-information__item-title">Ученик:</p>
-                                        <p class="salary-information__item-subtitle">Лукас Боэлс</p>
-                                    </div>
-                                </div>
-                                <div class="salary-information__item">
-                                    <p class="salary-information__item-title">Частота уроков:</p>
-                                    <p class="salary-information__item-subtitle">1 раз в неделю</p>
-                                </div>
-                                <div class="salary-information__item">
-                                    <p class="salary-information__item-title">Продолжительность урока:</p>
-                                    <p class="salary-information__item-subtitle">1 час</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lessons-edit__box lessons-edit-box">
-                            <h2 class="lessons-edit__title">Дополнительно</h2>
-                            <div class="lessons__infoblock infoblock">
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Предмет:</p>
-                                    <p class="infoblock__text">Математика</p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Причина обучения:</p>
-                                    <p class="infoblock__text">Выпускной</p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Язык:</p>
-                                    <p class="infoblock__text">Английский</p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Филиал (ученик):</p>
-                                    <p class="infoblock__text">Оломуц</p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Форма обучения:</p>
-                                    <p class="infoblock__text">Онлайн \ вне отделения</p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Оценка:</p>
-                                    <p class="infoblock__text">9</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lessons-edit__box lessons-edit-box">
-                            <h2 class="lessons-edit__title">Требования к репетитору</h2>
-                            <div class="lessons__infoblock infoblock info-tutor">
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Уровень:</p>
-                                    <p class="infoblock__text">
-                                        SS 
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#30D937" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                        <path d="M10.495 7.16172C10.7683 6.88836 10.7683 6.44514 10.495 6.17177C10.2216 5.89841 9.77839 5.89841 9.50503 6.17177L10.495 7.16172ZM7.33333 9.33341L6.83836 9.82839C7.11173 10.1018 7.55494 10.1018 7.82831 9.82839L7.33333 9.33341ZM6.49497 7.50511C6.22161 7.23174 5.77839 7.23174 5.50503 7.50511C5.23166 7.77847 5.23166 8.22169 5.50503 8.49506L6.49497 7.50511ZM9.50503 6.17177L6.83836 8.83844L7.82831 9.82839L10.495 7.16172L9.50503 6.17177ZM7.82831 8.83844L6.49497 7.50511L5.50503 8.49506L6.83836 9.82839L7.82831 8.83844Z" fill="#30D937"/>
-                                        </svg>
-                                    </p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Педагогическое образование:</p>
-                                    <p class="infoblock__text">
-                                        Есть
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#30D937" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.495 7.16172C10.7683 6.88836 10.7683 6.44514 10.495 6.17177C10.2216 5.89841 9.77839 5.89841 9.50503 6.17177L10.495 7.16172ZM7.33333 9.33341L6.83836 9.82839C7.11173 10.1018 7.55494 10.1018 7.82831 9.82839L7.33333 9.33341ZM6.49497 7.50511C6.22161 7.23174 5.77839 7.23174 5.50503 7.50511C5.23166 7.77847 5.23166 8.22169 5.50503 8.49506L6.49497 7.50511ZM9.50503 6.17177L6.83836 8.83844L7.82831 9.82839L10.495 7.16172L9.50503 6.17177ZM7.82831 8.83844L6.49497 7.50511L5.50503 8.49506L6.83836 9.82839L7.82831 8.83844Z" fill="#30D937"/>
-                                        </svg>
-                                    </p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">СДВГ:</p>
-                                    <p class="infoblock__text">
-                                        Есть
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#30D937" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.495 7.16172C10.7683 6.88836 10.7683 6.44514 10.495 6.17177C10.2216 5.89841 9.77839 5.89841 9.50503 6.17177L10.495 7.16172ZM7.33333 9.33341L6.83836 9.82839C7.11173 10.1018 7.55494 10.1018 7.82831 9.82839L7.33333 9.33341ZM6.49497 7.50511C6.22161 7.23174 5.77839 7.23174 5.50503 7.50511C5.23166 7.77847 5.23166 8.22169 5.50503 8.49506L6.49497 7.50511ZM9.50503 6.17177L6.83836 8.83844L7.82831 9.82839L10.495 7.16172L9.50503 6.17177ZM7.82831 8.83844L6.49497 7.50511L5.50503 8.49506L6.83836 9.82839L7.82831 8.83844Z" fill="#30D937"/>
-                                        </svg>
-                                    </p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Квалификация:</p>
-                                    <p class="infoblock__text">А1</p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Пол:</p>
-                                    <p class="infoblock__text">Мужской</p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Метод Хайнехо:</p>
-                                    <p class="infoblock__text">
-                                        Есть
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#30D937" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.495 7.16172C10.7683 6.88836 10.7683 6.44514 10.495 6.17177C10.2216 5.89841 9.77839 5.89841 9.50503 6.17177L10.495 7.16172ZM7.33333 9.33341L6.83836 9.82839C7.11173 10.1018 7.55494 10.1018 7.82831 9.82839L7.33333 9.33341ZM6.49497 7.50511C6.22161 7.23174 5.77839 7.23174 5.50503 7.50511C5.23166 7.77847 5.23166 8.22169 5.50503 8.49506L6.49497 7.50511ZM9.50503 6.17177L6.83836 8.83844L7.82831 9.82839L10.495 7.16172L9.50503 6.17177ZM7.82831 8.83844L6.49497 7.50511L5.50503 8.49506L6.83836 9.82839L7.82831 8.83844Z" fill="#30D937"/>
-                                        </svg>
-                                    </p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Сертификат:</p>
-                                    <p class="infoblock__text">
-                                        Нет
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#FF5454" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M6 6L9.99991 9.99991" stroke="#FF5454" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M6 9.99991L9.99991 6" stroke="#FF5454" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                                        </svg>                                            
-                                    </p>
-                                </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">SPU:</p>
-                                    <p class="infoblock__text">
-                                        Есть
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M8 14C11.3137 14 14 11.3137 14 8C14 4.68629 11.3137 2 8 2C4.68629 2 2 4.68629 2 8C2 11.3137 4.68629 14 8 14Z" stroke="#30D937" stroke-width="1.4" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-                                            <path d="M10.495 7.16172C10.7683 6.88836 10.7683 6.44514 10.495 6.17177C10.2216 5.89841 9.77839 5.89841 9.50503 6.17177L10.495 7.16172ZM7.33333 9.33341L6.83836 9.82839C7.11173 10.1018 7.55494 10.1018 7.82831 9.82839L7.33333 9.33341ZM6.49497 7.50511C6.22161 7.23174 5.77839 7.23174 5.50503 7.50511C5.23166 7.77847 5.23166 8.22169 5.50503 8.49506L6.49497 7.50511ZM9.50503 6.17177L6.83836 8.83844L7.82831 9.82839L10.495 7.16172L9.50503 6.17177ZM7.82831 8.83844L6.49497 7.50511L5.50503 8.49506L6.83836 9.82839L7.82831 8.83844Z" fill="#30D937"/>
-                                        </svg>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="lessons-edit__box lessons-edit-box">
-                            <h2 class="lessons-edit__title">Варианты времени</h2>
-                            <div class="lessons__infoblock infoblock">
-                                <ul class="select-time">
-                                    <li><p class="select-time__item">— После 9:00-13:00 Онлайн или офлайн</p></li>
-                                    <li><p class="select-time__item">— После 14:00-18:00 Онлайн или офлайн по предварительной записи</p></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="lessons-edit__box lessons-edit-box">
-                            <h2 class="lessons-edit__title">Комментарий</h2>
-                            <div class="lessons__infoblock infoblock">
-                                <div class="infoblock__item infoblock__item--big">
-                                    <p class="infoblock__title personal-comment">Терпеливый лектор со специальной педагогикой, ориентированной на учебную программу 1-го класса, Терпеливый лектор со специальной педагогикой, ориентированной на учебную программу 1-го класса</p>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </section>
-            </div>
 		</div>
 	</section>
-    <div class="filter hide">
-        <div class="filter__inner">
-            <div class="filter__title">
-                <h2 class="filter__title--text">Фильтры</h2>
-                <svg class="filter__close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M21.3331 21.3334L10.6665 10.6667" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M21.3332 10.6667L10.6665 21.3334" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-            </div>
-            <div class="filter__select">
-                <div class="form__box form__box--select">
-                    <select class="form__input">
-                        <option value="">Город</option>
-                        <option value="dog">Статус</option>
-                        <option value="cat">Статус</option>
-                    </select>
-                </div>
-                <div class="form__box form__box--select">
-                    <select class="form__input">
-                        <option value="">Ветвь</option>
-                        <option value="dog">Статус</option>
-                        <option value="cat">Статус</option>
-                    </select>
-                </div>
-                <div class="form__box form__box--select">
-                    <select class="form__input">
-                        <option value="">Тема</option>
-                        <option value="dog">Статус</option>
-                        <option value="cat">Статус</option>
-                    </select>
-                </div>
-                <div class="form__box form__box--select">
-                    <select class="form__input">
-                        <option value="">Язык</option>
-                        <option value="dog">Статус</option>
-                        <option value="cat">Статус</option>
-                    </select>
-                </div>
-                <div class="form__box form__box--select">
-                    <select class="form__input">
-                        <option value="">Форма обучения</option>
-                        <option value="dog">Статус</option>
-                        <option value="cat">Статус</option>
-                    </select>
-                </div>
-                <div class="form__box form__box--select">
-                    <select class="form__input">
-                        <option value="">Причина обучения</option>
-                        <option value="dog">Статус</option>
-                        <option value="cat">Статус</option>
-                    </select>
-                </div>
-            </div>
-            <button class="btn__save--L" type="submit">Применить</button>
-            <button class="btn__save--L btn-light" type="submit">Сбросить</button>
-        </div>
-    </div>
     <footer></footer>
 </body>
 </html>

@@ -66,11 +66,11 @@
                             fill="#84B5DF" />
                     </svg>
                 </div>
-                <div class="header__favourites header-icon header__inner--item">
+                <a href="favourites.html" class="header__favourites header-icon header__inner--item">
                     <svg id="favourites" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>                        
-                </div>
+                </a>
                 <div class="header__burger burger header__inner--item">
                     <span></span>
                 </div>
@@ -278,13 +278,7 @@
 				<section class="main__header">
                     <div class="main__title-box dropdown-box">
                         <h1 class="main__title title">Курсы</h1>
-                        <div class="form__box form__box--select main__dropdown">
-                            <select class="form__input">
-                                <option value="">Направление</option>
-                                <option value="dog">Направление</option>
-                                <option value="cat">Направление</option>
-                            </select>
-                        </div>
+                        
                     </div>
                     <div class="courses-block">
                         <div class="dropdown-box table__search">
@@ -299,12 +293,19 @@
                                 </svg>
                                 <input class="form__input input__search" type="search" placeholder="Быстрый поиск">
                             </div>
-                            <div class="form__box form__box--select table__dropdown">
-                                <select class="form__input">
-                                    <option value="">Статус</option>
-                                    <option value="dog">Статус</option>
-                                    <option value="cat">Статус</option>
-                                </select>
+                            <div class="filter__btn">
+                                <p class="filter-btn__text">Фильтры</p>
+                                <svg class="filter-btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.66602 12H13.9993" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 12H4" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M4 13.3332L4 10.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M13.334 8H14.0007" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 8H10.6667" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M10.666 9.33317L10.666 6.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.33398 4H14.0007" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2 4H6.66667" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M6.66602 5.33317L6.66602 2.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg> 
                             </div>
                         </div>
                         <div class="table-container">
@@ -1191,8 +1192,64 @@
                 </section>
             </div>
 		</div>
-		<footer>
-		</footer>
 	</section>
+    <div class="filter hide">
+        <div class="filter__inner">
+            <div class="filter__title">
+                <h2 class="filter__title--text">Фильтры</h2>
+                <svg class="filter__close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.3331 21.3334L10.6665 10.6667" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.3332 10.6667L10.6665 21.3334" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="filter__select">
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Город</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Ветвь</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Тема</option>
+                        <option value="dog">Статус</option>
+                        <option value="cat">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Язык</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Форма обучения</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Причина обучения</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn__save--L" type="submit">Применить</button>
+            <button class="btn__save--L btn-light" type="submit">Сбросить</button>
+        </div>
+    </div>
+    <footer></footer>
 </body>
 </html>

@@ -1,6 +1,7 @@
 import '../scss/courses.scss';
-import {tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown} from '../vendors/script';
+import {filter, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown} from '../vendors/script';
 $(() => {
+	filter();
 	sortTable();
 	tabs();
 	editCourse();
