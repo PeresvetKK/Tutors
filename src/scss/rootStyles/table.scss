@@ -201,9 +201,7 @@ tr {
     }
   }
 }
-.table-btn--mobile {
-  display: none;
-}
+
 .table__header-arrow {
   width: 24px;
   height: 24px;
@@ -347,19 +345,7 @@ tr {
     display: flex;
     flex-wrap: wrap;
   }
-  .table-functional__add {
-    position: fixed;
-    bottom: 86px;
-    right: 30px;
-    width: 48px;
-    height: 48px;
-    color: $bgWhite;
-    border-radius: 50%;
-    background: $green;
-  }
-  .table-btn--mobile {
-    display: block;
-  }
+  
   .tabple__mobile-subject{
     width: 100%;
   }

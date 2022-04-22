@@ -1,5 +1,5 @@
 import '../scss/tutor-training.scss';
-import {dropDownFunc} from '../vendors/script';
+import {modal, openNotify, dropDownFunc} from '../vendors/script';
 $(() => {
 	
 	function burger() {
@@ -98,6 +98,8 @@ $(() => {
 			});
 		}
 	}
+	modal();
+	openNotify();
 	mainDropdown();
 	accrodeon();
 	dropDownFunc();

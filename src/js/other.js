@@ -1,6 +1,6 @@
 import { doc } from 'prettier';
 import '../scss/other.scss';
-import {dropDownFunc, burger, dropDownAside, mainDropdown} from '../vendors/script';
+import {modal, openNotify, dropDownFunc, burger, dropDownAside, mainDropdown} from '../vendors/script';
 $(() => {
 	$('.tabs__item').click(function () {
 		var id = $(this).attr('data-tab'),
@@ -12,6 +12,8 @@ $(() => {
 		$('.tab-content.active').removeClass('active'); // 3
 		content.addClass('active'); // 4
 	});
+	modal();
+	openNotify();
 	mainDropdown();
 	dropDownFunc();
 	burger();

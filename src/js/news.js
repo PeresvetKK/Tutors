@@ -1,5 +1,5 @@
 import '../scss/news.scss';
-import {dropDownFunc, burger, dropDownAside, mainDropdown} from '../vendors/script';
+import {modal, openNotify, dropDownFunc, burger, dropDownAside, mainDropdown} from '../vendors/script';
 $(() => {
 	$('.tabs__item').click(function () {
 		var id = $(this).attr('data-tab'),
@@ -33,6 +33,8 @@ $(() => {
 				myLessonsEdit.classList.toggle("active");	
 			});
 	}
+	modal();
+	openNotify();
     goBack();
     editCourse();
 	mainDropdown();

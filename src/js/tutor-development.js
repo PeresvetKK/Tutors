@@ -1,5 +1,5 @@
 import '../scss/tutor-development.scss';
-import {dropDownFunc} from '../vendors/script';
+import {modal, openNotify, dropDownFunc} from '../vendors/script';
 $(() => {
 	function burger() {
 		let burger = document.querySelector(".burger");
@@ -76,6 +76,8 @@ $(() => {
 			});
 		}
 	}
+	modal();
+	openNotify();
 	mainDropdown();
 	dropDownFunc();
 	burger();

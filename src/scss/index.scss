@@ -50,7 +50,6 @@
     margin-bottom: 16px;
   }
   &__text{
-    color: $green;
     cursor: pointer;
   }
 }
@@ -187,7 +186,7 @@ progress::-moz-progress-bar {
   flex-wrap: wrap;
   &__item {
     width: 33.33%;
-    height: 48px;
+    // height: 48px;
     margin-bottom: 16px;
   }
   &__title {
@@ -204,28 +203,7 @@ progress::-moz-progress-bar {
     width: 66.67%;
   }
 }
-.estimation {
-  &__message {
-    margin: 20px 0 30px 0;
-  }
-  &__comment {
-    margin: 20px 0 0 0;
-    max-width: 100%;
-    min-width: 100%;
-    min-height: 180px;
-    max-height: 180px;
-  }
-  &__inputs {
-    display: flex;
-    justify-content: space-between;
-    .form__box {
-      width: 32%;
-    }
-  }
-  &__submit {
-    margin-top: 50px;
-  }
-}
+
 .estimation-test {
   &__item {
     margin-top: 30px;
@@ -245,7 +223,7 @@ progress::-moz-progress-bar {
   }
 }
 .personal-comment{
-	max-width: 500px;
+	width: 100%;
 	color: $dark900;
 }
 .table-functional--LC{
@@ -320,7 +298,8 @@ progress::-moz-progress-bar {
   }
   .schedule-block{
     .shedule-btn{
-      display: none;
+      width: 100%;
+      margin-bottom: 20px;
     }
   }
   .tabs__item {

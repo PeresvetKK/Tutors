@@ -1,5 +1,5 @@
 import '../scss/training.scss';
-import {dropDownFunc} from '../vendors/script';
+import {modal, openNotify, dropDownFunc} from '../vendors/script';
 $(() => {
 	
 	function burger() {
@@ -77,6 +77,8 @@ $(() => {
 			});
 		}
 	}
+	modal();
+	openNotify();
 	mainDropdown();
 	dropDownFunc();
 	burger();

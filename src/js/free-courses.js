@@ -1,5 +1,5 @@
 import '../scss/free-courses.scss';
-import {tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, filter} from '../vendors/script';
+import {modal, openNotify, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, filter} from '../vendors/script';
 $(() => {
 
 	let edit = document.getElementsByClassName("breads");
@@ -12,6 +12,8 @@ $(() => {
             freeCourses.classList.toggle("active");
         });
     }
+	modal();
+	openNotify();
 	filter();
 	sortTable();
 	tabs();

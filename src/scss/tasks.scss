@@ -17,9 +17,55 @@
         position: absolute;
     }
 }
-
+.modal-message{
+    width: 100%;
+    padding: 30px;
+    background: $bgWhite;
+    border: 1px solid $border;
+    border-radius: 0.25rem;
+    
+}
+.training__modal{
+    margin-top: 20px;
+}
+.information-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid $border;
+    margin-bottom: 30px;
+}
+.infoblock__title{
+    width: 100%;
+    color: $dark700;
+}
+  @media screen and(max-width: 900px){
+    .salary-information__item{
+        width: 100%;
+    }
+    .salary-information__item:not(:last-child) {
+        margin-right: 0;
+    }
+    .information-container{
+        align-items: flex-start;
+        flex-direction: column;
+        padding-bottom: 20px;
+    }
+    .infoblock__item{
+        width: 80%;
+    }
+}
 @media screen and(max-width: 475px){
     .shedule-btn{
         display: none;
+    }
+    .training__modal{
+        padding: 18px;
+    }
+    .infoblock__item{
+        width: 100%;
+    }
+    .button-panel{
+        flex-direction: column;
     }
 }

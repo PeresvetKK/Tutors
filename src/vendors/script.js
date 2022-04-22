@@ -180,7 +180,7 @@ export function mainDropdown() {
     }
 }
 export function modal() {
-    let btn = document.getElementsByClassName('btn__add--M');
+    let btn = document.getElementsByClassName('btn__task');
     for (let i = 0; i < btn.length; i++) {
         btn[i].addEventListener('click', function () {
             let mainbody = document.querySelector('.scroll');
@@ -233,4 +233,28 @@ export function tableLoader(){
             progressLoader.classList.toggle('active');
         });
     }
+}
+export function openNotify(){
+    $('.notify').on('click', function(){
+        let body = document.querySelector('#root');
+        
+        let notify = document.querySelector('.notify-block');
+        notify.classList.toggle('active');
+
+        if(notify.classList.contains('active')){
+            body.classList.add('fixed-scroll__mobile');
+        }else{
+            if(body.classList.contains('fixed-scroll__mobile'))
+            body.classList.remove('fixed-scroll__mobile');
+        }
+    })
+    $('.notify-block__close').on('click', function(){
+        let body = document.querySelector('#root');
+        let notify = document.querySelector('.notify-block');
+
+        notify.classList.toggle('active');
+        if(body.classList.contains('fixed-scroll__mobile')){
+            body.classList.remove('fixed-scroll__mobile');
+        }
+    })
 }
