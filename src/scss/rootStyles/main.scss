@@ -1418,6 +1418,9 @@ select{
     &__title{
         margin-bottom: 20px;
     }
+    &__inner{
+        width: 85%;
+    }
     &__item{
         display: flex;
         gap: 16px;
@@ -1435,6 +1438,9 @@ select{
         align-items: center;
         &:hover{
             background: $darkBlue;
+            svg{
+                fill: $bgWhite;
+            }
         }
     }
     &__box{

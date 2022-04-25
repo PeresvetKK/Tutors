@@ -1590,6 +1590,9 @@ select {
 .notify-block__title {
   margin-bottom: 20px;
 }
+.notify-block__inner {
+  width: 85%;
+}
 .notify-block__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1619,6 +1622,9 @@ select {
 }
 .notify-block__icon:hover {
   background: #84B5DF;
+}
+.notify-block__icon:hover svg {
+  fill: #fff;
 }
 .notify-block__box {
   display: -webkit-box;
