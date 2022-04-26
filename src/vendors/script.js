@@ -75,31 +75,35 @@ export function editCourse() {
 //         });
 //     }
 // }
-export function setDateTime(){
-    new AirDatepicker('#set-data', {
+export function setDate(element){
+    let elem = document.querySelector(`.${element}`);
+    new AirDatepicker(`.${element}`, {
         onSelect: function (dataText, inst) {
             var dateAsString = dataText.formattedDate;
             console.log(dateAsString);
-            var input = document.getElementById('set-data');
+            var input = elem;
             input.value = dateAsString;
             input.setAttribute('data-quantity', input.value);
         }
     });
-    var input = document.getElementById('set-data');
+    var input = elem;
     input.addEventListener('input', function () {
         input.setAttribute('data-quantity', input.value);
     });
 
+}
+export function setTime(element){
     $('.clockpicker').clockpicker()
         .find('input').change(function () {
-            var input = document.getElementById('set-time');
+            var input = document.querySelector(`.${element}`);
+            console.log(input);
             input.value = this.value;
             input.setAttribute('data-time', input.value);
         });
-    $('#set-time').clockpicker({
+    $(`${element}`).clockpicker({
         autoclose: true,
         afterDone: function () {
-            var closeTime = document.querySelector('.clockpicker-popover');
+            var closeTime = element.querySelector('.clockpicker-popover');
             closeTime.style.display = "none";
         }
     });
@@ -180,17 +184,17 @@ export function mainDropdown() {
     }
 }
 export function modal() {
-    let btn = document.getElementsByClassName('btn__task');
+    let btn = document.getElementsByClassName('btn__task modal-active');
     for (let i = 0; i < btn.length; i++) {
         btn[i].addEventListener('click', function () {
             let mainbody = document.querySelector('.scroll');
-            mainbody.classList.add('fixed-scroll--mobile');
+            mainbody.classList.add('fixed-scroll');
             let modal = document.querySelector('.modal-add');
             let close = modal.querySelector('.modal__inner-svg');
             modal.classList.toggle('active__modal');
             close.addEventListener('click', function () {
                 modal.classList.remove('active__modal');
-                mainbody.classList.remove('fixed-scroll--mobile');
+                mainbody.classList.remove('fixed-scroll');
             });
         });
     }

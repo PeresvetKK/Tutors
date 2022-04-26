@@ -1,5 +1,5 @@
 import '../scss/calendar.scss';
-import {modal, openNotify, mainDropdown, dropDownFunc, burger, tabs, dropDownAside} from '../vendors/script';
+import {setDate, setTime, modal, openNotify, mainDropdown, dropDownFunc, burger, tabs, dropDownAside} from '../vendors/script';
 $(() => {
 	modal();
 	openNotify();
@@ -8,4 +8,6 @@ $(() => {
 	dropDownFunc();
 	burger();
 	dropDownAside();
+	setDate('date1');
+	setTime('settime1');
 });

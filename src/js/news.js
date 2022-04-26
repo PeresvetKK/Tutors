@@ -1,5 +1,5 @@
 import '../scss/news.scss';
-import {modal, openNotify, dropDownFunc, burger, dropDownAside, mainDropdown} from '../vendors/script';
+import {setDate, modal, openNotify, dropDownFunc, burger, dropDownAside, mainDropdown} from '../vendors/script';
 $(() => {
 	$('.tabs__item').click(function () {
 		var id = $(this).attr('data-tab'),
@@ -41,4 +41,5 @@ $(() => {
 	dropDownFunc();
 	burger();
 	dropDownAside();
+	setDate('date1');
 });

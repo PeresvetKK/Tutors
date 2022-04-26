@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap);
 @charset "UTF-8";
-.form__input {
+.select-data, .form__input {
   font-family: "Lato", sans-serif;
   color: #8F9498;
   font-size: 1em;
@@ -426,7 +426,7 @@ footer {
 .modal__inner {
   position: relative;
   width: 450px;
-  max-height: 495px;
+  height: 540px;
   overflow-y: scroll;
   background: #fff;
   border: 1px solid #E8E8E8;
@@ -443,6 +443,9 @@ footer {
 }
 .modal__textarea {
   margin: 0 0 28px 0;
+}
+.air-datepicker-global-container, .popover {
+  z-index: 100;
 }
 .select-file {
   position: relative;
@@ -1068,6 +1071,17 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: 56px;
+  padding: 15px;
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  border-radius: 0.25rem;
+  outline: none;
+  padding-left: 51px;
+}
+.select-data:hover, .select-data:focus {
+  border: 1px solid #84B5DF;
 }
 .select-data::after {
   content: "";
@@ -1083,9 +1097,6 @@ select {
   position: absolute;
   top: 30%;
   left: 17px;
-}
-.select-data .form__input {
-  padding-left: 40px;
 }
 .burger {
   width: 48px;
@@ -1620,12 +1631,6 @@ select {
       -ms-flex-align: center;
           align-items: center;
 }
-.notify-block__icon:hover {
-  background: #84B5DF;
-}
-.notify-block__icon:hover svg {
-  fill: #fff;
-}
 .notify-block__box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1633,6 +1638,9 @@ select {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+.notify-block__close {
+  cursor: pointer;
 }
 .notify-inner__title {
   display: -webkit-box;
@@ -1671,6 +1679,18 @@ select {
 }
 .select-time__item {
   margin-bottom: 15px;
+}
+.cell__inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 5px;
 }
 @media (max-width: 1201px) {
   .tabs {
@@ -1909,6 +1929,7 @@ select {
             align-items: center;
     grid-gap: 4px;
     gap: 4px;
+    cursor: pointer;
   }
   .nav-panel__text {
     font-size: 0.625em;
@@ -1933,6 +1954,10 @@ select {
 
   .table-btn--mobile {
     display: block;
+  }
+
+  .modal__inner {
+    height: 70%;
   }
 }
 @media screen and (max-width: 476px) {
@@ -2042,6 +2067,14 @@ select {
             align-items: flex-start;
   }
 
+  .edit-block-cell__inner {
+    width: auto;
+    width: initial;
+    height: 100%;
+    position: static;
+    position: initial;
+  }
+
   h1 {
     font-size: 1.75em;
     line-height: 129%;
@@ -2137,7 +2170,7 @@ select {
   }
 
   .modal__inner {
-    max-height: calc(100% - 60px);
+    max-height: calc(100% - 48px);
     height: 100%;
   }
 

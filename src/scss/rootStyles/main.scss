@@ -379,7 +379,7 @@ footer{
     &__inner{
         position: relative;
         width: 450px;
-        max-height: 495px;
+        height: 540px;
         overflow-y: scroll;
         background: #fff;
         border: 1px solid #E8E8E8;
@@ -401,6 +401,9 @@ footer{
     &__textarea{
         margin: 0 0 28px 0;
     }
+}
+.air-datepicker-global-container, .popover{
+    z-index: 100;
 }
 .select-file{
     position: relative;
@@ -957,6 +960,18 @@ select{
     width: 48%;
     position: relative;
     display: flex;
+    width: 100%;
+    height: 56px;
+    @extend %textM;
+    padding: 15px;
+    background: $bgWhite;
+    border: 1px solid $border;
+    border-radius: 0.25rem;
+    outline: none;
+    padding-left: 51px;
+    &:hover, &:focus{
+            border: 1px solid $darkBlue;
+        }
     &::after{
         content: "";
         position: absolute;
@@ -971,9 +986,6 @@ select{
         position: absolute;
         top: 30%;
         left: 17px;
-    }
-    .form__input{
-        padding-left: 40px;
     }
 }
 .burger{
@@ -1414,7 +1426,6 @@ select{
     max-height: 534px;
     overflow: hidden;
     overflow-y: scroll;
-
     &__title{
         margin-bottom: 20px;
     }
@@ -1436,16 +1447,13 @@ select{
         display: flex;
         justify-content: center;
         align-items: center;
-        &:hover{
-            background: $darkBlue;
-            svg{
-                fill: $bgWhite;
-            }
-        }
     }
     &__box{
         display: flex;
         justify-content: space-between;
+    }
+    &__close{
+        cursor: pointer;
     }
 }
 .notify-inner{
@@ -1482,6 +1490,14 @@ select{
 }
 .select-time__item{
     margin-bottom: 15px;
+}
+.cell__inner{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    top: 5px;
 }
 @media (max-width: 1201px) {
     .tabs{
@@ -1657,6 +1673,7 @@ select{
             flex-direction: column;
             align-items: center;
             gap: 4px;
+            cursor: pointer;
         }
         &__text{
             font-size: 0.625em;
@@ -1679,6 +1696,9 @@ select{
       }
       .table-btn--mobile {
         display: block;
+    }
+    .modal__inner{
+        height: 70%;
     }
 }
 
@@ -1771,7 +1791,11 @@ select{
         padding-top: 82px;
         align-items: flex-start;
     }
-    
+    .edit-block-cell__inner{
+        width: initial;
+        height: 100%;
+        position: initial;
+    }
     h1{
         font-size: 1.75em;
         line-height: 129%;
@@ -1846,7 +1870,7 @@ select{
         margin-top: 0;
     }
     .modal__inner{
-        max-height: calc(100% - 60px);
+        max-height: calc(100% - 48px);
         height: 100%;
     }
     .ixed-scroll--mobile{

@@ -122,6 +122,12 @@
         fill: $darkBlue;
     }
 }
+.edit-block-cell__innerr{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 8px;
+}
 @media screen and(max-width: 1175px){
     .salary-information__box{
         flex-wrap: wrap;

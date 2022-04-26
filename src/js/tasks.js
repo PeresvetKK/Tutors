@@ -3,7 +3,7 @@ import AirDatepicker from 'air-datepicker'
 import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'
 
-import {openNotify, setDateTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, changeBtn, tableDropdown, dropDownAside} from '../vendors/script';
+import {openNotify, setDate, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, changeBtn, tableDropdown, dropDownAside} from '../vendors/script';
 $(() => {
 
     function completeTask(){
@@ -11,10 +11,10 @@ $(() => {
             let complite = document.querySelector('.complite-modal');
             complite.classList.toggle('active__modal');
             let scroll = document.querySelector('.scroll');
-            scroll.classList.toggle('fixed-scroll--mobile');
+            scroll.classList.toggle('fixed-scroll');
             $('.modal__inner-svg').on('click', function(){
                 complite.classList.remove('active__modal');
-                scroll.classList.remove('fixed-scroll--mobile');
+                scroll.classList.remove('fixed-scroll');
             })
         })
     }
@@ -54,5 +54,5 @@ $(() => {
 	changeBtn();
 	tableDropdown();
 	dropDownAside();
-	setDateTime();
+	setDate('date1');
 });

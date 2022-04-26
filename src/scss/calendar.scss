@@ -53,6 +53,11 @@
         margin: 15px 0 0 0;
     }
 }
+@media screen and(max-width: 840px){
+    .calendar-header__selectbox{
+        width: 55%;
+    }
+}
 @media screen and(max-width: 475px){
     .calendar-header__selectbox{
         width: 100%;

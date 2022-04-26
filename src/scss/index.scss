@@ -198,6 +198,12 @@ progress::-moz-progress-bar {
   &__text {
     font-weight: 700;
   }
+  &__text--id{
+    font-size: 0.875em;
+    line-height: 17px;
+    text-decoration-line: underline;
+    color: #38AAFF;
+  }
 
   &__item--big {
     width: 66.67%;
@@ -253,8 +259,15 @@ progress::-moz-progress-bar {
     width: 49.99%;
     order: 0;
   }
+  .salary-information__item{
+    width: 100%;
+  }
+  .salary-information__item:not(:last-child){
+    margin-right: 0;
+  }
   .infoblock__item--big {
     order: 1;
+    width: 90%;
   }
   .infoblock__text {
     width: 90%;
