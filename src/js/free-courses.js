@@ -1,5 +1,5 @@
 import '../scss/free-courses.scss';
-import {mainDropdown, setDate, setTime, modal, openNotify, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, filter} from '../vendors/script';
+import {searchResult, mainDropdown, setDate, setTime, modal, openNotify, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, filter} from '../vendors/script';
 $(() => {
 
 	let edit = document.getElementsByClassName("breads");
@@ -27,6 +27,7 @@ $(() => {
 	setDate('date1');
 	setDate('date2');
 	setTime('settime1');
+	searchResult();
 	function pencelCourse() {
 		let edit = document.getElementsByClassName("edit-block-cell__inner");
 		for (let i = 0; i < edit.length; i++) {
