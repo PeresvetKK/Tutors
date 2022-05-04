@@ -262,3 +262,19 @@ export function openNotify(){
         }
     })
 }
+export function searchResult(){
+    $('.input__search').on('change', function(){
+        console.log('+');
+        let result = document.querySelector('.search-result');
+        result.classList.toggle('active');
+        let closeResult = document.querySelector('.close-result');
+        closeResult.classList.add('active');
+    })
+    $('.close-result').on('click', function(){
+        let result = document.querySelector('.search-result');
+        result.classList.toggle('active');
+        let closeResult = document.querySelector('.close-result');
+        closeResult.classList.toggle('active');
+        $('.input__search').val('');
+    })
+}

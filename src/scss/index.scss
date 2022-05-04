@@ -139,8 +139,6 @@
 .lessons-edit {
   &__box {
     padding-bottom: 30px;
-  }
-  &__box:not(:last-child) {
     border-bottom: 1px solid $border;
     margin-bottom: 20px;
   }
@@ -231,6 +229,7 @@ progress::-moz-progress-bar {
 .personal-comment{
 	width: 100%;
 	color: $dark900;
+  font-size: 1em;
 }
 .table-functional--LC{
   justify-content: space-between;
@@ -241,7 +240,17 @@ progress::-moz-progress-bar {
 .schedule-table{
   margin-top: 20px;
 }
-
+.pagination-container{
+  margin-top: 20px;
+}
+.information-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid $border;
+  margin-bottom: 20px;
+}
 @media (max-width: 1201px) {
 	.tabs__item{
 		width: 49%;
@@ -277,6 +286,10 @@ progress::-moz-progress-bar {
   }
   .estimation__inputs .form__box {
     width: 49%;
+  }
+  .information-container{
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 

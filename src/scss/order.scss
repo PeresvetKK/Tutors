@@ -1,0 +1,53 @@
+@import './index.scss';
+
+.main__title-box{
+    margin-bottom: 20px;
+}
+.edit-block-cell__innerr{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 8px;
+}
+.salary-information__box{
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.salary-information__item{
+    height: fit-content;
+}
+.salary-information__item:not(:last-child){
+    margin-right: 0;
+}
+.price-block{
+    width: 100%;
+    &__text{
+        font-weight: 700;
+        font-size: 2.875em;
+        line-height: 59%;
+        color: $dark900;
+        margin-top: 16px;
+    }
+    &__title{
+        font-size: 1.25em;
+        color: $dark900;
+        line-height: 130%;
+        font-weight: 700;
+    }
+}
+.up-balance{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+.btn__save--L{
+    width: max-content;
+}
+@media screen and(max-width: 475px){
+    .price-block__title{
+        font-size: 1em;
+    }
+    .price-block__text{
+        font-size: 1.875em;
+    }
+}

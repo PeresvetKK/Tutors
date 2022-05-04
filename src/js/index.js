@@ -56,5 +56,28 @@ $(() => {
 			});
 		}
 	}
+	function breadsmodal(){
+		
+			let edit = document.getElementsByClassName("cell__inner");
+			for (let i = 0; i < edit.length; i++) {
+				edit[i].addEventListener("click", function () {
+					let myLessons = document.querySelector("#my-lessons");
+					let deals = document.querySelector('#deals');
+					myLessons.classList.toggle("hide");
+					deals.classList.toggle('active');
+				});
+			}
+	}
+	function goBack(){
+		let edit = document.querySelector(".back-arrow");
+			edit.addEventListener("click", function () {
+				let myLessons = document.querySelector("#my-lessons");
+				let myLessonsEdit = document.querySelector("#deals");
+				myLessons.classList.toggle("hide");
+				myLessonsEdit.classList.toggle("active");	
+			});
+	}
+	goBack();
 	pencelCourse();
+	breadsmodal();
 });

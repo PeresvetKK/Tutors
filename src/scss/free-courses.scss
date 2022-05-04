@@ -99,7 +99,7 @@
     list-style: none;
 }
 .salary-information__item{
-    width: 32%;
+    width: 48%;
 }
 .favourites{
     width: 48px;
@@ -128,6 +128,7 @@
     position: relative;
     top: 8px;
 }
+
 @media screen and(max-width: 1175px){
     .salary-information__box{
         flex-wrap: wrap;

@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
 @import "mixins";
 @import "root";
-
+// @import "fonts";
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
     font-family: 'Lato', sans-serif;
     color: $dark900;
@@ -27,6 +28,12 @@ body {
     border: 0; 
     border-radius: 20px;
 }
+input[type=text]::-ms-clear {  display: none; width : 0; height: 0; }
+input[type=text]::-ms-reveal {  display: none; width : 0; height: 0; }
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
 section {
     position: relative;
 }
@@ -233,6 +240,12 @@ footer{
     background: $darkBlue;
     color: $bgWhite;
 }
+.red-btn{
+    background: $red;
+    color: #fff;
+    padding: 16px 32px;
+    @extend %btnL;
+}
 .edit__circle{
     width: 40px;
     height: 40px;
@@ -354,8 +367,8 @@ footer{
       margin: 20px 0 0 0;
       max-width: 100%;
       min-width: 100%;
-      min-height: 180px;
-      max-height: 180px;
+      min-height: 160px;
+      max-height: 160px;
     }
     &__inputs {
       display: flex;
@@ -378,9 +391,9 @@ footer{
     background: rgba(49, 61, 75, .3);
     &__inner{
         position: relative;
-        width: 450px;
+        width: 544px;
         height: 540px;
-        overflow-y: scroll;
+        overflow: hidden;
         background: #fff;
         border: 1px solid #E8E8E8;
         border-radius: 0.25rem;
@@ -427,9 +440,20 @@ footer{
 .training__modal{
     margin-top: 20px;
 }
+
 .modal-add, .modal-event{
     &__box{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         padding: 40px 40px 0 40px;
+    }
+    &__inner{
+        overflow: hidden;
+        overflow-y: scroll;
+        margin-right: -14px;
+        padding-right: 14px;
     }
     &__title{
         margin-bottom: 30px;
@@ -437,11 +461,18 @@ footer{
     }
     .form__box{
         width: 100%;
+        margin-bottom: 20px;
     }
     .btn__save--L{
         width: 100%;
         margin-bottom: 40px;
     }
+}
+.modal-event__box{
+    justify-content: center;
+}
+.modal-add__boxig{
+    height: calc(100% - 82px);
 }
 .form{
     display: flex;
@@ -1148,11 +1179,7 @@ select{
   background: rgba(26, 26, 26, 0.1);
   border: none;
 }
-.underline{
-    text-decoration-line: underline;
-    color: $blue;
-    cursor: pointer;
-}
+
 .status-arrow{
     transform: rotate(0deg);
 }
@@ -1448,6 +1475,9 @@ select{
         justify-content: center;
         align-items: center;
     }
+    &__icon--red{
+        background: rgba(255, 84, 84, 0.1);
+    }
     &__box{
         display: flex;
         justify-content: space-between;
@@ -1489,6 +1519,9 @@ select{
     display: none;
 }
 .select-time__item{
+    display: flex;
+    gap: 10px;
+    align-items: center;
     margin-bottom: 15px;
 }
 .cell__inner{
@@ -1498,6 +1531,60 @@ select{
     display: flex;
     align-items: center;
     top: 5px;
+}
+.documents{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.document{
+    &__prevue{
+        box-sizing: content-box;
+        max-width: 111px;
+        max-height: 146px;
+        padding: 27px 22.46px 27px 22.46px;
+        background: $bgElement;
+        border: 1px solid $border;
+        border-radius: 0.25rem;
+        margin-bottom: 10px;
+    }
+    &__name{
+        color: $dark700;
+        font-size: 0.875em;
+        line-height: 150%;
+    }
+}
+.edit-block-button{
+    border-bottom: none !important;
+}
+.search-result{
+    position: absolute;
+    background: #fff;
+    z-index: 2;
+    width: 100%;
+    height: calc(100% - 59px);
+    padding: 20px;
+}
+.close-result{
+    position: absolute;
+    left: 225px;
+    top: 22%;
+}
+.training-modal{
+    ul, li{
+        list-style: none;
+    }
+    span, p{
+        font-family: "Lato", sans-serif;
+        color: $dark700;
+        font-size: 1em;
+        margin-bottom: 15px;
+    }
+}
+.underline{
+    text-decoration-line: underline;
+    color: $blue !important;
+    cursor: pointer;
 }
 @media (max-width: 1201px) {
     .tabs{
@@ -1698,7 +1785,7 @@ select{
         display: block;
     }
     .modal__inner{
-        height: 70%;
+        height: calc(100% - 134px);
     }
 }
 
@@ -1878,5 +1965,8 @@ select{
     }
     .notify-inner{
         width: 80%;
+    }
+    .red-btn{
+        width: 100%;
     }
 }

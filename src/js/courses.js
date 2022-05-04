@@ -1,5 +1,5 @@
 import '../scss/courses.scss';
-import {setTime, setDate, modal, openNotify, filter, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown} from '../vendors/script';
+import {searchResult, setTime, setDate, modal, openNotify, filter, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown} from '../vendors/script';
 $(() => {
 	modal();
 	openNotify();
@@ -34,4 +34,5 @@ $(() => {
 		}
 	}
 	pencelCourse();
+	searchResult();
 });
