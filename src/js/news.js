@@ -20,7 +20,6 @@ $(() => {
 
 				myLessons.classList.toggle("hide");
 				myLessonsEdit.classList.toggle("active");
-				
 			});
 		}
 	}

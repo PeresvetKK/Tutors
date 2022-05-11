@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap);
 @charset "UTF-8";
 .select-data, .form__input {
   font-family: "Lato", sans-serif;
@@ -1800,6 +1800,194 @@ select {
   color: #38AAFF !important;
   cursor: pointer;
 }
+.chat {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #E8E8E8;
+  border-radius: 0.25rem;
+}
+.chat__header {
+  height: 72px;
+  padding: 16px;
+  border-bottom: 1px solid #E8E8E8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 8px;
+  gap: 8px;
+}
+.chat__header::after {
+  content: "";
+  margin-top: 2px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  left: 109px;
+  top: 30px;
+  background: #30D937;
+}
+.chat__header img {
+  width: 40px;
+  height: 40px;
+}
+.chat__user {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 169%;
+  color: #555555;
+}
+.chat__input {
+  width: 94%;
+  padding-right: 20px;
+  height: 40px;
+  border-right: 1px solid #E8E8E8;
+}
+.chat__functional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 14px;
+  gap: 14px;
+}
+.chat__add-file {
+  margin-left: 12px;
+  cursor: pointer;
+}
+.chat__smile {
+  cursor: pointer;
+}
+.chat__footer--inner {
+  height: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 6px 16px 6px 16px;
+}
+.chat-main {
+  padding: 16px;
+  height: 63vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+.message-box {
+  width: 48%;
+}
+.message-box__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 15px;
+  gap: 15px;
+}
+.message-box__header img {
+  width: 24px;
+  height: 24px;
+}
+.message-box__name {
+  font-weight: 700;
+  font-size: 1em;
+  line-height: 169%;
+  color: #555555;
+}
+.message-box__date {
+  color: #C7CACB;
+  font-size: 12px;
+  line-height: 14px;
+}
+.message-box__message {
+  padding: 20px;
+  color: #555555;
+  font-size: 1em;
+  line-height: 150%;
+  margin-top: 8px;
+}
+.apponent__message {
+  background: #FAFAFA;
+  border: 1px solid #E8E8E8;
+  border-radius: 0 0.25rem 0.25rem 0.25rem;
+}
+.apponent .message-box__header {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.user .message-box__header {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.user__message {
+  color: #fff;
+  background: #84B5DF;
+  border: 1px solid #E8E8E8;
+  border-radius: 0.25rem 0 0.25rem 0.25rem;
+}
+.message-box__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.message-box__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.footer-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-gap: 8px;
+  gap: 8px;
+  width: 100%;
+  padding: 0 16px 15px 16px;
+  border-bottom: 1px solid #E8E8E8;
+}
+.footer-box .message-box__name {
+  font-size: 12px;
+  line-height: 18px;
+}
+.footer-box .chat-footer__typing {
+  color: #C7CACB;
+  font-size: 10px;
+  line-height: 15px;
+  margin-top: 2px;
+}
+.chat-footer {
+  padding: 16px 0 0 0;
+}
+.chat-footer img {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
 @media (max-width: 1201px) {
   .tabs {
     width: 100%;
@@ -2292,6 +2480,11 @@ select {
 
   .red-btn {
     width: 100%;
+  }
+
+  .message-box {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
 .calendar {

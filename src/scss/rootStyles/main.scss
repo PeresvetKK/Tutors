@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import "mixins";
 @import "root";
 // @import "fonts";
@@ -1586,6 +1586,159 @@ select{
     color: $blue !important;
     cursor: pointer;
 }
+.chat{
+    width: 100%;
+    background: #fff;
+    border: 1px solid #E8E8E8;
+    border-radius: 0.25rem;
+    &__header{
+        height: 72px;
+        padding: 16px;
+        border-bottom: 1px solid $border;
+        display: flex;
+        justify-content: flex-start;
+        position: relative;
+        align-items: center;
+        gap: 8px;
+        &::after{
+            content: "";
+            margin-top: 2px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            left: 109px;
+            top: 30px;
+            background: $green;
+        }
+        img{
+            width: 40px;
+            height: 40px;
+        }
+    }
+    &__user{
+        font-weight: 700;
+        font-size: 1em;
+        line-height: 169%;
+        color: $dark900;
+    }
+    &__input{
+        width: 94%;
+        padding-right: 20px;
+        height: 40px;
+        border-right: 1px solid $border;
+    }
+    &__functional{
+        display: flex;
+        align-items: center;
+        gap: 14px;
+    }
+    &__add-file{
+        margin-left: 12px;
+        cursor: pointer;
+    }
+    &__smile{
+        cursor: pointer;
+    }
+}
+.chat__footer--inner{
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 6px 16px 6px 16px;
+}
+.chat-main{
+    padding: 16px;
+    height: 63vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.message-box{
+    width: 48%;
+    &__header{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        img{
+            width: 24px;
+            height: 24px;
+        }
+    }
+    &__name{
+        font-weight: 700;
+        font-size: 1em;
+        line-height: 169%;
+        color: $dark900;
+    }
+    &__date{
+        color: $dark300;
+        font-size: 12px;
+        line-height: 14px;
+    }
+    &__message{
+        padding: 20px;
+        color: $dark900;
+        font-size: 1em;
+        line-height: 150%;
+        margin-top: 8px;
+        
+    }
+}
+.apponent__message{
+    background: #FAFAFA;;
+    border: 1px solid $border;
+    border-radius: 0 0.25rem 0.25rem 0.25rem;
+}
+.apponent{
+    .message-box__header{
+        justify-content: flex-start;
+    }
+}
+.user{
+    .message-box__header{
+        justify-content: flex-end;
+    }
+}
+.user__message{
+    color: #fff;
+    background: $darkBlue;
+    border: 1px solid $border;
+    border-radius: 0.25rem 0 0.25rem 0.25rem;
+}
+.message-box__left{
+    display: flex;
+    justify-content: flex-start;
+}
+.message-box__right{
+    display: flex;
+    justify-content: flex-end;
+}
+.footer-box{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    padding: 0 16px 15px 16px;
+    border-bottom: 1px solid $border;
+    .message-box__name{
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .chat-footer__typing{
+        color: $dark300;
+        font-size: 10px;
+        line-height: 15px;
+        margin-top: 2px;
+    }
+}
+.chat-footer{
+    padding: 16px 0 0 0;
+    img{
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+    }
+}
 @media (max-width: 1201px) {
     .tabs{
         width: 100%;
@@ -1968,5 +2121,9 @@ select{
     }
     .red-btn{
         width: 100%;
+    }
+    .message-box {
+        width: 100%;
+        margin-bottom: 10px;
     }
 }
