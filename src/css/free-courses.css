@@ -3770,6 +3770,13 @@ progress::-moz-progress-bar {
 .infoblock__text svg {
   margin-left: 10px;
 }
+.infoblock__inner--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 10px;
+  gap: 10px;
+}
 .info-tutor {
   -webkit-box-pack: start;
       -ms-flex-pack: start;

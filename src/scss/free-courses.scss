@@ -92,6 +92,10 @@
         margin-left: 10px;
     }
 }
+.infoblock__inner--item{
+    display: flex;
+    gap: 10px;
+}
 .info-tutor{
     justify-content: flex-start;
 }
