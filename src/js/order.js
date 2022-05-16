@@ -4,7 +4,7 @@ import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
-import {openNotify, setDate, setTime, tableLoader,tabs, sortTable, mainDropdown, dropDownFunc, burger, tableDropdown, dropDownAside, modal, editCourse} from '../vendors/script';
+import {openNotify, setDate, setTime, tableLoader,tabs, sortTable, mainDropdown, dropDownFunc, burger, tableDropdown, dropDownAside, modal} from '../vendors/script';
 $(() => {
 	modal();
 	openNotify();
@@ -15,11 +15,25 @@ $(() => {
 	dropDownFunc();
 	burger();
 	tableDropdown();
-	editCourse();
+	// editCourse();
 	dropDownAside();
 	setDate('date1');
 	setDate('date2');
 	setTime('settime1');
+	function editCourse() {
+		let edit = document.getElementsByClassName("edit-block-cell__inner");
+		for (let i = 0; i < edit.length; i++) {
+			edit[i].addEventListener("click", function () {
+				let myLessons = document.querySelector("#my-lessons");
+				let myLessonsEdit = document.querySelector("#my-lessons--edit");
+
+				myLessons.classList.toggle("hide");
+				myLessonsEdit.classList.toggle("active");
+				
+			});
+		}
+	}
+	editCourse();
 	
     // let edit = document.getElementsByClassName('edit-block-cell__innerr');
 	// for(let i = 0; i < edit.length; i++){

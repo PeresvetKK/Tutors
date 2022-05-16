@@ -180,7 +180,6 @@ progress::-moz-progress-bar {
 .infoblock {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex-wrap: wrap;
   &__item {
     width: 33.33%;
@@ -250,6 +249,43 @@ progress::-moz-progress-bar {
   padding-bottom: 20px;
   border-bottom: 1px solid $border;
   margin-bottom: 20px;
+}
+
+.salary-oplat{
+  width: 100%;
+  background: #fff;
+  padding: 16px;
+  &__inner{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 16px;
+    align-items: center;
+    svg{
+      left: 16px;
+      top: 11px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .form__box{
+    margin-bottom: 0;
+    width: 172px;
+    height: 40px;
+  }
+  .form__input{
+    padding: 9px;
+    padding-left: 46px;
+    font-size: 14px;
+  }
+  .form__box--selectSVG::after{
+    top: 22%;
+  }
+}
+.modal-dogovor{
+  .modal__inner{
+    height: 476px;
+  }
 }
 @media (max-width: 1201px) {
 	.tabs__item{
@@ -374,5 +410,11 @@ progress::-moz-progress-bar {
   }
   .btn__save--L {
     width: 100%;
+  }
+  .modal-dogovor .modal__inner{
+    height: 100%;
+  }
+  .modal-dogovor .modal-add__box{
+    justify-content: flex-start;
   }
 }

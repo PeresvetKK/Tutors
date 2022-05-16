@@ -558,6 +558,11 @@ footer{
         }
     }
 }
+.modal__textarea{
+    &:hover, &:focus{
+        border: 1px solid $darkBlue;
+    }
+}
 .error{
     color: $red;
     .form__label{
@@ -795,6 +800,11 @@ select{
             fill: $darkBlue;
             path{
                 fill: $darkBlue;
+            }
+        }
+        .zakaz{
+            path{
+                stroke: $darkBlue;
             }
         }
         .stroke{
@@ -1445,6 +1455,7 @@ select{
 .notify-block{
     position: absolute;
     top: 95px;
+    right: 100px;
     width: 470px;
     padding: 20px;
     border-radius: 0.25rem;
@@ -1600,22 +1611,22 @@ select{
         position: relative;
         align-items: center;
         gap: 8px;
-        &::after{
-            content: "";
-            margin-top: 2px;
-            width: 6px;
-            height: 6px;
-            border-radius: 50%;
-            left: 109px;
-            top: 30px;
-            background: $green;
-        }
+        // &::after{
+        //     content: "";
+        //     margin-top: 2px;
+        //     width: 6px;
+        //     height: 6px;
+        //     border-radius: 50%;
+        //     left: 109px;
+        //     top: 30px;
+        //     background: $green;
+        // }
         img{
             width: 40px;
             height: 40px;
         }
     }
-    &__user{
+    &__titl{
         font-weight: 700;
         font-size: 1em;
         line-height: 169%;
@@ -1623,17 +1634,24 @@ select{
     }
     &__input{
         width: 94%;
-        padding-right: 20px;
-        height: 40px;
-        border-right: 1px solid $border;
+        height: 47px;
+        padding: 12px;
+        margin-right: 16px;
+        font-size: 1em;
+        padding-left: 16px;
+        color: $dark500;
+        font-family: "Lato", sans-serif;
     }
     &__functional{
         display: flex;
         align-items: center;
-        gap: 14px;
+        height: 100%;
+        border-right: 1px solid $border;
+        padding-right: 16px;
     }
     &__add-file{
-        margin-left: 12px;
+        width: 24px;
+        height: 24px;
         cursor: pointer;
     }
     &__smile{
@@ -1641,11 +1659,43 @@ select{
     }
 }
 .chat__footer--inner{
-    height: 52px;
+    height: 72px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 6px 16px 6px 16px;
+    .input__wrapper{
+        height: 67%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-right: 16px;
+        border-right: 1px solid $border;
+        cursor: pointer;
+    }
+    .input__file {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+      }
+       
+      .input__file-icon-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+       
+      .input__file-button-text {
+        line-height: 1;
+        margin-top: 1px;
+      }
+       
+      .input__file-button {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
 }
 .chat-main{
     padding: 16px;
@@ -1655,6 +1705,11 @@ select{
 }
 .message-box{
     width: 48%;
+    a{
+        text-decoration-line: underline;
+        color: $blue !important;
+        cursor: pointer;
+    }
     &__header{
         display: flex;
         align-items: center;
@@ -1700,18 +1755,20 @@ select{
     }
 }
 .user__message{
-    color: #fff;
-    background: $darkBlue;
-    border: 1px solid $border;
+    
+    background: rgba(132, 181, 223, 0.1);
+    border: 1px solid #84B5DF;
     border-radius: 0.25rem 0 0.25rem 0.25rem;
 }
 .message-box__left{
     display: flex;
     justify-content: flex-start;
+    margin-bottom: 30px;
 }
 .message-box__right{
     display: flex;
     justify-content: flex-end;
+    margin-bottom: 30px;
 }
 .footer-box{
     display: flex;
@@ -1738,7 +1795,120 @@ select{
         height: 16px;
         border-radius: 50%;
     }
+    // .btn__save--L{
+    //     max-width: 140px;
+    // }
 }
+.nav-panel__svg{
+    path{
+        stroke: $darkBlue;
+    }
+}
+.push-block{
+    position: absolute;
+    top: 200px;
+    right: 38px;
+    width: 30%;
+    min-width: 320px;
+    height: 56px;
+    padding: 16px;
+    background: $bgWhite;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.push{
+    &__close{
+        cursor: pointer;
+    }
+    &__left{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__error{
+        border: 1px solid $red;
+        .push__text{
+            color: $red;
+        }
+        .push__close{
+            path{
+                fill: $red;
+            }
+        }
+    }
+    &__wrong{
+        border: 1px solid $orange;
+        .push__text{
+            color: $orange;
+        }
+        .push__close{
+            path{
+                fill: $orange;
+            }
+        }
+    }
+    &__good{
+        border: 1px solid $green;
+        .push__text{
+            color: $green;
+        }
+        .push__close{
+            path{
+                fill: $green;
+            }
+        }
+    }
+    &__no{
+        border: 1px solid $dark700;
+        .push__text{
+            color: $dark700;
+        }
+        .push__close{
+            path{
+                fill: $dark700;
+            }
+        }
+    }
+}
+.alert{
+    position: absolute;
+    right: 38px;
+    top: 300px;
+    width: 440px;
+    padding: 20px;
+    background: $bgWhite;
+    border: 1px solid $darkBlue;
+    border-radius: 0.25rem;
+    &__header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+    }
+    &__text{
+        width: 90%;
+        margin-bottom: 24px;
+    }
+    &__footer{
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__inner{
+        width: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+    }
+    .btn__save--L{
+        padding: 9px 25px;
+        width: auto;
+    }
+}
+
 @media (max-width: 1201px) {
     .tabs{
         width: 100%;
@@ -2125,5 +2295,12 @@ select{
     .message-box {
         width: 100%;
         margin-bottom: 10px;
+    }
+    .push-block{
+        right: 25px;
+    }
+    .alert{
+        right: 25px;
+        width: 86%;
     }
 }

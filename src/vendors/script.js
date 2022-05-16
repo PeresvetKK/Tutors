@@ -278,3 +278,9 @@ export function searchResult(){
         $('.input__search').val('');
     })
 }
+export function pushClose(){
+    $('.push__close').on('click', function(){
+        // this.parentElement.classList.add('hide');
+        this.parentElement.style.display="none";
+    })
+}
