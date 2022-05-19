@@ -28,6 +28,7 @@
 .filter{
     position: fixed;
     height: 100%;
+    z-index: 10;
     max-height: calc(100% - 60px);
     top: 82px;
     right: 0;
@@ -105,7 +106,7 @@
     list-style: none;
 }
 .salary-information__item{
-    width: 32%;
+    // width: 32%;
 }
 .favourites{
     width: 48px;

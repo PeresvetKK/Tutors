@@ -1094,7 +1094,7 @@ select{
         color: $orange;
     }
     &__text{
-        max-width: 668px;
+        width: 100%;
     }
     &__close{
         cursor: pointer;
@@ -1270,6 +1270,12 @@ select{
 .loader-table{
     opacity: 0.3;
 }
+.esimation-form{
+    .form__box{
+      margin-top: 20px;
+      width: 32%;
+    }
+  }
 .loader-progress{
     position: absolute;
     width: 30%;
@@ -1285,8 +1291,9 @@ select{
     margin-left: -51px;
     cursor: pointer;
     width: 56px;
-    height: 55px;
+    height: 53px;
     padding: 7px;
+    z-index: 6;
     // box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
     // border-bottom: 1px solid $border;
   }
@@ -1419,8 +1426,17 @@ select{
     }
 }
 .profile-icon{
-    max-width: 64px;
-    max-height: 64px;
+    width: 64px;
+    height: 64px;
+}
+.infoblock__header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    svg{
+        margin-top: -3px;
+    }
 }
 .filesPreviue{
     max-width: 156px;
@@ -1535,13 +1551,17 @@ select{
     align-items: center;
     margin-bottom: 15px;
 }
-.cell__inner{
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    top: 5px;
+// .cell__inner{
+//     position: relative;
+//     z-index: 2;
+//     width: 100%;
+//     height: 100%;
+//     display: flex;
+//     align-items: center;
+//     top: 9px;
+// }
+svg.cell__inner{
+    width: 24px;
 }
 .documents{
     display: flex;
@@ -1704,7 +1724,7 @@ select{
     overflow-y: scroll;
 }
 .message-box{
-    width: 48%;
+    width: 90%;
     a{
         text-decoration-line: underline;
         color: $blue !important;
@@ -1805,8 +1825,8 @@ select{
     }
 }
 .push-block{
-    position: absolute;
-    top: 200px;
+    position: fixed;
+    bottom: 95px;
     right: 38px;
     width: 30%;
     min-width: 320px;
@@ -1815,10 +1835,12 @@ select{
     background: $bgWhite;
     border-radius: 0.25rem;
     display: flex;
+    z-index: 101;
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
 }
+
 .push{
     &__close{
         cursor: pointer;
@@ -1874,14 +1896,15 @@ select{
     }
 }
 .alert{
-    position: absolute;
+    position: fixed;
     right: 38px;
-    top: 300px;
+    top: calc(50% - 100px);
     width: 440px;
     padding: 20px;
     background: $bgWhite;
     border: 1px solid $darkBlue;
     border-radius: 0.25rem;
+    z-index: 101;
     &__header{
         display: flex;
         align-items: center;
@@ -1909,6 +1932,147 @@ select{
     }
 }
 
+.breads-drop{
+    position: fixed;
+    right: 96px;
+    // top: -13px;
+    background: $bgWhite;
+    width: 211px;
+    border: 1px solid $border;
+    border-radius: 0.25rem;
+    &__item{
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        padding: 15px 12px;
+        &:hover{
+            background: #F5F9FD;
+        }
+    }
+    &__text{
+        font-size: 14px;
+    }
+}
+.filter__btn{
+    width: 150px;
+    padding: 9px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid $darkBlue;
+    border-radius: 0.25rem;
+    background: $bgWhite;
+    cursor: pointer;
+}
+.filter-btn{
+    &__text{
+        font-size: 0.875em;
+        line-height: 150%;
+        color: $darkBlue;
+        margin-right: 4px;
+    }
+}
+.filter{
+    position: fixed;
+    z-index: 10;
+    height: 100%;
+    max-height: calc(100% - 60px);
+    top: 82px;
+    right: 0;
+    width: 305px;
+    border: 1px solid #E8E8E8;
+    border-radius: 0.25rem;
+    background: #fff;
+    padding: 30px 20px;
+    overflow: scroll;
+    &__inner{
+        margin-bottom: 50px;
+    }
+    &__close{
+        cursor: pointer;
+    }
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+    .form__box--select{
+        margin: 0;
+        margin-top: 16px;
+        width: 100%;
+    }
+    &__select{
+        margin-bottom: 32px;
+    }
+    .btn__save--L{
+        margin-bottom: 16px;
+        width: 100%;
+    }
+}
+.open-patez,.to-lessons{
+    top: 5px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.cell__inner{
+    top: 8px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.valuation{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    &__sup{
+        color: $dark500;
+    }
+    &__sub{
+        color: $dark900;
+        font-weight: 700;
+        margin-top: 8px;
+    }
+}
+.stars{
+    &__input{
+        visibility: hidden;
+    }
+    &__block{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+    &__item{
+        cursor: pointer;
+        &:hover{
+            fill: $darkBlue;
+            // path{
+            //     stroke: $darkBlue;
+            // }
+        }
+    }
+    &__item--active{
+        fill: $darkBlue;
+    }
+}
+.esimation-submit__inner{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+@media screen and(min-height: 1200px){
+    .modal-add__boxig{
+        height: initial;
+    }
+}
 @media (max-width: 1201px) {
     .tabs{
         width: 100%;
@@ -2110,6 +2274,9 @@ select{
     .modal__inner{
         height: calc(100% - 134px);
     }
+    .esimation-form .form__box{
+        width: 48%;
+    }
 }
 
 @media screen and (max-width: 476px){
@@ -2302,5 +2469,30 @@ select{
     .alert{
         right: 25px;
         width: 86%;
+    }
+    .cell__inner{
+        position: initial;
+        z-index: 2;
+        width: initial;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        top: 5px;
+    }
+    .breads-drop{
+        right: 73px;
+    }
+    .filter__btn{
+        width: 100%;
+    }
+    .filter{
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        max-height: calc(100% - 60px);
+        top: 82px;
+    }
+    .esimation-form .form__box{
+        width: 100%;
     }
 }

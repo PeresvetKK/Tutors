@@ -22,6 +22,7 @@
 .filter{
     position: fixed;
     height: 100%;
+    z-index: 10;
     max-height: calc(100% - 60px);
     top: 82px;
     right: 0;
@@ -106,20 +107,31 @@
     width: 48%;
 }
 .favourites{
-    width: 48px;
+    width: 200px;
     display: flex;
     height: 48px;
     align-items: center;
     justify-content: center;
-    border: 2px solid #84B5DF;
+    border: 2px solid $darkBlue;
+    background: $bgWhite;
     border-radius: 0.25rem;
     margin-right: 12px;
+    gap: 8px;
+    cursor: pointer;
+    &__svg{}
+    &__text{
+        color: $darkBlue;
+        font-weight: 700;
+    }
 }
 
-.favourites:hover{
-    border: 2px solid $bgWhite;
+.favourites:hover, .favourites--active{
+    border: 2px solid $darkBlue;
     background: $darkBlue;
-    svg{
+    .favourites__text{
+        color: $bgWhite;
+    }
+    .favourites__svg{
         path{
             stroke: $bgWhite;
         }
@@ -133,6 +145,15 @@
     top: 8px;
 }
 
+.courses-block{
+    margin-top: 0;
+}
+.container{
+    .main__header{
+        padding-bottom: 33px;
+        border-bottom: 1px solid $border;
+    }
+}
 @media screen and(max-width: 1175px){
     .salary-information__box{
         flex-wrap: wrap;
@@ -174,9 +195,6 @@
     }
     .filter__btn{
         width: 100%;
-    }
-    .courses-block{
-        margin-top: 0;
     }
     .search-box{
         display: none;

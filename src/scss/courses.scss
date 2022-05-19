@@ -6,62 +6,7 @@
     margin-top: 25px;
 }
 
-.filter__btn{
-    width: 150px;
-    padding: 9px 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid $darkBlue;
-    border-radius: 0.25rem;
-    background: $bgWhite;
-    cursor: pointer;
-}
-.filter-btn{
-    &__text{
-        font-size: 0.875em;
-        line-height: 150%;
-        color: $darkBlue;
-        margin-right: 4px;
-    }
-}
-.filter{
-    position: fixed;
-    height: 100%;
-    max-height: calc(100% - 60px);
-    top: 82px;
-    right: 0;
-    width: 305px;
-    border: 1px solid #E8E8E8;
-    border-radius: 0.25rem;
-    background: #fff;
-    padding: 30px 20px;
-    overflow: scroll;
-    &__inner{
-        margin-bottom: 50px;
-    }
-    &__close{
-        cursor: pointer;
-    }
-    &__title{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-bottom: 20px;
-    }
-    .form__box--select{
-        margin: 0;
-        margin-top: 16px;
-        width: 100%;
-    }
-    &__select{
-        margin-bottom: 32px;
-    }
-    .btn__save--L{
-        margin-bottom: 16px;
-        width: 100%;
-    }
-}
+
 .courses-header{
     display: flex;
     justify-content: space-between;
@@ -168,9 +113,7 @@
     .courses-header__box{
         margin-top: 20px;
     }
-    .filter__btn{
-        width: 100%;
-    }
+    
     .table__search {
         flex-direction: column;
         align-items: flex-start;
@@ -195,18 +138,14 @@
     .search-box{
         display: none;
     }
-    .filter{
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        max-height: calc(100% - 60px);
-        top: 82px;
-    }
+    
     .infoblock__item--big{
         width: 100%;
     }
 }
-
+.profile-content--lesson{
+    width: 49%;
+  }
 @media screen and(max-width: 476px){
     .main__title-box{
         flex-direction: column;

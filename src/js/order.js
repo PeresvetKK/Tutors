@@ -4,7 +4,8 @@ import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
-import {openNotify, setDate, setTime, tableLoader,tabs, sortTable, mainDropdown, dropDownFunc, burger, tableDropdown, dropDownAside, modal} from '../vendors/script';
+import {filter, openNotify, setDate, setTime, tableLoader,tabs, sortTable, mainDropdown, dropDownFunc, burger, tableDropdown, dropDownAside, modal} from '../vendors/script';
+import { doc } from 'prettier';
 $(() => {
 	modal();
 	openNotify();
@@ -15,38 +16,32 @@ $(() => {
 	dropDownFunc();
 	burger();
 	tableDropdown();
-	// editCourse();
 	dropDownAside();
-	setDate('date1');
+	filter();
 	setDate('date2');
-	setTime('settime1');
-	function editCourse() {
-		let edit = document.getElementsByClassName("edit-block-cell__inner");
+	function editCourse(pencel, open) {
+		let edit = document.getElementsByClassName(pencel);
 		for (let i = 0; i < edit.length; i++) {
 			edit[i].addEventListener("click", function () {
-				let myLessons = document.querySelector("#my-lessons");
-				let myLessonsEdit = document.querySelector("#my-lessons--edit");
+				let child = document.getElementsByClassName('main__header');
+				for(let i = 0; i < child.length; i++){
+					let item = child[i].parentElement;
+					item.classList.remove('active');
+				}
+				let openWrapper = document.querySelector(open);
+				let openBt = openWrapper.querySelector('.openButton');
+				let openBlock = openWrapper.querySelector('.openBlock')
 
-				myLessons.classList.toggle("hide");
-				myLessonsEdit.classList.toggle("active");
-				
+				openWrapper.classList.add("active");
+				openBlock.classList.add("active");
+				if(openBt){
+					openBt.classList.add('tabs__item--active');
+				}
 			});
 		}
 	}
-	editCourse();
-	
-    // let edit = document.getElementsByClassName('edit-block-cell__innerr');
-	// for(let i = 0; i < edit.length; i++){
-	// 	edit[i].addEventListener("click", function(){
-	// 		let myLessons = document.querySelector("#my-lessons");
-	// 		let myLessonsEdit = document.querySelector("#my-lessons--edit");
-	// 		let information = document.querySelector("#estimation");
-	// 		let open = document.querySelector("#open");
-			
-	// 		myLessons.classList.toggle("hide");
-	// 		myLessonsEdit.classList.toggle("active");
-	// 		open.classList.add("active");
-	// 		information.classList.add('tabs__item--active');
-	// 	});
-	// }
+	editCourse("edit-block-cell__inner", "#my-lessons--edit");
+	editCourse("open-patez", "#estimation");
+	editCourse("course-table__id", "#zayavka");
+	editCourse("to-lessons", "#lessons");
 });

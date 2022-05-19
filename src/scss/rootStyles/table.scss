@@ -153,6 +153,7 @@ tr {
   justify-content: space-between;
   padding-left: 19px;
   &__add {
+    z-index: 9;
     font-size: 0.875em;
     line-height: 150%;
     color: $green;
@@ -352,5 +353,8 @@ tr {
   }
   .mobile-long__cell{
     width: 72%;
+  }
+  .thead{
+    z-index: 2;
   }
 }

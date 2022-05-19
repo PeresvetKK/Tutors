@@ -4,7 +4,7 @@ import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
-import {pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside} from '../vendors/script';
+import {stars, dinamocBtn, offset, breadsDrop, pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside} from '../vendors/script';
 $(() => {
 	setDate('date1');
 	setDate('date2');
@@ -40,6 +40,7 @@ $(() => {
 	tableDropdown();
 	dropDownAside();
 	pushClose();
+	dinamocBtn();
 	function pencelCourse() {
 		let edit = document.getElementsByClassName("edit-block-cell__inner");
 		for (let i = 0; i < edit.length; i++) {
@@ -59,7 +60,7 @@ $(() => {
 	}
 	function breadsmodal(){
 		
-			let edit = document.getElementsByClassName("cell__inner");
+			let edit = document.getElementsByClassName("open-block");
 			for (let i = 0; i < edit.length; i++) {
 				edit[i].addEventListener("click", function () {
 					let myLessons = document.querySelector("#my-lessons");
@@ -73,28 +74,8 @@ $(() => {
 				});
 			}
 	}
-	// function goBack(){
-	// 	let edit = document.getElementsByClassName("edit-block-cell__inner");
-	// 	for (let i = 0; i < edit.length; i++) {
-	// 		edit[i].addEventListener("click", function () {
-	// 			let myLessons = document.querySelector("#my-lessons");
-	// 			let myLessonsEdit = document.querySelector("#my-lessons--edit");
-	// 			let pancelInner = document.querySelector('#estimation');
-	// 			let esti = document.querySelector('#estimationItem');
-	// 			let estiblock = pancelInner.querySelector("#open");
-	// 			// myLessons.classList.toggle("hide");
-	// 			myLessonsEdit.classList.toggle("active");
-	// 			pancelInner.classList.toggle('active');
-	// 			esti.classList.toggle('tabs__item--active');
-	// 			estiblock.classList.toggle('active');
-	// 		});
-	// 	}
-	// }
-	// goBack();
-
 	pencelCourse();
 	breadsmodal();
-
 	function modalDogovor(){
 		let btn = document.getElementsByClassName('btn-dogovor');
 		for (let i = 0; i < btn.length; i++) {
@@ -112,4 +93,5 @@ $(() => {
 		}
 	}
 	modalDogovor();
+	// stars('stars__input');
 });

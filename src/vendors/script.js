@@ -212,19 +212,23 @@ export function sortTable() {
     }
 }
 export function filter() {
-    let filterBtn = document.querySelector('.filter__btn');
-    filterBtn.addEventListener('click', function () {
-        let filter = document.querySelector('.filter');
-        let close = filter.querySelector('.filter__close');
-        // let bod = document.querySelector('.scroll');
-
-        filter.classList.toggle('active');
-        // bod.classList.add('fixed-scroll');
-        close.addEventListener('click', function () {
-            filter.classList.remove('active');
-            // bod.classList.remove('fixed-scroll');
+    let filterBtn = document.getElementsByClassName('filter__btn');
+    for(let i = 0; i < filterBtn.length; i++){
+        filterBtn[i].addEventListener('click', function () {
+            let filter = document.getElementsByClassName('filter');
+            let close = document.getElementsByClassName('filter__close');
+            // let bod = document.querySelector('.scroll');
+            for(let i = 0; i < filter.length; i++){
+                filter[i].classList.toggle('active');
+            }
+            for(let i = 0; i < close.length; i++){
+                close[i].addEventListener('click', function () {
+                    filter[i].classList.remove('active');
+                    // bod.classList.remove('fixed-scroll');
+                });
+            }
         });
-    });
+    }
 }
 export function tableLoader(){
     let showLoader = document.getElementsByClassName('row-counter__pages');
@@ -283,4 +287,66 @@ export function pushClose(){
         // this.parentElement.classList.add('hide');
         this.parentElement.style.display="none";
     })
+}
+export function breadsDrop(){
+    // let breads = document.getElementsByClassName('cell__inner');
+    // for(let i = 0; i < breads.length; i++){
+    //     breads[i].addEventListener('click', function(){
+    //         console.log('+');
+    //     });
+    // }
+    // $('#root').on('click', function(){
+    //     if(!this.classList.contains('cell__inner')){
+    //         let item = document.getElementsByClassName('breads-drop');
+    //         for(let i = 0; i < item.length; i++){
+    //             item[i].classList.remove('active');
+    //         }
+    //     }
+    // })
+    // $('.cell__inner').on('click', function(){
+    //     // let item = document.getElementsByClassName('breads-drop');
+    //     // for(let i = 0; i < item.length; i++){
+    //     //     item[i].classList.remove('active');
+    //     // }
+    //     // this.querySelector('.breads-drop').classList.toggle('active');
+    // })
+}
+export function offset(el) {
+    var rect = el.getBoundingClientRect(),
+    scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+    scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    return { top: rect.top , left: rect.left}
+}
+export function dinamocBtn(){
+    let inputs = document.getElementsByClassName('cell__inner');
+    for(let i = 0; i < inputs.length; i++){
+        let input = inputs[i];
+        input.addEventListener('click', function(){
+            var topHeight = offset(input);
+            let btn = input.querySelector('.breads-drop');
+            btn.classList.toggle('active');
+            var par = document.querySelector('.cell__inner');
+            var parHeight = offset(par);
+            btn.style.top = `${topHeight.top - 13}px`;
+            // let bod = document.querySelector('#root');
+            // bod.classList.add('fixed-scroll');
+            // btn.style.visibility="visible";
+        });
+    }
+    for(let i = 0; i < inputs.length; i++){
+        inputs[i].addEventListener('click', function(){
+            inputs[i].classList.remove('active');
+        })
+    }
+}
+export function stars(input){
+    let inputs = document.querySelector(input);
+    console.log(inputs);
+    let count = inputs.value;
+    for(let i = 0; i <= count; i++){
+        let item = inputs.nextSiblingElement.getElementsByClassName('stars__item');
+        for(let i = 0; i <= count; i++){
+            item[i].classList.toggle('stars__item--active');
+        }
+    }
 }

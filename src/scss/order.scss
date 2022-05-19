@@ -39,9 +39,70 @@
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    .bye{
+        width: 200px;
+        &:hover, &:focus{
+            width: 200px;
+        }
+    }
 }
 .btn__save--L{
     width: max-content;
+    &:hover, &:focus{
+        width: max-content;
+    }
+}
+
+.qr-mini{
+    width: 48px;
+    height: 48px;
+    background: $bgWhite;
+    border: 1px solid $darkBlue;
+    border-radius: 0.25rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+.down-info{
+    width: 31%;
+}
+.table__search{
+    background: $bgWhite;
+    border: 1px solid transparent;
+    border-radius: 0.25rem 0.25rem 0px 0px;
+}
+.filter__btn {
+    width: 150px;
+    padding: 9px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border: 1px solid #84B5DF;
+    border-radius: 0.25rem;
+    background: #fff;
+    cursor: pointer;
+}
+.filter-btn__text {
+    font-size: 0.875em;
+    line-height: 150%;
+    color: #84B5DF;
+    margin-right: 4px;
+}
+
+
+@media screen and(max-width: 970px){
+    .down-info{
+        width: 100%;
+    }
 }
 @media screen and(max-width: 475px){
     .price-block__title{
