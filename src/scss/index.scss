@@ -446,7 +446,7 @@ progress::-moz-progress-bar {
     width: 100%;
   }
   .estimation__title {
-    width: 80%;
+    width: 100%;
   }
   .message-blue {
     width: 100%;
@@ -490,4 +490,7 @@ progress::-moz-progress-bar {
       right: 10px;
       top: 39%;
     }
+    .profile-content--lesson {
+      margin-bottom: 0 !important;
+  }
 }

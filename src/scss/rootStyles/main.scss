@@ -1951,6 +1951,7 @@ svg.cell__inner{
     }
     &__text{
         font-size: 14px;
+        font-weight: 400;
     }
 }
 .filter__btn{
@@ -2067,6 +2068,35 @@ svg.cell__inner{
     width: 100%;
     display: flex;
     justify-content: flex-end;
+}
+.table-comment{
+    max-width: 240px;
+    overflow: hidden;
+}
+.table-comment__full{
+    display: none;
+}
+.table-comment__container{
+    position: relative;
+    &:hover{
+        .table-comment__full{
+            display: flex;
+            flex-wrap: wrap;
+            width: 240px;
+            position: fixed;
+            background: #FDFDFD;
+            padding: 16px 5px;
+            z-index: 20;
+            border: 1px solid #D4D4D8;
+            box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.06);
+            border-radius: 8px;
+            p{
+                width: 100%;
+                display: block;
+                white-space: pre-wrap;
+            }
+        }
+    }
 }
 @media screen and(min-height: 1200px){
     .modal-add__boxig{
@@ -2260,7 +2290,7 @@ svg.cell__inner{
     }
     .table-functional__add {
         position: fixed;
-        bottom: 110px;
+        bottom: 77px;
         right: 30px;
         width: 48px;
         height: 48px;
@@ -2494,5 +2524,36 @@ svg.cell__inner{
     }
     .esimation-form .form__box{
         width: 100%;
+    }
+    .valuation{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .open-patez, .to-lessons{
+        top: 0px;
+        width: auto;
+    }
+    .breads__link{
+        font-size: 0.675em;
+    }
+    .search-box{
+        display: none;
+    }
+    .table__search{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0;
+        height: 100%;
+        margin-bottom: 20px;
+        .form__box{
+            width: 100%;
+            &:not(:last-child){
+                margin-bottom: 10px;
+            }
+        }
+        .form__input{
+            width: 100%;
+        }
     }
 }

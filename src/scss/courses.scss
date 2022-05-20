@@ -135,9 +135,7 @@
         height: 100%;
         margin-bottom: 20px;
     }
-    .search-box{
-        display: none;
-    }
+    
     
     .infoblock__item--big{
         width: 100%;
@@ -160,20 +158,5 @@
         border-radius: 0;
         
     }
-    .table__search{
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 0;
-        height: 100%;
-        margin-bottom: 20px;
-        .form__box{
-            width: 100%;
-            &:not(:last-child){
-                margin-bottom: 10px;
-            }
-        }
-        .form__input{
-            width: 100%;
-        }
-    }
+    
 }

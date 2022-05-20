@@ -192,6 +192,12 @@
     }
     .courses-header__box{
         margin-top: 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .favourites{
+        width: 100%;
+        margin-right: 0;
     }
     .filter__btn{
         width: 100%;
@@ -209,4 +215,5 @@
     .infoblock__item--big{
         width: 100%;
     }
+
 }
