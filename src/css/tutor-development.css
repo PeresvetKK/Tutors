@@ -2369,6 +2369,7 @@ svg.cell__inner {
       flex-wrap: wrap;
   width: 240px;
   position: fixed;
+  right: 100px;
   background: #FDFDFD;
   padding: 16px 5px;
   z-index: 20;
@@ -2381,6 +2382,12 @@ svg.cell__inner {
   width: 100%;
   display: block;
   white-space: pre-wrap;
+}
+.send {
+  cursor: pointer;
+}
+.send svg {
+  fill: #84B5DF;
 }
 @media screen and (min-height: 1200px) {
   .modal-add__boxig {
@@ -2639,7 +2646,7 @@ svg.cell__inner {
 
   .table-functional__add {
     position: fixed;
-    bottom: 77px;
+    bottom: 140px;
     right: 30px;
     width: 48px;
     height: 48px;

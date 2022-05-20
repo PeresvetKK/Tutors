@@ -1,5 +1,5 @@
 import '../scss/training.scss';
-import {setDate, setTime, modal, openNotify, dropDownFunc} from '../vendors/script';
+import {sendScroll, checkKey, setDate, setTime, modal, openNotify, dropDownFunc} from '../vendors/script';
 $(() => {
 	
 	function burger() {
@@ -87,4 +87,5 @@ $(() => {
 	dropDownAside();
 	setDate('date1');
 	setTime('settime1');
+	sendScroll();
 });

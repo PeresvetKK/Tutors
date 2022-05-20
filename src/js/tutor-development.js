@@ -1,5 +1,5 @@
 import '../scss/tutor-development.scss';
-import {setDate, setTime, modal, openNotify, dropDownFunc} from '../vendors/script';
+import {sendScroll, checkKey, setDate, setTime, modal, openNotify, dropDownFunc} from '../vendors/script';
 $(() => {
 	function burger() {
 		let burger = document.querySelector(".burger");
@@ -86,4 +86,5 @@ $(() => {
 	dropDownAside();
 	setDate('date1');
 	setTime('settime1');
+	sendScroll();
 });

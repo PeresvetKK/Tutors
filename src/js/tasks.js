@@ -3,7 +3,7 @@ import AirDatepicker from 'air-datepicker'
 import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'
 
-import {openNotify, setDate, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, changeBtn, tableDropdown, dropDownAside} from '../vendors/script';
+import {sendScroll, checkKey, openNotify, setDate, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, changeBtn, tableDropdown, dropDownAside} from '../vendors/script';
 $(() => {
 
     function completeTask(){
@@ -55,4 +55,5 @@ $(() => {
 	tableDropdown();
 	dropDownAside();
 	setDate('date1');
+	sendScroll();
 });

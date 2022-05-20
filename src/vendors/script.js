@@ -80,7 +80,7 @@ export function setDate(element){
     new AirDatepicker(`.${element}`, {
         onSelect: function (dataText, inst) {
             var dateAsString = dataText.formattedDate;
-            console.log(dateAsString);
+            // console.log(dateAsString);
             var input = elem;
             input.value = dateAsString;
             input.setAttribute('data-quantity', input.value);
@@ -96,7 +96,7 @@ export function setTime(element){
     $('.clockpicker').clockpicker()
         .find('input').change(function () {
             var input = document.querySelector(`.${element}`);
-            console.log(input);
+            // console.log(input);
             input.value = this.value;
             input.setAttribute('data-time', input.value);
         });
@@ -268,7 +268,6 @@ export function openNotify(){
 }
 export function searchResult(){
     $('.input__search').on('change', function(){
-        console.log('+');
         let result = document.querySelector('.search-result');
         result.classList.toggle('active');
         let closeResult = document.querySelector('.close-result');
@@ -289,27 +288,7 @@ export function pushClose(){
     })
 }
 export function breadsDrop(){
-    // let breads = document.getElementsByClassName('cell__inner');
-    // for(let i = 0; i < breads.length; i++){
-    //     breads[i].addEventListener('click', function(){
-    //         console.log('+');
-    //     });
-    // }
-    // $('#root').on('click', function(){
-    //     if(!this.classList.contains('cell__inner')){
-    //         let item = document.getElementsByClassName('breads-drop');
-    //         for(let i = 0; i < item.length; i++){
-    //             item[i].classList.remove('active');
-    //         }
-    //     }
-    // })
-    // $('.cell__inner').on('click', function(){
-    //     // let item = document.getElementsByClassName('breads-drop');
-    //     // for(let i = 0; i < item.length; i++){
-    //     //     item[i].classList.remove('active');
-    //     // }
-    //     // this.querySelector('.breads-drop').classList.toggle('active');
-    // })
+    
 }
 export function offset(el) {
     var rect = el.getBoundingClientRect(),
@@ -318,27 +297,48 @@ export function offset(el) {
     return { top: rect.top , left: rect.left}
 }
 export function dinamocBtn(){
-    let inputs = document.getElementsByClassName('cell__inner');
-    for(let i = 0; i < inputs.length; i++){
-        let input = inputs[i];
-        input.addEventListener('click', function(){
+    let bod = document.querySelector('#root');
+    bod.addEventListener('click', function(e){
+        if(e.target.classList.contains('cell__inner')){
+            let input = e.target;
             var topHeight = offset(input);
             let btn = input.querySelector('.breads-drop');
             btn.classList.toggle('active');
             var par = document.querySelector('.cell__inner');
             var parHeight = offset(par);
             btn.style.top = `${topHeight.top - 13}px`;
-            // let bod = document.querySelector('#root');
-            // bod.classList.add('fixed-scroll');
-            // btn.style.visibility="visible";
-        });
-    }
-    for(let i = 0; i < inputs.length; i++){
-        inputs[i].addEventListener('click', function(){
-            inputs[i].classList.remove('active');
-        })
-    }
+                // let bod = document.querySelector('#root');
+                // bod.classList.add('fixed-scroll');
+                // btn.style.visibility="visible";
+        }
+        else if(e.target.parentElement.classList.contains('cell__inner')){
+            let input = e.target.parentElement;
+            var topHeight = offset(input);
+            let btn = input.querySelector('.breads-drop');
+            btn.classList.toggle('active');
+            var par = document.querySelector('.cell__inner');
+            var parHeight = offset(par);
+            btn.style.top = `${topHeight.top - 13}px`;
+        }
+        else if(e.target.parentElement.parentElement.classList.contains('cell__inner')){
+            let input = e.target.parentElement.parentElement;
+            var topHeight = offset(input);
+            let btn = input.querySelector('.breads-drop');
+            btn.classList.toggle('active');
+            var par = document.querySelector('.cell__inner');
+            var parHeight = offset(par);
+            btn.style.top = `${topHeight.top - 13}px`;
+        }
+        else{
+            let inputs = document.getElementsByClassName('breads-drop');
+            for(let i = 0; i < inputs.length; i++){
+                inputs[i].classList.remove('active');
+            }
+        }
+    });
 }
+
+
 export function stars(input){
     let inputs = document.querySelector(input);
     console.log(inputs);
@@ -348,5 +348,20 @@ export function stars(input){
         for(let i = 0; i <= count; i++){
             item[i].classList.toggle('stars__item--active');
         }
+    }
+}
+export function checkKey(e, form) {
+    if (e.ctrlKey && e.keyCode == 13){
+        form.submit();
+    }
+}
+export function sendScroll(){
+    let send = document.getElementsByClassName('send-svg');
+    for(let i = 0; i < send.length; i++){
+        send[i].addEventListener('click', function(){
+            let chat = send[i].parentElement.parentElement.parentElement.previousElementSibling;
+            let scrollHeight = Math.max(chat.scrollHeight, chat.offsetHeight, chat.clientHeight);
+            chat.scrollBy(0, scrollHeight);
+        });
     }
 }

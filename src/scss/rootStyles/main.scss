@@ -2084,6 +2084,7 @@ svg.cell__inner{
             flex-wrap: wrap;
             width: 240px;
             position: fixed;
+            right: 100px;
             background: #FDFDFD;
             padding: 16px 5px;
             z-index: 20;
@@ -2096,6 +2097,12 @@ svg.cell__inner{
                 white-space: pre-wrap;
             }
         }
+    }
+}
+.send{
+    cursor: pointer;
+    svg{
+        fill: $darkBlue;
     }
 }
 @media screen and(min-height: 1200px){
@@ -2290,7 +2297,7 @@ svg.cell__inner{
     }
     .table-functional__add {
         position: fixed;
-        bottom: 77px;
+        bottom: 140px;
         right: 30px;
         width: 48px;
         height: 48px;

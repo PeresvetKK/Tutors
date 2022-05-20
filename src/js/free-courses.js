@@ -1,5 +1,5 @@
 import '../scss/free-courses.scss';
-import {dinamocBtn, offset, breadsDrop, searchResult, mainDropdown, setDate, setTime, modal, openNotify, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, filter} from '../vendors/script';
+import {sendScroll, checkKey, dinamocBtn, offset, breadsDrop, searchResult, mainDropdown, setDate, setTime, modal, openNotify, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, filter} from '../vendors/script';
 $(() => {
 
 	let edit = document.getElementsByClassName("breads");
@@ -29,6 +29,7 @@ $(() => {
 	searchResult();
 	breadsDrop();
 	dinamocBtn();
+	sendScroll();
 	function editCourse(pencel, open) {
 		let edit = document.getElementsByClassName(pencel);
 		for (let i = 0; i < edit.length; i++) {
