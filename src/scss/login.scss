@@ -1,1 +1,63 @@
-@import "./rootStyles/main.scss";
+@import "./index.scss";
+
+.wrapper{
+    margin: 0;
+    max-width: 100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 18%;
+    display: flex;
+    justify-content: center;
+}
+.box{
+    width: 500px;
+    background: $bgWhite;
+    border: 1px solid $border;
+    border-radius: 0.25rem;
+    height: fit-content;
+}
+.login{
+    &__header{
+        height: 80px;
+        background: $menu;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 180px;
+            height: 40px;
+        }
+    }
+    &__form{
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+.form__box--index, .login__btn{
+    width: 100%;
+    &:hover, &:focus{
+        width: 100%;
+    }
+}
+.login__btn{
+    margin-bottom: 15px;
+}
+.recovery__text{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 25px;
+}
+.back-arrow{
+    position: fixed;
+    top: 21%;
+    left: 18%;
+}
+.hide{
+    display: none;
+}
+.active{
+    display: block;
+}
