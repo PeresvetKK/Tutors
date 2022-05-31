@@ -1,4 +1,4 @@
-import '../scss/index.scss';
+import '../scss/login.scss';
 import AirDatepicker from 'air-datepicker'
 import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'

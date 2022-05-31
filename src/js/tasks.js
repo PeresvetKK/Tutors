@@ -3,7 +3,7 @@ import AirDatepicker from 'air-datepicker'
 import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'
 
-import {sendScroll, checkKey, openNotify, setDate, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, changeBtn, tableDropdown, dropDownAside} from '../vendors/script';
+import {dinamocBtn, offset, editCourseTwo, sendScroll, checkKey, openNotify, setDate, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, changeBtn, tableDropdown, dropDownAside} from '../vendors/script';
 $(() => {
 
     function completeTask(){
@@ -18,19 +18,20 @@ $(() => {
             })
         })
     }
-    function editCourse() {
-		let edit = document.getElementsByClassName("edit-block-cell__inner");
-		for (let i = 0; i < edit.length; i++) {
-			edit[i].addEventListener("click", function () {
-				let myLessons = document.querySelector("#my-lessons");
-				let myLessonsEdit = document.querySelector("#my-lessons--edit");
+    // function editCourse() {
+	// 	let edit = document.getElementsByClassName("edit-block-cell__inner");
+	// 	for (let i = 0; i < edit.length; i++) {
+	// 		edit[i].addEventListener("click", function () {
+	// 			let myLessons = document.querySelector("#my-lessons");
+	// 			let myLessonsEdit = document.querySelector("#my-lessons--edit");
 
-				myLessons.classList.toggle("hide");
-				myLessonsEdit.classList.toggle("active");
+	// 			myLessons.classList.toggle("hide");
+	// 			myLessonsEdit.classList.toggle("active");
 				
-			});
-		}
-	}
+	// 		});
+	// 	}
+	// }
+	editCourseTwo('open-plan', "#my-lessons--edit");
     function goBack(){
 		let edit = document.querySelector(".back-arrow");
 			edit.addEventListener("click", function () {
@@ -42,7 +43,6 @@ $(() => {
 	}
 	openNotify();
     goBack();
-    editCourse();
 	completeTask();
 	tableLoader();
 	modal();
@@ -56,4 +56,5 @@ $(() => {
 	dropDownAside();
 	setDate('date1');
 	sendScroll();
+	dinamocBtn();
 });

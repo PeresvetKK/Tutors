@@ -1,12 +1,14 @@
 import '../scss/courses.scss';
-import {sendScroll, checkKey, searchResult, setTime, setDate, modal, openNotify, filter, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown} from '../vendors/script';
+import {dinamocBtn, offset, editCourseTwo, sendScroll, checkKey, searchResult, setTime, setDate, modal, openNotify, filter, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown} from '../vendors/script';
 $(() => {
 	modal();
 	openNotify();
 	filter();
 	sortTable();
 	tabs();
-	editCourse();
+	dinamocBtn();
+	editCourseTwo('course-table__id', "#my-lessons--edit");
+	editCourseTwo('open-lesson', "#estimation");
 	dropDownFunc();
 	burger();
 	tableDropdown();

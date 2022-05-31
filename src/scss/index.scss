@@ -265,7 +265,7 @@ progress::-moz-progress-bar {
   &__inner{
     display: flex;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: space-between;
     gap: 16px;
     align-items: center;
     svg{
@@ -275,10 +275,22 @@ progress::-moz-progress-bar {
       height: 20px;
     }
   }
+  &__left{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  &__btn{
+    width: 150px;
+    &:hover, &focus{
+      width: 150px;
+    }
+  }
   .form__box{
     margin-bottom: 0;
     width: 172px;
     height: 40px;
+    justify-content: center;
   }
   .form__input{
     padding: 9px;
@@ -309,7 +321,6 @@ progress::-moz-progress-bar {
     background-color: #F5F9FD;
     border: 1px solid #E8E8E8;
     border-radius: 0.25rem;
-    padding: 20px;
     margin-right: 0;
     width: 100%;
     gap: 20px;
@@ -322,6 +333,19 @@ progress::-moz-progress-bar {
       width: 31%;
     }
   }
+  &__item--new{
+    background: $bgWhite;
+    justify-content: space-between;
+    border: none;
+  }
+}
+.aplication__container{
+  height: 120px;
+  padding-left: 20px;
+  background: $bgElement;
+  width: 32%;
+  border: 1px solid $border;
+  border-radius: 0.25rem;
 }
 .dogovor__item{
   width: 32%;

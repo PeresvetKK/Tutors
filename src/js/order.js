@@ -4,7 +4,7 @@ import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
-import {sendScroll, checkKey, filter, openNotify, setDate, setTime, tableLoader,tabs, sortTable, mainDropdown, dropDownFunc, burger, tableDropdown, dropDownAside, modal} from '../vendors/script';
+import {dinamocBtn, offset, editCourseTwo, sendScroll, checkKey, filter, openNotify, setDate, setTime, tableLoader,tabs, sortTable, mainDropdown, dropDownFunc, burger, tableDropdown, dropDownAside, modal} from '../vendors/script';
 import { doc } from 'prettier';
 $(() => {
 	modal();
@@ -18,6 +18,9 @@ $(() => {
 	tableDropdown();
 	dropDownAside();
 	filter();
+	dinamocBtn();
+	editCourseTwo('open-lesson' ,'#my-lessons--edit');
+	editCourseTwo('open-spisanie' ,'#estimation');
 	setDate('date2');
 	sendScroll();
 	function editCourse(pencel, open) {
