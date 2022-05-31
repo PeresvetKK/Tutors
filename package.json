@@ -19,8 +19,10 @@
     "clockpicker": "0.0.7",
     "dotenv": "^10.0.0",
     "jquery": "^3.6.0",
+    "jquery-ui": "^1.13.1",
     "jquery-validation": "^1.19.3",
-    "js-datepicker": "^5.18.0"
+    "js-datepicker": "^5.18.0",
+    "nouislider": "^15.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.15.4",
