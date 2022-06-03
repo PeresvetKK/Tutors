@@ -488,6 +488,9 @@
                             <button class="tabs__item past" data-tab="6">
                                 Договора
                             </button>
+                            <button class="tabs__item past" data-tab="40">
+                                Студенты
+                            </button>
                         </div>
                     </div>					
 				</section>
@@ -580,7 +583,7 @@
 					</div>
 				</section>
 				<section class="main__block schedule-block tab-content" data-tab="2">
-					<button class="btn__add--M shedule-btn modalevent modal-active">Добавить +</button>
+					<button class="btn__add--M shedule-btn modalevent modal-active open-push">Добавить +</button>
                     <div class="table-container">
                         <div class="table schedule-table">
                             <div class="thead">
@@ -672,7 +675,7 @@
                                                 <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg> 
                                             <div class="breads-drop hide">
-                                                <div class="breads-drop__item">
+                                                <div class="breads-drop__item open-push">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <g clip-path="url(#clip0_541_36990)">
                                                             <g filter="url(#filter0_d_541_36990)">
@@ -2683,6 +2686,233 @@
                         </div>
                     </div>
                 </section>
+                <section class="main__block course-block tab-content" data-tab="40">
+                    <div class="table-container">
+                        <div class="table course-table">
+                            <div class="thead">
+                                <div class="tr tabel__block">
+                                    
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            Имя 
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            Телефон
+                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            Email
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            Адрес
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div class="table-flex">
+                                                ID заявления 
+                                                <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                                </svg> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loader-progress hide"></div>
+                            <div class="tbody">
+                                <div class="tr">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Иван Иванов</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">1234567</div>
+                                    </div>
+                                    
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">testemail@gmail.com</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">г. Саратов, ул. Московская</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex course-table__id">1234567</div>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Иван Иванов</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">1234567</div>
+                                    </div>
+                                    
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">testemail@gmail.com</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">г. Саратов, ул. Московская</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex course-table__id">1234567</div>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Иван Иванов</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">1234567</div>
+                                    </div>
+                                    
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">testemail@gmail.com</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">г. Саратов, ул. Московская</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex course-table__id">1234567</div>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Иван Иванов</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">1234567</div>
+                                    </div>
+                                    
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">testemail@gmail.com</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">г. Саратов, ул. Московская</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex course-table__id">1234567</div>
+                                    </div>
+                                </div>
+                                <div class="tr">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Иван Иванов</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">1234567</div>
+                                    </div>
+                                    
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">testemail@gmail.com</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">г. Саратов, ул. Московская</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex course-table__id">1234567</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__box form__box--select table-select">
+                        <select class="form__input table-sort" name="table-sort">
+                            <option value="">Сортировать по</option>
+                            <option value="dog">Дате</option>
+                            <option value="cat">Времени</option>
+                        </select>
+                    </div>
+                    <div class="table-mobile">
+                        <div class="table schedule-table--mobile">
+                            <div class="thead">
+                                <div class="tr tr__head">
+                                    <div class="th table-flex--mobile">Иван Иванов</div>
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                <div class="tr tabel__block">
+                                    <div class="td tabel__cell">
+                                        <p class="table-mobile__title">Телефон:</p>
+                                        <p class="table-mobile__text">123456</p>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <p class="table-mobile__title">Email:</p>
+                                        <p class="table-mobile__text">testemail@gmail.com</p>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <p class="table-mobile__title">Адрес:</p>
+                                        <p class="table-mobile__text">г. Саратов, ул. Московская</p>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <p class="table-mobile__title">ID заявления:</p>
+                                        <p class="course-table__id">1234567</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="table-functional table-functional--LC">
+                        <div class="flex">
+                            <p class="row-counter__text">Строк в таблице</p>
+                            <div class="row-counter__box">
+                                <p class="row-counter__select">8</p>
+                                <svg class="row-counter__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.7071 10.7071C17.0976 10.3166 17.0976 9.68342 16.7071 9.29289C16.3166 8.90237 15.6834 8.90237 15.2929 9.29289L16.7071 10.7071ZM12 14L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L12 14ZM8.70711 9.29289C8.31658 8.90237 7.68342 8.90237 7.29289 9.29289C6.90237 9.68342 6.90237 10.3166 7.29289 10.7071L8.70711 9.29289ZM15.2929 9.29289L11.2929 13.2929L12.7071 14.7071L16.7071 10.7071L15.2929 9.29289ZM12.7071 13.2929L8.70711 9.29289L7.29289 10.7071L11.2929 14.7071L12.7071 13.2929Z"
+                                        fill="#6A7175" />
+                                </svg>
+                                <div class="row-counter__dropdown hide">
+                                    <p class="row-counter__dropdown--item">10</p>
+                                    <p class="row-counter__dropdown--item">20</p>
+                                    <p class="row-counter__dropdown--item">30</p>
+                                    <p class="row-counter__dropdown--item">40</p>
+                                    <p class="row-counter__dropdown--item">50</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-functional__row-counter row-counter">
+                            <p class="row-counter__pages">1-8 из 1240</p>
+                            <svg class="row-counter__arrows" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9.07071 12.0707C9.03166 12.0317 9.03166 11.9683 9.07071 11.9293L15 6" stroke="#9FA2B4"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                            <svg class="row-counter__arrows" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L14.9293 12.0707C14.9683 12.0317 14.9683 11.9683 14.9293 11.9293L9 6" stroke="#9FA2B4"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <a href="#" class="pagination__item prev-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="#555555"/>
+                            <mask id="mask0_759_66886" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="6" width="8" height="12">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0_759_66886)">
+                            </g>
+                        </svg></a>
+                        <a href="#" class="pagination__item">1</a>
+                        <a href="#" class="pagination__item pagination__item--active">2</a>
+                        <a href="#" class="pagination__item">3</a>
+                        <a href="#" class="pagination__item">...</a>
+                        <a href="#" class="pagination__item">12</a>
+                        <a href="#" class="pagination__item next-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
+                            <mask id="mask0_759_66889" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="6" width="8" height="12">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
+                            </mask>
+                            <g mask="url(#mask0_759_66889)">
+                            </g>
+                        </svg></a>
+                    </div>
+                </section>
 			</div>
 			<div class="wrapper hide" id="my-lessons--edit">
                 <ul class="breads__nav">
@@ -4266,6 +4496,7 @@
                     </svg> 
                 </form>
             </div>
+            
             <div class="modal modal-event hide">
                 <form action="#" method="POST" class="modal__inner">
                     <div class="modal-add__box">

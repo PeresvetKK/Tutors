@@ -836,13 +836,13 @@ select {
 }
 .aside .aside__dropdown--active {
   display: block;
-  height: 66px;
+  height: 80px;
 }
 .aside .aside-dropdown__item {
   display: block;
   margin-left: 31px;
   font-weight: 700;
-  font-size: 0.75em;
+  font-size: 0.875em;
   line-height: 14px;
 }
 .aside .aside-dropdown__item:hover {
@@ -1819,7 +1819,7 @@ svg.cell__inner {
   top: 22%;
 }
 .training-modal ul, .training-modal li {
-  list-style: none;
+  margin-left: 9px;
 }
 .training-modal span, .training-modal p {
   font-family: "Lato", sans-serif;

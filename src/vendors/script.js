@@ -2,6 +2,7 @@ import AirDatepicker from 'air-datepicker';
 import 'air-datepicker/air-datepicker.css';
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
+
 export function dropDownFunc() {
     let dropDown = document.getElementsByClassName('container__dropdown');
     for(let i = 0; i < dropDown.length; i++){
@@ -19,8 +20,6 @@ export function dropDownFunc() {
         });
     }
 }
-
-
 export function burger() {
     let burger = document.querySelector(".burger");
     burger.addEventListener("click", function () {
@@ -326,9 +325,14 @@ export function longMessage(){
     for(let i = 0; i < miniComment.length; i++){
         let item = miniComment[i];
         item.addEventListener('click', function(e){
+            let hideAllComment = document.getElementsByClassName('table-comment__full');
+            for(let i = 0; i < hideAllComment.length; i++){
+                hideAllComment[i].classList.remove('table-comment__full--active');
+            }
             let input = e.target;
             var topHeight = offset(input);
             let longComment = e.target.parentElement.querySelector('.table-comment__full');
+
             longComment.classList.toggle('table-comment__full--active');
             longComment.style.top = `${topHeight.top - 13}px`;
         });
@@ -347,6 +351,19 @@ export function longMessage(){
         //     longComment.style.top = `${topHeight.top - 13}px`;
         // });
     }
+    // $(window).on("scroll", function() {
+    //     const header_bottom = document.getElementsByClassName('table-comment__full');
+    //     for(let i = 0; i < header_bottom.length; i++){
+    //         let scrollHeights = window.pageYOffset;
+    //         let heightElement = header_bottom[i].clientTop;
+    //         console.log(scrollHeights + " scrollHeight");
+    //         console.log(heightElement + " elementHeight");
+    //             // if (header_bottom[i].classList.contains('table-comment__full--active')) {
+    //             //   header_bottom[i].classList.toggle('table-comment__full--active');
+    //             //   console.log('+');
+    //             // }
+    //     }
+    //   })
 }
 export function dinamocBtn(){
     let bod = document.querySelector('#root');
@@ -389,8 +406,6 @@ export function dinamocBtn(){
         }
     });
 }
-
-
 export function stars(input){
     let inputs = document.querySelector(input);
     console.log(inputs);
@@ -424,3 +439,21 @@ export function openExit(){
         ex.classList.toggle('hide');
     })
 }
+export function hidePassword(){
+    let eye = document.getElementsByClassName('password-control');
+    for(let i = 0; i < eye.length; i++){
+        let item = eye[i];
+        item.addEventListener('click', function(e){
+            e.preventDefault();
+            let parent = item.parentElement;
+            let input = parent.querySelector('.form__input');
+            input.classList.toggle('view');
+            if($(input).attr('type') == 'password'){
+                $(input).attr('type', 'text');
+            } 
+            else{
+                $(input).attr('type', 'password');
+            }
+        });
+    }
+}   

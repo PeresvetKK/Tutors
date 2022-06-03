@@ -39,10 +39,13 @@
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    align-items: flex-end;
     .bye{
         width: 200px;
+        max-height: 56px;
         &:hover, &:focus{
             width: 200px;
+            max-height: 56px;
         }
     }
 }
@@ -54,8 +57,8 @@
 }
 
 .qr-mini{
-    width: 48px;
-    height: 48px;
+    width: 120px;
+    height: 120px;
     background: $bgWhite;
     border: 1px solid $darkBlue;
     border-radius: 0.25rem;

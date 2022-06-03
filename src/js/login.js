@@ -4,7 +4,7 @@ import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
-import {longMessage, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside, editCourseTwo, openExit} from '../vendors/script';
+import {longMessage, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside, editCourseTwo, openExit, hidePassword} from '../vendors/script';
 $(() => {
 
 	function modalEvent() {
@@ -23,18 +23,7 @@ $(() => {
 			});
 		}
 	}
-	function hidePassword(){
-		$('body').on('click', '.password-control', function(){
-			if ($('#password-input').attr('type') == 'password'){
-				$(this).addClass('view');
-				$('#password-input').attr('type', 'text');
-			} else {
-				$(this).removeClass('view');
-				$('#password-input').attr('type', 'password');
-			}
-			return false;
-		});
-	}
+	
 	hidePassword();
 	modalEvent();
 	openNotify();

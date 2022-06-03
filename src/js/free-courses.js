@@ -72,30 +72,30 @@ $(() => {
 	
 	var dateSlider = document.getElementById('slider-date');
 
-function timestamp(str) {
-    return new Date(str).getTime();
-}
+	function timestamp(str) {
+		return new Date(str).getTime();
+	}
 
-noUiSlider.create(dateSlider, {
-    range: {
-        min: timestamp('2021'),
-        max: timestamp('2022')
-    },
-    // step: 7 * 24 * 60 * 60 * 1000,
+	noUiSlider.create(dateSlider, {
+		range: {
+			min: timestamp('2021'),
+			max: timestamp('2022')
+		},
+		// step: 7 * 24 * 60 * 60 * 1000,
 
-    start: [timestamp('2021'), timestamp('2023')],
+		start: [timestamp('2021'), timestamp('2023')],
 
-});
-var dateValues = [
-    document.getElementById('event-start'),
-    document.getElementById('event-end')
-];
+	});
+	var dateValues = [
+		document.getElementById('event-start'),
+		document.getElementById('event-end')
+	];
 
-var formatter = new Intl.DateTimeFormat('en-GB', {
-    // dateStyle: 'full'
-});
+	var formatter = new Intl.DateTimeFormat('en-GB', {
+		// dateStyle: 'full'
+	});
 
-dateSlider.noUiSlider.on('update', function (values, handle) {
-    dateValues[handle].innerHTML = formatter.format(new Date(+values[handle]));
-});
+	dateSlider.noUiSlider.on('update', function (values, handle) {
+		dateValues[handle].innerHTML = formatter.format(new Date(+values[handle]));
+	});
 });

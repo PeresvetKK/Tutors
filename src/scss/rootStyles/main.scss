@@ -751,13 +751,13 @@ select{
     }
     .aside__dropdown--active{
         display: block;
-        height: 66px;
+        height: 80px;
     }
     .aside-dropdown__item{
         display: block;
         margin-left: 31px;
         font-weight: 700;
-        font-size: 0.75em;
+        font-size: 0.875em;
         line-height: 14px;
         &:hover{
             color: $darkBlue;
@@ -1618,7 +1618,8 @@ svg.cell__inner{
 }
 .training-modal{
     ul, li{
-        list-style: none;
+        // list-style: none;
+        margin-left: 9px;
     }
     span, p{
         font-family: "Lato", sans-serif;
