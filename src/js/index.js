@@ -1,10 +1,12 @@
-import '../scss/index.scss';
 import AirDatepicker from 'air-datepicker'
 import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
-import {longMessage, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside, editCourseTwo, openExit, hidePassword} from '../vendors/script';
+import * as noUiSlider from 'nouislider';
+import 'nouislider/dist/nouislider.css';
+import '../scss/index.scss';
+import {longMessage, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside, editCourseTwo, openExit, hidePassword, timeSlider} from '../vendors/script';
 $(() => {
 	setDate('date1');
 	setDate('date2');
@@ -53,6 +55,7 @@ $(() => {
 	pushClose();
 	dinamocBtn();
 	sendScroll();
+	timeSlider();
 	function pencelCourse() {
 		let edit = document.getElementsByClassName("edit-block-cell__inner");
 		for (let i = 0; i < edit.length; i++) {

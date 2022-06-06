@@ -73,6 +73,7 @@
         fill: $darkBlue;
     }
 }
+
 @media screen and(max-width: 1175px){
     .salary-information__box{
         flex-wrap: wrap;
@@ -135,10 +136,13 @@
         height: 100%;
         margin-bottom: 20px;
     }
-    
-    
     .infoblock__item--big{
         width: 100%;
+    }
+    .courses-block{
+        .search-box{
+            display: flex;
+        }
     }
 }
 .profile-content--lesson{

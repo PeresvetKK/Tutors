@@ -329,6 +329,8 @@ progress::-moz-progress-bar {
     margin-right: 0;
     width: 100%;
     gap: 20px;
+    height: 93px;
+    padding-left: 20px;
     .inner-salary__block{
       display: flex;
       align-items: center;
@@ -364,6 +366,28 @@ progress::-moz-progress-bar {
   }
   .dogovor__item{
     width: 48%;
+  }
+}
+@media screen and(max-width: 1051px){
+  .salary-oplat__inner{
+    flex-direction: column;
+  }
+  .salary-oplat__left, .salary-oplat__right{
+    width: 100%;
+  }
+  .salary-oplat .form__box{
+    width: 50%;
+  }
+  .salary-oplat__right{
+    width: 100%;
+    display: flex;
+    gap: 16px;
+  }
+  .salary-oplat__btn{
+    &:hover, &:focus{
+      width: 50%;
+    }
+    width: 50%;
   }
 }
 @media screen and(max-width: 930px){
@@ -405,6 +429,7 @@ progress::-moz-progress-bar {
     flex-direction: column;
     align-items: flex-start;
   }
+
 }
 
 @media screen and (max-width: 477px) {

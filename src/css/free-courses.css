@@ -1793,7 +1793,7 @@ footer {
           justify-content: center;
 }
 .modal-add__boxig {
-  height: calc(100% - 82px);
+  height: auto;
 }
 .form {
   display: -webkit-box;
@@ -2078,7 +2078,7 @@ select {
   color: #fff;
 }
 .aside .aside__dropdown {
-  margin-top: -8px;
+  margin-top: 0;
   height: 0;
   overflow: hidden;
   -webkit-transition: height 0.4s ease-in-out;
@@ -3715,6 +3715,21 @@ svg.cell__inner {
   color: #84B5DF;
   font-size: 14px;
 }
+.slider {
+  width: 97%;
+  margin-bottom: 15px;
+}
+.data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.noUi-connect {
+  background: #84B5DF;
+}
 @media screen and (min-height: 1200px) {
   .modal-add__boxig {
     height: auto;
@@ -5094,6 +5109,8 @@ progress::-moz-progress-bar {
   width: 100%;
   grid-gap: 20px;
   gap: 20px;
+  height: 93px;
+  padding-left: 20px;
 }
 .application__item .inner-salary__block {
   display: -webkit-box;
@@ -5137,6 +5154,38 @@ progress::-moz-progress-bar {
 
   .dogovor__item {
     width: 48%;
+  }
+}
+@media screen and (max-width: 1051px) {
+  .salary-oplat__inner {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .salary-oplat__left, .salary-oplat__right {
+    width: 100%;
+  }
+
+  .salary-oplat .form__box {
+    width: 50%;
+  }
+
+  .salary-oplat__right {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-gap: 16px;
+    gap: 16px;
+  }
+
+  .salary-oplat__btn {
+    width: 50%;
+  }
+  .salary-oplat__btn:hover, .salary-oplat__btn:focus {
+    width: 50%;
   }
 }
 @media screen and (max-width: 930px) {
@@ -5540,6 +5589,12 @@ progress::-moz-progress-bar {
 
   .infoblock__item--big {
     width: 100%;
+  }
+
+  .courses-block .search-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 .profile-content--lesson {

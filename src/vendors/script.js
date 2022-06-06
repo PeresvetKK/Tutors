@@ -1,7 +1,10 @@
-import AirDatepicker from 'air-datepicker';
-import 'air-datepicker/air-datepicker.css';
+import AirDatepicker from 'air-datepicker'
+import 'air-datepicker/air-datepicker.css'
+import 'air-datepicker/air-datepicker.js'
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
+import * as noUiSlider from 'nouislider';
+import 'nouislider/dist/nouislider.css';
 
 export function dropDownFunc() {
     let dropDown = document.getElementsByClassName('container__dropdown');
@@ -100,16 +103,61 @@ export function editCourseTwo(pencel, open) {
 //     }
 // }
 export function setDate(element){
+    if (document.documentElement.lang === "en") {
+        var langs = {
+            days: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+            daysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+            daysMin: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
+            months: ['January','February','March','April','May','June', 'July','August','September','October','November','December'],
+            monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+            today: 'Today',
+            clear: 'Clear',
+            dateFormat: 'dd.MM.yyyy',
+            timeFormat: 'HH:mm',
+            firstDay: 1
+        }
+    } 
+    else if (document.documentElement.lang === "ru") {
+        var langs = {
+            days: ['Воскресенье', 'Понедельник', 'Вторник', 'Среда', 'Четверг', 'Пятница', 'Суббота'],
+            daysShort: ['Вос','Пон','Вто','Сре','Чет','Пят','Суб'],
+            daysMin: ['Вс','Пн','Вт','Ср','Чт','Пт','Сб'],
+            months: ['Январь', 'Февраль', 'Март', 'Апрель', 'Май', 'Июнь', 'Июль', 'Август', 'Сентябрь', 'Октябрь', 'Ноябрь', 'Декабрь'],
+            monthsShort: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'],
+            today: 'Сегодня',
+            clear: 'Очистить',
+            dateFormat: 'dd.MM.yyyy',
+            timeFormat: 'HH:mm',
+            firstDay: 1
+        }
+    }
+    else if (document.documentElement.lang === "cs") {
+        var langs = {
+            days: ["Neděle", "Pondělí", "Úterý", "Středa", "Čtvrtek", "Pátek", "Sobota"],
+            daysShort: ["Ne", "Po", "Út", "St", "Čt", "Pá", "So"],
+            daysMin: ["Ne", "Po", "Út", "St", "Čt", "Pá", "So"],
+            months: ["Leden", "Únor", "Březen", "Duben", "Květen", "Červen", "Červenec", "Srpen", "Září", "Říjen", "Listopad", "Prosinec"],
+            monthsShort: ["Led", "Úno", "Bře", "Dub", "Kvě", "Čer", "Čec", "Srp", "Zář", "Říj", "Lis", "Pro"],
+            today: 'dneska',
+            clear: 'vyčistit',
+            dateFormat: 'dd.MM.yyyy',
+            timeFormat: 'HH:mm',
+            firstDay: 0
+        }
+    }
+    
     let elem = document.querySelector(`.${element}`);
     new AirDatepicker(`.${element}`, {
+        locale: langs,
         onSelect: function (dataText, inst) {
             var dateAsString = dataText.formattedDate;
-            // console.log(dateAsString);
+            console.log(dataText);
             var input = elem;
             input.value = dateAsString;
             input.setAttribute('data-quantity', input.value);
-        }
+        },
     });
+    
     var input = elem;
     input.addEventListener('input', function () {
         input.setAttribute('data-quantity', input.value);
@@ -206,6 +254,62 @@ export function mainDropdown() {
             }
         });
     }
+}
+export function timeSlider() {
+    let slider = document.querySelector(".slider");
+    let leftValue = document.querySelector('.leftvalue');
+    let rightValue = document.querySelector('.rightvalue');
+
+    // 0 = initial minutes from start of day
+    // 1440 = maximum minutes in a day
+    // step: 30 = amount of minutes to step by. 
+    let initialStartMinute = 0;
+    let initialEndMinute = 1440;
+    let step = 15;
+
+    slider = noUiSlider.create(slider, {
+        start: [initialStartMinute, initialEndMinute],
+        connect: true,
+        step: step,
+        range: {
+            'min': initialStartMinute,
+            'max': initialEndMinute
+        }
+    });
+
+    const convertToHour = value => Math.floor(value / 60);
+
+    const convertToMinute = (value, hour) => value - hour * 60;
+
+    const formatHoursAndMinutes = (hours, minutes) => {
+        if (hours.toString().length == 1) {
+            hours = '0' + hours;
+        }
+
+        if (minutes.toString().length == 1) {
+            minutes = '0' + minutes;
+        }
+
+        return hours + ':' + minutes;
+    };
+
+    const convertValuesToTime = (values, handle) => {
+        let hours = 0;
+        let minutes = 0;
+
+        if (handle === 0) {
+            hours = convertToHour(values[0]);
+            minutes = convertToMinute(values[0], hours);
+            leftValue.innerHTML = formatHoursAndMinutes(hours, minutes);
+            return;
+        };
+
+        hours = convertToHour(values[1]);
+        minutes = convertToMinute(values[1], hours);
+        rightValue.innerHTML = formatHoursAndMinutes(hours, minutes);
+    };
+
+    slider.on('update', (values, handle) => convertValuesToTime(values, handle));
 }
 export function modal() {
     let btn = document.getElementsByClassName('btn__task modal-active');

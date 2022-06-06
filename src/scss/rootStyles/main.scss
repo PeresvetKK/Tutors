@@ -486,7 +486,8 @@ footer{
     justify-content: center;
 }
 .modal-add__boxig{
-    height: calc(100% - 82px);
+    // height: calc(100% - 82px);
+    height: auto;
 }
 .form{
     display: flex;
@@ -744,7 +745,7 @@ select{
         color: $bgWhite;
     }
     .aside__dropdown{
-        margin-top: -8px;
+        margin-top: 0;
         height: 0;
         overflow: hidden;
         transition: height .4s ease-in-out;
@@ -2187,6 +2188,18 @@ svg.cell__inner{
         font-size: 14px;
     }
 }
+.slider {
+    width: 97%;
+    margin-bottom: 15px;
+  }
+  
+  .data {
+    display: flex;
+    justify-content: space-between;
+  }
+  .noUi-connect{
+      background: $darkBlue;
+  }
 @media screen and(min-height: 1200px){
     .modal-add__boxig{
         height: initial;
