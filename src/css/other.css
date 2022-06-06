@@ -504,7 +504,7 @@ footer {
 .training__modal {
   margin-top: 20px;
 }
-.modal-add__box, .modal-event__box {
+.modal-add__box, .modal-event__box, .modal-add-task__box {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,21 +518,21 @@ footer {
           justify-content: space-between;
   padding: 40px 40px 0 40px;
 }
-.modal-add__inner, .modal-event__inner {
+.modal-add__inner, .modal-event__inner, .modal-add-task__inner {
   overflow: hidden;
   overflow-y: scroll;
   margin-right: -14px;
   padding-right: 14px;
 }
-.modal-add__title, .modal-event__title {
+.modal-add__title, .modal-event__title, .modal-add-task__title {
   margin-bottom: 30px;
   text-align: center;
 }
-.modal-add .form__box, .modal-event .form__box {
+.modal-add .form__box, .modal-event .form__box, .modal-add-task .form__box {
   width: 100%;
   margin-bottom: 20px;
 }
-.modal-add .btn__save--L, .modal-event .btn__save--L {
+.modal-add .btn__save--L, .modal-event .btn__save--L, .modal-add-task .btn__save--L {
   width: 100%;
   margin-bottom: 40px;
 }
