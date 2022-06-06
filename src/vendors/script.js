@@ -255,10 +255,10 @@ export function mainDropdown() {
         });
     }
 }
-export function timeSlider() {
-    let slider = document.querySelector(".slider");
-    let leftValue = document.querySelector('.leftvalue');
-    let rightValue = document.querySelector('.rightvalue');
+export function timeSlider(element) {
+    let slider = document.querySelector(element);
+    let leftValue = slider.parentElement.querySelector('.leftvalue');
+    let rightValue = slider.parentElement.querySelector('.rightvalue');
 
     // 0 = initial minutes from start of day
     // 1440 = maximum minutes in a day

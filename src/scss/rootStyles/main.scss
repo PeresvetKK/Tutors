@@ -2200,6 +2200,14 @@ svg.cell__inner{
   .noUi-connect{
       background: $darkBlue;
   }
+.filter__select{
+    .form__box--selectSVG{
+        width: 100%;
+    }
+}
+.select-data{
+    font-size: 0.875em;
+}
 @media screen and(min-height: 1200px){
     .modal-add__boxig{
         height: initial;
@@ -2219,7 +2227,9 @@ svg.cell__inner{
         width: 400px;
     }
 }
-
+.slider-box{
+    margin-bottom: 20px;
+}
 @media screen and (max-width: 913px){
     .aside{
         display: none;

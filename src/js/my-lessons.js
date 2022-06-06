@@ -21,6 +21,7 @@ $(() => {
 	dropDownAside();
 	setDate('date1');
 	setDate('date2');
+	setDate('date50');
 	setTime('settime1');
 	searchResult();
 	sendScroll();

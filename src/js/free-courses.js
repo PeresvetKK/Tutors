@@ -90,5 +90,6 @@ $(() => {
 	// 	dateValues[handle].innerHTML = formatter.format(new Date(+values[handle]));
 	// });
 	
-	timeSlider();
+	timeSlider(".slider-one");
+	timeSlider(".slider-two");
 });

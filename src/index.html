@@ -5317,17 +5317,17 @@
             <div class="modal modal-add-task hide">
                 <form action="#" method="POST" class="modal__inner modal-add__boxig">
                     <div class="modal-add__box">
-                        <h1 class="modal-add__title">Изменение строки</h1>
+                        <h1 class="modal-add__title">Редактировани строки</h1>
                         <div class="modal-add__inner">
                             <div class="form__box form__box--select">
                                 <select class="form__input">
                                     <option value="">День</option>
-                                    <option value="dog">Статус</option>
-                                    <option value="cat">Статус</option>
+                                    <option selected value="dog">Понедельник</option>
+                                    <option value="cat">Вторник</option>
                                 </select>
                             </div>
                             <div class="form__box form__box--selectSVG">
-                                <input type="text" id="set-data" class="select-data date4" autocomplete="off" required placeholder="Дата">
+                                <input type="text" id="set-data" data-quantity="15.06.2022" class="select-data date4" autocomplete="off" value="15.06.2022" required placeholder="Дата">
                                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M4 8H20" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                     <path d="M19 4H5C4.44772 4 4 4.44772 4 5V19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4Z" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -5339,18 +5339,18 @@
                             <div class="form__box form__box--select">
                                 <select class="form__input">
                                     <option value="">Форма обучения</option>
-                                    <option value="online">Онлайн</option>
+                                    <option selected value="online">Онлайн</option>
                                     <option value="ofline">Офлайн</option>
                                 </select>
                             </div>
-                            <div class="form__box form__box--long">
+                            <!-- <div class="form__box form__box--long">
                                 <div class="slider"></div>
                                 <div class="data">
                                     <div class="leftvalue"></div>
                                     <div class="rightvalue"></div>
                                 </div>
-                            </div>
-                            <textarea class="estimation__comment textarea modal__textarea" name="" required id="" placeholder="Описание"></textarea>
+                            </div> -->
+                            <textarea class="estimation__comment textarea modal__textarea" name="" required id="" placeholder="Описание">Example message</textarea>
                         </div>
                         <button class="btn__save--L" type="submit">Сохранить</button>
                     </div> 

@@ -55,7 +55,7 @@ $(() => {
 	pushClose();
 	dinamocBtn();
 	sendScroll();
-	timeSlider();
+	// timeSlider();
 	function pencelCourse() {
 		let edit = document.getElementsByClassName("edit-block-cell__inner");
 		for (let i = 0; i < edit.length; i++) {
