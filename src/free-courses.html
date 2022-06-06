@@ -194,9 +194,25 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="header__profile profile">
-                <img src="/img/profile.png" alt="profile">
-            </a>
+            <div class="header__profile profile exit-container">
+                <img class="open-exit" src="/img/profile.png" alt="profile">
+                <div class="exit hide">
+                    <div class="exit__header">
+                        <img src="/img/profile.png" alt="profile">
+                        <div class="exit__textbox">
+                            <p class="exit__sub">Лектор</p>
+                            <p class="exit__sup">Никита Герасимов</p>
+                        </div>
+                    </div>
+                    <button class="btn light-btn exit__btn">
+                        Выйти 
+                        <svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M9.93436 11.9343C9.62194 12.2467 9.62194 12.7533 9.93436 13.0657C10.2468 13.3781 10.7533 13.3781 11.0657 13.0657L9.93436 11.9343ZM13 10L13.5657 10.5657C13.7158 10.4157 13.8 10.2122 13.8 10C13.8 9.78783 13.7158 9.58434 13.5657 9.43431L13 10ZM11.0657 6.93431C10.7533 6.6219 10.2468 6.6219 9.93436 6.93431C9.62194 7.24673 9.62194 7.75327 9.93436 8.06569L11.0657 6.93431ZM3.83337 9.2C3.39155 9.2 3.03337 9.55817 3.03337 10C3.03337 10.4418 3.39155 10.8 3.83337 10.8L3.83337 9.2ZM11.0657 13.0657L13.5657 10.5657L12.4344 9.43431L9.93436 11.9343L11.0657 13.0657ZM13.5657 9.43431L11.0657 6.93431L9.93436 8.06569L12.4344 10.5657L13.5657 9.43431ZM3.83337 10.8L13 10.8V9.2L3.83337 9.2L3.83337 10.8Z" fill="#84B5DF"/>
+                            <path d="M8 5.83333V4.16666C8 3.70642 8.3731 3.33333 8.83333 3.33333H16.3333C16.7936 3.33333 17.1667 3.70642 17.1667 4.16666V15.8333C17.1667 16.2936 16.7936 16.6667 16.3333 16.6667H8.83333C8.3731 16.6667 8 16.2936 8 15.8333V14.1667" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
         </div>
     </header>
     <aside class="aside">
@@ -1876,7 +1892,7 @@
                             <h3 class="lessons-edit__score">30 из 80</h3>
                             <progress value="30" max="100" class="progressbar"></progress>
                             <div class="salary-information__box application__box">
-                                <div class="application__item application__item--new">
+                                <div class="application__item application__item--new small-mail">
                                     <div class="inner-salary__block salary-information__block aplication__container">
                                         <img class="profile-icon header__profile profile" src="./img/profile.icon.png" alt="profile">
                                         <div class="salary-information__inner">

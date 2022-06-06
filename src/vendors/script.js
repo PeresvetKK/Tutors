@@ -321,6 +321,16 @@ export function offset(el) {
     return { top: rect.top , left: rect.left}
 }
 export function longMessage(){
+    $('#root').on('click', function(e){
+        if(! e.target.classList.contains('table-comment')){
+            let hideAllComment = document.getElementsByClassName('table-comment__full');
+            if(hideAllComment){
+            for(let i = 0; i < hideAllComment.length; i++){
+                hideAllComment[i].classList.remove('table-comment__full--active');
+            }
+            }
+        }
+    });
     let miniComment = document.getElementsByClassName('table-comment');
     for(let i = 0; i < miniComment.length; i++){
         let item = miniComment[i];
@@ -351,17 +361,27 @@ export function longMessage(){
         //     longComment.style.top = `${topHeight.top - 13}px`;
         // });
     }
+    // $(window).on('scroll', function(){
+    //     if($('table-comment__full')){
+
+    //     console.log($(window).scrollTop() - $('.table-comment__full').offset().top);
+    //     }
+    // });
     // $(window).on("scroll", function() {
     //     const header_bottom = document.getElementsByClassName('table-comment__full');
+    //     if(header_bottom){
     //     for(let i = 0; i < header_bottom.length; i++){
-    //         let scrollHeights = window.pageYOffset;
-    //         let heightElement = header_bottom[i].clientTop;
-    //         console.log(scrollHeights + " scrollHeight");
-    //         console.log(heightElement + " elementHeight");
+            
+            
+    //         // let scrollHeights = window.pageYOffset;
+    //         // let heightElement = header_bottom[i].clientTop;
+    //         // console.log(scrollHeights + " scrollHeight");
+    //         // console.log(heightElement + " elementHeight");
     //             // if (header_bottom[i].classList.contains('table-comment__full--active')) {
     //             //   header_bottom[i].classList.toggle('table-comment__full--active');
     //             //   console.log('+');
     //             // }
+            
     //     }
     //   })
 }

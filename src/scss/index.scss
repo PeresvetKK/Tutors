@@ -117,6 +117,11 @@
     color: $dark900;
   }
 }
+.small-mail{
+  .salary-information__item-subtitle{
+    font-size: 0.875em;
+  }
+}
 .profile-content--lesson{
   width: 49%;
 }

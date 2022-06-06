@@ -1,5 +1,5 @@
 import '../scss/courses.scss';
-import {dinamocBtn, offset, editCourseTwo, sendScroll, checkKey, searchResult, setTime, setDate, modal, openNotify, filter, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown} from '../vendors/script';
+import {dinamocBtn, offset, editCourseTwo, sendScroll, checkKey, searchResult, setTime, setDate, modal, openNotify, filter, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown, openExit} from '../vendors/script';
 $(() => {
 	modal();
 	openNotify();
@@ -19,6 +19,7 @@ $(() => {
 	setDate('date2');
 	setTime('settime1');
 	sendScroll();
+	openExit();
 	function pencelCourse() {
 		let edit = document.getElementsByClassName("edit-block-cell__inner");
 		for (let i = 0; i < edit.length; i++) {

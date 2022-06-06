@@ -675,7 +675,7 @@
                                                 <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                                             </svg> 
                                             <div class="breads-drop hide">
-                                                <div class="breads-drop__item open-push">
+                                                <div class="breads-drop__item open-modal-edit">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <g clip-path="url(#clip0_541_36990)">
                                                             <g filter="url(#filter0_d_541_36990)">
@@ -1933,7 +1933,7 @@
                                         <path d="M8 2V4" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
                                     </svg>  
                                 </div>
-                                <a href="#" class="underline">Сбросить</a>
+                                <button class="btn__save--L salary-oplat__btn">Сбросить</button>
                             </div>
                             <div class="salary-oplat__right">
                                 <button class="btn__save--L salary-oplat__btn">
@@ -2200,55 +2200,28 @@
                                             <div class="breads-drop hide">
                                                 <div class="breads-drop__item open-dogovor">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <g clip-path="url(#clip0_541_36990)">
-                                                            <g filter="url(#filter0_d_541_36990)">
-                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
-                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            </g>
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                                                <feOffset dy="4"></feOffset>
-                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
-                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
-                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
-                                                            </filter>
-                                                            <clipPath id="clip0_541_36990">
-                                                                <rect width="24" height="24" fill="white"></rect>
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>  
-                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                        <path
+                                                            d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                            stroke="#84B5DF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M8 12H16" stroke="#84B5DF" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M12 16L12 8" stroke="#84B5DF" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <p class="breads-drop__text">Добавить</p>                                                
                                                 </div>
                                                 <div class="breads-drop__item open-dogovor">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <g clip-path="url(#clip0_541_36990)">
-                                                            <g filter="url(#filter0_d_541_36990)">
-                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
-                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            </g>
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                                                <feOffset dy="4"></feOffset>
-                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
-                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
-                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
-                                                            </filter>
-                                                            <clipPath id="clip0_541_36990">
-                                                                <rect width="24" height="24" fill="white"></rect>
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>   
-                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                        <path
+                                                            d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z"
+                                                            stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)"
+                                                            fill="#84B5DF" />
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)"
+                                                            fill="#84B5DF" />
+                                                    </svg>
+                                                    <p class="breads-drop__text">Расторгнуть</p>                                                
                                                 </div>
                                             </div>   
                                         </div>                               
@@ -2287,58 +2260,31 @@
                                             <div class="breads-drop hide">
                                                 <div class="breads-drop__item open-dogovor">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <g clip-path="url(#clip0_541_36990)">
-                                                            <g filter="url(#filter0_d_541_36990)">
-                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
-                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            </g>
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                                                <feOffset dy="4"></feOffset>
-                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
-                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
-                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
-                                                            </filter>
-                                                            <clipPath id="clip0_541_36990">
-                                                                <rect width="24" height="24" fill="white"></rect>
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>  
-                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                        <path
+                                                            d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                            stroke="#84B5DF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M8 12H16" stroke="#84B5DF" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M12 16L12 8" stroke="#84B5DF" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <p class="breads-drop__text">Добавить</p>                                                
                                                 </div>
                                                 <div class="breads-drop__item open-dogovor">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <g clip-path="url(#clip0_541_36990)">
-                                                            <g filter="url(#filter0_d_541_36990)">
-                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
-                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            </g>
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                                                <feOffset dy="4"></feOffset>
-                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
-                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
-                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
-                                                            </filter>
-                                                            <clipPath id="clip0_541_36990">
-                                                                <rect width="24" height="24" fill="white"></rect>
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>   
-                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                        <path
+                                                            d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z"
+                                                            stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)"
+                                                            fill="#84B5DF" />
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)"
+                                                            fill="#84B5DF" />
+                                                    </svg>
+                                                    <p class="breads-drop__text">Расторгнуть</p>                                                
                                                 </div>
                                             </div>   
-                                        </div>                               
+                                        </div>                              
                                     </div>  
                                 </div>
                                 <div class="tr">
@@ -2374,55 +2320,28 @@
                                             <div class="breads-drop hide">
                                                 <div class="breads-drop__item open-dogovor">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <g clip-path="url(#clip0_541_36990)">
-                                                            <g filter="url(#filter0_d_541_36990)">
-                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
-                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            </g>
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                                                <feOffset dy="4"></feOffset>
-                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
-                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
-                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
-                                                            </filter>
-                                                            <clipPath id="clip0_541_36990">
-                                                                <rect width="24" height="24" fill="white"></rect>
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>  
-                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                        <path
+                                                            d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                            stroke="#84B5DF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M8 12H16" stroke="#84B5DF" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M12 16L12 8" stroke="#84B5DF" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <p class="breads-drop__text">Добавить</p>                                                
                                                 </div>
                                                 <div class="breads-drop__item open-dogovor">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <g clip-path="url(#clip0_541_36990)">
-                                                            <g filter="url(#filter0_d_541_36990)">
-                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
-                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            </g>
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                                                <feOffset dy="4"></feOffset>
-                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
-                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
-                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
-                                                            </filter>
-                                                            <clipPath id="clip0_541_36990">
-                                                                <rect width="24" height="24" fill="white"></rect>
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>   
-                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                        <path
+                                                            d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z"
+                                                            stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)"
+                                                            fill="#84B5DF" />
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)"
+                                                            fill="#84B5DF" />
+                                                    </svg>
+                                                    <p class="breads-drop__text">Расторгнуть</p>                                                
                                                 </div>
                                             </div>   
                                         </div>                               
@@ -2461,58 +2380,31 @@
                                             <div class="breads-drop hide">
                                                 <div class="breads-drop__item open-dogovor">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <g clip-path="url(#clip0_541_36990)">
-                                                            <g filter="url(#filter0_d_541_36990)">
-                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
-                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            </g>
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                                                <feOffset dy="4"></feOffset>
-                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
-                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
-                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
-                                                            </filter>
-                                                            <clipPath id="clip0_541_36990">
-                                                                <rect width="24" height="24" fill="white"></rect>
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>  
-                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                        <path
+                                                            d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                            stroke="#84B5DF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M8 12H16" stroke="#84B5DF" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                        <path d="M12 16L12 8" stroke="#84B5DF" stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round" />
+                                                    </svg>
+                                                    <p class="breads-drop__text">Добавить</p>                                                
                                                 </div>
                                                 <div class="breads-drop__item open-dogovor">
                                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                        <g clip-path="url(#clip0_541_36990)">
-                                                            <g filter="url(#filter0_d_541_36990)">
-                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
-                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                            </g>
-                                                        </g>
-                                                        <defs>
-                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                                                <feOffset dy="4"></feOffset>
-                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
-                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
-                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
-                                                            </filter>
-                                                            <clipPath id="clip0_541_36990">
-                                                                <rect width="24" height="24" fill="white"></rect>
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>   
-                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                        <path
+                                                            d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z"
+                                                            stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)"
+                                                            fill="#84B5DF" />
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)"
+                                                            fill="#84B5DF" />
+                                                    </svg>
+                                                    <p class="breads-drop__text">Расторгнуть</p>                                                
                                                 </div>
                                             </div>   
-                                        </div>                               
+                                        </div>                              
                                     </div>  
                                 </div>
                             </div>
@@ -2541,58 +2433,31 @@
                                                 <div class="breads-drop hide">
                                                     <div class="breads-drop__item open-dogovor">
                                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <g clip-path="url(#clip0_541_36990)">
-                                                                <g filter="url(#filter0_d_541_36990)">
-                                                                    <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                    <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
-                                                                    <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                </g>
-                                                            </g>
-                                                            <defs>
-                                                                <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                                                    <feOffset dy="4"></feOffset>
-                                                                    <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                                                                    <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
-                                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
-                                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
-                                                                </filter>
-                                                                <clipPath id="clip0_541_36990">
-                                                                    <rect width="24" height="24" fill="white"></rect>
-                                                                </clipPath>
-                                                            </defs>
-                                                        </svg>  
-                                                        <p class="breads-drop__text">Подробнее</p>                                                
+                                                            <path
+                                                                d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                                                                stroke="#84B5DF" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M8 12H16" stroke="#84B5DF" stroke-width="2" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                            <path d="M12 16L12 8" stroke="#84B5DF" stroke-width="2" stroke-linecap="round"
+                                                                stroke-linejoin="round" />
+                                                        </svg>
+                                                        <p class="breads-drop__text">Добавить</p>                                                
                                                     </div>
                                                     <div class="breads-drop__item open-dogovor">
                                                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <g clip-path="url(#clip0_541_36990)">
-                                                                <g filter="url(#filter0_d_541_36990)">
-                                                                    <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                    <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
-                                                                    <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                                                </g>
-                                                            </g>
-                                                            <defs>
-                                                                <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                                                                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
-                                                                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
-                                                                    <feOffset dy="4"></feOffset>
-                                                                    <feGaussianBlur stdDeviation="6"></feGaussianBlur>
-                                                                    <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
-                                                                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
-                                                                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
-                                                                </filter>
-                                                                <clipPath id="clip0_541_36990">
-                                                                    <rect width="24" height="24" fill="white"></rect>
-                                                                </clipPath>
-                                                            </defs>
-                                                        </svg>   
-                                                        <p class="breads-drop__text">Подробнее</p>                                                
+                                                            <path
+                                                                d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z"
+                                                                stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                                            <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)"
+                                                                fill="#84B5DF" />
+                                                            <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)"
+                                                                fill="#84B5DF" />
+                                                        </svg>
+                                                        <p class="breads-drop__text">Расторгнуть</p>                                                
                                                     </div>
                                                 </div>   
-                                            </div>                               
+                                            </div>                              
                                         </div>  
                                     </div>
                                 </div>
@@ -2691,36 +2556,14 @@
                         <div class="table course-table">
                             <div class="thead">
                                 <div class="tr tabel__block">
-                                    
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            Фамилия
+                                        </div>
+                                    </div>
                                     <div class="th">
                                         <div class="table-flex">
                                             Имя 
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Телефон
-                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
-                                            </svg> 
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Email
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                            Адрес
-                                        </div>
-                                    </div>
-                                    <div class="th">
-                                        <div class="table-flex">
-                                                ID заявления 
-                                                <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
-                                                </svg> 
                                         </div>
                                     </div>
                                 </div>
@@ -2729,93 +2572,183 @@
                             <div class="tbody">
                                 <div class="tr">
                                     <div class="td tabel__cell">
-                                        <div class="table-flex">Иван Иванов</div>
+                                        <div class="table-flex">Иванов</div>
                                     </div>
                                     <div class="td tabel__cell">
-                                        <div class="table-flex">1234567</div>
+                                        <div class="table-flex">Иванов</div>
                                     </div>
-                                    
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">testemail@gmail.com</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">г. Саратов, ул. Московская</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex course-table__id">1234567</div>
-                                    </div>
+                                    <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item open-stud-lk">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                               
+                                    </div>  
                                 </div>
                                 <div class="tr">
                                     <div class="td tabel__cell">
-                                        <div class="table-flex">Иван Иванов</div>
+                                        <div class="table-flex">Иванов</div>
                                     </div>
                                     <div class="td tabel__cell">
-                                        <div class="table-flex">1234567</div>
+                                        <div class="table-flex">Иванов</div>
                                     </div>
-                                    
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">testemail@gmail.com</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">г. Саратов, ул. Московская</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex course-table__id">1234567</div>
-                                    </div>
+                                    <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item open-stud-lk">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                               
+                                    </div>  
                                 </div>
                                 <div class="tr">
                                     <div class="td tabel__cell">
-                                        <div class="table-flex">Иван Иванов</div>
+                                        <div class="table-flex">Иванов</div>
                                     </div>
                                     <div class="td tabel__cell">
-                                        <div class="table-flex">1234567</div>
+                                        <div class="table-flex">Иванов</div>
                                     </div>
-                                    
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">testemail@gmail.com</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">г. Саратов, ул. Московская</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex course-table__id">1234567</div>
-                                    </div>
+                                    <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item open-stud-lk">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                               
+                                    </div>  
                                 </div>
                                 <div class="tr">
                                     <div class="td tabel__cell">
-                                        <div class="table-flex">Иван Иванов</div>
+                                        <div class="table-flex">Иванов</div>
                                     </div>
                                     <div class="td tabel__cell">
-                                        <div class="table-flex">1234567</div>
+                                        <div class="table-flex">Иванов</div>
                                     </div>
-                                    
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">testemail@gmail.com</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">г. Саратов, ул. Московская</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex course-table__id">1234567</div>
-                                    </div>
-                                </div>
-                                <div class="tr">
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">Иван Иванов</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">1234567</div>
-                                    </div>
-                                    
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">testemail@gmail.com</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex">г. Саратов, ул. Московская</div>
-                                    </div>
-                                    <div class="td tabel__cell">
-                                        <div class="table-flex course-table__id">1234567</div>
-                                    </div>
+                                    <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item open-stud-lk">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Подробнее</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                               
+                                    </div>  
                                 </div>
                             </div>
                         </div>
@@ -2949,7 +2882,7 @@
                             <h3 class="lessons-edit__score">30 из 80</h3>
                             <progress value="30" max="100" class="progressbar"></progress>
                             <div class="salary-information__box application__box">
-                                <div class="application__item application__item--new">
+                                <div class="application__item application__item--new small-mail">
                                     <div class="inner-salary__block salary-information__block aplication__container">
                                         <img class="profile-icon header__profile profile" src="./img/profile.icon.png" alt="profile">
                                         <div class="salary-information__inner">
@@ -4451,6 +4384,891 @@
                     </section>
                 </section>
             </div>
+            <div class="wrapper hide" id="users-lk">
+				<section  class="main__header">
+					<h1 class="main__title title">Личная карта</h1>
+                    <div class="main__block-tabs">
+                        <div class="form__box form__box--select category-select">
+                            <div class="category">
+                                <p class="category__text">Профиль</p>
+                            </div>
+                        </div>
+                        <div class="tabs main__tabs">
+                            <button class="tabs__item tabs__item--active current openButton" data-tab="100">
+                                Профиль
+                            </button>
+                            <button class="tabs__item past" data-tab="101">                              
+                                Рассписание
+                            </button>
+                        </div>
+                    </div>					
+				</section>
+				<section class="main__block profile-block tab-content active openBlock" data-tab="100">
+					<div class="container">				
+						<form action="#" id="main-form" class="profile-form" method="POST">
+                            <div class="profile-block__person person">
+                                <img class="person__img" src="img/nulluser.png" alt="person">
+                                <div class="person__edit edit__circle">
+                                    <input class="person__edit--input" type="button" value="submit">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M8 20.0001V21.0001C8.26522 21.0001 8.51957 20.8947 8.70711 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.44772 21.0001 4 21.0001V20.0001ZM4 16.0001L3.29289 15.293C3.10536 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.41431L16 5.41431L15.2929 4.7072ZM16.7071 4.7072L16 5.41431L16 5.41431L16.7071 4.7072ZM19.2929 7.29299L20 6.58588V6.58588L19.2929 7.29299ZM19.2929 8.7072L18.5858 8.00009L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.70711 16.7072L16 5.41431L14.5858 4.00009L3.29289 15.293L4.70711 16.7072ZM16 5.41431L18.5858 8.00009L20 6.58588L17.4142 4.00009L16 5.41431ZM18.5858 8.00009L7.29289 19.293L8.70711 20.7072L20 9.41431L18.5858 8.00009ZM18.5858 8.00009V8.00009L20 9.41431C20.781 8.63326 20.781 7.36693 20 6.58588L18.5858 8.00009ZM16 5.41431H16L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.41431Z"
+                                            fill="white" />
+                                        <path d="M12 8L16 12" stroke="white" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" />
+                                    </svg>
+                                </div>
+                                <div class="person__textbox person-textbox">
+                                    <p class="person-textbox__post">Лектор</p>
+                                    <h2 class="person-textbox__name">Никита Герасимов</h2>
+                                    <p class="person-textbox__text complite">• Преподаю</p>						
+                                </div>
+                            </div>
+							<div class="profile-form__block profile-block">
+								<h3 class="profile-block__title">Основная информация</h3>
+								<div class="profile-container">
+									<div class="form__box form__box--index">
+										<label class="form__label" for="name">Имя</label>
+										<input class="form__input name" type="text" id="name" name="name" placeholder="Value"
+											value="" required>
+                                        <p class="form__lagel-error">Введено некорректное значение</p>
+									</div>
+									<div class="form__box form__box--index">
+										<label class="form__label phone" for="tel">Номер телефона</label>
+										<input class="form__input phone" type="tel" id="tel" name="tel"
+											placeholder="+7(909) 334-66-77" value="" required>
+									</div>
+									<div class="form__box form__box--index">
+										<label class="form__label lastname" for="lastname">Фамилия</label>
+										<input class="form__input lastname" type="text" id="lastname" name="lastname" placeholder="Value"
+											value="" required>
+									</div>
+									<div class="form__box form__box--index">
+										<label class="form__label email" for="email">E-mail</label>
+										<input class="form__input email" type="email" id="email" name="email"
+											placeholder="ad.valach@gmail.com" value="" required>
+									</div>
+                                    <div class="form__box form__box--index password">
+										<label class="form__label email" for="password">Пароль</label>
+										<input class="form__input" type="password" id="password-input" name="password"
+											placeholder="" value="" required>
+                                        <a href="#" class="password-control"></a>
+									</div>
+								</div>
+							</div>
+							<div class="profile-form__block profile-block">
+								<h3 class="profile-block__title">Информация об адресе</h3>
+								<div class="profile-container">
+									<div class="form__box form__box--index">
+										<label class="form__label city" for="city">Город</label>
+										<input class="form__input city" type="text" id="city" name="city" placeholder="Прага"
+											value="Прага" required>
+									</div>
+									<div class="form__box form__box--select form__box--index">
+										<label class="form__label" for="UTC">Часовой пояс</label>
+										<select class="form__input" id="UTC" name="UTC">
+											<option value="">Прага +3 UTC</option>
+											<option value="dog">Прага +3 UTC</option>
+											<option value="cat">Прага +3 UTC</option>
+										</select>
+									</div>
+									<div class="form__box form__box--index" >
+										<label class="form__label street" for="street">Улица</label>
+										<input class="form__input street" type="text" id="street" name="street"
+											placeholder="Ленина 13" value="Ленина 13" required>
+									</div>
+									<div class="form__box form__box--index">
+										<label class="form__label index" for="index">Почтовый индекс</label>
+										<input class="form__input index" type="text" id="index" name="index"
+											placeholder="767 767" value="767 767" required>
+									</div>
+								</div>
+							</div>
+                            <div class="form-btn">
+								<button class="btn__save--L" type="submit">Сохранить</button>
+							</div>
+						</form>
+					</div>
+				</section>
+				<section class="main__block schedule-block tab-content" data-tab="101">
+                    <div class="table-container">
+                        <div class="table schedule-table">
+                            <div class="thead">
+                                <div class="tr tabel__block">
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            № 
+                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                            </svg>                                                
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            День
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            Дата 
+                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            Форма обучения
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            Начало 
+                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            Конец 
+                                            <svg class="table-swap" width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.33359 11.3333L3.33359 2.66667L4.13359 3.73333C4.35426 4.028 4.77226 4.08733 5.06692 3.86667C5.24159 3.736 5.33359 3.53533 5.33359 3.33267C5.33359 3.194 5.29026 3.05333 5.20026 2.93333L3.20026 0.266667C3.07559 0.1 2.88026 0.00133406 2.67292 8.36837e-07C2.46426 -0.00133239 2.26759 0.0933331 2.14026 0.258L0.140256 2.83267C-0.0857443 3.12267 -0.0330776 3.542 0.258256 3.768C0.548256 3.994 0.967589 3.94133 1.19359 3.65067L2.00026 2.612L2.00026 11.3333C2.00026 11.7013 2.29826 12 2.66692 12C3.03559 12 3.33359 11.7013 3.33359 11.3333Z" fill="#8F9498"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            Комментарий
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="loader-progress hide"></div>
+                            <div class="tbody">
+                                <div class="table-inner">
+                                    
+                                </div>
+                                <div class="tr edit-block">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">1</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Понедельник</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">22.04.2022</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Онлайн</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">18.30</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">19.30</div>
+                                    </div>
+                                    <div class="td tabel__cell table-comment__container">
+                                        <div class="table-flex cell--inner table-comment">Урок будет проведен для...</div>
+                                        <div class="table-comment__full">
+                                            <p>Урок будет проведен для всех желающих Урок будет проведен для всех желающих Урок будет проведен для всех желающих</p> 
+                                        </div>
+                                    </div>
+                                    <!-- <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item open-modal-edit">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Редактировать</p>                                                
+                                                </div>
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)" fill="#84B5DF"></rect>
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)" fill="#84B5DF"></rect>
+                                                    </svg> 
+                                                    <p class="breads-drop__text">Удалить</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                               
+                                    </div> -->
+                                </div>
+                                <div class="tr edit-block">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">2</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Вторник</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">22.04.2022</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Онлайн</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">18.30</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">19.30</div>
+                                    </div>
+                                    <div class="td tabel__cell table-comment__container">
+                                        <div class="table-flex cell--inner table-comment">Урок не будет проведен для...</div>
+                                        <div class="table-comment__full">
+                                            <p>Урок не будет проведен для всех желающих Урок будет проведен для всех желающих Урок будет проведен для всех желающих</p> 
+                                        </div>
+                                    </div>
+                                    <!-- <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Редактировать</p>                                                
+                                                </div>
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)" fill="#84B5DF"></rect>
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)" fill="#84B5DF"></rect>
+                                                    </svg> 
+                                                    <p class="breads-drop__text">Удалить</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                                
+                                    </div> -->
+                                </div>
+                                <div class="tr edit-block">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">3</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Среда</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">22.04.2022</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Онлайн</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">18.30</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">19.30</div>
+                                    </div>
+                                    <div class="td tabel__cell table-comment__container">
+                                        <div class="table-flex cell--inner table-comment">Урок может быть перенесе...</div>
+                                        <div class="table-comment__full">
+                                            <p>Урок может быть перенесен для всех желающих Урок будет проведен для всех желающих Урок будет проведен для всех желающих</p> 
+                                        </div>
+                                    </div>
+                                    <!-- <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Редактировать</p>                                                
+                                                </div>
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)" fill="#84B5DF"></rect>
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)" fill="#84B5DF"></rect>
+                                                    </svg> 
+                                                    <p class="breads-drop__text">Удалить</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                                 
+                                    </div> -->
+                                </div>
+                                <div class="tr edit-block">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">3</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Среда</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">22.04.2022</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Онлайн</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">18.30</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">19.30</div>
+                                    </div>
+                                    <div class="td tabel__cell table-comment__container">
+                                        <div class="table-flex cell--inner table-comment">Урок может быть перенесе...</div>
+                                        <div class="table-comment__full">
+                                            <p>Урок может быть перенесен для всех желающих Урок будет проведен для всех желающих Урок будет проведен для всех желающих</p> 
+                                        </div>
+                                    </div>
+                                    <!-- <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Редактировать</p>                                                
+                                                </div>
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)" fill="#84B5DF"></rect>
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)" fill="#84B5DF"></rect>
+                                                    </svg> 
+                                                    <p class="breads-drop__text">Удалить</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                                 
+                                    </div> -->
+                                </div>
+                                <div class="tr edit-block">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">3</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Среда</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">22.04.2022</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Онлайн</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">18.30</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">19.30</div>
+                                    </div>
+                                    <div class="td tabel__cell table-comment__container">
+                                        <div class="table-flex cell--inner table-comment">Урок может быть перенесе...</div>
+                                        <div class="table-comment__full">
+                                            <p>Урок может быть перенесен для всех желающих Урок будет проведен для всех желающих Урок будет проведен для всех желающих</p> 
+                                        </div>
+                                    </div>
+                                    <!-- <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Редактировать</p>                                                
+                                                </div>
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)" fill="#84B5DF"></rect>
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)" fill="#84B5DF"></rect>
+                                                    </svg> 
+                                                    <p class="breads-drop__text">Удалить</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                                 
+                                    </div> -->
+                                </div>
+                                <div class="tr edit-block">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">3</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Среда</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">22.04.2022</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Онлайн</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">18.30</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">19.30</div>
+                                    </div>
+                                    <div class="td tabel__cell table-comment__container">
+                                        <div class="table-flex cell--inner table-comment">Урок может быть перенесе...</div>
+                                        <div class="table-comment__full">
+                                            <p>Урок может быть перенесен для всех желающих Урок будет проведен для всех желающих Урок будет проведен для всех желающих</p> 
+                                        </div>
+                                    </div>
+                                    <!-- <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Редактировать</p>                                                
+                                                </div>
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)" fill="#84B5DF"></rect>
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)" fill="#84B5DF"></rect>
+                                                    </svg> 
+                                                    <p class="breads-drop__text">Удалить</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                                 
+                                    </div> -->
+                                </div>
+                                <div class="tr edit-block">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">3</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Среда</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">22.04.2022</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Онлайн</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">18.30</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">19.30</div>
+                                    </div>
+                                    <div class="td tabel__cell table-comment__container">
+                                        <div class="table-flex cell--inner table-comment">Урок может быть перенесе...</div>
+                                        <div class="table-comment__full">
+                                            <p>Урок может быть перенесен для всех желающих Урок будет проведен для всех желающих Урок будет проведен для всех желающих</p> 
+                                        </div>
+                                    </div>
+                                    <!-- <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Редактировать</p>                                                
+                                                </div>
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)" fill="#84B5DF"></rect>
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)" fill="#84B5DF"></rect>
+                                                    </svg> 
+                                                    <p class="breads-drop__text">Удалить</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                                 
+                                    </div> -->
+                                </div>
+                                <div class="tr edit-block">
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">3</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Среда</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">22.04.2022</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">Онлайн</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">18.30</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex">19.30</div>
+                                    </div>
+                                    <div class="td tabel__cell table-comment__container">
+                                        <div class="table-flex cell--inner table-comment">Урок может быть перенесе...</div>
+                                        <div class="table-comment__full">
+                                            <p>Урок может быть перенесен для всех желающих Урок будет проведен для всех желающих Урок будет проведен для всех желающих</p> 
+                                        </div>
+                                    </div>
+                                    <!-- <div class="edit-block-cell">
+                                        <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Редактировать</p>                                                
+                                                </div>
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)" fill="#84B5DF"></rect>
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)" fill="#84B5DF"></rect>
+                                                    </svg> 
+                                                    <p class="breads-drop__text">Удалить</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>                                 
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__box form__box--select table-select">
+                        <select class="form__input table-sort" name="table-sort">
+                            <option value="">Сортировать по</option>
+                            <option value="dog">Дате</option>
+                            <option value="cat">Времени</option>
+                        </select>
+                    </div>
+                    <div class="table-mobile">
+                        <div class="table schedule-table--mobile">
+                            <div class="thead">
+                                <div class="tr tr__head">
+                                    <div class="th table-flex--mobile">
+                                        <p class="table-mobile__title">Понедельник</p>
+                                        <!-- <div class="cell__inner">
+                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M6 11C6.55228 11 7 11.4477 7 12C7 12.5523 6.55228 13 6 13C5.44772 13 5 12.5523 5 12C5 11.4477 5.44772 11 6 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M12 11C12.5523 11 13 11.4477 13 12C13 12.5523 12.5523 13 12 13C11.4477 13 11 12.5523 11 12C11 11.4477 11.4477 11 12 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                <path d="M18 11C18.5523 11 19 11.4477 19 12C19 12.5523 18.5523 13 18 13C17.4477 13 17 12.5523 17 12C17 11.4477 17.4477 11 18 11Z" stroke="#C7CACB" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg> 
+                                            <div class="breads-drop hide">
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_541_36990)">
+                                                            <g filter="url(#filter0_d_541_36990)">
+                                                                <path d="M4 20H20" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                                <path d="M8 20.0001V21.0001C8.2652 21.0001 8.5196 20.8947 8.7071 20.7072L8 20.0001ZM4 20.0001H3C3 20.5524 3.4477 21.0001 4 21.0001V20.0001ZM4 16.0001L3.2929 15.293C3.1054 15.4805 3 15.7349 3 16.0001H4ZM15.2929 4.7072L16 5.4143L15.2929 4.7072ZM16.7071 4.7072L16 5.4143L16.7071 4.7072ZM19.2929 7.293L20 6.5859L19.2929 7.293ZM19.2929 8.7072L18.5858 8.0001L19.2929 8.7072ZM8 19.0001H4V21.0001H8V19.0001ZM5 20.0001V16.0001H3V20.0001H5ZM4.7071 16.7072L16 5.4143L14.5858 4.00009L3.2929 15.293L4.7071 16.7072ZM16 5.4143L18.5858 8.0001L20 6.5859L17.4142 4.00009L16 5.4143ZM18.5858 8.0001L7.2929 19.293L8.7071 20.7072L20 9.4143L18.5858 8.0001ZM18.5858 8.0001L20 9.4143C20.781 8.6333 20.7811 7.3669 20 6.5859L18.5858 8.0001ZM16 5.4143L17.4142 4.00009C16.6332 3.21904 15.3668 3.21904 14.5858 4.00009L16 5.4143Z" fill="#84B5DF"></path>
+                                                                <path d="M12 8L16 12" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                            </g>
+                                                        </g>
+                                                        <defs>
+                                                            <filter id="filter0_d_541_36990" x="-9" y="-4.58569" width="42" height="41.5857" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                                                <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                                                                <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"></feColorMatrix>
+                                                                <feOffset dy="4"></feOffset>
+                                                                <feGaussianBlur stdDeviation="6"></feGaussianBlur>
+                                                                <feColorMatrix type="matrix" values="0 0 0 0 0.505882 0 0 0 0 0.701961 0 0 0 0 0.878431 0 0 0 0.08 0"></feColorMatrix>
+                                                                <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_541_36990"></feBlend>
+                                                                <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_541_36990" result="shape"></feBlend>
+                                                            </filter>
+                                                            <clipPath id="clip0_541_36990">
+                                                                <rect width="24" height="24" fill="white"></rect>
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>  
+                                                    <p class="breads-drop__text">Редактировать</p>                                                
+                                                </div>
+                                                <div class="breads-drop__item">
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M17 4H7C6.44772 4 6 4.44772 6 5V20.1315C6 20.9302 6.89014 21.4066 7.5547 20.9635L11.4453 18.3698C11.7812 18.1459 12.2188 18.1459 12.5547 18.3698L16.4453 20.9635C17.1099 21.4066 18 20.9302 18 20.1315V5C18 4.44772 17.5523 4 17 4Z" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                                        <rect x="14.1211" y="14.5355" width="8" height="2" rx="1" transform="rotate(-135 14.1211 14.5355)" fill="#84B5DF"></rect>
+                                                        <rect x="8.46484" y="13.1213" width="8" height="2" rx="1" transform="rotate(-45 8.46484 13.1213)" fill="#84B5DF"></rect>
+                                                    </svg> 
+                                                    <p class="breads-drop__text">Удалить</p>                                                
+                                                </div>
+                                            </div>   
+                                        </div>     -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tbody">
+                                <div class="tr tabel__block">
+                                    <div class="td tabel__cell">
+                                        <p class="table-mobile__title">Дата:</p>
+                                        <p class="table-mobile__text">22.04.2022</p>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <p class="table-mobile__title">Форма обучения:</p>
+                                        <p class="table-mobile__text">Онлайн</p>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <p class="table-mobile__title">Начало:</p>
+                                        <p class="table-mobile__text">16.30</p>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <p class="table-mobile__title">Конец:</p>
+                                        <p class="table-mobile__text">17.30</p>
+                                    </div>
+                                    
+                                    <div class="td tabel__cell table__cell--long table-comment__container">
+                                        <p class="table-mobile__title">Комментарий:</p>
+                                        <div class="table-flex cell--inner table-comment">Урок будет проведен для...</div>
+                                        <div class="table-comment__full">
+                                            <p>Урок будет проведен для всех желающих Урок будет проведен для всех желающих Урок будет проведен для всех желающих</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button class="btn__add--M table-functional__add table-btn--mobile btn__task modal-active">+</button> -->
+                    <div class="table-functional table-functional--LC">
+                        <div class="flex">
+                            <p class="row-counter__text">Строк в таблице</p>
+                            <div class="row-counter__box">
+                                <p class="row-counter__select">8</p>
+                                <svg class="row-counter__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M16.7071 10.7071C17.0976 10.3166 17.0976 9.68342 16.7071 9.29289C16.3166 8.90237 15.6834 8.90237 15.2929 9.29289L16.7071 10.7071ZM12 14L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L12 14ZM8.70711 9.29289C8.31658 8.90237 7.68342 8.90237 7.29289 9.29289C6.90237 9.68342 6.90237 10.3166 7.29289 10.7071L8.70711 9.29289ZM15.2929 9.29289L11.2929 13.2929L12.7071 14.7071L16.7071 10.7071L15.2929 9.29289ZM12.7071 13.2929L8.70711 9.29289L7.29289 10.7071L11.2929 14.7071L12.7071 13.2929Z"
+                                        fill="#6A7175" />
+                                </svg>
+                                <div class="row-counter__dropdown hide">
+                                    <p class="row-counter__dropdown--item">20</p>
+                                    <p class="row-counter__dropdown--item">20</p>
+                                    <p class="row-counter__dropdown--item">20</p>
+                                    <p class="row-counter__dropdown--item">20</p>
+                                    <p class="row-counter__dropdown--item">20</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-functional__row-counter row-counter">
+                            <p class="row-counter__pages">1-8 из 1240</p>
+                            <svg class="row-counter__arrows" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15 18L9.07071 12.0707C9.03166 12.0317 9.03166 11.9683 9.07071 11.9293L15 6" stroke="#9FA2B4"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                            <svg class="row-counter__arrows" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 18L14.9293 12.0707C14.9683 12.0317 14.9683 11.9683 14.9293 11.9293L9 6" stroke="#9FA2B4"
+                                    stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                            <a href="#" class="pagination__item prev-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="#555555"/>
+                                <mask id="mask0_759_66886" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="7" y="6" width="8" height="12">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M15 6.85755C15 7.05126 14.9186 7.24583 14.7514 7.40611L9.95601 12.0097L14.579 16.6057C14.9507 16.9734 14.8779 17.5134 14.4161 17.8108C13.9554 18.1074 13.2815 18.0491 12.9098 17.6796L7.73721 12.5369C7.41687 12.2197 7.42116 11.7646 7.749 11.4509L13.1058 6.30813C13.484 5.94471 14.1601 5.89586 14.6143 6.19842C14.8682 6.36813 15 6.61156 15 6.85755Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_759_66886)">
+                                </g>
+                            </svg></a>
+                            <a href="#" class="pagination__item">1</a>
+                            <a href="#" class="pagination__item pagination__item--active">2</a>
+                            <a href="#" class="pagination__item">3</a>
+                            <a href="#" class="pagination__item">...</a>
+                            <a href="#" class="pagination__item">12</a>
+                            <a href="#" class="pagination__item next-page"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
+                                <mask id="mask0_759_66889" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="9" y="6" width="8" height="12">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 17.1424C9 16.9487 9.08142 16.7542 9.24856 16.5939L14.044 11.9903L9.42105 7.39433C9.04928 7.02662 9.12213 6.48663 9.58389 6.18921C10.0446 5.89264 10.7185 5.95093 11.0902 6.32035L16.2628 11.4631C16.5831 11.7803 16.5788 12.2354 16.251 12.5491L10.8942 17.6919C10.516 18.0553 9.83995 18.1041 9.38569 17.8016C9.13178 17.6319 9 17.3884 9 17.1424Z" fill="white"/>
+                                </mask>
+                                <g mask="url(#mask0_759_66889)">
+                                </g>
+                            </svg></a>
+                    </div>
+				</section>
+			</div>
             <div class="modal modal-add hide">
                 <form action="#" method="POST" class="modal__inner modal-add__boxig">
                     <div class="modal-add__box">
@@ -4496,7 +5314,45 @@
                     </svg> 
                 </form>
             </div>
-            
+            <div class="modal modal-add-task hide">
+                <form action="#" method="POST" class="modal__inner modal-add__boxig">
+                    <div class="modal-add__box">
+                        <h1 class="modal-add__title">Изменение строки</h1>
+                        <div class="modal-add__inner">
+                            <div class="form__box form__box--select">
+                                <select class="form__input">
+                                    <option value="">День</option>
+                                    <option value="dog">Статус</option>
+                                    <option value="cat">Статус</option>
+                                </select>
+                            </div>
+                            <div class="form__box form__box--selectSVG">
+                                <input type="text" id="set-data" class="select-data date4" autocomplete="off" required placeholder="Дата">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4 8H20" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M19 4H5C4.44772 4 4 4.44772 4 5V19C4 19.5523 4.44772 20 5 20H19C19.5523 20 20 19.5523 20 19V5C20 4.44772 19.5523 4 19 4Z" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M14.5 14H9.5" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M16 2V4" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    <path d="M8 2V4" stroke="#8F9498" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                            <div class="form__box form__box--select">
+                                <select class="form__input">
+                                    <option value="">Форма обучения</option>
+                                    <option value="online">Онлайн</option>
+                                    <option value="ofline">Офлайн</option>
+                                </select>
+                            </div>
+                            <textarea class="estimation__comment textarea modal__textarea" name="" required id="" placeholder="Описание"></textarea>
+                        </div>
+                        <button class="btn__save--L" type="submit">Сохранить</button>
+                    </div> 
+                    <svg class="modal__inner-svg" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.3331 21.3334L10.6665 10.6667" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M21.3332 10.6667L10.6665 21.3334" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg> 
+                </form>
+            </div>
             <div class="modal modal-event hide">
                 <form action="#" method="POST" class="modal__inner">
                     <div class="modal-add__box">
@@ -4621,7 +5477,7 @@
             <p class="nav-panel__text">Рассписание</p>
         </div>
     </div>
-    <div class="push-block push__error">
+    <!-- <div class="push-block push__error">
         <div class="push__left">
             <svg class="push__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="24" height="24" fill="white"/>
@@ -4724,7 +5580,7 @@
                 <button class="btn__save--L" type="submit">Сохранить</button>
             </div>
         </div>
-    </div>
+    </div> -->
     <footer></footer>
 </body>
 </html>

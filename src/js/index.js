@@ -9,16 +9,17 @@ $(() => {
 	setDate('date1');
 	setDate('date2');
 	setDate('date3');
+	setDate('date4');
 	setDate('date10');
 	setDate('date11');
 	setTime('settime1');
-	function modalEvent() {
-		let btn = document.getElementsByClassName('modalevent');
+	function modalEvent(button, modals) {
+		let btn = document.getElementsByClassName(button);
 		for (let i = 0; i < btn.length; i++) {
 			btn[i].addEventListener('click', function () {
 				let mainbody = document.querySelector('.scroll');
 				mainbody.classList.add('fixed-scroll');
-				let modal = document.querySelector('.modal-event');
+				let modal = document.querySelector(modals);
 				let close = modal.querySelector('.modal__inner-svg');
 				modal.classList.toggle('active__modal');
 				close.addEventListener('click', function () {
@@ -29,7 +30,8 @@ $(() => {
 		}
 	}
 	hidePassword();
-	modalEvent();
+	modalEvent('modalevent', '.modal-event');
+	modalEvent('open-modal-edit', '.modal-add-task');
 	openNotify();
 	tableLoader();
 	modal();
@@ -44,6 +46,7 @@ $(() => {
 	editCourseTwo("course-table__id", "#my-lessons--edit");
 	editCourseTwo("open-lesson", "#estimation");
 	editCourseTwo("open-dogovor", "#deals");
+	editCourseTwo('open-stud-lk', '#users-lk');
 	changeBtn();
 	tableDropdown();
 	dropDownAside();

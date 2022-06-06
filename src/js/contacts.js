@@ -1,5 +1,5 @@
 import '../scss/contacts.scss';
-import {csendScroll, heckKey, setDate, setTime, modal, openNotify, mainDropdown, dropDownFunc, burger, tabs, dropDownAside} from '../vendors/script';
+import {csendScroll, heckKey, setDate, setTime, modal, openNotify, mainDropdown, dropDownFunc, burger, tabs, dropDownAside, openExit} from '../vendors/script';
 $(() => {
 	modal();
 	openNotify();
@@ -11,4 +11,5 @@ $(() => {
 	setDate('date1');
 	setTime('settime1');
 	sendScroll();
+	openExit();
 });
