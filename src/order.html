@@ -1154,10 +1154,7 @@
                                     <p class="infoblock__title">Ветвь:</p>
                                     <p class="infoblock__text">Оломуц</p>
                                 </div>
-                                <div class="infoblock__item">
-                                    <p class="infoblock__title">Firmat:</p>
-                                    <p class="infoblock__text">Skola papulo</p>
-                                </div>
+                                
                                 <div class="infoblock__item">
                                     <p class="infoblock__title">Var. symbol:</p>
                                     <p class="infoblock__text">123456</p>
@@ -1863,6 +1860,11 @@
                                             </svg> 
                                         </div>
                                     </div>
+                                    <div class="th">
+                                        <div class="table-flex">
+                                            Статус
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="loader-progress hide"></div>
@@ -1880,6 +1882,9 @@
                                     <div class="td tabel__cell">
                                         <div class="table-flex">15 000 CZK</div>
                                     </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex checked">Checked-in</div>
+                                    </div>
                                     <div class="edit-block-cell complite-task">
                                         <div class="cell__inner">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1957,6 +1962,9 @@
                                     <div class="td tabel__cell">
                                         <div class="table-flex">15 000 CZK</div>
                                     </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex checked">Checked-in</div>
+                                    </div>
                                     <div class="edit-block-cell complite-task">
                                         <div class="cell__inner">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2034,6 +2042,9 @@
                                     <div class="td tabel__cell">
                                         <div class="table-flex">15 000 CZK</div>
                                     </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex checked">Checked-in</div>
+                                    </div>
                                     <div class="edit-block-cell complite-task">
                                         <div class="cell__inner">
                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2110,6 +2121,9 @@
                                     </div>
                                     <div class="td tabel__cell">
                                         <div class="table-flex">15 000 CZK</div>
+                                    </div>
+                                    <div class="td tabel__cell">
+                                        <div class="table-flex errorChecked">No checked</div>
                                     </div>
                                     <div class="edit-block-cell complite-task">
                                         <div class="cell__inner">
@@ -2680,13 +2694,14 @@
                         <a href="#" class="breads__link breads__link--active">Платежи за курс математики</a>
                     </li>
                 </ul>
-                <section class="main__header">
-                    <h1 class="main__title-box title">Платеж за курс математики</h1>
-                </section>
+                
                 <section class="main__block active">
                     <div class="container">
                         <div class="lessons-edit__box lessons-edit-box">
-                            <h2 class="lessons-edit__title">Информация о списании</h2>
+                            <div class="information-container">
+                                <h2 class="lessons-edit__title">Информация о списании</h2>
+                                <p class="person-textbox__text complite">• Checked-in</p>
+                            </div>
                             <div class="salary-information__box">
                                 <div class="salary-information__item price-block">
                                     <p class="salary-information__item-title price-block__title">Planned amount:</p>
@@ -2707,8 +2722,8 @@
                             </div>
                         </div>
                         <div class="up-balance">
-                            <img class="qr-mini" src="./img/qr-mini.png" alt="qr-code">
                             <button class="btn__save--L bye" type="submit">Оплатить</button>
+                            <img class="qr-mini" src="./img/qr-mini.png" alt="qr-code">
                         </div>
                     </div>
                 </section>
@@ -2742,7 +2757,7 @@
                 </section>
                 <section class="main__block tab-content openBlock active" id="open" data-tab="18">
                     <div class="container">
-                        <div class="lessons-edit__box lessons-edit-box">
+                        <div class="lessons-edit__box lessons-edit-box no-border">
                             <h2 class="lessons-edit__title">Об обучении</h2>
                             <p class="lessons-edit__subtitle">Уроков пройдено:</p>
                             <h3 class="lessons-edit__score">30 из 80</h3>
@@ -3730,7 +3745,7 @@
                     </div>
                 </section>
             </div>
-            <button class="btn__add--M table-functional__add table-btn--mobile btn__task modal-active">+</button>
+            <!-- <button class="btn__add--M table-functional__add table-btn--mobile btn__task modal-active">+</button> -->
             <div class="modal modal-add hide">
                 <form action="#" method="POST" class="modal__inner modal-add__boxig">
                     <div class="modal-add__box">

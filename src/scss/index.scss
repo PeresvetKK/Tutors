@@ -330,7 +330,7 @@ progress::-moz-progress-bar {
     width: 100%;
     gap: 20px;
     height: 93px;
-    padding-left: 20px;
+    // padding-left: 20px;
     .inner-salary__block{
       display: flex;
       align-items: center;
@@ -357,7 +357,10 @@ progress::-moz-progress-bar {
 .dogovor__item{
   width: 32%;
 }
-@media (max-width: 1201px) {
+.no-border{
+  border-bottom: none;
+}
+@media (max-width: 1370px) {
 	.tabs__item{
 		width: 49%;
 	}
@@ -367,6 +370,14 @@ progress::-moz-progress-bar {
   .dogovor__item{
     width: 48%;
   }
+  .application__item{
+    height: inherit;
+  }
+}
+.one-element{
+  justify-content: flex-end;
+  background: $bgWhite;
+  border-radius: 0.25rem 0.25rem 0 0;
 }
 @media screen and(max-width: 1051px){
   .salary-oplat__inner{
@@ -546,5 +557,10 @@ progress::-moz-progress-bar {
     }
     .profile-content--lesson {
       margin-bottom: 0 !important;
+  }
+  .one-element{
+    justify-content: center;
+    background: transparent;
+    padding: 0;
   }
 }

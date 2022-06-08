@@ -6,7 +6,7 @@ import 'clockpicker/src/clockpicker.css';
 import * as noUiSlider from 'nouislider';
 import 'nouislider/dist/nouislider.css';
 import '../scss/index.scss';
-import {longMessage, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside, editCourseTwo, openExit, hidePassword, timeSlider} from '../vendors/script';
+import {filter, longMessage, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside, editCourseTwo, openExit, hidePassword, timeSlider} from '../vendors/script';
 $(() => {
 	setDate('date1');
 	setDate('date2');
@@ -15,6 +15,7 @@ $(() => {
 	setDate('date10');
 	setDate('date11');
 	setTime('settime1');
+	filter();
 	function modalEvent(button, modals) {
 		let btn = document.getElementsByClassName(button);
 		for (let i = 0; i < btn.length; i++) {

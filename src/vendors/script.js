@@ -151,10 +151,13 @@ export function setDate(element){
         locale: langs,
         onSelect: function (dataText, inst) {
             var dateAsString = dataText.formattedDate;
-            console.log(dataText);
             var input = elem;
             input.value = dateAsString;
             input.setAttribute('data-quantity', input.value);
+            if(dataText.date == undefined){
+                input.value = ""
+                input.setAttribute('data-quantity', input.value);
+            }
         },
     });
     

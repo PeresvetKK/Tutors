@@ -633,6 +633,7 @@ footer {
   border: 1px solid #E8E8E8;
   border-radius: 0.25rem;
   outline: none;
+  color: #757575;
 }
 .form__input:hover, .form__input:focus {
   border: 1px solid #84B5DF;
@@ -2485,13 +2486,13 @@ svg.cell__inner {
 .select-data {
   font-size: 0.875em;
 }
-@media screen and (min-height: 1200px) {
+@media screen and (min-height: 1370px) {
   .modal-add__boxig {
     height: auto;
     height: initial;
   }
 }
-@media (max-width: 1201px) {
+@media (max-width: 1370px) {
   .tabs {
     width: 100%;
   }
@@ -2741,21 +2742,6 @@ svg.cell__inner {
 
   .fixed-scroll__mobile {
     overflow-y: hidden;
-  }
-
-  .table-functional__add {
-    position: fixed;
-    bottom: 140px;
-    right: 30px;
-    width: 48px;
-    height: 48px;
-    color: #fff !important;
-    border-radius: 50%;
-    background: #84B5DF;
-  }
-
-  .table-btn--mobile {
-    display: block;
   }
 
   .modal__inner {
@@ -3179,6 +3165,9 @@ svg.cell__inner {
 .disabledCheck {
   color: #9FA3A7;
 }
+.errorChecked {
+  color: #FF5454;
+}
 .disable-table .td-time {
   text-decoration: line-through;
   color: #9FA3A7;
@@ -3255,7 +3244,6 @@ tr {
   z-index: 9;
   font-size: 0.875em;
   line-height: 150%;
-  color: #30D937;
 }
 .table-functional--noBtn {
   -webkit-box-pack: end;
@@ -3335,7 +3323,7 @@ tr {
 .table-swap:hover path {
   fill: #84B5DF;
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1370px) {
   .schedule-block,
 .subjects-block,
 .course-block,
@@ -3868,7 +3856,6 @@ progress::-moz-progress-bar {
   grid-gap: 20px;
   gap: 20px;
   height: 93px;
-  padding-left: 20px;
 }
 .application__item .inner-salary__block {
   display: -webkit-box;
@@ -3901,7 +3888,10 @@ progress::-moz-progress-bar {
 .dogovor__item {
   width: 32%;
 }
-@media (max-width: 1201px) {
+.no-border {
+  border-bottom: none;
+}
+@media (max-width: 1370px) {
   .tabs__item {
     width: 49%;
   }
@@ -3913,6 +3903,17 @@ progress::-moz-progress-bar {
   .dogovor__item {
     width: 48%;
   }
+
+  .application__item {
+    height: inherit;
+  }
+}
+.one-element {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background: #fff;
+  border-radius: 0.25rem 0.25rem 0 0;
 }
 @media screen and (max-width: 1051px) {
   .salary-oplat__inner {
@@ -4158,6 +4159,14 @@ progress::-moz-progress-bar {
   .profile-content--lesson {
     margin-bottom: 0 !important;
   }
+
+  .one-element {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background: transparent;
+    padding: 0;
+  }
 }
 .modal-message {
   width: 100%;
@@ -4195,7 +4204,7 @@ progress::-moz-progress-bar {
 .training__modal {
   margin-top: 20px;
 }
-@media screen and (max-width: 1201px) {
+@media screen and (max-width: 1370px) {
   .modal-message__text, .modal-message__comtext {
     width: 83%;
   }

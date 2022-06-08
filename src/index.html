@@ -528,7 +528,7 @@
 									<div class="form__box form__box--index">
 										<label class="form__label phone" for="tel">Номер телефона</label>
 										<input class="form__input phone" type="tel" id="tel" name="tel"
-											placeholder="+7(909) 334-66-77" value="" required>
+											placeholder="+79093346677" value="" required>
 									</div>
 									<div class="form__box form__box--index">
 										<label class="form__label lastname" for="lastname">Фамилия</label>
@@ -1591,6 +1591,22 @@
                     </div>
                 </section>
                 <section class="main__block course-block tab-content" data-tab="4">
+                    <div class="dropdown-box table__search one-element">
+                        <div class="filter__btn">
+                            <p class="filter-btn__text">Фильтры</p>
+                            <svg class="filter-btn__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.66602 12H13.9993" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M2 12H4" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M4 13.3332L4 10.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M13.334 8H14.0007" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M2 8H10.6667" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10.666 9.33317L10.666 6.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M9.33398 4H14.0007" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M2 4H6.66667" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M6.66602 5.33317L6.66602 2.6665" stroke="#84B5DF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg> 
+                        </div>
+                    </div>
                     <div class="table-container">
                         <div class="table course-table">
                             <div class="thead">
@@ -2876,7 +2892,7 @@
                 </section>
                 <section class="main__block tab-content active openBlock" id="open" data-tab="6">
                     <div class="container">
-                        <div class="lessons-edit__box lessons-edit-box">
+                        <div class="lessons-edit__box lessons-edit-box no-border">
                             <h2 class="lessons-edit__title">Об обучении</h2>
                             <p class="lessons-edit__subtitle">Уроков пройдено:</p>
                             <h3 class="lessons-edit__score">30 из 80</h3>
@@ -5448,9 +5464,66 @@
                     </svg> 
                 </form>
             </div>
-            <button class="btn__add--M table-functional__add table-btn--mobile btn__task modal-active">+</button>
+            <!-- <button class="btn__add--M table-functional__add table-btn--mobile btn__task modal-active">+</button> -->
 		</div>
 	</section>
+    <div class="filter hide">
+        <div class="filter__inner">
+            <div class="filter__title">
+                <h2 class="filter__title--text">Фильтры</h2>
+                <svg class="filter__close" width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M21.3331 21.3334L10.6665 10.6667" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M21.3332 10.6667L10.6665 21.3334" stroke="#84B5DF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+            <div class="filter__select">
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Город</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Ветвь</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Тема</option>
+                        <option value="dog">Статус</option>
+                        <option value="cat">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Язык</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Форма обучения</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+                <div class="form__box form__box--select">
+                    <select class="form__input">
+                        <option value="">Причина обучения</option>
+                        <option value="">Статус</option>
+                        <option value="">Статус</option>
+                    </select>
+                </div>
+            </div>
+            <button class="btn__save--L" type="submit">Применить</button>
+            <button class="btn__save--L btn-light" type="submit">Сбросить</button>
+        </div>
+    </div>
     <div class="nav-panel">
         <div class="nav-panel__item notify">
             <svg class="nav-panel__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">

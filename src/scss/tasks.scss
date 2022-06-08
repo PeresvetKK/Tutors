@@ -39,6 +39,9 @@
     width: 100%;
     color: $dark700;
 }
+.add-task-mobile{
+    background: $green;
+}
   @media screen and(max-width: 900px){
     .salary-information__item{
         width: 100%;
@@ -56,9 +59,9 @@
     }
 }
 @media screen and(max-width: 475px){
-    .shedule-btn{
-        display: none;
-    }
+    // .shedule-btn{
+    //     display: none;
+    // }
     .training__modal{
         padding: 18px;
     }

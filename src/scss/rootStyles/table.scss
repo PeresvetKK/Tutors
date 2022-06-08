@@ -80,6 +80,9 @@
 .disabledCheck {
   color: $gray;
 }
+.errorChecked{
+  color: $red;
+}
 .disable-table{
   .td-time{
     text-decoration: line-through;
@@ -156,7 +159,7 @@ tr {
     z-index: 9;
     font-size: 0.875em;
     line-height: 150%;
-    color: $green;
+    // color: $green;
   }
 }
 .table-functional--noBtn {
@@ -231,7 +234,7 @@ tr {
   }
 }
 
-@media screen and(max-width: 1201px) {
+@media screen and(max-width: 1370px) {
   .schedule-block,
   .subjects-block,
   .course-block, 
