@@ -1,5 +1,5 @@
 import '../scss/favourites.scss';
-import {sendScroll, checkKey, setDate, setTime, modal, openNotify, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown, openExit} from '../vendors/script';
+import {yesNo, sendScroll, checkKey, setDate, setTime, modal, openNotify, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown, openExit} from '../vendors/script';
 $(() => {
 	modal();
 	openNotify();
@@ -17,6 +17,7 @@ $(() => {
 	setTime('settime1');
 	sendScroll();
 	openExit();
+	yesNo();
 	function pencelCourse() {
 		let edit = document.getElementsByClassName("edit-block-cell__inner");
 		for (let i = 0; i < edit.length; i++) {

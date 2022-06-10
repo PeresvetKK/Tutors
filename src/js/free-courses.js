@@ -6,7 +6,7 @@ import 'clockpicker/src/clockpicker.css';
 import * as noUiSlider from 'nouislider';
 import 'nouislider/dist/nouislider.css';
 import '../scss/free-courses.scss';
-import {timeSlider, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, searchResult, mainDropdown, setDate, setTime, modal, openNotify, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, filter, openExit } from '../vendors/script';
+import {yesNo, timeSlider, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, searchResult, mainDropdown, setDate, setTime, modal, openNotify, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, filter, openExit } from '../vendors/script';
 $(() => {
 	let edit = document.getElementsByClassName("breads");
 	for (let i = 0; i < edit.length; i++) {
@@ -25,6 +25,7 @@ $(() => {
 	tabs();
 	dropDownFunc();
 	burger();
+	yesNo();
 	tableDropdown();
 	dropDownAside();
 	tableLoader();

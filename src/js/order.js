@@ -22,8 +22,10 @@ $(() => {
 	editCourseTwo('open-lesson' ,'#my-lessons--edit');
 	editCourseTwo('open-spisanie' ,'#estimation');
 	setDate('date2');
+	setDate('date3');
 	sendScroll();
 	openExit();
+	// yesNo();
 	function editCourse(pencel, open) {
 		let edit = document.getElementsByClassName(pencel);
 		for (let i = 0; i < edit.length; i++) {

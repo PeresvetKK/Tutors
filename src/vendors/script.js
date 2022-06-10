@@ -162,6 +162,7 @@ export function setDate(element){
     });
     
     var input = elem;
+    
     input.addEventListener('input', function () {
         input.setAttribute('data-quantity', input.value);
     });
@@ -584,3 +585,13 @@ export function hidePassword(){
         });
     }
 }   
+export function yesNo(){
+    $('#open-next').on('click', function(){
+        let hidedBlock = document.querySelector('#next-block');
+        hidedBlock.classList.add('active');
+    })
+    $('#dont-open').on('click', function(){
+        let hidedBlock = document.querySelector('#next-block');
+        hidedBlock.classList.remove('active');
+    })
+}

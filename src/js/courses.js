@@ -1,5 +1,5 @@
 import '../scss/courses.scss';
-import {dinamocBtn, offset, editCourseTwo, sendScroll, checkKey, searchResult, setTime, setDate, modal, openNotify, filter, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown, openExit} from '../vendors/script';
+import {yesNo, dinamocBtn, offset, editCourseTwo, sendScroll, checkKey, searchResult, setTime, setDate, modal, openNotify, filter, tableLoader, sortTable, dropDownFunc, burger, tabs, editCourse, tableDropdown, dropDownAside, mainDropdown, openExit} from '../vendors/script';
 $(() => {
 	modal();
 	openNotify();
@@ -39,4 +39,5 @@ $(() => {
 	}
 	pencelCourse();
 	searchResult();
+	yesNo();
 });

@@ -6,7 +6,7 @@ import 'clockpicker/src/clockpicker.css';
 import * as noUiSlider from 'nouislider';
 import 'nouislider/dist/nouislider.css';
 import '../scss/index.scss';
-import {filter, longMessage, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside, editCourseTwo, openExit, hidePassword, timeSlider} from '../vendors/script';
+import {yesNo, filter, longMessage, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside, editCourseTwo, openExit, hidePassword, timeSlider} from '../vendors/script';
 $(() => {
 	setDate('date1');
 	setDate('date2');
@@ -43,6 +43,7 @@ $(() => {
 	dropDownFunc();
 	burger();
 	tabs();
+	yesNo();
 	// editCourse();
 	longMessage();
 	openExit();

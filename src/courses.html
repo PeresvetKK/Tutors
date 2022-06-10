@@ -1974,6 +1974,7 @@
                                 <h2 class="lessons-edit__title">Общая информация</h2>
                                 <p class="person-textbox__text complite">• Checked-in</p>
                             </div>
+                            <p class="first-leeson">Внимание, 1 урок!</p>
                             <p class="lessons-edit__subtitle">Уроков пройдено:</p>
                             <h3 class="lessons-edit__score">30 из 80</h3>
                             <progress value="30" max="100" class="progressbar"></progress>
@@ -2005,20 +2006,22 @@
                             </div>
                             <div class="salary-information__box">
                                 <div class="application__item">
-                                    <div class="inner-salary__block salary-information__block">
-                                        <img class="profile-icon header__profile profile" src="./img/profile.png" alt="profile">
-                                        <div class="salary-information__inner">
-                                            <p class="salary-information__item-title">Лектор:</p>
-                                            <p class="salary-information__item-subtitle">Каетан Стерлик</p>
+                                    <div class="application__container">
+                                        <div class="inner-salary__block salary-information__block">
+                                            <img class="profile-icon header__profile profile" src="./img/profile.png" alt="profile">
+                                            <div class="salary-information__inner">
+                                                <p class="salary-information__item-title">Лектор:</p>
+                                                <p class="salary-information__item-subtitle">Каетан Стерлик</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="salary-information__inner salary-information__block">
-                                        <p class="salary-information__item-title">Телефон:</p>
-                                        <p class="salary-information__item-subtitle">+7 (964) 334-32-22</p>
-                                    </div>
-                                    <div class="salary-information__inner salary-information__block">
-                                        <p class="salary-information__item-title">E-mail:</p>
-                                        <p class="salary-information__item-subtitle">Каетан Стерлик@mail.com</p>
+                                        <div class="salary-information__inner salary-information__block center-box">
+                                            <p class="salary-information__item-title">Телефон:</p>
+                                            <p class="salary-information__item-subtitle">+7 (964) 334-32-22</p>
+                                        </div>
+                                        <div class="salary-information__inner salary-information__block center-box">
+                                            <p class="salary-information__item-title">E-mail:</p>
+                                            <p class="salary-information__item-subtitle">Каетан Стерлик@mail.com</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="salary-information__item profile-content profile-content--lesson">
@@ -2242,7 +2245,20 @@
                             <div class="message-blue estimation__message">
                                 <p class="message-blue__text">Студенческий часовой пояс: Белград, Братислава, Будапешт, Любляна, Прага (GMT+01:00)</p>
                             </div>
-                            <div class="estimation__test estimation-test">
+                            <div class="estimation-test__item">
+                                <h3 class="estimation-test__title">Запланировать следующую лекцию</h3>
+                                <div class="estimation-test__inner">
+                                    <div class="radio estimation-test__inner-item" id="dont-open">
+                                        <input class="custom-radio" type="radio" id="color-100" name="color-6" value="">
+                                        <label for="color-100"><span>Нет</span></label>
+                                    </div>
+                                    <div class="radio estimation-test__inner-item" id="open-next">
+                                        <input class="custom-radio" type="radio" id="color-101" name="color-6" value="">
+                                        <label for="color-101"><span>Да</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="estimation__test estimation-test hide" id="next-block">
                                 <div class="estimation__inputs estimation-input">
                                     <div class="form__box form__box--selectSVG">
                                         <input type="text" id="set-data" class="select-data date2" autocomplete="off" placeholder="Дата">
@@ -2364,6 +2380,11 @@
                                 </a>
                                 <p class="message-box__name">Lindsey Stroud</p>
                                 <p class="chat-footer__typing">Typing a message...</p>
+                            </div>
+                            <div class="chat__loads_files">
+                                <div class="chat__file_container">
+                                    <img src="./img/word.png" class="document__prevue chat__file">
+                                </div>
                             </div>
                             <div class="chat__footer--inner">
                                 <div class="input__wrapper">

@@ -56,6 +56,7 @@ $(() => {
 	tableDropdown();
 	dropDownAside();
 	setDate('date1');
+	setDate('date50');
 	sendScroll();
 	dinamocBtn();
 	openExit();

@@ -259,7 +259,7 @@ progress::-moz-progress-bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 20px;
+  // margin-bottom: 20px;
 }
 
 .salary-oplat{
@@ -318,7 +318,7 @@ progress::-moz-progress-bar {
     align-items: flex-start;
     gap: 20px;
   }
-  &__item{
+  &__item, &__container{
     min-width: 235px;
     display: flex;
     flex-wrap: wrap;
@@ -329,16 +329,25 @@ progress::-moz-progress-bar {
     margin-right: 0;
     width: 100%;
     gap: 20px;
-    height: 93px;
+    padding: 1.27rem 1.27rem 1.27rem 0;
+    // height: 93px;
     // padding-left: 20px;
     .inner-salary__block{
       display: flex;
       align-items: center;
       gap: 12px;
+      // padding: 1.27rem;
     }
     .salary-information__block{
       width: 31%;
+      // height: 80px;
     }
+  }
+  &__container{
+    padding: 0;
+    border: none;
+    padding-left: 1.27rem;
+
   }
   &__item--new{
     background: $bgWhite;
@@ -440,7 +449,9 @@ progress::-moz-progress-bar {
     flex-direction: column;
     align-items: flex-start;
   }
-
+  .salary-information__item{
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 477px) {

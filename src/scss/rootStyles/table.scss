@@ -93,6 +93,9 @@
 tr {
   position: relative;
 }
+.tr:nth-child(2n){
+  background: #eee;
+}
 .table__edit {
   position: absolute;
   background-image: url('../img/pencel.svg');

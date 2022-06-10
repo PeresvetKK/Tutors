@@ -64,3 +64,18 @@
 .form__box{
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 970px) {
+    .back-arrow{
+        top: 9%;
+        left: 9%;
+    }
+}
+@media screen and (max-width: 476px) {
+    h1{
+        font-size: 1.5em;
+    }
+    .recovery__text{
+        font-size: 0.875em;
+    }
+}
