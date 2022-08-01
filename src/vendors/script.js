@@ -595,3 +595,11 @@ export function yesNo(){
         hidedBlock.classList.remove('active');
     })
 }
+export function scrollDown() {
+    $('.tabs__item').on('click', (e) => {
+        if(e.target.hasAttribute('data-scroll')){
+            var windowCoords = document.documentElement.clientHeight;
+            window.scrollTo(0, windowCoords)
+        }
+    })
+  }

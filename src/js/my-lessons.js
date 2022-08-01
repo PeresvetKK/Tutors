@@ -4,7 +4,7 @@ import 'air-datepicker/air-datepicker.css'
 import 'air-datepicker/air-datepicker.js'
 import 'clockpicker/src/clockpicker.js';
 import 'clockpicker/src/clockpicker.css';
-import {yesNo, openExit, dinamocBtn, offset, editCourseTwo, sendScroll, checkKey, searchResult, openNotify, filter, setDate, setTime, editCourse, tableLoader,tabs, sortTable, mainDropdown, dropDownFunc, burger, tableDropdown, dropDownAside, modal} from '../vendors/script';
+import {yesNo, openExit, dinamocBtn, offset, editCourseTwo, sendScroll, checkKey, searchResult, openNotify, filter, setDate, setTime, editCourse, tableLoader,tabs, sortTable, mainDropdown, dropDownFunc, burger, tableDropdown, dropDownAside, modal, scrollDown} from '../vendors/script';
 $(() => {
 	modal();
 	openNotify();
@@ -40,4 +40,5 @@ $(() => {
 	// 		information.classList.add('tabs__item--active');
 	// 	});
 	// }
+	scrollDown();
 });

@@ -1,6 +1,6 @@
 import { doc } from 'prettier';
 import '../scss/other.scss';
-import {openExit, sendScroll, checkKey, setDate, setTime, modal, openNotify, dropDownFunc, burger, dropDownAside, mainDropdown} from '../vendors/script';
+import {openExit, sendScroll, checkKey, setDate, setTime, modal, openNotify, dropDownFunc, burger, dropDownAside, mainDropdown, scrollDown} from '../vendors/script';
 $(() => {
 	$('.tabs__item').click(function () {
 		var id = $(this).attr('data-tab'),
@@ -22,4 +22,5 @@ $(() => {
 	setTime('settime1');
 	sendScroll();
 	openExit();
+	scrollDown();
 });
