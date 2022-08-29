@@ -331,6 +331,23 @@ export function modal() {
         });
     }
 }
+export function modalNew(className, modalName) {
+    let btn = document.getElementsByClassName(`${className}`);
+    console.log(className)
+    for (let i = 0; i < btn.length; i++) {
+        btn[i].addEventListener('click', function () {
+            let mainbody = document.querySelector('.scroll');
+            mainbody.classList.add('fixed-scroll');
+            let modal = document.querySelector(`.${modalName}`);
+            let close = modal.querySelector('.modal__inner-svg');
+            modal.classList.toggle('active__modal');
+            close.addEventListener('click', function () {
+                modal.classList.remove('active__modal');
+                mainbody.classList.remove('fixed-scroll');
+            });
+        });
+    }
+}
 export function sortTable() {
     let tableSort = document.getElementsByClassName('table-swap');
     for (let i = 0; i < tableSort.length; i++) {

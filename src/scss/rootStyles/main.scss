@@ -455,7 +455,7 @@ footer{
     margin-top: 20px;
 }
 
-.modal-add, .modal-event, .modal-add-task{
+.modal-add, .modal-event, .modal-add-task, .modal-ost-zayav{
     &__box{
         height: 100%;
         display: flex;
@@ -488,6 +488,12 @@ footer{
 .modal-add__boxig{
     // height: calc(100% - 82px);
     height: auto;
+}
+.modal-ost-zayav{
+    .slider-box{
+        width: 94%;
+        margin-bottom: 20px;
+    }
 }
 .form{
     display: flex;
@@ -2265,6 +2271,11 @@ svg.cell__inner{
   border-radius: 50%;
   width: 10em;
   height: 10em;
+}
+
+.modal-time__box{
+    width: 94%;
+    margin: 0 auto;
 }
 
 .loader {
