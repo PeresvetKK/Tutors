@@ -589,9 +589,6 @@ footer {
 .form__box--index {
   height: 77px;
 }
-.form__box:hover .form__label, .form__box:focus .form__label {
-  color: #84B5DF;
-}
 .form__box--small {
   width: 23%;
 }
@@ -3199,6 +3196,15 @@ svg.cell__inner {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+.form__input:invalid, textarea:invalid, .required:invalid {
+  border: 1px solid #E8E8E8;
+}
+.form__input:focus:invalid, textarea:focus:invalid, .required:focus:invalid {
+  border: 1px solid #FF5454;
+}
+.form__input:focus:invalid .form__label, .required:invalid {
+  color: #FF5454;
 }
 .air-datepicker-cell.-day-.-other-month-, .air-datepicker-cell.-year-.-other-decade- {
   color: var(--adp-color-other-month);

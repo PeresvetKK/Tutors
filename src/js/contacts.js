@@ -1,11 +1,21 @@
 import '../scss/contacts.scss';
-import {csendScroll, heckKey, setDate, setTime, modal, openNotify, mainDropdown, dropDownFunc, burger, tabs, dropDownAside, openExit, scrollDown} from '../vendors/script';
+import {sendScroll, heckKey, setDate, setTime, modal, openNotify, mainDropdown, dropDownFunc, burger, tabs, dropDownAside, openExit, scrollDown} from '../vendors/script';
 $(() => {
+
+	const headerSelectLectors = () =>{
+		document.querySelectorAll('.btn-dropdown').forEach((element) => {
+			element.addEventListener('click', function(){
+				element.nextElementSibling.classList.toggle('dropdown-active');
+				element.querySelector('.dropdown-arrow').classList.toggle('rotate180');
+			});
+		});
+	}
+	headerSelectLectors();
 	modal();
 	openNotify();
 	tabs();
 	mainDropdown();
-	dropDownFunc();
+	// dropDownFunc();
 	burger();
 	dropDownAside();
 	setDate('date1');

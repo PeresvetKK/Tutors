@@ -34,7 +34,6 @@
         border-bottom: 1px solid $blue;
     }
 }
-
 @media screen and(max-width: 1370px){
     .plate{
         grid-template-columns: 1fr 1fr;
@@ -44,4 +43,13 @@
     .plate{
         grid-template-columns: 1fr;
     }
+}
+
+
+.header-search{
+    margin: 10px 13px 10px 16px;
+    width: calc(100% - 29px);
+}
+.header-search input{
+    width: 100%;
 }
