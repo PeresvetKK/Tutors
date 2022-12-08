@@ -2338,6 +2338,21 @@ svg.cell__inner{
 .slider-box{
     margin-bottom: 20px;
 }
+
+.notify-inner__closes{
+    display: flex;
+    align-items: center;
+    margin-right: 3px;
+    .notify-inner__status{
+        padding-top: 2px;
+        font-size: 1.375em;
+    }
+    svg{
+        width: 28px;
+        height: 28px;
+    }
+}
+
 @media screen and (max-width: 913px){
     .aside{
         display: none;
