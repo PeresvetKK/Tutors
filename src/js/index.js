@@ -6,7 +6,7 @@ import 'clockpicker/src/clockpicker.css';
 import * as noUiSlider from 'nouislider';
 import 'nouislider/dist/nouislider.css';
 import '../scss/index.scss';
-import {yesNo, filter, longMessage, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside, editCourseTwo, openExit, hidePassword, timeSlider, scrollDown} from '../vendors/script';
+import {yesNo, filter, longMessage, sendScroll, checkKey, dinamocBtn, offset, breadsDrop, pushClose, openNotify,	setDate, setTime, tableLoader, modal, sortTable, mainDropdown, dropDownFunc, burger, tabs, editCourse, changeBtn, tableDropdown, dropDownAside, editCourseTwo, openExit, hidePassword, timeSlider, scrollDown, validateInputsRequired} from '../vendors/script';
 $(() => {
 	setDate('date1');
 	setDate('date2');
@@ -111,5 +111,6 @@ $(() => {
 		}
 	}
 	modalDogovor();
+	validateInputsRequired();
 	// stars('stars__input');
 });

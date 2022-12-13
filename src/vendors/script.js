@@ -86,22 +86,6 @@ export function editCourseTwo(pencel, open) {
         });
     }
 }
-// export function editLessons(){
-//     let edit = document.getElementsByClassName("edit-block-cell__inner");
-//     for (let i = 0; i < edit.length; i++) {
-//         edit[i].addEventListener("click", function () {
-//             let myLessons = document.querySelector("#my-lessons--edit");
-//             let myLessonsEdit = document.querySelector("#main-lessons--edit");
-//             let information = document.querySelector("#information");
-//             let open = document.querySelector("#open-lesson");
-
-//             myLessons.classList.toggle("active");
-//             myLessonsEdit.classList.toggle("active");
-//             open.classList.add("active");
-//             information.classList.add('tabs__item--active');
-//         });
-//     }
-// }
 export function setDate(element){
     if (document.documentElement.lang === "en") {
         var langs = {
@@ -185,14 +169,6 @@ export function setTime(element){
     });
 }
 export function changeBtn() {
-    // let btn = document.querySelector('.btn__save--L');
-    // if(btn.classList.contains("btn__disabled--L")){
-    // 	btn.addEventListener('click', function(e){
-    // 		e.preventDefault();
-    // 	});
-    // }else{
-    // 	btn.defaultPrevented;
-    // }
     let inputForm = document.getElementsByClassName('form__input');
     for (let i = 0; i < inputForm.length; i++) {
         inputForm[i].addEventListener('change', function () {
@@ -521,9 +497,6 @@ export function dinamocBtn(){
             var par = document.querySelector('.cell__inner');
             var parHeight = offset(par);
             btn.style.top = `${topHeight.top - 13}px`;
-                // let bod = document.querySelector('#root');
-                // bod.classList.add('fixed-scroll');
-                // btn.style.visibility="visible";
         }
         else if(e.target.parentElement.classList.contains('cell__inner')){
             let input = e.target.parentElement;
@@ -620,3 +593,16 @@ export function scrollDown() {
         }
     })
   }
+export const validateInputsRequired = () =>{
+
+    // let bod = document.getElementsByTagName('body')[0];
+    // bod.addEventListener('click', (e) => {
+    //     if (e.target.classList.contains('sendForm')){
+            
+    //     }
+    // })
+    // $('.btn__save--L').on('click', function(e) {
+        
+    //     $('input[required]').addClass('req');
+    //   });
+}

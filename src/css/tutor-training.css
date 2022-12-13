@@ -3214,14 +3214,11 @@ svg.cell__inner {
             justify-content: center;
   }
 }
-.form__input:invalid, textarea:invalid, .required:invalid {
-  border: 1px solid #E8E8E8;
-}
-.form__input:focus:invalid, textarea:focus:invalid, .required:focus:invalid {
+.invalid-input, .invalid-input:focus, .invalid-input:hover {
   border: 1px solid #FF5454;
 }
-.form__input:focus:invalid .form__label, .required:invalid {
-  color: #FF5454;
+.invalid-label {
+  color: #FF5454 !important;
 }
 .block-place {
   width: 80%;
