@@ -527,28 +527,28 @@
 								<div class="profile-container">
 									<div class="form__box form__box--index">
 										<label class="form__label" for="name">Имя</label>
-										<input class="required form__input name" type="text" id="name" name="name" placeholder="Value"
+										<input class="inputs-required required form__input name" type="text" id="name" name="name" placeholder="Value"
 											value="">
                                         <p class="form__lagel-error">Введено некорректное значение</p>
 									</div>
 									<div class="form__box form__box--index">
 										<label class="form__label phone" for="tel">Номер телефона</label>
-										<input class="required form__input phone" type="tel" id="tel" name="tel"
+										<input class="inputs-required required form__input phone" type="tel" id="tel" name="tel"
 											placeholder="+79093346677" value="">
 									</div>
 									<div class="form__box form__box--index">
 										<label class="form__label lastname" for="lastname">Фамилия</label>
-										<input class="required form__input lastname" type="text" id="lastname" name="lastname" placeholder="Value"
+										<input class="inputs-required required form__input lastname" type="text" id="lastname" name="lastname" placeholder="Value"
 											value="">
 									</div>
 									<div class="form__box form__box--index">
 										<label class="form__label email" for="email">E-mail</label>
-										<input class="required form__input email" type="email" id="email" name="email"
+										<input class="inputs-required required form__input email" type="email" id="email" name="email"
 											placeholder="ad.valach@gmail.com" value="">
 									</div>
                                     <div class="form__box form__box--index password">
 										<label class="form__label email" for="password">Пароль</label>
-										<input class="required form__input" type="password" id="password-input" name="password"
+										<input class="inputs-required required form__input" type="password" id="password-input" name="password"
 											placeholder="" value="">
                                         <a href="#" class="password-control"></a>
 									</div>
@@ -5697,7 +5697,7 @@
     <script>
         function validateMyForm(formID){
             let form = document.querySelector(`#${formID}`);
-            form.querySelectorAll('input.required').forEach(input => {
+            form.querySelectorAll('.required').forEach(input => {
                 if(input.value == ""){
                     input.classList.add('invalid-input')
                     if(input.previousElementSibling){
@@ -5710,19 +5710,7 @@
                     }
                 }
             })
-            form.querySelectorAll('textarea.required').forEach(input => {
-                if(input.value == ""){
-                    input.classList.add('invalid-input')
-                    if(input.previousElementSibling){
-                        input.previousElementSibling.classList.add('invalid-label')
-                    }
-                }else{
-                    input.classList.remove('invalid-input')
-                    if(input.previousElementSibling){
-                        input.previousElementSibling.classList.remove('invalid-label')
-                    }
-                }
-            })
+            
             if(!form.querySelector('.invalid-input')){
                 console.log('form-sended')
                 return true;
